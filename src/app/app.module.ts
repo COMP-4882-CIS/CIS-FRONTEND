@@ -13,13 +13,20 @@ import {HomeComponent, ZipcodeComponent} from "./pages";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
 import {MatListModule} from "@angular/material/list";
+import { MatIconModule } from "@angular/material/icon";
+import { MapComponent } from './map/map.component';
+import { MarkerService } from './marker.service';
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ZipcodeComponent,
-    RepEmailFormComponent
+    RepEmailFormComponent,
+    MapComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,9 +38,13 @@ import {MatListModule} from "@angular/material/list";
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
-    MatListModule
+    MatListModule,
+    MatIconModule,
+    
   ],
-  providers: [],
+  providers: [
+    MarkerService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

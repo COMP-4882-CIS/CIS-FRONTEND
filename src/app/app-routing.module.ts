@@ -4,7 +4,7 @@ import {HomeComponent, ZipcodeComponent} from './pages';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'zipcodes', component: ZipcodeComponent}
+  {path: 'zipcodes', component: ZipcodeComponent},
 ];
 
 @NgModule({
