@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "gh-deploy": "ng deploy --base-href=/ng-cis/",
-    "gen-tree": "find . -not -path \"./node_modules*\" -not -path \"./dist*\" -not -path \"./.git*\" -not -path \"./.vscode*\" -not -path \"./.idea*\" -printf '%P\\n' > tree.txt\n"
+    "gen-tree": "find . -not -path \"./node_modules*\" -not -path \"./dist*\" -not -path \"./.git*\" -not -path \"./.vscode*\" -not -path \"./.idea*\" -printf '%P\\n' > tree.txt"
   },
   "private": true,
   "dependencies": {
