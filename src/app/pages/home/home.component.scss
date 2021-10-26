@@ -1,15 +1,10 @@
 @use '~@angular/material' as mat;
 
 mat-card {
-  @include mat.elevation-transition();
-  @include mat.elevation(2);
+  @include mat.elevation-transition(24);
+  @include mat.elevation(24);
 
   &:hover {
-    @include mat.elevation(3);
+    @include mat.elevation(24);
   }
-}
-
-iframe {
-  width: 100%;
-  border-radius: 6px;
 }

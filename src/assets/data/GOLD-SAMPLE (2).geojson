@@ -1,0 +1,708 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.7662,35.1377 ]
+    },
+    "properties": {
+    "ZipCode":38018,
+    "City":"CORDOVA",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.9627,35.3466 ]
+    },
+    "properties": {
+    "ZipCode":38053,
+    "City":"MILLINGTON",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.644,35.0603 ]
+    },
+    "properties": {
+    "ZipCode":38017,
+    "City":"COLLIERVILLE",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.0523,35.1429 ]
+    },
+    "properties": {
+    "ZipCode":38103,
+    "City":"MEMPHIS",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.0993,35.106 ]
+    },
+    "properties": {
+    "ZipCode":38113,
+    "City":"MEMPHIS",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.0047,35.1324 ]
+    },
+    "properties": {
+    "ZipCode":38104,
+    "City":"MEMPHIS",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.035,35.1516 ]
+    },
+    "properties": {
+    "ZipCode":38105,
+    "City":"MEMPHIS",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.1214,35.0938 ]
+    },
+    "properties": {
+    "ZipCode":38106,
+    "City":"MEMPHIS",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.0233,35.1654 ]
+    },
+    "properties": {
+    "ZipCode":38107,
+    "City":"MEMPHIS",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.9673,35.1764 ]
+    },
+    "properties": {
+    "ZipCode":38108,
+    "City":"MEMPHIS",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.1401,35.0277 ]
+    },
+    "properties": {
+    "ZipCode":38109,
+    "City":"MEMPHIS",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.9907,35.0939 ]
+    },
+    "properties": {
+    "ZipCode":38114,
+    "City":"MEMPHIS",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.9347,35.0938 ]
+    },
+    "properties": {
+    "ZipCode":38111,
+    "City":"MEMPHIS",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.9673,35.1434 ]
+    },
+    "properties": {
+    "ZipCode":38112,
+    "City":"MEMPHIS",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.8599,35.0497 ]
+    },
+    "properties": {
+    "ZipCode":38115,
+    "City":"MEMPHIS",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.0093,35.0278 ]
+    },
+    "properties": {
+    "ZipCode":38116,
+    "City":"MEMPHIS",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.902,35.1103 ]
+    },
+    "properties": {
+    "ZipCode":38117,
+    "City":"MEMPHIS",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.0443,35.1241 ]
+    },
+    "properties": {
+    "ZipCode":38126,
+    "City":"MEMPHIS",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.0187,35.2368 ]
+    },
+    "properties": {
+    "ZipCode":38127,
+    "City":"MEMPHIS",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.9347,35.0278 ]
+    },
+    "properties": {
+    "ZipCode":38118,
+    "City":"MEMPHIS",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.8458,35.0773 ]
+    },
+    "properties": {
+    "ZipCode":38119,
+    "City":"MEMPHIS",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.799,35.2092 ]
+    },
+    "properties": {
+    "ZipCode":38133,
+    "City":"MEMPHIS",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.8552,35.1213 ]
+    },
+    "properties": {
+    "ZipCode":38120,
+    "City":"MEMPHIS",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.799,35.2092 ]
+    },
+    "properties": {
+    "ZipCode":38152,
+    "City":"MEMPHIS",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.9361,35.1243 ]
+    },
+    "properties": {
+    "ZipCode":38002,
+    "City":"MEMPHIS",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.9207,35.1544 ]
+    },
+    "properties": {
+    "ZipCode":38122,
+    "City":"MEMPHIS",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.7849,35.0276 ]
+    },
+    "properties": {
+    "ZipCode":38125,
+    "City":"MEMPHIS",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.916,35.2258 ]
+    },
+    "properties": {
+    "ZipCode":38128,
+    "City":"MEMPHIS",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.9936,35.0643 ]
+    },
+    "properties": {
+    "ZipCode":38131,
+    "City":"MEMPHIS",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.9965,35.0732 ]
+    },
+    "properties": {
+    "ZipCode":38132,
+    "City":"MEMPHIS",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.8692,35.1928 ]
+    },
+    "properties": {
+    "ZipCode":38134,
+    "City":"MEMPHIS",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.8458,35.2422 ]
+    },
+    "properties": {
+    "ZipCode":38135,
+    "City":"MEMPHIS",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.8037,35.0937 ]
+    },
+    "properties": {
+    "ZipCode":38138,
+    "City":"GERMANTOWN",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.8411,35.0057 ]
+    },
+    "properties": {
+    "ZipCode":38141,
+    "City":"MEMPHIS",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.7662,35.1816 ]
+    },
+    "properties": {
+    "ZipCode":38016,
+    "City":"CORDOVA",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.6346,35.2033 ]
+    },
+    "properties": {
+    "ZipCode":38028,
+    "City":"EADS",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.7521,35.0881 ]
+    },
+    "properties": {
+    "ZipCode":38139,
+    "City":"GERMANTOWN",
+    "MixedCity":"",
+    "StateCode":"TN",
+    "StateFIPS":"",
+    "County":"SHELBY",
+    "MixedCounty":"",
+    "CountyFIPS":"",
+    "GMT":"",
+    "DST":""
+    }
+  }
+]
+}

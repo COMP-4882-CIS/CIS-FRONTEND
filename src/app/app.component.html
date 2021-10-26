@@ -1,8 +1,8 @@
 <mat-toolbar color="primary">
-  <span>Child Impact Statements</span>
+  <a class="logo" href="#" routerLink="/"><span style="color:red">Child</span><span style="color:white">Impact</span><span style="color: lightblue" >Statements</span></a> 
   <span class="spacer"></span>
-  <button mat-button routerLink="/">
-    Home
+  <button mat-icon-button routerLink="/" color="secondary" aria-label="Example icon button with a home icon">
+    <mat-icon>home</mat-icon>
   </button>
   <button mat-button routerLink="zipcodes">
     Zip Codes
@@ -12,3 +12,4 @@
 <div class="container">
  <router-outlet></router-outlet>
 </div>
+

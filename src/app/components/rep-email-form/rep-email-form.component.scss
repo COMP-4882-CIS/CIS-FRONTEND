@@ -1,12 +1,12 @@
 @use '~@angular/material' as mat;
 
-mat-card {
-  margin-top: 2em;
+mat-card-title {
+  margin-top: 3em;
   @include mat.elevation-transition();
   @include mat.elevation(2);
 
   &:hover {
-    @include mat.elevation(3);
+    @include mat.elevation(9);
   }
 }
 
@@ -15,3 +15,11 @@ mat-card {
   flex: 1;
   flex-direction: column;
 }
+
+button {
+  padding: 1.5em 2em;
+  margin-bottom: 3em;
+  cursor: pointer;
+
+}
+
