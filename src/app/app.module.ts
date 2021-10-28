@@ -16,6 +16,7 @@ import {MatListModule} from "@angular/material/list";
 import { MatIconModule } from "@angular/material/icon";
 import { MapComponent } from './map/map.component';
 import { MarkerService } from './marker.service';
+import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 
 
 
@@ -28,20 +29,21 @@ import { MarkerService } from './marker.service';
     RepEmailFormComponent,
     MapComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatCardModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatListModule,
-    MatIconModule,
-    
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        BrowserAnimationsModule,
+        MatToolbarModule,
+        MatButtonModule,
+        MatCardModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatListModule,
+        MatIconModule,
+        MatProgressSpinnerModule,
+
+    ],
   providers: [
     MarkerService
   ],
