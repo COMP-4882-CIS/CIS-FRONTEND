@@ -13,11 +13,12 @@ import {HomeComponent, ZipcodeComponent} from "./pages";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
 import {MatListModule} from "@angular/material/list";
-import { MatIconModule } from "@angular/material/icon";
-import { MapComponent } from './map/map.component';
-import { MarkerService } from './marker.service';
-
-
+import {MatIconModule} from "@angular/material/icon";
+import {MapComponent} from './components/map/map.component';
+import {MarkerService} from './marker.service';
+import {MapBoxComponent} from './components/map-box/map-box.component';
+import {MapSidebarComponent} from './components/map-sidebar/map-sidebar.component';
+import {MatSidenavModule} from "@angular/material/sidenav";
 
 
 @NgModule({
@@ -27,6 +28,8 @@ import { MarkerService } from './marker.service';
     ZipcodeComponent,
     RepEmailFormComponent,
     MapComponent,
+    MapBoxComponent,
+    MapSidebarComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,7 +43,8 @@ import { MarkerService } from './marker.service';
     MatInputModule,
     MatListModule,
     MatIconModule,
-    
+    MatSidenavModule,
+
   ],
   providers: [
     MarkerService
