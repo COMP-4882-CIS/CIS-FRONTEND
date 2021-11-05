@@ -1,6 +1,7 @@
 import { Component, AfterViewInit } from '@angular/core';
 import * as L from 'leaflet';
 import { MarkerService } from '../../marker.service';
+import {GeoTractService} from "../../backend/services/geo-tract.service";
 
 const iconRetinaUrl = 'assets/marker-icon-2x.png';
 const iconUrl = 'assets/marker-icon.png';
@@ -24,12 +25,15 @@ L.Marker.prototype.options.icon = iconDefault;
 })
 
 export class MapComponent implements AfterViewInit {
+
+  isLoading: boolean = true;
+
   private map: any;
 
   private initMap(): void {
     this.map = L.map('map', {
-      center: [ 39.8282, -98.5795 ],
-      zoom: 3
+      center: [ 35.1269, -89.9253 ],
+      zoom: 10
     });
 
     const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -38,10 +42,40 @@ export class MapComponent implements AfterViewInit {
       attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     });
 
+    const tracts = L.geoJSON()
+      .bindPopup((layer: any) => `Tract ${layer['feature'].properties.name}`)
+      .addTo(this.map);
+
+    const zipCodes = L.geoJSON(undefined, {style: {color: 'red'}})
+      .bindPopup((layer: any) => `ZIP Code ${layer['feature'].properties.name}`)
+      .addTo(this.map);
+
+    this.geoTractService.recursivelyGetZipCodeFeatures().subscribe((result) => {
+      zipCodes.addData(result.features);
+    });
+
+    this.geoTractService.recursivelyGetTractFeatures().subscribe((result) => {
+        tracts.addData(result.features);
+
+        if (result.done) {
+          console.log('Finished loading map!');
+          this.isLoading = false;
+        }
+    });
+
+    const zipTractLayers = {
+      "ZIP Codes": zipCodes,
+      "Census Tracts": tracts
+    }
+
+    L.control.layers(undefined, zipTractLayers).addTo(this.map);
+
     tiles.addTo(this.map);
   }
 
-  constructor(private markerService: MarkerService) { }
+  constructor(private markerService: MarkerService,
+              private geoTractService: GeoTractService) {
+  }
 
   ngAfterViewInit(): void {
     this.initMap();

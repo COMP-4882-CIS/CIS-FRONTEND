@@ -25,6 +25,7 @@
     "igniteui-angular-charts": "^12.1.1",
     "igniteui-angular-core": "^12.1.1",
     "igniteui-angular-maps": "^12.1.1",
+    "kb-burly": "^0.1.1",
     "leaflet": "^1.7.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",

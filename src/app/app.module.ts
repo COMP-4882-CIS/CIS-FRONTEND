@@ -13,6 +13,10 @@ import {HomeComponent, ZipcodeComponent} from "./pages";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
 import {MatListModule} from "@angular/material/list";
+import { MatIconModule } from "@angular/material/icon";
+import { MapComponent } from './map/map.component';
+import { MarkerService } from './marker.service';
+import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 import {MatIconModule} from "@angular/material/icon";
 import {MapComponent} from './components/map/map.component';
 import {MarkerService} from './marker.service';
@@ -31,21 +35,21 @@ import {MatSidenavModule} from "@angular/material/sidenav";
     MapBoxComponent,
     MapSidebarComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatCardModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatListModule,
-    MatIconModule,
-    MatSidenavModule,
-
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        BrowserAnimationsModule,
+        MatToolbarModule,
+        MatButtonModule,
+        MatCardModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatListModule,
+        MatIconModule,
+        MatProgressSpinnerModule,
+      MatSidenavModule
+    ],
   providers: [
     MarkerService
   ],
