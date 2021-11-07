@@ -13,16 +13,13 @@ import {HomeComponent, ZipcodeComponent} from "./pages";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
 import {MatListModule} from "@angular/material/list";
-import { MatIconModule } from "@angular/material/icon";
-import { MapComponent } from './map/map.component';
-import { MarkerService } from './marker.service';
 import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 import {MatIconModule} from "@angular/material/icon";
 import {MapComponent} from './components/map/map.component';
-import {MarkerService} from './marker.service';
 import {MapBoxComponent} from './components/map-box/map-box.component';
 import {MapSidebarComponent} from './components/map-sidebar/map-sidebar.component';
 import {MatSidenavModule} from "@angular/material/sidenav";
+import {MatDividerModule} from "@angular/material/divider";
 
 
 @NgModule({
@@ -35,23 +32,21 @@ import {MatSidenavModule} from "@angular/material/sidenav";
     MapBoxComponent,
     MapSidebarComponent,
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        HttpClientModule,
-        BrowserAnimationsModule,
-        MatToolbarModule,
-        MatButtonModule,
-        MatCardModule,
-        MatFormFieldModule,
-        MatInputModule,
-        MatListModule,
-        MatIconModule,
-        MatProgressSpinnerModule,
-      MatSidenavModule
-    ],
-  providers: [
-    MarkerService
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatListModule,
+    MatIconModule,
+    MatProgressSpinnerModule,
+    MatSidenavModule,
+    MatDividerModule,
   ],
   bootstrap: [AppComponent]
 })

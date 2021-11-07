@@ -1,7 +1,7 @@
-import { Component, AfterViewInit } from '@angular/core';
+import {Component, AfterViewInit} from '@angular/core';
 import * as L from 'leaflet';
-import { MarkerService } from '../../marker.service';
 import {GeoTractService} from "../../backend/services/geo-tract.service";
+import {switchMap, tap} from "rxjs/operators";
 
 const iconRetinaUrl = 'assets/marker-icon-2x.png';
 const iconUrl = 'assets/marker-icon.png';
@@ -32,7 +32,7 @@ export class MapComponent implements AfterViewInit {
 
   private initMap(): void {
     this.map = L.map('map', {
-      center: [ 35.1269, -89.9253 ],
+      center: [35.1269, -89.9253],
       zoom: 10
     });
 
@@ -50,17 +50,13 @@ export class MapComponent implements AfterViewInit {
       .bindPopup((layer: any) => `ZIP Code ${layer['feature'].properties.name}`)
       .addTo(this.map);
 
-    this.geoTractService.recursivelyGetZipCodeFeatures().subscribe((result) => {
-      zipCodes.addData(result.features);
-    });
 
-    this.geoTractService.recursivelyGetTractFeatures().subscribe((result) => {
-        tracts.addData(result.features);
-
-        if (result.done) {
-          console.log('Finished loading map!');
-          this.isLoading = false;
-        }
+    this.geoTractService.getZipCodeFeatures().pipe(
+      tap(f => zipCodes.addData(f)),
+      switchMap(() => this.geoTractService.getCensusTractFeatures()),
+      tap(f => tracts.addData(f))
+    ).subscribe(() => {
+      this.isLoading = false;
     });
 
     const zipTractLayers = {
@@ -73,12 +69,10 @@ export class MapComponent implements AfterViewInit {
     tiles.addTo(this.map);
   }
 
-  constructor(private markerService: MarkerService,
-              private geoTractService: GeoTractService) {
+  constructor(private geoTractService: GeoTractService) {
   }
 
   ngAfterViewInit(): void {
     this.initMap();
-    this.markerService.makeCapitalMarkers(this.map);
   }
 }
