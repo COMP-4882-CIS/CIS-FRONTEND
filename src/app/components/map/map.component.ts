@@ -3,25 +3,10 @@ import * as L from 'leaflet';
 import {GeoTractService} from "../../backend/services/geo-tract.service";
 import {switchMap, tap} from "rxjs/operators";
 import {GeoEvent} from "../../backend/types/geo/geo-event.type";
-import {PopupEvent} from "leaflet";
+import {GeoJSON, PopupEvent} from "leaflet";
 import {Feature} from "geojson";
 
 import 'src/assets/leaflet/SmoothWheelZoom.js';
-
-const iconRetinaUrl = 'assets/marker-icon-2x.png';
-const iconUrl = 'assets/marker-icon.png';
-const shadowUrl = 'assets/marker-shadow.png';
-const iconDefault = L.icon({
-  iconRetinaUrl,
-  iconUrl,
-  shadowUrl,
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  tooltipAnchor: [16, -28],
-  shadowSize: [41, 41]
-});
-L.Marker.prototype.options.icon = iconDefault;
 
 @Component({
   selector: 'app-map',
@@ -32,10 +17,13 @@ L.Marker.prototype.options.icon = iconDefault;
 export class MapComponent implements AfterViewInit {
 
   @Output()
-  popupOpened: EventEmitter<GeoEvent|null> = new EventEmitter<GeoEvent|null>();
+  popupOpened: EventEmitter<GeoEvent | null> = new EventEmitter<GeoEvent | null>();
 
   isLoading: boolean = true;
 
+  private tractsGeoJSON?: GeoJSON;
+  private zipCodesGeoJSON?: GeoJSON;
+  private popupOpen = false;
   private map?: L.Map;
 
   private initMap(): void {
@@ -51,45 +39,60 @@ export class MapComponent implements AfterViewInit {
       smoothSensitivity: 1,   // zoom speed. default is 1
     });
 
-    const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 18,
-      minZoom: 3,
-      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    });
-
-    const tracts = L.geoJSON()
+    this.tractsGeoJSON = L.geoJSON()
       .bindPopup((layer: any) => `Tract ${layer['feature'].properties.tract}`)
       .addTo(this.map);
 
-    const zipCodes = L.geoJSON(undefined, {style: {color: 'red'}})
+    this.zipCodesGeoJSON = L.geoJSON(undefined, {style: {color: 'red'}})
       .bindPopup((layer: any) => `ZIP Code ${layer['feature'].properties.name}`)
       .addTo(this.map);
 
+    this.fetchMapData(this.map);
 
-    this.geoTractService.getCensusTractFeatures().pipe(
-      tap(f => tracts.addData(f)),
-      switchMap(() => this.geoTractService.getZipCodeFeatures()),
-      tap(f => zipCodes.addData(f))
-    ).subscribe(() => {
-      this.isLoading = false;
+    this.attachEvents(this.map);
+  }
 
-      if (!!this.map) {
-        this.map.fitBounds(zipCodes.getBounds());
-        this.map.setMaxBounds(zipCodes.getBounds());
+  constructor(private geoTractService: GeoTractService) {
+
+    // This logic ensures the Leaflet container is only resized when needed
+    this.popupOpened.subscribe((d) => {
+      if (!!d && !this.popupOpen) {
+        this.resizeMap();
+        this.popupOpen = true;
+      } else if (d === null && this.popupOpen) {
+        this.resizeMap();
+        this.popupOpen = false;
       }
     });
+  }
 
-    const zipTractLayers = {
-      "ZIP Codes": zipCodes,
-      "Census Tracts": tracts
-    }
+  ngAfterViewInit(): void {
+    this.initMap();
+  }
 
-    L.control.layers(undefined, zipTractLayers).addTo(this.map);
+  /**
+   * Resize the Leaflet map container
+   *
+   * Internally calls invalidate size after ensuring the L.map object is defined
+   * @private
+   */
+  private resizeMap() {
+    setTimeout(() => {
+      if (!!this.map) {
+        this.map.invalidateSize({animate: true});
+      }
+    }, 150);
+  }
 
-    tiles.addTo(this.map);
-
-    this.map.on('popupopen', (e: PopupEvent) => {
-      const feature = (e.popup as unknown as {_source: any})._source.feature as Feature;
+  /**
+   * Attach the popup events to an L.map object
+   *
+   * @param map - L.Map
+   * @private
+   */
+  private attachEvents(map: L.Map) {
+    map.on('popupopen', (e: PopupEvent) => {
+      const feature = (e.popup as unknown as { _source: any })._source.feature as Feature;
 
       if (!!feature.properties) {
         let eventType: 'tract' | 'zip' = 'tract';
@@ -105,15 +108,63 @@ export class MapComponent implements AfterViewInit {
       }
     });
 
-    this.map.on('click', (e) => {
-      this.popupOpened.emit(null);
+    map.on('click', () => this.popupOpened.emit(null));
+  }
+
+  /**
+   * Fetch the Tract/ZIP Code Feature Geometry
+   *
+   * @param map - L.Map
+   * @private
+   */
+  private fetchMapData(map: L.Map) {
+    if (!!this.tractsGeoJSON && !!this.zipCodesGeoJSON) {
+      const tracts = this.tractsGeoJSON as GeoJSON;
+      const zipCodes = this.zipCodesGeoJSON as GeoJSON;
+
+      this.geoTractService.getCensusTractFeatures().pipe(
+        tap(f => tracts.addData(f)),
+        switchMap(() => this.geoTractService.getZipCodeFeatures()),
+        tap(f => zipCodes.addData(f))
+      ).subscribe(() => {
+        this.isLoading = false;
+
+        if (!!this.map) {
+          const outerBounds = zipCodes.getBounds().pad(0.5);
+
+          this.map.fitBounds(outerBounds);
+          this.map.setMaxBounds(outerBounds);
+          this.appendMapData(map);
+        }
+      });
+    }
+  }
+
+  /**
+   * Show the Tract/ZIP Code Feature Geometry
+   *
+   * Ensure the tractsGeoJSON/zipCodesGeoJSON objects are defined before calling this!
+   * @param map - L.Map
+   * @private
+   */
+  private appendMapData(map: L.Map) {
+    const tracts = this.tractsGeoJSON as GeoJSON;
+    const zipCodes = this.zipCodesGeoJSON as GeoJSON;
+
+    const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 18,
+      minZoom: 3,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     });
-  }
 
-  constructor(private geoTractService: GeoTractService) {
-  }
 
-  ngAfterViewInit(): void {
-    this.initMap();
+    const zipTractLayers = {
+      "ZIP Codes": zipCodes,
+      "Census Tracts": tracts
+    }
+
+    L.control.layers(undefined, zipTractLayers).addTo(map);
+
+    tiles.addTo(map);
   }
 }
