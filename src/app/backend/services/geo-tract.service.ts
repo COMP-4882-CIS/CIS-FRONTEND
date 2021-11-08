@@ -10,10 +10,10 @@ export class GeoTractService {
   constructor(private http: HttpClient) { }
 
   getCensusTractFeatures() {
-    return this.http.get<GeoJSONObject>('/assets/data/census-tracts.geojson');
+    return this.http.get<GeoJSONObject>('assets/data/census-tracts.geojson');
   }
 
   getZipCodeFeatures() {
-    return this.http.get<GeoJSONObject>('/assets/data/zipcodes.geojson');
+    return this.http.get<GeoJSONObject>('assets/data/zipcodes.geojson');
   }
 }

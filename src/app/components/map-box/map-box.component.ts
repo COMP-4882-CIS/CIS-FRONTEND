@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {GeoEvent} from "../../backend/types/geo/geo-event.type";
+import {BehaviorSubject, Subject} from "rxjs";
 
 @Component({
   selector: 'app-map-box',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MapBoxComponent implements OnInit {
 
+  currentData: Subject<GeoEvent|null> = new Subject<GeoEvent|null>();
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  popupOpened(event: GeoEvent|null) {
+    this.currentData.next(event);
+  }
 }
