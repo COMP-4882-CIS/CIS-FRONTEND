@@ -1,0 +1,8 @@
+<mat-drawer-container class="map-box-container">
+  <mat-drawer-content>
+    <app-map (popupOpened)="popupOpened($event)"></app-map>
+  </mat-drawer-content>
+  <mat-drawer mode="side" position="end" [opened]="!!(currentData|async)">
+    <app-map-sidebar [data]="currentData|async"></app-map-sidebar>
+  </mat-drawer>
+</mat-drawer-container>
