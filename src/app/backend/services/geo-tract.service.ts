@@ -16,4 +16,8 @@ export class GeoTractService {
   getZipCodeFeatures() {
     return this.http.get<GeoJSONObject>('assets/data/zipcodes.geojson');
   }
+
+  getLibraryFeatures(){
+    return this.http.get<GeoJSONObject>('assets/data/libraries.geojson');
+  }
 }

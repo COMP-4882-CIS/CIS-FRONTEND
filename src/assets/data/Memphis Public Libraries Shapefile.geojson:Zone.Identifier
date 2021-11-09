@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://data.memphistn.gov/Neighborhoods/Memphis-Public-Libraries-Shapefile/4kk2-hed2
+HostUrl=https://data.memphistn.gov/api/geospatial/4kk2-hed2?method=export&format=GeoJSON

@@ -23,6 +23,7 @@ export class MapComponent implements AfterViewInit {
 
   private tractsGeoJSON?: GeoJSON;
   private zipCodesGeoJSON?: GeoJSON;
+  private librariesGeoJSON?: GeoJSON;
   private popupOpen = false;
   private map?: L.Map;
 
@@ -38,6 +39,7 @@ export class MapComponent implements AfterViewInit {
       smoothWheelZoom: true,  // enable smooth zoom
       smoothSensitivity: 1,   // zoom speed. default is 1
     });
+    
 
     this.tractsGeoJSON = L.geoJSON()
       .bindPopup((layer: any) => `Tract ${layer['feature'].properties.tract}`)
@@ -47,6 +49,23 @@ export class MapComponent implements AfterViewInit {
       .bindPopup((layer: any) => `ZIP Code ${layer['feature'].properties.name}`)
       .addTo(this.map);
 
+    this.librariesGeoJSON = L.geoJSON(undefined, {
+      pointToLayer: function(feature, latlng){
+        var libraryIcon = L.icon({
+          iconUrl: 'assets/icons/leaf-green.png',
+          shadowUrl: 'assets/icons/leaf-shadow.png',
+    
+          iconSize:     [38, 95], // size of the icon
+          shadowSize:   [50, 64], // size of the shadow
+          iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+          shadowAnchor: [4, 62],  // the same for the shadow
+          popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+        });
+        return L.marker(latlng, {icon:libraryIcon})
+      }
+    })
+      .bindPopup((layer: any) => `Library ${layer['feature'].properties.name}`)
+      .addTo(this.map);
     this.fetchMapData(this.map);
 
     this.attachEvents(this.map);
@@ -121,11 +140,14 @@ export class MapComponent implements AfterViewInit {
     if (!!this.tractsGeoJSON && !!this.zipCodesGeoJSON) {
       const tracts = this.tractsGeoJSON as GeoJSON;
       const zipCodes = this.zipCodesGeoJSON as GeoJSON;
+      const libraries = this.librariesGeoJSON as GeoJSON;
 
       this.geoTractService.getCensusTractFeatures().pipe(
         tap(f => tracts.addData(f)),
         switchMap(() => this.geoTractService.getZipCodeFeatures()),
-        tap(f => zipCodes.addData(f))
+        tap(f => zipCodes.addData(f)),
+        switchMap(() => this.geoTractService.getLibraryFeatures()),
+        tap(f => libraries.addData(f))
       ).subscribe(() => {
         this.isLoading = false;
 
@@ -150,6 +172,7 @@ export class MapComponent implements AfterViewInit {
   private appendMapData(map: L.Map) {
     const tracts = this.tractsGeoJSON as GeoJSON;
     const zipCodes = this.zipCodesGeoJSON as GeoJSON;
+    const libraries = this.librariesGeoJSON as GeoJSON;
 
     const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 18,
@@ -160,7 +183,8 @@ export class MapComponent implements AfterViewInit {
 
     const zipTractLayers = {
       "ZIP Codes": zipCodes,
-      "Census Tracts": tracts
+      "Census Tracts": tracts,
+      "Libraries": libraries
     }
 
     L.control.layers(undefined, zipTractLayers).addTo(map);
