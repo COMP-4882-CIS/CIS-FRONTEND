@@ -1,12 +1,16 @@
 <div class="inner-sidebar" *ngIf="currentData|async as data">
   <h1 class="title">{{data.data}} - <span>{{getSubtitle(data)}}</span></h1>
   <div class="stats" *ngIf="populationData|async as populationData; else loadingStats">
+
+
     <h2>Total Population: {{getStat(populationData).totalPopulation}}</h2>
     <mat-divider></mat-divider>
     <h3>Population under 18:</h3>
     <h4>Total - {{getStat(populationData).populationUnder18}}</h4>
     <h4>Total Male - {{getStat(populationData).populationUnder18Male}}</h4>
     <h4>Total Female - {{getStat(populationData).populationUnder18Female}}</h4>
+
+    <app-breakdown-chart [chartData]="getChartData(populationData)" [chartLabels]="[['Female'], ['Male']]"></app-breakdown-chart>
     <mat-divider></mat-divider>
     <h3>Population in poverty under 18:</h3>
     <h4>Total - {{getPovertyTotal(populationData)}}</h4>

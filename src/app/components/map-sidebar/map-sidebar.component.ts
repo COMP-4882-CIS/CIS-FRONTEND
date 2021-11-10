@@ -1,15 +1,17 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
 import {GeoEvent} from "../../backend/types/geo/geo-event.type";
-import {Observable, Subject, Subscription} from "rxjs";
+import {Subject, Subscription} from "rxjs";
 import {BreakdownStatResponse} from "../../backend/responses/stat/breakdown-stat.response";
 import {StatService} from "../../backend/services/stat.service";
 import {switchMap} from "rxjs/operators";
 import {BreakdownStat} from "../../backend/types/stat/breakdown-stat.type";
+import {ChartDataset} from "chart.js";
 
 @Component({
   selector: 'app-map-sidebar',
   templateUrl: './map-sidebar.component.html',
-  styleUrls: ['./map-sidebar.component.scss']
+  styleUrls: ['./map-sidebar.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MapSidebarComponent implements OnInit {
 
@@ -46,6 +48,14 @@ export class MapSidebarComponent implements OnInit {
     return stat.populationInPovertyUnder6 + stat.populationInPoverty6To11 + stat.populationInPoverty12To17;
   }
 
+  getChartData(response: BreakdownStatResponse): ChartDataset[] {
+    const stat = this.getStat(response);
+
+    return [
+      { data: [stat.populationUnder18Female, stat.populationUnder18Male]}
+    ];
+  }
+
   private reloadData() {
     this.populationData.next(null);
 
@@ -55,8 +65,6 @@ export class MapSidebarComponent implements OnInit {
 
     this.populationSub = this.currentData.pipe(
       switchMap(ev => {
-        console.log('Getting population data');
-
         if (ev.type === 'zip') {
           return this.statService.getZipCodeBreakdown(ev.data)
         }
