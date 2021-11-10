@@ -20,9 +20,8 @@ import {MapBoxComponent} from './components/map-box/map-box.component';
 import {MapSidebarComponent} from './components/map-sidebar/map-sidebar.component';
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatDividerModule} from "@angular/material/divider";
-import { PieChartOverviewComponent } from './pie-chart-overview/pie-chart-overview.component';
-import { NgChartsModule } from 'ng2-charts';
-
+import {NgChartsModule} from 'ng2-charts';
+import {BreakdownChartComponent} from './components/breakdown-chart/breakdown-chart.component';
 
 
 @NgModule({
@@ -34,7 +33,7 @@ import { NgChartsModule } from 'ng2-charts';
     MapComponent,
     MapBoxComponent,
     MapSidebarComponent,
-    PieChartOverviewComponent,
+    BreakdownChartComponent,
   ],
   imports: [
     BrowserModule,
