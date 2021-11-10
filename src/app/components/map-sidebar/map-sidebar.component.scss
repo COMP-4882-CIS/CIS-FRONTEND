@@ -1,10 +1,26 @@
 .inner-sidebar {
   min-width: 320px;
   padding: 1.2em;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  .loading-shade {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .title {
   span {
     color: gray;;
   }
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }

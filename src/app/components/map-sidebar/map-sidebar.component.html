@@ -1,3 +1,23 @@
 <div class="inner-sidebar" *ngIf="currentData|async as data">
   <h1 class="title">{{data.data}} - <span>{{getSubtitle(data)}}</span></h1>
+  <div class="stats" *ngIf="populationData|async as populationData; else loadingStats">
+    <h2>Total Population: {{getStat(populationData).totalPopulation}}</h2>
+    <mat-divider></mat-divider>
+    <h3>Population under 18:</h3>
+    <h4>Total - {{getStat(populationData).populationUnder18}}</h4>
+    <h4>Total Male - {{getStat(populationData).populationUnder18Male}}</h4>
+    <h4>Total Female - {{getStat(populationData).populationUnder18Female}}</h4>
+    <mat-divider></mat-divider>
+    <h3>Population in poverty under 18:</h3>
+    <h4>Total - {{getPovertyTotal(populationData)}}</h4>
+    <h4>Under age 6 - {{getStat(populationData).populationInPovertyUnder6}}</h4>
+    <h4>Ages 6 through 11 - {{getStat(populationData).populationInPoverty6To11}}</h4>
+    <h4>Ages 12 through 17 - {{getStat(populationData).populationInPoverty12To17}}</h4>
+  </div>
+
+  <ng-template #loadingStats>
+    <div class="loading-shade">
+      <mat-spinner diameter="40"></mat-spinner>
+    </div>
+  </ng-template>
 </div>
