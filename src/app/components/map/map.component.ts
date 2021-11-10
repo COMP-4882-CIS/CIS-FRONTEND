@@ -23,6 +23,7 @@ export class MapComponent implements AfterViewInit {
 
   private tractsGeoJSON?: GeoJSON;
   private zipCodesGeoJSON?: GeoJSON;
+  private parksGeoJSON?: GeoJSON;
   private popupOpen = false;
   private map?: L.Map;
 
@@ -47,10 +48,21 @@ export class MapComponent implements AfterViewInit {
       .bindPopup((layer: any) => `ZIP Code ${layer['feature'].properties.name}`)
       .addTo(this.map);
 
-    this.fetchMapData(this.map);
-
-    this.attachEvents(this.map);
-  }
+      this.parksGeoJSON = L.geoJSON(undefined, {
+        pointToLayer: (feature, latlng) => {
+          const parkIcon = L.icon({
+            iconUrl: 'assets/icons/Park-icon.png',
+            iconSize: [40, 40],
+          });
+          return L.marker(latlng, {icon: parkIcon})
+        },
+      })
+        .bindPopup((layer: any) => `${layer['feature'].properties.user_name}`)
+        .addTo(this.map);
+  
+      this.fetchMapData(this.map);
+      this.attachEvents(this.map);
+    }
 
   constructor(private geoTractService: GeoTractService) {
 
@@ -121,11 +133,14 @@ export class MapComponent implements AfterViewInit {
     if (!!this.tractsGeoJSON && !!this.zipCodesGeoJSON) {
       const tracts = this.tractsGeoJSON as GeoJSON;
       const zipCodes = this.zipCodesGeoJSON as GeoJSON;
+      const parks = this.parksGeoJSON as GeoJSON;
 
       this.geoTractService.getCensusTractFeatures().pipe(
         tap(f => tracts.addData(f)),
         switchMap(() => this.geoTractService.getZipCodeFeatures()),
-        tap(f => zipCodes.addData(f))
+        tap(f => zipCodes.addData(f)),
+        switchMap(() => this.geoTractService.getParksFeatures()),
+        tap(f => parks.addData(f))
       ).subscribe(() => {
         this.isLoading = false;
 
@@ -150,7 +165,7 @@ export class MapComponent implements AfterViewInit {
   private appendMapData(map: L.Map) {
     const tracts = this.tractsGeoJSON as GeoJSON;
     const zipCodes = this.zipCodesGeoJSON as GeoJSON;
-
+    const parks = this.parksGeoJSON as GeoJSON;
     const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 18,
       minZoom: 3,
@@ -160,7 +175,8 @@ export class MapComponent implements AfterViewInit {
 
     const zipTractLayers = {
       "ZIP Codes": zipCodes,
-      "Census Tracts": tracts
+      "Census Tracts": tracts,
+      "Parks": parks
     }
 
     L.control.layers(undefined, zipTractLayers).addTo(map);
