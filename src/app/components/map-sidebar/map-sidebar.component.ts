@@ -18,12 +18,16 @@ export class MapSidebarComponent implements OnInit {
 
   currentData: Subject<GeoEvent> = new Subject<GeoEvent>();
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
+    
   }
 
   getSubtitle(data: GeoEvent) {
     return data.type === 'zip' ? 'ZIP Code' : 'Census Tract';
   }
+
+  
 }

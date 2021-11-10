@@ -4,11 +4,12 @@ import {HttpClientModule} from "@angular/common/http";
 
 
 
+
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
   ]
 })
 export class BackendModule { }
