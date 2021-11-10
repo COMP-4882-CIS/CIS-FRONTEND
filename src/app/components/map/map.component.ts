@@ -64,7 +64,7 @@ export class MapComponent implements AfterViewInit {
         return L.marker(latlng, {icon:libraryIcon})
       }
     })
-      .bindPopup((layer: any) => `Library ${layer['feature'].properties.name}`)
+      .bindPopup((layer: any) => `${layer['feature'].properties.user_name}`)
       .addTo(this.map);
     this.fetchMapData(this.map);
 
