@@ -1,27 +1,39 @@
-<div class="inner-sidebar" *ngIf="currentData|async as data">
-  <h1 class="title">{{data.data}} - <span>{{getSubtitle(data)}}</span></h1>
-  <div class="stats" *ngIf="populationData|async as populationData; else loadingStats">
+<ng-container *ngIf="currentData|async as data">
+  <div class="map-sidebar">
+    <mat-toolbar>
+      <h1 class="title">{{data.data}} - <span>{{getSubtitle(data)}}</span></h1>
+    </mat-toolbar>
+    <mat-tab-group dynamicHeight>
+      <mat-tab label="Population">
+        <div class="inner-sidebar">
+          <div class="stats" *ngIf="populationData|async as populationData; else loadingStats">
+            <h2>Population under 18:</h2>
+            <h3>Total - {{getStat(populationData).populationUnder18}}</h3>
+            <h3>Total Male - {{getStat(populationData).populationUnder18Male}}</h3>
+            <h3>Total Female - {{getStat(populationData).populationUnder18Female}}</h3>
 
-
-    <h2>Total Population: {{getStat(populationData).totalPopulation}}</h2>
-    <mat-divider></mat-divider>
-    <h3>Population under 18:</h3>
-    <h4>Total - {{getStat(populationData).populationUnder18}}</h4>
-    <h4>Total Male - {{getStat(populationData).populationUnder18Male}}</h4>
-    <h4>Total Female - {{getStat(populationData).populationUnder18Female}}</h4>
-
-    <app-breakdown-chart [chartData]="getChartData(populationData)" [chartLabels]="[['Female'], ['Male']]"></app-breakdown-chart>
-    <mat-divider></mat-divider>
-    <h3>Population in poverty under 18:</h3>
-    <h4>Total - {{getPovertyTotal(populationData)}}</h4>
-    <h4>Under age 6 - {{getStat(populationData).populationInPovertyUnder6}}</h4>
-    <h4>Ages 6 through 11 - {{getStat(populationData).populationInPoverty6To11}}</h4>
-    <h4>Ages 12 through 17 - {{getStat(populationData).populationInPoverty12To17}}</h4>
+            <app-breakdown-chart [chartData]="genderChartData|async"></app-breakdown-chart>
+            <h2>Total Population: {{getStat(populationData).totalPopulation}}</h2>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="Poverty">
+        <div class="inner-sidebar">
+          <div class="stats" *ngIf="populationData|async as populationData; else loadingStats">
+            <h2>Population in poverty under 18:</h2>
+            <h3>Total - {{getPovertyTotal(populationData)}}</h3>
+            <h3>Under age 6 - {{getStat(populationData).populationInPovertyUnder6}}</h3>
+            <h3>Ages 6 through 11 - {{getStat(populationData).populationInPoverty6To11}}</h3>
+            <h3>Ages 12 through 17 - {{getStat(populationData).populationInPoverty12To17}}</h3>
+            <app-breakdown-chart [chartData]="povertyChartData|async"></app-breakdown-chart>
+          </div>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+    <ng-template #loadingStats>
+      <div class="loading-shade">
+        <mat-spinner diameter="40"></mat-spinner>
+      </div>
+    </ng-template>
   </div>
-
-  <ng-template #loadingStats>
-    <div class="loading-shade">
-      <mat-spinner diameter="40"></mat-spinner>
-    </div>
-  </ng-template>
-</div>
+</ng-container>

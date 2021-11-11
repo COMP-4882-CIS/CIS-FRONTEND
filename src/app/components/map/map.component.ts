@@ -178,13 +178,16 @@ export class MapComponent implements AfterViewInit {
     });
 
 
-    const zipTractLayers = {
+    const baseLayers = {
       "ZIP Codes": zipCodes,
       "Census Tracts": tracts,
+    }
+
+    const overlayLayers = {
       "Libraries": libraries
     }
 
-    L.control.layers(undefined, zipTractLayers).addTo(map);
+    L.control.layers(baseLayers, overlayLayers, {collapsed: false}).addTo(map);
 
     tiles.addTo(map);
 
@@ -211,5 +214,7 @@ export class MapComponent implements AfterViewInit {
         layer.feature.properties.type = 'library';
       }
     });
+
+    tracts.removeFrom(map);
   }
 }
