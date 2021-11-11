@@ -1,10 +1,48 @@
 .inner-sidebar {
   min-width: 320px;
   padding: 1.2em;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  .loading-shade {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+  }
 }
 
 .title {
   span {
     color: gray;;
   }
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.mat-tab-group {
+  flex: 1;
+}
+
+.map-sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.map-sidebar ::ng-deep {
+  .mat-tab-body-wrapper, .mat-tab-label {
+    flex: 1;
+  }
+}
+
+app-breakdown-chart {
+  margin-bottom: 2em;
+  display: block;
 }
