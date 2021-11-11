@@ -17,6 +17,10 @@ export class GeoTractService {
     return this.http.get<GeoJSONObject>('assets/data/zipcodes.geojson');
   }
 
+  getParksFeatures() {
+    return this.http.get<GeoJSONObject>('assets/data/parks.geojson');
+  }
+
   getLibraryFeatures(){
     return this.http.get<GeoJSONObject>('assets/data/libraries.geojson');
   }
