@@ -4,7 +4,7 @@ import {GeoTractService} from "../../backend/services/geo-tract.service";
 import {switchMap, tap} from "rxjs/operators";
 import {GeoEvent} from "../../backend/types/geo/geo-event.type";
 import {GeoJSON, PopupEvent} from "leaflet";
-import {Feature} from "geojson";
+import {Feature, Geometry} from "geojson";
 
 import 'src/assets/leaflet/SmoothWheelZoom.js';
 
@@ -48,21 +48,24 @@ export class MapComponent implements AfterViewInit {
       .bindPopup((layer: any) => `ZIP Code ${layer['feature'].properties.name}`)
       .addTo(this.map);
 
-      this.parksGeoJSON = L.geoJSON(undefined, {
-        pointToLayer: (feature, latlng) => {
-          const parkIcon = L.icon({
-            iconUrl: 'assets/icons/Park-icon.png',
-            iconSize: [40, 40],
-          });
-          return L.marker(latlng, {icon: parkIcon})
-        },
-      })
-        .bindPopup((layer: any) => `${layer['feature'].properties.user_name}`)
-        .addTo(this.map);
-  
-      this.fetchMapData(this.map);
-      this.attachEvents(this.map);
-    }
+    this.parksGeoJSON = L.geoJSON(undefined, {
+      pointToLayer: (feature, latlng) => {
+        const parkIcon = L.icon({
+          iconUrl: 'assets/icons/park-icon.png',
+          iconSize: [40, 40],
+        });
+
+        return L.marker(latlng, {icon: parkIcon})
+      },
+      filter: (feature: Feature<Geometry, any>): boolean => {
+        return feature.properties.hasOwnProperty('park_nam_1') && !!feature.properties.park_nam_1
+      }
+    }).bindPopup((layer: any) => `${layer['feature'].properties.park_nam_1}`)
+      .addTo(this.map);
+
+    this.fetchMapData(this.map);
+    this.attachEvents(this.map);
+  }
 
   constructor(private geoTractService: GeoTractService) {
 
