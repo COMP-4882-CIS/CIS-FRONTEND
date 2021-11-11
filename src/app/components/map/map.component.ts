@@ -7,6 +7,7 @@ import {GeoJSON, PopupEvent} from "leaflet";
 import {Feature, Geometry} from "geojson";
 
 import 'src/assets/leaflet/SmoothWheelZoom.js';
+import {GeoLayer} from "../../backend/types/geo/geo-layer.type";
 
 @Component({
   selector: 'app-map',
@@ -24,6 +25,8 @@ export class MapComponent implements AfterViewInit {
   private tractsGeoJSON?: GeoJSON;
   private zipCodesGeoJSON?: GeoJSON;
   private parksGeoJSON?: GeoJSON;
+  private librariesGeoJSON?: GeoJSON;
+
   private popupOpen = false;
   private map?: L.Map;
 
@@ -39,6 +42,7 @@ export class MapComponent implements AfterViewInit {
       smoothWheelZoom: true,  // enable smooth zoom
       smoothSensitivity: 1,   // zoom speed. default is 1
     });
+
 
     this.tractsGeoJSON = L.geoJSON()
       .bindPopup((layer: any) => `Tract ${layer['feature'].properties.tract}`)
@@ -61,6 +65,18 @@ export class MapComponent implements AfterViewInit {
         return feature.properties.hasOwnProperty('park_nam_1') && !!feature.properties.park_nam_1
       }
     }).bindPopup((layer: any) => `${layer['feature'].properties.park_nam_1}`)
+      .addTo(this.map);
+
+    this.librariesGeoJSON = L.geoJSON(undefined, {
+      pointToLayer: (feature, latlng) => {
+        const libraryIcon = L.icon({
+          iconUrl: 'assets/icons/book.png',
+          iconSize: [40, 40], // size of the icon
+        });
+        return L.marker(latlng, {icon: libraryIcon})
+      },
+    })
+      .bindPopup((layer: any) => `${layer['feature'].properties.user_name}`)
       .addTo(this.map);
 
     this.fetchMapData(this.map);
@@ -109,8 +125,8 @@ export class MapComponent implements AfterViewInit {
     map.on('popupopen', (e: PopupEvent) => {
       const feature = (e.popup as unknown as { _source: any })._source.feature as Feature;
 
-      if (!!feature.properties) {
-        let eventType: 'tract' | 'zip' = 'tract';
+      if (!!feature.properties && ['tract', 'zip'].includes(feature.properties.type)) {
+        let eventType: 'tract' | 'zip' = feature.properties.type;
 
         if (feature.properties.hasOwnProperty('name')) {
           eventType = 'zip';
@@ -120,6 +136,8 @@ export class MapComponent implements AfterViewInit {
           type: eventType,
           data: (eventType === 'zip' ? feature.properties['name'] : feature.properties['tract'])
         });
+      } else {
+        this.popupOpened.emit(null);
       }
     });
 
@@ -137,6 +155,7 @@ export class MapComponent implements AfterViewInit {
       const tracts = this.tractsGeoJSON as GeoJSON;
       const zipCodes = this.zipCodesGeoJSON as GeoJSON;
       const parks = this.parksGeoJSON as GeoJSON;
+      const libraries = this.librariesGeoJSON as GeoJSON;
 
       this.geoTractService.getCensusTractFeatures().pipe(
         tap(f => tracts.addData(f)),
@@ -144,6 +163,8 @@ export class MapComponent implements AfterViewInit {
         tap(f => zipCodes.addData(f)),
         switchMap(() => this.geoTractService.getParksFeatures()),
         tap(f => parks.addData(f))
+        switchMap(() => this.geoTractService.getLibraryFeatures()),
+        tap(f => libraries.addData(f))
       ).subscribe(() => {
         this.isLoading = false;
 
@@ -169,6 +190,8 @@ export class MapComponent implements AfterViewInit {
     const tracts = this.tractsGeoJSON as GeoJSON;
     const zipCodes = this.zipCodesGeoJSON as GeoJSON;
     const parks = this.parksGeoJSON as GeoJSON;
+    const libraries = this.librariesGeoJSON as GeoJSON;
+
     const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 18,
       minZoom: 3,
@@ -176,14 +199,44 @@ export class MapComponent implements AfterViewInit {
     });
 
 
-    const zipTractLayers = {
+    const baseLayers = {
       "ZIP Codes": zipCodes,
       "Census Tracts": tracts,
+    }
+
+    const overlayLayers = {
+      "Libraries": libraries,
       "Parks": parks
     }
 
-    L.control.layers(undefined, zipTractLayers).addTo(map);
+    L.control.layers(baseLayers, overlayLayers, {collapsed: false}).addTo(map);
 
     tiles.addTo(map);
+
+    tracts.eachLayer(rawLayer => {
+      const layer = rawLayer as unknown as GeoLayer;
+
+      if (!!layer.feature.properties) {
+        layer.feature.properties.type = 'tract';
+      }
+    });
+
+    zipCodes.eachLayer(rawLayer => {
+      const layer = rawLayer as unknown as GeoLayer;
+
+      if (!!layer.feature.properties) {
+        layer.feature.properties.type = 'zip';
+      }
+    });
+
+    libraries.eachLayer(rawLayer => {
+      const layer = rawLayer as unknown as GeoLayer;
+
+      if (!!layer.feature.properties) {
+        layer.feature.properties.type = 'library';
+      }
+    });
+
+    tracts.removeFrom(map);
   }
 }

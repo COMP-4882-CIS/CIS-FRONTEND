@@ -20,6 +20,9 @@ import {MapBoxComponent} from './components/map-box/map-box.component';
 import {MapSidebarComponent} from './components/map-sidebar/map-sidebar.component';
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatDividerModule} from "@angular/material/divider";
+import {NgChartsModule} from 'ng2-charts';
+import {BreakdownChartComponent} from './components/breakdown-chart/breakdown-chart.component';
+import {MatTabsModule} from "@angular/material/tabs";
 
 
 @NgModule({
@@ -31,6 +34,7 @@ import {MatDividerModule} from "@angular/material/divider";
     MapComponent,
     MapBoxComponent,
     MapSidebarComponent,
+    BreakdownChartComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,6 +51,8 @@ import {MatDividerModule} from "@angular/material/divider";
     MatProgressSpinnerModule,
     MatSidenavModule,
     MatDividerModule,
+    NgChartsModule,
+    MatTabsModule
   ],
   bootstrap: [AppComponent]
 })
