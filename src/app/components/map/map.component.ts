@@ -162,7 +162,7 @@ export class MapComponent implements AfterViewInit {
         switchMap(() => this.geoTractService.getZipCodeFeatures()),
         tap(f => zipCodes.addData(f)),
         switchMap(() => this.geoTractService.getParksFeatures()),
-        tap(f => parks.addData(f))
+        tap(f => parks.addData(f)),
         switchMap(() => this.geoTractService.getLibraryFeatures()),
         tap(f => libraries.addData(f))
       ).subscribe(() => {
