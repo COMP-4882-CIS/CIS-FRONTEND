@@ -302,8 +302,8 @@ export class MapComponent implements AfterViewInit {
         return style;
       });
 
-      this.bindLabels(tracts, 'tract', map);
-      this.bindLabels(zipCodes, 'zipcode', map);
+   //   this.bindLabels(tracts, 'tract', map);
+   //   this.bindLabels(zipCodes, 'zipcode', map);
 
       tracts.removeFrom(map);
 
