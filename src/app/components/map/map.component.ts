@@ -1,13 +1,17 @@
 import {Component, AfterViewInit, Output, EventEmitter} from '@angular/core';
 import * as L from 'leaflet';
 import {GeoTractService} from "../../backend/services/geo-tract.service";
-import {switchMap, tap} from "rxjs/operators";
+import {switchMap, tap, map as rxMap} from "rxjs/operators";
 import {GeoEvent} from "../../backend/types/geo/geo-event.type";
-import {GeoJSON, PopupEvent} from "leaflet";
+import {GeoJSON, Layer, PopupEvent} from "leaflet";
 import {Feature, Geometry} from "geojson";
 
 import 'src/assets/leaflet/SmoothWheelZoom.js';
 import {GeoLayer} from "../../backend/types/geo/geo-layer.type";
+import {CensusFeature} from "../../backend/types/geo/census-feature.type";
+import {GeoDataRequest} from "../../backend/requests/geo/geo-data.request";
+import {TractFeatureProperties, ZipFeatureProperties} from "../../backend/types/geo/census-feature-properties.type";
+import {StatService} from "../../backend/services/stat.service";
 
 @Component({
   selector: 'app-map',
@@ -27,9 +31,34 @@ export class MapComponent implements AfterViewInit {
   private parksGeoJSON?: GeoJSON;
   private librariesGeoJSON?: GeoJSON;
 
+  private zipLayers: Layer[] = [];
+  private tractLayers: Layer[] = [];
   private popupOpen = false;
   private map?: L.Map;
 
+  constructor(private geoTractService: GeoTractService,
+              private statService: StatService) {
+
+    // This logic ensures the Leaflet container is only resized when needed
+    this.popupOpened.subscribe((d) => {
+      if (!!d && !this.popupOpen) {
+        this.resizeMap();
+        this.popupOpen = true;
+      } else if (d === null && this.popupOpen) {
+        this.resizeMap();
+        this.popupOpen = false;
+      }
+    });
+  }
+
+  ngAfterViewInit(): void {
+    this.initMap();
+  }
+
+  /**
+   * Setup the Leaflet map
+   * @private
+   */
   private initMap(): void {
     this.map = L.map('map', {
       center: [35.1269, -89.9253],
@@ -81,24 +110,6 @@ export class MapComponent implements AfterViewInit {
 
     this.fetchMapData(this.map);
     this.attachEvents(this.map);
-  }
-
-  constructor(private geoTractService: GeoTractService) {
-
-    // This logic ensures the Leaflet container is only resized when needed
-    this.popupOpened.subscribe((d) => {
-      if (!!d && !this.popupOpen) {
-        this.resizeMap();
-        this.popupOpen = true;
-      } else if (d === null && this.popupOpen) {
-        this.resizeMap();
-        this.popupOpen = false;
-      }
-    });
-  }
-
-  ngAfterViewInit(): void {
-    this.initMap();
   }
 
   /**
@@ -166,8 +177,6 @@ export class MapComponent implements AfterViewInit {
         switchMap(() => this.geoTractService.getLibraryFeatures()),
         tap(f => libraries.addData(f))
       ).subscribe(() => {
-        this.isLoading = false;
-
         if (!!this.map) {
           const outerBounds = zipCodes.getBounds().pad(0.5);
 
@@ -198,18 +207,10 @@ export class MapComponent implements AfterViewInit {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     });
 
-
-    const baseLayers = {
-      "ZIP Codes": zipCodes,
-      "Census Tracts": tracts,
-    }
-
     const overlayLayers = {
       "Libraries": libraries,
       "Parks": parks
     }
-
-    L.control.layers(baseLayers, overlayLayers, {collapsed: false}).addTo(map);
 
     tiles.addTo(map);
 
@@ -237,6 +238,108 @@ export class MapComponent implements AfterViewInit {
       }
     });
 
-    tracts.removeFrom(map);
+    this.fetchMapPopulationData(map).subscribe((maxStats) => {
+      const baseLayers = {
+        'ZIP Codes': zipCodes,
+        'Tracts': tracts
+      }
+
+      L.control.layers(baseLayers, overlayLayers, {collapsed: false}).addTo(map);
+
+      zipCodes.setStyle(feature => {
+        const style = {
+          opacity: 1.0,
+          fillOpacity: 1.0
+        };
+
+        if (!!feature?.properties) {
+          let opacity = 0.1;
+          const properties = feature.properties as ZipFeatureProperties;
+          const population = properties.populationUnder18;
+
+          if (population > 0) {
+            opacity = Math.max(Math.min((population/maxStats.maxZip), 0.6), 0.2);
+          }
+
+          style.opacity = opacity;
+          style.fillOpacity = opacity;
+        }
+
+
+        return style;
+      });
+
+      tracts.setStyle(feature => {
+        const style = {
+          opacity: 1.0,
+          fillOpacity: 1.0
+        };
+
+        if (!!feature?.properties) {
+          let opacity = 0.1;
+          const properties = feature.properties as TractFeatureProperties;
+          const population = properties.populationUnder18;
+
+          if (population > 0) {
+            opacity = Math.max(Math.min((population/maxStats.maxTract), 0.6), 0.2);
+          }
+
+         // style.opacity = opacity;
+          style.fillOpacity = opacity;
+        }
+
+
+        return style;
+      })
+
+      tracts.removeFrom(map);
+
+      this.isLoading = false;
+    });
+  }
+
+  /**
+   * Fetch the population stats and append them to the feature (geometry) properties
+   * @param map - Leaflet map
+   * @private
+   */
+  private fetchMapPopulationData(map: L.Map) {
+    const requestItems: GeoDataRequest[] = [];
+
+    map.eachLayer(rawLayer => {
+      const layer = rawLayer as unknown as GeoLayer;
+      const feature = layer.feature as unknown as CensusFeature;
+
+      if (!!feature) {
+        if (!!feature.properties && !!feature.properties.type && ['tract', 'zip'].includes(feature.properties.type)) {
+          let id: string;
+
+          if (feature.properties.type === 'zip') {
+            id = (feature.properties as ZipFeatureProperties).name;
+          } else {
+            id = (feature.properties as TractFeatureProperties).tract;
+          }
+
+          requestItems.push({
+            type: feature.properties.type,
+            layer: rawLayer,
+            id
+          });
+        }
+      }
+    });
+
+    return this.statService.requestMapGeoStats(requestItems).pipe(
+      tap(layerResults => {
+        this.zipLayers = layerResults[0].layers;
+        this.tractLayers = layerResults[1].layers;
+      }),
+      rxMap(layerResults => {
+        return {
+          maxZip: layerResults[0].max,
+          maxTract: layerResults[1].max
+        }
+      })
+    );
   }
 }

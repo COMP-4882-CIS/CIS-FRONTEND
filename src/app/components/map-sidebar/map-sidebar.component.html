@@ -3,17 +3,18 @@
     <mat-toolbar>
       <h1 class="title">{{data.data}} - <span>{{getSubtitle(data)}}</span></h1>
     </mat-toolbar>
+    <ng-container *ngIf="!didError; else errorFetchingStats">
     <mat-tab-group dynamicHeight>
       <mat-tab label="Population">
         <div class="inner-sidebar">
           <div class="stats" *ngIf="populationData|async as populationData; else loadingStats">
             <h2>Population under 18:</h2>
-            <h3>Total - {{getStat(populationData).populationUnder18}}</h3>
-            <h3>Total Male - {{getStat(populationData).populationUnder18Male}}</h3>
-            <h3>Total Female - {{getStat(populationData).populationUnder18Female}}</h3>
+            <h3>Total - {{getFormattedStat(populationData, 'populationUnder18')}}</h3>
+            <h3>Total Male - {{getFormattedStat(populationData, 'populationUnder18Male')}}</h3>
+            <h3>Total Female - {{getFormattedStat(populationData, 'populationUnder18Female')}}</h3>
 
             <app-breakdown-chart [chartData]="genderChartData|async"></app-breakdown-chart>
-            <h2>Total Population: {{getStat(populationData).totalPopulation}}</h2>
+            <h2>Total Population: {{getFormattedStat(populationData, 'totalPopulation')}}</h2>
           </div>
         </div>
       </mat-tab>
@@ -22,14 +23,19 @@
           <div class="stats" *ngIf="populationData|async as populationData; else loadingStats">
             <h2>Population in poverty under 18:</h2>
             <h3>Total - {{getPovertyTotal(populationData)}}</h3>
-            <h3>Under age 6 - {{getStat(populationData).populationInPovertyUnder6}}</h3>
-            <h3>Ages 6 through 11 - {{getStat(populationData).populationInPoverty6To11}}</h3>
-            <h3>Ages 12 through 17 - {{getStat(populationData).populationInPoverty12To17}}</h3>
+            <h3>Under age 6 - {{getFormattedStat(populationData, 'populationInPovertyUnder6')}}</h3>
+            <h3>Ages 6 through 11 - {{getFormattedStat(populationData, 'populationInPoverty6To11')}}</h3>
+            <h3>Ages 12 through 17 - {{getFormattedStat(populationData, 'populationInPoverty12To17')}}</h3>
             <app-breakdown-chart [chartData]="povertyChartData|async"></app-breakdown-chart>
           </div>
         </div>
       </mat-tab>
     </mat-tab-group>
+    </ng-container>
+
+    <ng-template #errorFetchingStats>
+      <h1>Could not fetch stats!</h1>
+    </ng-template>
     <ng-template #loadingStats>
       <div class="loading-shade">
         <mat-spinner diameter="40"></mat-spinner>

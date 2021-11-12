@@ -13,5 +13,5 @@ export interface ZipCodeBreakdownStat extends BreakdownStat {
 }
 
 export interface TractBreakdownStat extends BreakdownStat {
-  tract: number;
+  censusTract: number;
 }
