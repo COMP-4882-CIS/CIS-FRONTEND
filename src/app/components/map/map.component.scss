@@ -25,3 +25,17 @@
     z-index: 9999;
   }
 }
+
+::ng-deep {
+  .map-geo-label {
+    transition: opacity 200ms ease-in-out!important;
+
+    &.show {
+      opacity: 1!important;
+    }
+
+    &.hide {
+      opacity: 0!important;
+    }
+  }
+}

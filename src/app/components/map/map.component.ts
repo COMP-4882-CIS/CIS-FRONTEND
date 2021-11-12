@@ -153,6 +153,9 @@ export class MapComponent implements AfterViewInit {
     });
 
     map.on('click', () => this.popupOpened.emit(null));
+
+    map.on('zoomend', () => this.refreshCalloutLabels());
+    map.on('baselayerchange', () => this.refreshCalloutLabels());
   }
 
   /**
@@ -220,6 +223,7 @@ export class MapComponent implements AfterViewInit {
       if (!!layer.feature.properties) {
         layer.feature.properties.type = 'tract';
       }
+
     });
 
     zipCodes.eachLayer(rawLayer => {
@@ -246,6 +250,7 @@ export class MapComponent implements AfterViewInit {
 
       L.control.layers(baseLayers, overlayLayers, {collapsed: false}).addTo(map);
 
+
       zipCodes.setStyle(feature => {
         const style = {
           opacity: 1.0,
@@ -258,7 +263,7 @@ export class MapComponent implements AfterViewInit {
           const population = properties.populationUnder18;
 
           if (population > 0) {
-            opacity = Math.max(Math.min((population/maxStats.maxZip), 0.6), 0.2);
+            opacity = Math.max(Math.min((population / maxStats.maxZip), 0.6), 0.2);
           }
 
           style.opacity = opacity;
@@ -281,21 +286,48 @@ export class MapComponent implements AfterViewInit {
           const population = properties.populationUnder18;
 
           if (population > 0) {
-            opacity = Math.max(Math.min((population/maxStats.maxTract), 0.6), 0.2);
+            opacity = Math.max(Math.min((population / maxStats.maxTract), 0.6), 0.2);
           }
 
-         // style.opacity = opacity;
+          // style.opacity = opacity;
           style.fillOpacity = opacity;
         }
 
 
         return style;
-      })
+      });
+
+      this.bindLabels(tracts, 'tract', map);
+      this.bindLabels(zipCodes, 'zipcode', map);
 
       tracts.removeFrom(map);
 
       this.isLoading = false;
     });
+  }
+
+  /**
+   * Add callout labels to feature collections
+   * @param feature - L.GeoJSON (tracts/zipCodes)
+   * @param type - zipcode/tract
+   * @param map
+   * @private
+   */
+  private bindLabels(feature: L.GeoJSON, type: 'zipcode' | 'tract', map: L.Map) {
+    feature.eachLayer(rawLayer => {
+      const layer = rawLayer as unknown as GeoLayer;
+      if (!!layer.feature.properties) {
+        const content = (type === 'zipcode' ? layer.feature.properties.name : `T${layer.feature.properties.tract}`);
+
+        rawLayer.bindTooltip(
+          content,
+          {
+            permanent: true,
+            direction: 'center',
+            className: `${type}-label map-geo-label ${map.getZoom() < 12 ? 'hide' : 'show'}`
+          });
+      }
+    })
   }
 
   /**
@@ -341,5 +373,19 @@ export class MapComponent implements AfterViewInit {
         }
       })
     );
+  }
+
+  /**
+   * Refresh the callout labels
+   * @private
+   */
+  private refreshCalloutLabels() {
+    if (!!this.map) {
+      if (this.map.getZoom() < 12) {
+        document.querySelectorAll('.map-geo-label').forEach(l => l.classList.replace('show', 'hide'))
+      } else {
+        document.querySelectorAll('.map-geo-label').forEach(l => l.classList.replace('hide', 'show'))
+      }
+    }
   }
 }
