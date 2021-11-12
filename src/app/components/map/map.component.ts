@@ -65,6 +65,7 @@ export class MapComponent implements AfterViewInit {
       zoom: 11,
       minZoom: 11,
       zoomControl: true,
+      preferCanvas: true,
       scrollWheelZoom: false, // disable original zoom function
 
       // @ts-ignore
