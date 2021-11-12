@@ -5,7 +5,6 @@ import {switchMap, tap, map as rxMap} from "rxjs/operators";
 import {GeoEvent} from "../../backend/types/geo/geo-event.type";
 import {GeoJSON, Layer, PopupEvent} from "leaflet";
 import {Feature, Geometry} from "geojson";
-
 import 'src/assets/leaflet/SmoothWheelZoom.js';
 import {GeoLayer} from "../../backend/types/geo/geo-layer.type";
 import {CensusFeature} from "../../backend/types/geo/census-feature.type";
@@ -18,7 +17,6 @@ import {StatService} from "../../backend/services/stat.service";
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.scss']
 })
-
 export class MapComponent implements AfterViewInit {
 
   @Output()
@@ -60,19 +58,25 @@ export class MapComponent implements AfterViewInit {
    * @private
    */
   private initMap(): void {
-    this.map = L.map('map', {
+    let mapConfig: L.MapOptions = {
       center: [35.1269, -89.9253],
       zoom: 11,
       minZoom: 11,
       zoomControl: true,
       preferCanvas: true,
-      scrollWheelZoom: false, // disable original zoom function
+    }
 
-      // @ts-ignore
-      smoothWheelZoom: true,  // enable smooth zoom
-      smoothSensitivity: 1,   // zoom speed. default is 1
-    });
+    if (navigator.platform.indexOf('Mac') === 0) {
+      mapConfig = {
+        ...mapConfig,
+        scrollWheelZoom: false, // disable original zoom function
+        // @ts-ignore
+        smoothWheelZoom: true,  // enable smooth zoom
+        smoothSensitivity: 1,   // zoom speed. default is 1
+      }
+    }
 
+    this.map = L.map('map', mapConfig);
 
     this.tractsGeoJSON = L.geoJSON()
       .bindPopup((layer: any) => `Tract ${layer['feature'].properties.tract}`)
