@@ -25,6 +25,7 @@ export class MapSidebarComponent implements OnInit {
   povertyChartData: ReplaySubject<ChartData> = new ReplaySubject<ChartData>();
   genderChartData: ReplaySubject<ChartData> = new ReplaySubject<ChartData>();
 
+  didError = false;
   currentData: Subject<GeoEvent> = new Subject<GeoEvent>();
   populationData: Subject<BreakdownStatResponse | null> = new Subject<BreakdownStatResponse | null>();
 
@@ -40,55 +41,82 @@ export class MapSidebarComponent implements OnInit {
     return data.type === 'zip' ? 'ZIP Code' : 'Census Tract';
   }
 
-  getStat(response: BreakdownStatResponse): BreakdownStat {
-    return response.stats[0];
-  }
-
-  getPovertyTotal(response: BreakdownStatResponse): number {
+  getFormattedStat(response: BreakdownStatResponse, key: string): any {
     const stat = this.getStat(response);
 
-    return stat.populationInPovertyUnder6 + stat.populationInPoverty6To11 + stat.populationInPoverty12To17;
-  }
-
-  getGenderChartData(response: BreakdownStatResponse): ChartData {
-    const stat = this.getStat(response);
-
-    return {
-      labels: ['Female', 'Male'],
-      datasets: [
-        {
-          label: 'Population Breakdown',
-          data: [
-            stat.populationUnder18Female,
-            stat.populationUnder18Male
-          ]
-        }
-      ]
+    if (!!stat) {
+      return (stat as {[key: string]: any})[key];
     }
+
+    return 0;
   }
 
-  getPovertyChartData(response: BreakdownStatResponse): ChartData {
+  getStat(response: BreakdownStatResponse): BreakdownStat|null {
+    if (response.stats.length > 0) {
+      return response.stats[0];
+    }
+
+    return null;
+  }
+
+  getPovertyTotal(response: BreakdownStatResponse): number | null {
     const stat = this.getStat(response);
 
-    return {
-      labels: [
-        'Under age 6',
-        'Ages 6 - 11',
-        'Ages 12 - 17',
-      ],
-      datasets: [
-        {
-          data: [
-            stat.populationInPovertyUnder6,
-            stat.populationInPoverty6To11,
-            stat.populationInPoverty12To17
-          ]
-        }
-      ]
+    if (!!stat) {
+      return stat.populationInPovertyUnder6 + stat.populationInPoverty6To11 + stat.populationInPoverty12To17;
     }
+
+    return null;
+  }
+
+  getGenderChartData(response: BreakdownStatResponse): ChartData|null {
+    const stat = this.getStat(response);
+
+    if (!!stat) {
+      return {
+        labels: ['Female', 'Male'],
+        datasets: [
+          {
+            label: 'Population Breakdown',
+            data: [
+              stat.populationUnder18Female,
+              stat.populationUnder18Male
+            ]
+          }
+        ]
+      }
+    }
+
+    return null;
+  }
+
+  getPovertyChartData(response: BreakdownStatResponse): ChartData|null {
+    const stat = this.getStat(response);
+
+    if (!!stat) {
+      return {
+        labels: [
+          'Under age 6',
+          'Ages 6 - 11',
+          'Ages 12 - 17',
+        ],
+        datasets: [
+          {
+            data: [
+              stat.populationInPovertyUnder6,
+              stat.populationInPoverty6To11,
+              stat.populationInPoverty12To17
+            ]
+          }
+        ]
+      }
+    }
+
+    return null;
   }
 
   private reloadData() {
+    this.didError = false;
     this.populationData.next(null);
 
     if (!!this.populationSub) {
@@ -104,12 +132,24 @@ export class MapSidebarComponent implements OnInit {
         return this.statService.getTractBreakdown(ev.data);
       }),
       tap(response => {
-        this.genderChartData.next(this.getGenderChartData(response));
-        this.genderChartData.complete();
+        const genderChartData = this.getGenderChartData(response);
+
+        if (!!genderChartData) {
+          this.genderChartData.next(genderChartData);
+          this.genderChartData.complete();
+        } else {
+          this.didError = true;
+        }
       }),
       tap(response => {
-        this.povertyChartData.next(this.getPovertyChartData(response));
-        this.genderChartData.complete();
+        const povertyChartData = this.getPovertyChartData(response);
+
+        if (!!povertyChartData) {
+          this.povertyChartData.next(povertyChartData);
+          this.genderChartData.complete();
+        } else {
+          this.didError = true;
+        }
       })
     ).subscribe(this.populationData);
   }
