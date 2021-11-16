@@ -4,7 +4,7 @@ import {GeoTractService} from "../../backend/services/geo-tract.service";
 import {switchMap, tap} from "rxjs/operators";
 import {GeoEvent} from "../../backend/types/geo/geo-event.type";
 import {GeoJSON, PopupEvent} from "leaflet";
-import {Feature} from "geojson";
+import {Feature, Geometry} from "geojson";
 
 import 'src/assets/leaflet/SmoothWheelZoom.js';
 import {GeoLayer} from "../../backend/types/geo/geo-layer.type";
@@ -24,8 +24,10 @@ export class MapComponent implements AfterViewInit {
 
   private tractsGeoJSON?: GeoJSON;
   private zipCodesGeoJSON?: GeoJSON;
+  private parksGeoJSON?: GeoJSON;
   private librariesGeoJSON?: GeoJSON;
   private centersGeoJSON?: GeoJSON;
+
   private popupOpen = false;
   private map?: L.Map;
 
@@ -49,6 +51,21 @@ export class MapComponent implements AfterViewInit {
 
     this.zipCodesGeoJSON = L.geoJSON(undefined, {style: {color: 'red'}})
       .bindPopup((layer: any) => `ZIP Code ${layer['feature'].properties.name}`)
+      .addTo(this.map);
+
+    this.parksGeoJSON = L.geoJSON(undefined, {
+      pointToLayer: (feature, latlng) => {
+        const parkIcon = L.icon({
+          iconUrl: 'assets/icons/park-icon.png',
+          iconSize: [40, 40],
+        });
+
+        return L.marker(latlng, {icon: parkIcon})
+      },
+      filter: (feature: Feature<Geometry, any>): boolean => {
+        return feature.properties.hasOwnProperty('park_nam_1') && !!feature.properties.park_nam_1
+      }
+    }).bindPopup((layer: any) => `${layer['feature'].properties.park_nam_1}`)
       .addTo(this.map);
 
     this.librariesGeoJSON = L.geoJSON(undefined, {
@@ -150,6 +167,7 @@ export class MapComponent implements AfterViewInit {
     if (!!this.tractsGeoJSON && !!this.zipCodesGeoJSON) {
       const tracts = this.tractsGeoJSON as GeoJSON;
       const zipCodes = this.zipCodesGeoJSON as GeoJSON;
+      const parks = this.parksGeoJSON as GeoJSON;
       const libraries = this.librariesGeoJSON as GeoJSON;
       const centers = this.centersGeoJSON as GeoJSON;
 
@@ -157,6 +175,8 @@ export class MapComponent implements AfterViewInit {
         tap(f => tracts.addData(f)),
         switchMap(() => this.geoTractService.getZipCodeFeatures()),
         tap(f => zipCodes.addData(f)),
+        switchMap(() => this.geoTractService.getParksFeatures()),
+        tap(f => parks.addData(f)),
         switchMap(() => this.geoTractService.getLibraryFeatures()),
         tap(f => libraries.addData(f)),
         switchMap(() => this.geoTractService.getCentersFeatures()),
@@ -185,6 +205,7 @@ export class MapComponent implements AfterViewInit {
   private appendMapData(map: L.Map) {
     const tracts = this.tractsGeoJSON as GeoJSON;
     const zipCodes = this.zipCodesGeoJSON as GeoJSON;
+    const parks = this.parksGeoJSON as GeoJSON;
     const libraries = this.librariesGeoJSON as GeoJSON;
     const centers = this.centersGeoJSON as GeoJSON;
 
@@ -202,7 +223,8 @@ export class MapComponent implements AfterViewInit {
 
     const overlayLayers = {
       "Libraries": libraries,
-      "Centers": centers
+      "Community Centers": centers
+      "Parks": parks
     }
 
     L.control.layers(baseLayers, overlayLayers, {collapsed: false}).addTo(map);
