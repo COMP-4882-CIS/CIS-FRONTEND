@@ -235,7 +235,7 @@ export class MapComponent implements AfterViewInit {
 
     const overlayLayers = {
       "Libraries": libraries,
-      "Community Centers": centers
+      "Community Centers": centers,
       "Parks": parks
     }
 
@@ -265,7 +265,7 @@ export class MapComponent implements AfterViewInit {
         layer.feature.properties.type = 'library';
       }
     });
-    
+
     centers.eachLayer(rawLayer => {
       const layer = rawLayer as unknown as GeoLayer;
 
