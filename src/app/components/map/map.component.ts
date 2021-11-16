@@ -64,6 +64,7 @@ export class MapComponent implements AfterViewInit {
       minZoom: 11,
       zoomControl: true,
       preferCanvas: true,
+
     }
 
     if (navigator.platform.indexOf('Mac') === 0) {
