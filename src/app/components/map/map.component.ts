@@ -25,6 +25,7 @@ export class MapComponent implements AfterViewInit {
   private tractsGeoJSON?: GeoJSON;
   private zipCodesGeoJSON?: GeoJSON;
   private librariesGeoJSON?: GeoJSON;
+  private centersGeoJSON?: GeoJSON;
   private popupOpen = false;
   private map?: L.Map;
 
@@ -60,6 +61,18 @@ export class MapComponent implements AfterViewInit {
       },
     })
       .bindPopup((layer: any) => `${layer['feature'].properties.user_name}`)
+      .addTo(this.map);
+
+    this.centersGeoJSON = L.geoJSON(undefined, {
+      pointToLayer: (feature, latlng) => {
+        const centersIcon = L.icon({
+          iconUrl: 'assets/icons/center.png',
+          iconSize: [40, 40],
+        });
+
+        return L.marker(latlng, {icon: centersIcon})
+      },
+    }).bindPopup((layer: any) => `${layer['feature'].properties.user_name}`)
       .addTo(this.map);
 
     this.fetchMapData(this.map);
@@ -138,13 +151,16 @@ export class MapComponent implements AfterViewInit {
       const tracts = this.tractsGeoJSON as GeoJSON;
       const zipCodes = this.zipCodesGeoJSON as GeoJSON;
       const libraries = this.librariesGeoJSON as GeoJSON;
+      const centers = this.centersGeoJSON as GeoJSON;
 
       this.geoTractService.getCensusTractFeatures().pipe(
         tap(f => tracts.addData(f)),
         switchMap(() => this.geoTractService.getZipCodeFeatures()),
         tap(f => zipCodes.addData(f)),
         switchMap(() => this.geoTractService.getLibraryFeatures()),
-        tap(f => libraries.addData(f))
+        tap(f => libraries.addData(f)),
+        switchMap(() => this.geoTractService.getCentersFeatures()),
+        tap(f => centers.addData(f))
       ).subscribe(() => {
         this.isLoading = false;
 
@@ -170,6 +186,7 @@ export class MapComponent implements AfterViewInit {
     const tracts = this.tractsGeoJSON as GeoJSON;
     const zipCodes = this.zipCodesGeoJSON as GeoJSON;
     const libraries = this.librariesGeoJSON as GeoJSON;
+    const centers = this.centersGeoJSON as GeoJSON;
 
     const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 18,
@@ -184,7 +201,8 @@ export class MapComponent implements AfterViewInit {
     }
 
     const overlayLayers = {
-      "Libraries": libraries
+      "Libraries": libraries,
+      "Centers": centers
     }
 
     L.control.layers(baseLayers, overlayLayers, {collapsed: false}).addTo(map);
@@ -212,6 +230,14 @@ export class MapComponent implements AfterViewInit {
 
       if (!!layer.feature.properties) {
         layer.feature.properties.type = 'library';
+      }
+    });
+
+    centers.eachLayer(rawLayer => {
+      const layer = rawLayer as unknown as GeoLayer;
+
+      if (!!layer.feature.properties) {
+        layer.feature.properties.type = 'centers';
       }
     });
 

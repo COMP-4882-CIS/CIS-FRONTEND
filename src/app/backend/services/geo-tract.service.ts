@@ -20,4 +20,8 @@ export class GeoTractService {
   getLibraryFeatures(){
     return this.http.get<GeoJSONObject>('assets/data/libraries.geojson');
   }
+
+  getCentersFeatures(){
+    return this.http.get<GeoJSONObject>('assets/data/centers.geojson');
+  }
 }
