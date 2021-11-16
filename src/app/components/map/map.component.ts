@@ -28,6 +28,7 @@ export class MapComponent implements AfterViewInit {
   private zipCodesGeoJSON?: GeoJSON;
   private parksGeoJSON?: GeoJSON;
   private librariesGeoJSON?: GeoJSON;
+  private centersGeoJSON?: GeoJSON;
 
   private zipLayers: Layer[] = [];
   private tractLayers: Layer[] = [];
@@ -114,6 +115,18 @@ export class MapComponent implements AfterViewInit {
       .bindPopup((layer: any) => `${layer['feature'].properties.user_name}`)
       .addTo(this.map);
 
+    this.centersGeoJSON = L.geoJSON(undefined, {
+      pointToLayer: (feature, latlng) => {
+        const centersIcon = L.icon({
+          iconUrl: 'assets/icons/center.png',
+          iconSize: [40, 40],
+        });
+
+        return L.marker(latlng, {icon: centersIcon})
+      },
+    }).bindPopup((layer: any) => `${layer['feature'].properties.community_}`)
+      .addTo(this.map);
+
     this.fetchMapData(this.map);
     this.attachEvents(this.map);
   }
@@ -176,6 +189,7 @@ export class MapComponent implements AfterViewInit {
       const zipCodes = this.zipCodesGeoJSON as GeoJSON;
       const parks = this.parksGeoJSON as GeoJSON;
       const libraries = this.librariesGeoJSON as GeoJSON;
+      const centers = this.centersGeoJSON as GeoJSON;
 
       this.geoTractService.getCensusTractFeatures().pipe(
         tap(f => tracts.addData(f)),
@@ -184,7 +198,9 @@ export class MapComponent implements AfterViewInit {
         switchMap(() => this.geoTractService.getParksFeatures()),
         tap(f => parks.addData(f)),
         switchMap(() => this.geoTractService.getLibraryFeatures()),
-        tap(f => libraries.addData(f))
+        tap(f => libraries.addData(f)),
+        switchMap(() => this.geoTractService.getCentersFeatures()),
+        tap(f => centers.addData(f))
       ).subscribe(() => {
         if (!!this.map) {
           const outerBounds = zipCodes.getBounds().pad(0.5);
@@ -209,6 +225,7 @@ export class MapComponent implements AfterViewInit {
     const zipCodes = this.zipCodesGeoJSON as GeoJSON;
     const parks = this.parksGeoJSON as GeoJSON;
     const libraries = this.librariesGeoJSON as GeoJSON;
+    const centers = this.centersGeoJSON as GeoJSON;
 
     const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 18,
@@ -218,6 +235,7 @@ export class MapComponent implements AfterViewInit {
 
     const overlayLayers = {
       "Libraries": libraries,
+      "Community Centers": centers
       "Parks": parks
     }
 
@@ -245,6 +263,14 @@ export class MapComponent implements AfterViewInit {
 
       if (!!layer.feature.properties) {
         layer.feature.properties.type = 'library';
+      }
+    });
+    
+    centers.eachLayer(rawLayer => {
+      const layer = rawLayer as unknown as GeoLayer;
+
+      if (!!layer.feature.properties) {
+        layer.feature.properties.type = 'centers';
       }
     });
 
