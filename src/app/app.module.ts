@@ -8,8 +8,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatButtonModule} from "@angular/material/button";
 import {MatCardModule} from "@angular/material/card";
-import {RepEmailFormComponent} from './components/rep-email-form/rep-email-form.component';
-import {HomeComponent, ZipcodeComponent} from "./pages";
+import {HomeComponent} from "./pages";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
 import {MatListModule} from "@angular/material/list";
@@ -29,8 +28,6 @@ import {MatTabsModule} from "@angular/material/tabs";
   declarations: [
     AppComponent,
     HomeComponent,
-    ZipcodeComponent,
-    RepEmailFormComponent,
     MapComponent,
     MapBoxComponent,
     MapSidebarComponent,

@@ -6,6 +6,7 @@ import {StatService} from "../../backend/services/stat.service";
 import {switchMap, tap} from "rxjs/operators";
 import {BreakdownStat} from "../../backend/types/stat/breakdown-stat.type";
 import {ChartData} from "chart.js";
+import {PointFeature} from "../../backend/types/geo/features/point-feature.type";
 
 @Component({
   selector: 'app-map-sidebar',
@@ -125,11 +126,19 @@ export class MapSidebarComponent implements OnInit {
 
     this.populationSub = this.currentData.pipe(
       switchMap(ev => {
-        if (ev.type === 'zip') {
-          return this.statService.getZipCodeBreakdown(ev.data)
+        if (['zip', 'tract'].includes(ev.type)) {
+          const data: string = ev.data as string;
+
+          if (ev.type === 'zip') {
+            return this.statService.getZipCodeBreakdown(data);
+          }
+
+          return this.statService.getTractBreakdown(data);
         }
 
-        return this.statService.getTractBreakdown(ev.data);
+        const data: PointFeature = ev.data as PointFeature;
+
+        return this.statService.getZipCodeBreakdown(data.zipCode);
       }),
       tap(response => {
         const genderChartData = this.getGenderChartData(response);
