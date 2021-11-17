@@ -1,7 +1,7 @@
 import {Component, Input} from '@angular/core';
-import {PointFeature} from "../../backend/types/geo/features/point-feature.type";
-import {LibraryFeature} from "../../backend/types/geo/features/library-feature.type";
-import {CommunityCenterFeature} from "../../backend/types/geo/features/community-center-feature.type";
+import {PointFeature} from "../../backend/types/geo/features/point/point-feature.type";
+import {LibraryFeature} from "../../backend/types/geo/features/point/types/library-feature.type";
+import {CommunityCenterFeature} from "../../backend/types/geo/features/point/types/community-center-feature.type";
 
 @Component({
   selector: 'app-point-feature-summary',

@@ -1,5 +1,5 @@
-import {PointFeature} from "./point-feature.type";
-import {PointFeatureType} from "./feature-type.enum";
+import {PointFeature} from "../point-feature.type";
+import {PointFeatureType} from "../point-feature-type.enum";
 
 export class LibraryFeature implements PointFeature {
   displayName: string;

@@ -1,18 +1,18 @@
-import {Component, AfterViewInit, Output, EventEmitter} from '@angular/core';
+import {AfterViewInit, Component, EventEmitter, Output} from '@angular/core';
 import * as L from 'leaflet';
-import {GeoTractService} from "../../backend/services/geo-tract.service";
-import {switchMap, tap, map as rxMap} from "rxjs/operators";
-import {GeoEvent} from "../../backend/types/geo/geo-event.type";
-import {GeoJSON, Layer, PopupEvent} from "leaflet";
+import {GeoJSON, Layer, PopupEvent} from 'leaflet';
+import {map as rxMap, switchMap, tap} from "rxjs/operators";
 import {Feature, Geometry} from "geojson";
+import {FeatureHelper, LayerHelper, PopupHelper} from "../../helpers";
+import {DistrictFeature, LayerFeature, TractFeature, ZipcodeFeature} from "../../backend/types/geo/features/layer";
+import {LayerFeatureType} from "../../backend/types/geo/features/layer/layer-feature-type.enum";
+import {PointFeatureType} from "../../backend/types/geo/features/point/point-feature-type.enum";
+import {GeoTractService, StatService} from "../../backend/services";
+import {GeoDataRequest} from "../../backend/requests/geo";
+import {GeoEvent, GeoLayer} from "../../backend/types/geo";
 import 'src/assets/leaflet/SmoothWheelZoom.js';
-import {GeoLayer} from "../../backend/types/geo/geo-layer.type";
-import {CensusFeature} from "../../backend/types/geo/census-feature.type";
-import {GeoDataRequest} from "../../backend/requests/geo/geo-data.request";
-import {TractFeatureProperties, ZipFeatureProperties} from "../../backend/types/geo/census-feature-properties.type";
-import {StatService} from "../../backend/services/stat.service";
-import {FeatureHelper} from "../../helpers/feature.helper";
-import {PointFeatureType} from "../../backend/types/geo/features/feature-type.enum";
+import {PointFeature} from "../../backend/types/geo/features/point";
+
 
 @Component({
   selector: 'app-map',
@@ -28,6 +28,7 @@ export class MapComponent implements AfterViewInit {
 
   private tractsGeoJSON?: GeoJSON;
   private zipCodesGeoJSON?: GeoJSON;
+  private districtsGeoJSON?: GeoJSON;
   private parksGeoJSON?: GeoJSON;
   private librariesGeoJSON?: GeoJSON;
   private centersGeoJSON?: GeoJSON;
@@ -82,12 +83,19 @@ export class MapComponent implements AfterViewInit {
 
     this.map = L.map('map', mapConfig);
 
+    this.districtsGeoJSON = L.geoJSON(undefined, {
+      interactive: false,
+      style: {color: 'rgb(255, 159, 64)', fillOpacity: 0, weight: 8, opacity: 1.0}
+    })
+      .bindPopup(layer => PopupHelper.bindLayerPopup(LayerFeatureType.DISTRICT, layer))
+      .addTo(this.map);
+
     this.tractsGeoJSON = L.geoJSON()
-      .bindPopup((layer: any) => `Tract ${layer['feature'].properties.tract}`)
+      .bindPopup(layer => PopupHelper.bindLayerPopup(LayerFeatureType.TRACT, layer))
       .addTo(this.map);
 
     this.zipCodesGeoJSON = L.geoJSON(undefined, {style: {color: 'red'}})
-      .bindPopup((layer: any) => `ZIP Code ${layer['feature'].properties.name}`)
+      .bindPopup(layer => PopupHelper.bindLayerPopup(LayerFeatureType.ZIP_CODE, layer))
       .addTo(this.map);
 
     this.parksGeoJSON = L.geoJSON(undefined, {
@@ -102,7 +110,7 @@ export class MapComponent implements AfterViewInit {
       filter: (feature: Feature<Geometry, any>): boolean => {
         return feature.properties.hasOwnProperty('park_nam_1') && !!feature.properties.park_nam_1
       }
-    }).bindPopup((layer: any) => `${layer['feature'].properties.park_nam_1}`)
+    }).bindPopup(layer => PopupHelper.bindPointPopup(PointFeatureType.PARK, layer))
       .addTo(this.map);
 
     this.librariesGeoJSON = L.geoJSON(undefined, {
@@ -113,8 +121,7 @@ export class MapComponent implements AfterViewInit {
         });
         return L.marker(latlng, {icon: libraryIcon})
       },
-    })
-      .bindPopup((layer: any) => `${layer['feature'].properties.user_name}`)
+    }).bindPopup(layer => PopupHelper.bindPointPopup(PointFeatureType.LIBRARY, layer))
       .addTo(this.map);
 
     this.centersGeoJSON = L.geoJSON(undefined, {
@@ -126,7 +133,7 @@ export class MapComponent implements AfterViewInit {
 
         return L.marker(latlng, {icon: centersIcon})
       },
-    }).bindPopup((layer: any) => `${layer['feature'].properties.community_}`)
+    }).bindPopup(layer => PopupHelper.bindPointPopup(PointFeatureType.COMMUNITY_CENTER, layer))
       .addTo(this.map);
 
     this.fetchMapData(this.map);
@@ -157,25 +164,13 @@ export class MapComponent implements AfterViewInit {
     map.on('popupopen', (e: PopupEvent) => {
       const feature = (e.popup as unknown as { _source: any })._source.feature as Feature;
 
-      if (!!feature.properties && ['tract', 'zip'].includes(feature.properties.type)) {
-        let eventType: 'tract' | 'zip' = feature.properties.type;
-
-        if (feature.properties.hasOwnProperty('name')) {
-          eventType = 'zip';
-        }
+      if (!!feature.properties) {
+        const genericLayer: PointFeature | LayerFeature = feature.properties as PointFeature | LayerFeature;
 
         this.popupOpened.emit({
-          type: eventType,
-          data: (eventType === 'zip' ? feature.properties['name'] : feature.properties['tract'])
-        });
-      } else if (!!feature.properties && ['park', 'library', 'community_center'].includes(feature.properties.type)) {
-        const pointFeatureType = feature.properties.type as PointFeatureType
-        const pointFeatureData = FeatureHelper.mapRawDataToFeatureData(pointFeatureType, feature.properties);
-
-        this.popupOpened.emit( {
-          type: pointFeatureData.type,
-          data: pointFeatureData
-        });
+          type: genericLayer.type,
+          data: genericLayer
+        })
 
       } else {
         this.popupOpened.emit(null);
@@ -185,7 +180,10 @@ export class MapComponent implements AfterViewInit {
     map.on('click', () => this.popupOpened.emit(null));
 
     map.on('zoomend', () => this.refreshCalloutLabels());
-    map.on('baselayerchange', () => this.refreshCalloutLabels());
+    map.on('baselayerchange', () => {
+      this.refreshCalloutLabels();
+      this.districtsGeoJSON?.bringToFront();
+    });
   }
 
   /**
@@ -198,6 +196,7 @@ export class MapComponent implements AfterViewInit {
     if (!!this.tractsGeoJSON && !!this.zipCodesGeoJSON) {
       const tracts = this.tractsGeoJSON as GeoJSON;
       const zipCodes = this.zipCodesGeoJSON as GeoJSON;
+      const districts = this.districtsGeoJSON as GeoJSON;
       const parks = this.parksGeoJSON as GeoJSON;
       const libraries = this.librariesGeoJSON as GeoJSON;
       const centers = this.centersGeoJSON as GeoJSON;
@@ -206,6 +205,8 @@ export class MapComponent implements AfterViewInit {
         tap(f => tracts.addData(f)),
         switchMap(() => this.geoTractService.getZipCodeFeatures()),
         tap(f => zipCodes.addData(f)),
+        switchMap(() => this.geoTractService.getDistrictFeatures()),
+        tap(f => districts.addData(f)),
         switchMap(() => this.geoTractService.getParksFeatures()),
         tap(f => parks.addData(f)),
         switchMap(() => this.geoTractService.getLibraryFeatures()),
@@ -234,6 +235,7 @@ export class MapComponent implements AfterViewInit {
   private appendMapData(map: L.Map) {
     const tracts = this.tractsGeoJSON as GeoJSON;
     const zipCodes = this.zipCodesGeoJSON as GeoJSON;
+    const districts = this.districtsGeoJSON as GeoJSON;
     const parks = this.parksGeoJSON as GeoJSON;
     const libraries = this.librariesGeoJSON as GeoJSON;
     const centers = this.centersGeoJSON as GeoJSON;
@@ -247,53 +249,21 @@ export class MapComponent implements AfterViewInit {
     const overlayLayers = {
       "Libraries": libraries,
       "Community Centers": centers,
-      "Parks": parks
+      "Parks": parks,
+      "Districts": districts
     }
 
     tiles.addTo(map);
 
-    tracts.eachLayer(rawLayer => {
-      const layer = rawLayer as unknown as GeoLayer;
+    tracts.eachLayer(layer => FeatureHelper.mapLayerData(LayerFeatureType.TRACT, layer));
+    zipCodes.eachLayer(layer => FeatureHelper.mapLayerData(LayerFeatureType.ZIP_CODE, layer));
+    districts.eachLayer(layer => FeatureHelper.mapLayerData(LayerFeatureType.DISTRICT, layer));
 
-      if (!!layer.feature.properties) {
-        layer.feature.properties.type = 'tract';
-      }
+    parks.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.PARK, layer));
+    libraries.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.LIBRARY, layer));
+    centers.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.COMMUNITY_CENTER, layer));
 
-    });
-
-    zipCodes.eachLayer(rawLayer => {
-      const layer = rawLayer as unknown as GeoLayer;
-
-      if (!!layer.feature.properties) {
-        layer.feature.properties.type = 'zip';
-      }
-    });
-
-    parks.eachLayer(rawLayer => {
-      const layer = rawLayer as unknown as GeoLayer;
-
-      if (!!layer.feature.properties) {
-        layer.feature.properties.type = 'park';
-      }
-
-    });
-
-
-    libraries.eachLayer(rawLayer => {
-      const layer = rawLayer as unknown as GeoLayer;
-
-      if (!!layer.feature.properties) {
-        layer.feature.properties.type = 'library';
-      }
-    });
-
-    centers.eachLayer(rawLayer => {
-      const layer = rawLayer as unknown as GeoLayer;
-
-      if (!!layer.feature.properties) {
-        layer.feature.properties.type = 'community_center';
-      }
-    });
+    districts.removeFrom(map);
 
     this.fetchMapPopulationData(map).subscribe((maxStats) => {
       const baseLayers = {
@@ -303,84 +273,15 @@ export class MapComponent implements AfterViewInit {
 
       L.control.layers(baseLayers, overlayLayers, {collapsed: false}).addTo(map);
 
-
-      zipCodes.setStyle(feature => {
-        const style = {
-          opacity: 1.0,
-          fillOpacity: 1.0
-        };
-
-        if (!!feature?.properties) {
-          let opacity = 0.1;
-          const properties = feature.properties as ZipFeatureProperties;
-          const population = properties.populationUnder18;
-
-          if (population > 0) {
-            opacity = Math.max(Math.min((population / maxStats.maxZip), 0.6), 0.2);
-          }
-
-          style.opacity = opacity;
-          style.fillOpacity = opacity;
-        }
-
-
-        return style;
-      });
-
-      tracts.setStyle(feature => {
-        const style = {
-          opacity: 1.0,
-          fillOpacity: 1.0
-        };
-
-        if (!!feature?.properties) {
-          let opacity = 0.1;
-          const properties = feature.properties as TractFeatureProperties;
-          const population = properties.populationUnder18;
-
-          if (population > 0) {
-            opacity = Math.max(Math.min((population / maxStats.maxTract), 0.6), 0.2);
-          }
-
-          // style.opacity = opacity;
-          style.fillOpacity = opacity;
-        }
-
-
-        return style;
-      });
-
-      //   this.bindLabels(tracts, 'tract', map);
-      //   this.bindLabels(zipCodes, 'zipcode', map);
+      LayerHelper.stylizePopulationLayer(zipCodes, maxStats);
+      LayerHelper.stylizePopulationLayer(tracts, maxStats);
+      LayerHelper.stylizeDistrictLayer(districts);
 
       tracts.removeFrom(map);
 
+      this.bindDistrictLabels(districts, map);
       this.isLoading = false;
     });
-  }
-
-  /**
-   * Add callout labels to feature collections
-   * @param feature - L.GeoJSON (tracts/zipCodes)
-   * @param type - zipcode/tract
-   * @param map
-   * @private
-   */
-  private bindLabels(feature: L.GeoJSON, type: 'zipcode' | 'tract', map: L.Map) {
-    feature.eachLayer(rawLayer => {
-      const layer = rawLayer as unknown as GeoLayer;
-      if (!!layer.feature.properties) {
-        const content = (type === 'zipcode' ? layer.feature.properties.name : `T${layer.feature.properties.tract}`);
-
-        rawLayer.bindTooltip(
-          content,
-          {
-            permanent: true,
-            direction: 'center',
-            className: `${type}-label map-geo-label ${map.getZoom() < 12 ? 'hide' : 'show'}`
-          });
-      }
-    })
   }
 
   /**
@@ -390,25 +291,23 @@ export class MapComponent implements AfterViewInit {
    */
   private fetchMapPopulationData(map: L.Map) {
     const requestItems: GeoDataRequest[] = [];
+    const districts: GeoLayer[] = (this.districtsGeoJSON as GeoJSON).getLayers() as unknown as GeoLayer[];
 
     map.eachLayer(rawLayer => {
       const layer = rawLayer as unknown as GeoLayer;
-      const feature = layer.feature as unknown as CensusFeature;
+      const feature = layer.feature;
 
-      if (!!feature) {
-        if (!!feature.properties && !!feature.properties.type && ['tract', 'zip'].includes(feature.properties.type)) {
-          let id: string;
+      if (!!feature && !!feature.properties) {
+        const layerFeature = feature.properties as LayerFeature;
 
-          if (feature.properties.type === 'zip') {
-            id = (feature.properties as ZipFeatureProperties).name;
-          } else {
-            id = (feature.properties as TractFeatureProperties).tract;
+        if (layerFeature instanceof ZipcodeFeature || layerFeature instanceof TractFeature) {
+          if (layerFeature instanceof TractFeature) {
+            layerFeature.updateDistrict(districts.find(d => d._bounds.contains(layer._bounds)));
           }
 
           requestItems.push({
-            type: feature.properties.type,
             layer: rawLayer,
-            id
+            feature: layerFeature
           });
         }
       }
@@ -442,5 +341,28 @@ export class MapComponent implements AfterViewInit {
     }
   }
 
+  /**
+   * Add callout labels to the district labels
+   * @param feature - L.GeoJSON (tracts/zipCodes)
+   * @param map
+   * @private
+   */
+  private bindDistrictLabels(feature: L.GeoJSON, map: L.Map) {
+    feature.eachLayer(rawLayer => {
+      const layer = rawLayer as unknown as GeoLayer;
+      if (!!layer.feature.properties) {
+        const district: DistrictFeature = layer.feature.properties as DistrictFeature;
+
+        rawLayer.bindTooltip(
+            `District ${district.id}`,
+          {
+            permanent: true,
+            direction: 'auto',
+            offset: [-100, 0],
+            className: `district-label map-geo-label ${map.getZoom() < 12 ? 'hide' : 'show'}`
+          });
+      }
+    })
+  }
 
 }

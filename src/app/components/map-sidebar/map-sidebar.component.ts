@@ -1,23 +1,27 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {GeoEvent} from "../../backend/types/geo/geo-event.type";
-import {Observable, ReplaySubject, Subject, Subscription} from "rxjs";
-import {BreakdownStatResponse} from "../../backend/responses/stat/breakdown-stat.response";
-import {StatService} from "../../backend/services/stat.service";
+import {Component, Input} from '@angular/core';
 import {switchMap, tap} from "rxjs/operators";
-import {BreakdownStat} from "../../backend/types/stat/breakdown-stat.type";
 import {ChartData} from "chart.js";
-import {PointFeature} from "../../backend/types/geo/features/point-feature.type";
-import {MapSidebarMode} from "./map-sidebar-mode.enum";
 import {TitleCasePipe} from "@angular/common";
-import {ChartDataHelper} from "../../helpers/chart-data.helper";
+import {ChartDataHelper} from "../../helpers";
 import {resettable} from "../../lib/resettable.rxjs";
+import {DistrictFeature, LayerFeature, TractFeature, ZipcodeFeature} from "../../backend/types/geo/features/layer";
+import {PointFeatureType} from "../../backend/types/geo/features/point/point-feature-type.enum";
+import {Observable, ReplaySubject, Subject, Subscription} from "rxjs";
+import {BreakdownStat} from "../../backend/types/stat/breakdown-stat.type";
+import {PointFeature} from "../../backend/types/geo/features/point";
+import {BreakdownStatResponse} from "../../backend/responses/stat";
+import {LayerFeatureType} from "../../backend/types/geo/features/layer/layer-feature-type.enum";
+import {MapSidebarMode} from "./map-sidebar-mode.enum";
+import {StatService} from "../../backend/services";
+import {GeoEvent} from "../../backend/types/geo";
+
 
 @Component({
   selector: 'app-map-sidebar',
   templateUrl: './map-sidebar.component.html',
   styleUrls: ['./map-sidebar.component.scss'],
 })
-export class MapSidebarComponent implements OnInit {
+export class MapSidebarComponent {
 
   @Input()
   set data(newValue: GeoEvent | null) {
@@ -56,54 +60,50 @@ export class MapSidebarComponent implements OnInit {
     this.genderChartData = this._genderChartData.observable;
   }
 
-  ngOnInit(): void {
+
+  getTitle(event: GeoEvent): string {
+    if (Object.values(LayerFeatureType).includes(event.type as LayerFeatureType)) {
+      return (event.data as LayerFeature).id;
+    }
+
+    return (event.data as PointFeature).displayName;
+  }
+
+  getDistrict(event: GeoEvent): DistrictFeature | undefined {
+    if (event.type === LayerFeatureType.ZIP_CODE) {
+      return (event.data as ZipcodeFeature).district;
+    } else if (event.type === LayerFeatureType.TRACT) {
+      return (event.data as TractFeature).district;
+    }
+
+    return undefined;
   }
 
   getSubtitle(data: GeoEvent) {
-    if (['zip', 'tract'].includes(data.type)) {
-      return data.type === 'zip' ? 'ZIP Code' : 'Census Tract';
+    if (Object.values(LayerFeatureType).includes(data.type as LayerFeatureType)) {
+      switch ((data.type as LayerFeatureType)) {
+        case LayerFeatureType.DISTRICT:
+          return 'District';
+        case LayerFeatureType.TRACT:
+          return 'Census Tract';
+        case LayerFeatureType.ZIP_CODE:
+          return 'ZIP Code';
+      }
     }
 
     return this.titleCasePipe.transform(data.type.toString().replace('_', ' '));
-  }
-
-  getFormattedStat(response: BreakdownStatResponse, key: string): any {
-    const stat = this.getStat(response);
-
-    if (!!stat) {
-      return (stat as {[key: string]: any})[key];
-    }
-
-    return 0;
   }
 
   getPointFeatureData(event: GeoEvent): PointFeature {
     return (event.data as PointFeature);
   }
 
-  getStat(response: BreakdownStatResponse): BreakdownStat|null {
+  getStat(response: BreakdownStatResponse): BreakdownStat | null {
     if (response.stats.length > 0) {
       return response.stats[0];
     }
 
     return null;
-  }
-
-  getPovertyTotal(response: BreakdownStatResponse): number | null {
-    const stat = this.getStat(response);
-
-    if (!!stat) {
-      return stat.populationInPovertyUnder6 + stat.populationInPoverty6To11 + stat.populationInPoverty12To17;
-    }
-
-    return null;
-  }
-
-
-  getFeaturePointTitle(event: GeoEvent) {
-    const data: PointFeature = event.data as PointFeature;
-
-    return data.displayName;
   }
 
   get isMulti(): boolean {
@@ -123,25 +123,27 @@ export class MapSidebarComponent implements OnInit {
     }
 
     this.populationSub = this.currentData.pipe(
-      switchMap(ev => {
-        if (['zip', 'tract'].includes(ev.type)) {
-          const data: string = ev.data as string;
-
-          if (ev.type === 'zip') {
+      switchMap(event => {
+        switch (event.type) {
+          case LayerFeatureType.ZIP_CODE:
+            const zipcodeFeature: ZipcodeFeature = event.data as ZipcodeFeature;
             this.sidebarDataMode = MapSidebarMode.SINGLE_ZIPCODE_BREAKDOWN;
-            return this.statService.getZipCodeBreakdown(data);
-          }
 
-          this.sidebarDataMode = MapSidebarMode.SINGLE_TRACT_BREAKDOWN;
+            return this.statService.getZipCodeBreakdown(zipcodeFeature.id);
+          case LayerFeatureType.TRACT:
+            const tractFeature: TractFeature = event.data as TractFeature;
+            this.sidebarDataMode = MapSidebarMode.SINGLE_TRACT_BREAKDOWN;
 
-          return this.statService.getTractBreakdown(data);
+            return this.statService.getTractBreakdown(tractFeature.id);
+          case LayerFeatureType.DISTRICT:
+          case PointFeatureType.PARK:
+          case PointFeatureType.COMMUNITY_CENTER:
+          default:
+            const data: PointFeature = event.data as PointFeature;
+            this.sidebarDataMode = MapSidebarMode.FEATURE_POINT_SUMMARY;
+
+            return this.statService.getZipCodeBreakdown(data.zipCode);
         }
-
-        const data: PointFeature = ev.data as PointFeature;
-
-        this.sidebarDataMode = MapSidebarMode.FEATURE_POINT_SUMMARY;
-
-        return this.statService.getZipCodeBreakdown(data.zipCode);
       }),
       tap(response => {
         const genderChartData = ChartDataHelper.getGenderChartData(response);

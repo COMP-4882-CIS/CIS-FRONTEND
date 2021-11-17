@@ -1,7 +1,7 @@
 import { Layer } from "leaflet";
+import {LayerFeature} from "../../types/geo/features/layer";
 
 export interface GeoDataRequest {
-  type: 'tract' | 'zip';
   layer: Layer;
-  id: string
+  feature: LayerFeature;
 }

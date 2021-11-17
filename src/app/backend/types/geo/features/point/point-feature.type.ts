@@ -1,4 +1,4 @@
-import {PointFeatureType} from "./feature-type.enum";
+import {PointFeatureType} from "./point-feature-type.enum";
 
 export interface PointFeature {
   displayName: string;

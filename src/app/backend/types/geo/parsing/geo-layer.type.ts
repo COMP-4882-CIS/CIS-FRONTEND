@@ -1,4 +1,5 @@
 import {Feature} from "geojson";
+import {LatLngBounds} from "leaflet";
 
 export interface GeoLayer {
   _path: {
@@ -6,6 +7,9 @@ export interface GeoLayer {
   };
 
   feature: Feature;
+
+  _bounds: LatLngBounds;
+
   options: {
     fill: boolean
     fillColor: string

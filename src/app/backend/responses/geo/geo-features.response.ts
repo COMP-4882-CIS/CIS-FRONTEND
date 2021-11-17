@@ -1,4 +1,4 @@
-import {GeoJSONObject} from "../../types/geo/geo-json.type";
+import {GeoJSONObject} from "../../types/geo/parsing/geo-json.type";
 
 export class GeoFeaturesResponse {
   data!: GeoJSONObject;
