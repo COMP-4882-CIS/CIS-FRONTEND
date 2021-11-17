@@ -7,6 +7,25 @@ Child Impact Statements - Angular Frontend
 1. First, ensure that you have the [backend](https://github.com/COMP-4882-Capstone-4/Child-Impact-Statements) up and running.
 2. Install the npm dependencies: `npm i`.
 3. Run the application: `npm run start` or `npm run watch`
+4. One can set the backend url for development and production in the files `src/app/environment.ts` and `src/app/environment.prod.ts` respectively:
+
+```typescript
+// Development
+export const environment = {
+  production: false,
+  apiURL: 'http://localhost:3000'
+};
+
+```
+
+```typescript
+// Production
+export const environment = {
+  production: true,
+  apiURL: 'https://cis-backend-comp-4882.herokuapp.com'
+};
+
+```
 
 
 ## Building
