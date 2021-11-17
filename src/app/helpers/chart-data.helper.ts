@@ -1,20 +1,11 @@
 import {BreakdownStatResponse} from "../backend/responses/stat";
 import {ChartData} from "chart.js";
 import {BreakdownStat} from "../backend/types/stat/breakdown-stat.type";
+import {ColorsHelper} from "./colors.helper";
 import colorLib, {Color} from "@kurkle/color";
 
 export class ChartDataHelper {
-
-  static CHART_COLORS = {
-    red: 'rgb(255, 99, 132)',
-    green: 'rgb(75, 192, 192)',
-    blue: 'rgb(54, 162, 235)',
-    purple: 'rgb(153, 102, 255)',
-    grey: 'rgb(201, 203, 207)',
-    orange: 'rgb(255, 159, 64)',
-    yellow: 'rgb(255, 205, 86)',
-  };
-
+  static CHART_COLORS = ColorsHelper.chartColors;
 
   static isPatternOrGradient = (value: any) => value instanceof CanvasGradient || value instanceof CanvasPattern;
 

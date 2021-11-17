@@ -1,30 +1,31 @@
-import {GeoJSON} from "leaflet";
+import {GeoJSON, PathOptions} from "leaflet";
 import {DistrictFeature, TractFeature, ZipcodeFeature} from "../backend/types/geo/features/layer";
-import {ChartDataHelper} from "./chart-data.helper";
+import {LayerFeatureType} from "../backend/types/geo/features/layer/layer-feature-type.enum";
+import {ColorsHelper} from "./colors.helper";
 
 export class LayerHelper {
 
   static stylizePopulationLayer(layer: GeoJSON, maxStats: { maxZip: number, maxTract: number }) {
     layer.setStyle(feature => {
-      const style = {
+      const style: PathOptions = {
         opacity: 1.0,
-        fillOpacity: 1.0
+        fillOpacity: 0.2
       };
 
 
       if (!!feature && !!feature.properties) {
-        let opacity = 0.1;
-
         const layerFeature: ZipcodeFeature | TractFeature = feature.properties;
+        const layerType: LayerFeatureType = (layerFeature instanceof  TractFeature ? LayerFeatureType.TRACT : LayerFeatureType.ZIP_CODE);
         const population = layerFeature.populationUnder18;
 
-        if (feature.properties instanceof TractFeature && population > 0) {
-          opacity = Math.max(Math.min((population / maxStats.maxTract), 0.6), 0.2);
-        } else if (feature.properties instanceof ZipcodeFeature && population > 0) {
-          opacity = Math.max(Math.min((population / maxStats.maxZip), 0.6), 0.2);
+
+        if (layerType === LayerFeatureType.TRACT && population > 0) {
+          style.fillOpacity = Math.max(Math.min((population / maxStats.maxTract), 0.6), 0.2);
+        } else if (layerType === LayerFeatureType.ZIP_CODE && population > 0) {
+          style.fillOpacity = Math.max(Math.min((population / maxStats.maxZip), 0.6), 0.2);
         }
 
-        style.fillOpacity = opacity;
+        style.color = ColorsHelper.getLayerColor(layerType);
       }
 
       return style;
@@ -33,27 +34,24 @@ export class LayerHelper {
 
   static stylizeDistrictLayer(layer: GeoJSON) {
     layer.setStyle(feature => {
-      let color = 'rgb(255, 159, 64)';
 
+      const style: PathOptions = {
+        opacity: 1.0,
+        fillOpacity: 0,
+        interactive: false,
+        weight: 8.0
+      };
 
-      const colors = Object.values(ChartDataHelper.CHART_COLORS);
 
       if (!!feature && !!feature.properties) {
         const layerFeature: DistrictFeature = feature.properties;
         const districtNumber = Number(layerFeature.id);
 
-        if (districtNumber < colors.length) {
-          color = colors[districtNumber - 1];
-        }
-
+        style.color = ColorsHelper.getLayerColor(LayerFeatureType.DISTRICT, districtNumber);
       }
 
 
-      return {
-        opacity: 1.0,
-        fillOpacity: 0,
-        color
-      };
+      return style;
     });
   }
 }
