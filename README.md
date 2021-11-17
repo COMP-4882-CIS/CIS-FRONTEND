@@ -1,28 +1,29 @@
-# CIS
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.9.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 # ng-cis
+
+Child Impact Statements - Angular Frontend
+
+## Setup
+
+1. First, ensure that you have the [backend](https://github.com/COMP-4882-Capstone-4/Child-Impact-Statements) up and running.
+2. Install the npm dependencies: `npm i`.
+3. Run the application: `npm run start` or `npm run watch`
+
+
+## Building
+
+To build the project, please run `npm run build`. 
+
+The resulting files will be available in `dist/CIS`.
+
+## Datasets
+* [Census Tracts](https://data.memphistn.gov/Public-Safety/Census-Tracts/e4xa-n94q) - Memphis Data Hub
+* [Parks](https://data.memphistn.gov/Neighborhoods/City-of-Memphis-Parks-Spatial-Data/aeu5-vwkq) - Memphis Data Hub
+* [Community Centers](https://data.memphistn.gov/Neighborhoods/Community-Centers-Shapefile/hh7a-g7mu) - Memphis Data Hub
+* [City Council Districts](https://data.memphistn.gov/Good-Government/City-Council-Districts-Boundaries/d874-nrqr) - Memphis Data Hub
+* [Libraries](https://data.memphistn.gov/Neighborhoods/Memphis-Public-Libraries-Shapefile/4kk2-hed2) - Memphis Data Hub
+* [ZIP Codes](https://data.memphistn.gov/dataset/Shelby-County-Zip-Codes/98jk-gvpk) - Memphis Data Hub
+
+### Updating Datasets
+
+To update a dataset, visit the links above and click 'Export', selecting the 'GeoJSON' option. 
+Rename and replace the resulting file in `src/assets/data`.
