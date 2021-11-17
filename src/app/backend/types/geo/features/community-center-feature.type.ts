@@ -1,4 +1,5 @@
 import {PointFeature} from "./point-feature.type";
+import {PointFeatureType} from "./feature-type.enum";
 
 export class CommunityCenterFeature implements PointFeature {
   displayName: string;
@@ -6,6 +7,7 @@ export class CommunityCenterFeature implements PointFeature {
   zipCode: string;
   streetAddress: string;
   phoneNumber: string;
+  type: PointFeatureType = PointFeatureType.COMMUNITY_CENTER;
 
   /**
    * @param rawJSON

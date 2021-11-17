@@ -169,10 +169,13 @@ export class MapComponent implements AfterViewInit {
           data: (eventType === 'zip' ? feature.properties['name'] : feature.properties['tract'])
         });
       } else if (!!feature.properties && ['park', 'library', 'community_center'].includes(feature.properties.type)) {
-
         const pointFeatureType = feature.properties.type as PointFeatureType
         const pointFeatureData = FeatureHelper.mapRawDataToFeatureData(pointFeatureType, feature.properties);
-        console.log(pointFeatureData);
+
+        this.popupOpened.emit( {
+          type: pointFeatureData.type,
+          data: pointFeatureData
+        });
 
       } else {
         this.popupOpened.emit(null);

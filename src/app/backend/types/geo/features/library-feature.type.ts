@@ -1,10 +1,12 @@
 import {PointFeature} from "./point-feature.type";
+import {PointFeatureType} from "./feature-type.enum";
 
 export class LibraryFeature implements PointFeature {
   displayName: string;
   streetAddress: string;
   zipCode: string;
   phoneNumber: string;
+  type: PointFeatureType = PointFeatureType.LIBRARY;
 
   /**
    * @param rawJSON

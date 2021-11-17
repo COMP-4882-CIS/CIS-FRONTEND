@@ -22,6 +22,9 @@ import {MatDividerModule} from "@angular/material/divider";
 import {NgChartsModule} from 'ng2-charts';
 import {BreakdownChartComponent} from './components/breakdown-chart/breakdown-chart.component';
 import {MatTabsModule} from "@angular/material/tabs";
+import { PointFeatureSummaryComponent } from './components/point-feature-summary/point-feature-summary.component';
+import { BreakdownSummaryComponent } from './components/breakdown-summary/breakdown-summary.component';
+import { PovertyBreakdownSummaryComponent } from './components/poverty-breakdown-summary/poverty-breakdown-summary.component';
 
 
 @NgModule({
@@ -32,6 +35,9 @@ import {MatTabsModule} from "@angular/material/tabs";
     MapBoxComponent,
     MapSidebarComponent,
     BreakdownChartComponent,
+    PointFeatureSummaryComponent,
+    BreakdownSummaryComponent,
+    PovertyBreakdownSummaryComponent,
   ],
   imports: [
     BrowserModule,
