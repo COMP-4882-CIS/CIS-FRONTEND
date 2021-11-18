@@ -1,8 +1,8 @@
 import {AfterViewInit, Component, EventEmitter, Output} from '@angular/core';
 import * as L from 'leaflet';
-import {GeoJSON, Layer, PopupEvent} from 'leaflet';
+import {GeoJSON, Layer, LeafletEvent, PopupEvent} from 'leaflet';
 import {map as rxMap, switchMap, tap} from "rxjs/operators";
-import {Feature, Geometry} from "geojson";
+import {Feature} from "geojson";
 import {FeatureHelper, LayerHelper, PopupHelper} from "../../helpers";
 import {DistrictFeature, LayerFeature, TractFeature, ZipcodeFeature} from "../../backend/types/geo/features/layer";
 import {LayerFeatureType} from "../../backend/types/geo/features/layer/layer-feature-type.enum";
@@ -10,9 +10,9 @@ import {PointFeatureType} from "../../backend/types/geo/features/point/point-fea
 import {GeoTractService, StatService} from "../../backend/services";
 import {GeoDataRequest} from "../../backend/requests/geo";
 import {GeoEvent, GeoLayer} from "../../backend/types/geo";
-import 'src/assets/leaflet/SmoothWheelZoom.js';
 import {PointFeature} from "../../backend/types/geo/features/point";
-
+import 'src/assets/leaflet/SmoothWheelZoom.js';
+import '../../../../node_modules/leaflet-iconmaterial/dist/leaflet.icon-material.js';
 
 @Component({
   selector: 'app-map',
@@ -83,10 +83,7 @@ export class MapComponent implements AfterViewInit {
 
     this.map = L.map('map', mapConfig);
 
-    this.districtsGeoJSON = L.geoJSON(undefined, {
-      interactive: false,
-      style: {color: 'rgb(255, 159, 64)', fillOpacity: 0, weight: 8, opacity: 1.0}
-    })
+    this.districtsGeoJSON = L.geoJSON()
       .bindPopup(layer => PopupHelper.bindLayerPopup(LayerFeatureType.DISTRICT, layer))
       .addTo(this.map);
 
@@ -94,47 +91,13 @@ export class MapComponent implements AfterViewInit {
       .bindPopup(layer => PopupHelper.bindLayerPopup(LayerFeatureType.TRACT, layer))
       .addTo(this.map);
 
-    this.zipCodesGeoJSON = L.geoJSON(undefined, {style: {color: 'red'}})
+    this.zipCodesGeoJSON = L.geoJSON()
       .bindPopup(layer => PopupHelper.bindLayerPopup(LayerFeatureType.ZIP_CODE, layer))
       .addTo(this.map);
 
-    this.parksGeoJSON = L.geoJSON(undefined, {
-      pointToLayer: (feature, latlng) => {
-        const parkIcon = L.icon({
-          iconUrl: 'assets/icons/park-icon.png',
-          iconSize: [40, 40],
-        });
-
-        return L.marker(latlng, {icon: parkIcon})
-      },
-      filter: (feature: Feature<Geometry, any>): boolean => {
-        return feature.properties.hasOwnProperty('park_nam_1') && !!feature.properties.park_nam_1
-      }
-    }).bindPopup(layer => PopupHelper.bindPointPopup(PointFeatureType.PARK, layer))
-      .addTo(this.map);
-
-    this.librariesGeoJSON = L.geoJSON(undefined, {
-      pointToLayer: (feature, latlng) => {
-        const libraryIcon = L.icon({
-          iconUrl: 'assets/icons/book.png',
-          iconSize: [40, 40], // size of the icon
-        });
-        return L.marker(latlng, {icon: libraryIcon})
-      },
-    }).bindPopup(layer => PopupHelper.bindPointPopup(PointFeatureType.LIBRARY, layer))
-      .addTo(this.map);
-
-    this.centersGeoJSON = L.geoJSON(undefined, {
-      pointToLayer: (feature, latlng) => {
-        const centersIcon = L.icon({
-          iconUrl: 'assets/icons/center.png',
-          iconSize: [40, 40],
-        });
-
-        return L.marker(latlng, {icon: centersIcon})
-      },
-    }).bindPopup(layer => PopupHelper.bindPointPopup(PointFeatureType.COMMUNITY_CENTER, layer))
-      .addTo(this.map);
+    this.parksGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.PARK).addTo(this.map);
+    this.librariesGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.LIBRARY).addTo(this.map);
+    this.centersGeoJSON =FeatureHelper.createGeoJSON(PointFeatureType.COMMUNITY_CENTER).addTo(this.map);
 
     this.fetchMapData(this.map);
     this.attachEvents(this.map);
@@ -151,7 +114,7 @@ export class MapComponent implements AfterViewInit {
       if (!!this.map) {
         this.map.invalidateSize({animate: true});
       }
-    }, 150);
+    }, 350);
   }
 
   /**
@@ -161,6 +124,10 @@ export class MapComponent implements AfterViewInit {
    * @private
    */
   private attachEvents(map: L.Map) {
+    const parks: GeoJSON = this.parksGeoJSON!;
+    const libraries: GeoJSON = this.librariesGeoJSON!;
+    const centers: GeoJSON = this.centersGeoJSON!;
+
     map.on('popupopen', (e: PopupEvent) => {
       const feature = (e.popup as unknown as { _source: any })._source.feature as Feature;
 
@@ -184,6 +151,10 @@ export class MapComponent implements AfterViewInit {
       this.refreshCalloutLabels();
       this.districtsGeoJSON?.bringToFront();
     });
+
+    parks.on('click', (event) => this.handleFeatureClick(event));
+    centers.on('click', (event) => this.handleFeatureClick(event));
+    libraries.on('click', (event) => this.handleFeatureClick(event));
   }
 
   /**
@@ -354,7 +325,7 @@ export class MapComponent implements AfterViewInit {
         const district: DistrictFeature = layer.feature.properties as DistrictFeature;
 
         rawLayer.bindTooltip(
-            `District ${district.id}`,
+          `District ${district.id}`,
           {
             permanent: true,
             direction: 'auto',
@@ -363,6 +334,22 @@ export class MapComponent implements AfterViewInit {
           });
       }
     })
+  }
+
+  /**
+   * Handle a click event on a feature
+   * @param event
+   * @private
+   */
+  private handleFeatureClick(event: LeafletEvent) {
+    const feature: PointFeature = event.sourceTarget.feature.properties;
+
+    setTimeout(() => {
+      this.popupOpened.emit({
+        type: feature.type,
+        data: feature
+      })
+    }, 100);
   }
 
 }
