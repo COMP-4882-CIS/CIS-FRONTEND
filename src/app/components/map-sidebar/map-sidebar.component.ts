@@ -1,20 +1,10 @@
 import {Component, Input} from '@angular/core';
-import {filter, switchMap, tap} from "rxjs/operators";
-import {ChartData} from "chart.js";
 import {TitleCasePipe} from "@angular/common";
-import {ChartDataHelper} from "../../helpers";
-import {resettable} from "../../lib/resettable.rxjs";
-import {DistrictFeature, LayerFeature, TractFeature, ZipcodeFeature} from "../../backend/types/geo/features/layer";
-import {PointFeatureType} from "../../backend/types/geo/features/point/point-feature-type.enum";
-import {Observable, of, ReplaySubject, Subject, Subscription} from "rxjs";
-import {BreakdownStat} from "../../backend/types/stat/breakdown-stat.type";
+import {DistrictFeature, TractFeature, ZipcodeFeature} from "../../backend/types/geo/features/layer";
+import {Subject} from "rxjs";
 import {PointFeature} from "../../backend/types/geo/features/point";
-import {BreakdownStatResponse} from "../../backend/responses/stat";
-import {LayerFeatureType} from "../../backend/types/geo/features/layer/layer-feature-type.enum";
 import {MapSidebarMode} from "./map-sidebar-mode.enum";
-import {LandmarkService, StatService} from "../../backend/services";
-import {GeoEvent} from "../../backend/types/geo";
-import {LandmarkSummaryResponse} from "../../backend/responses/landmark/landmark-summary.response";
+import {MapSidebarData} from "./map-sidebar-data.type";
 
 
 @Component({
@@ -25,91 +15,69 @@ import {LandmarkSummaryResponse} from "../../backend/responses/landmark/landmark
 export class MapSidebarComponent {
 
   @Input()
-  set data(newValue: GeoEvent | null) {
-    this._overallChartData.reset();
-    this._genderChartData.reset();
-    this._povertyChartData.reset();
-    this._landmarksSummary.reset();
-
-    if (!!newValue) {
-      this.reloadData();
-      this.currentData.next(newValue);
-    }
-  }
+  didError = false;
 
   @Input()
   sidebarDataMode: MapSidebarMode = MapSidebarMode.SINGLE_ZIPCODE_BREAKDOWN;
 
-  overallChartData: Observable<ChartData>;
-  povertyChartData: Observable<ChartData>;
-  genderChartData: Observable<ChartData>;
-  landmarksSummary: Observable<LandmarkSummaryResponse>;
+  @Input()
+  set data(newValue: MapSidebarData | null | undefined) {
+    if (!!newValue) {
+      this.currentData.next(newValue);
+    }
+  }
 
-  didError = false;
-  currentData: Subject<GeoEvent> = new Subject<GeoEvent>();
-  populationData: Subject<BreakdownStatResponse | null> = new Subject<BreakdownStatResponse | null>();
+  currentData: Subject<MapSidebarData> = new Subject<MapSidebarData>();
 
-
-  private _overallChartData = resettable(() => new ReplaySubject<ChartData>(1));
-  private _povertyChartData = resettable(() => new ReplaySubject<ChartData>(1));
-  private _genderChartData = resettable(() => new ReplaySubject<ChartData>(1));
-
-  private _landmarksSummary = resettable(() => new ReplaySubject<LandmarkSummaryResponse>(1));
-
-  private populationSub?: Subscription;
   private titleCasePipe: TitleCasePipe = new TitleCasePipe();
 
-  constructor(private statService: StatService, private landmarkService: LandmarkService) {
-    this.overallChartData = this._overallChartData.observable;
-    this.povertyChartData = this._povertyChartData.observable;
-    this.genderChartData = this._genderChartData.observable;
-    this.landmarksSummary = this._landmarksSummary.observable;
+  constructor() {
   }
 
 
-  getTitle(event: GeoEvent): string {
-    if (Object.values(LayerFeatureType).includes(event.type as LayerFeatureType)) {
-      return (event.data as LayerFeature).id;
+  getTitle(data: MapSidebarData): string {
+    switch (this.sidebarDataMode) {
+      case MapSidebarMode.FEATURE_POINT_SUMMARY:
+        return data.pointFeatureData!.displayName;
+      case MapSidebarMode.SINGLE_ZIPCODE_BREAKDOWN:
+      case MapSidebarMode.SINGLE_TRACT_BREAKDOWN:
+        return data.layerFeatureData!.id;
+      default:
+        return data.title || 'No title';
+    }
+  }
+
+  getDistrict(data: MapSidebarData): DistrictFeature | undefined {
+    switch (this.sidebarDataMode) {
+      case MapSidebarMode.SINGLE_TRACT_BREAKDOWN:
+        return (data.layerFeatureData! as TractFeature).district;
+      case MapSidebarMode.SINGLE_ZIPCODE_BREAKDOWN:
+        return (data.layerFeatureData! as ZipcodeFeature).district;
+      default:
+        return undefined;
+    }
+  }
+
+  getSubtitle(data: MapSidebarData) {
+    switch (this.sidebarDataMode) {
+      case MapSidebarMode.SINGLE_ZIPCODE_BREAKDOWN:
+        return 'ZIP Code';
+      case MapSidebarMode.SINGLE_TRACT_BREAKDOWN:
+        return 'Census Tract';
+      case MapSidebarMode.MULTI_TRACT_BREAKDOWN:
+        return 'Census Tracts';
+      case MapSidebarMode.MULTI_ZIPCODE_BREAKDOWN:
+        return 'ZIP Codes';
+      case MapSidebarMode.FEATURE_POINT_SUMMARY:
+        const pointFeatureType = data.pointFeatureData!.type.toString();
+        return this.titleCasePipe.transform(pointFeatureType.replace('_', ' '));
     }
 
-    return (event.data as PointFeature).displayName;
+    return '';
   }
 
-  getDistrict(event: GeoEvent): DistrictFeature | undefined {
-    if (event.type === LayerFeatureType.ZIP_CODE) {
-      return (event.data as ZipcodeFeature).district;
-    } else if (event.type === LayerFeatureType.TRACT) {
-      return (event.data as TractFeature).district;
-    }
-
-    return undefined;
-  }
-
-  getSubtitle(data: GeoEvent) {
-    if (Object.values(LayerFeatureType).includes(data.type as LayerFeatureType)) {
-      switch ((data.type as LayerFeatureType)) {
-        case LayerFeatureType.DISTRICT:
-          return 'District';
-        case LayerFeatureType.TRACT:
-          return 'Census Tract';
-        case LayerFeatureType.ZIP_CODE:
-          return 'ZIP Code';
-      }
-    }
-
-    return this.titleCasePipe.transform(data.type.toString().replace('_', ' '));
-  }
-
-  getPointFeatureData(event: GeoEvent): PointFeature {
-    return (event.data as PointFeature);
-  }
-
-  getStat(response: BreakdownStatResponse): BreakdownStat | null {
-    if (response.stats.length > 0) {
-      return response.stats[0];
-    }
-
-    return null;
+  getPointFeatureData(data: MapSidebarData): PointFeature {
+    return (data.pointFeatureData as PointFeature);
   }
 
   get isMulti(): boolean {
@@ -120,90 +88,20 @@ export class MapSidebarComponent {
     return this.sidebarDataMode === MapSidebarMode.FEATURE_POINT_SUMMARY;
   }
 
-  showGenderChart(response: BreakdownStatResponse | null) {
-    if (!!response) {
-      return this.getStat(response)!.populationUnder18 > 0
+  showGenderChart(data: MapSidebarData) {
+    if (!!data.genderChartData) {
+      return data.stat.populationUnder18 > 0
     }
+
     return false;
   }
 
-  showPovertyChart(response: BreakdownStatResponse | null) {
-    if (!!response) {
-      return (
-        this.getStat(response)!.populationInPovertyUnder6 > 0 ||
-        this.getStat(response)!.populationInPoverty6To11 > 0 ||
-        this.getStat(response)!.populationInPoverty12To17 > 0
-      )
-    }
-    return false;
+  showPovertyChart(data: MapSidebarData) {
+    return (
+      data.stat.populationInPovertyUnder6 > 0 ||
+      data.stat.populationInPoverty6To11 > 0 ||
+      data.stat.populationInPoverty12To17 > 0
+    )
   }
 
-  private reloadData() {
-    this.didError = false;
-    this.populationData.next(null);
-
-    if (!!this.populationSub) {
-      this.populationSub.unsubscribe();
-    }
-
-
-    this.populationSub = this.currentData.pipe(
-      tap(event => {
-        if (event.data instanceof ZipcodeFeature) {
-          this.landmarkService.getLandmarksSummary((event.data as LayerFeature).id).subscribe(data => {
-            this._landmarksSummary.subject.next(data);
-          });
-        }
-      }),
-      switchMap(event => {
-        switch (event.type) {
-          case LayerFeatureType.ZIP_CODE:
-            const zipcodeFeature: ZipcodeFeature = event.data as ZipcodeFeature;
-            this.sidebarDataMode = MapSidebarMode.SINGLE_ZIPCODE_BREAKDOWN;
-
-            return this.statService.getZipCodeBreakdown(zipcodeFeature.id);
-          case LayerFeatureType.TRACT:
-            const tractFeature: TractFeature = event.data as TractFeature;
-            this.sidebarDataMode = MapSidebarMode.SINGLE_TRACT_BREAKDOWN;
-
-            return this.statService.getTractBreakdown(tractFeature.id);
-          case LayerFeatureType.DISTRICT:
-          case PointFeatureType.PARK:
-          case PointFeatureType.COMMUNITY_CENTER:
-          default:
-            const data: PointFeature = event.data as PointFeature;
-            this.sidebarDataMode = MapSidebarMode.FEATURE_POINT_SUMMARY;
-
-            return this.statService.getZipCodeBreakdown(data.zipCode);
-        }
-      }),
-      tap(response => {
-        const genderChartData = ChartDataHelper.getGenderChartData(response);
-
-        if (!!genderChartData) {
-          this._genderChartData.subject.next(genderChartData);
-        } else {
-          this.didError = true;
-        }
-      }),
-      tap(response => {
-        const povertyChartData = ChartDataHelper.getPovertyChartData(response);
-
-        if (!!povertyChartData) {
-          this._povertyChartData.subject.next(povertyChartData);
-        } else {
-          this.didError = true;
-        }
-      }),
-      tap(response => {
-        const overallChartData = ChartDataHelper.getOverallChartData(response);
-
-        if (!!overallChartData) {
-          this._overallChartData.subject.next(overallChartData);
-        } else {
-          this.didError = true;
-        }
-      }),
-    ).subscribe(this.populationData);
-  }
 }

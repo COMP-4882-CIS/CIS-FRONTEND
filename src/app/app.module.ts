@@ -26,7 +26,6 @@ import { PointFeatureSummaryComponent } from './components/point-feature-summary
 import { BreakdownSummaryComponent } from './components/breakdown-summary/breakdown-summary.component';
 import { PovertyBreakdownSummaryComponent } from './components/poverty-breakdown-summary/poverty-breakdown-summary.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,

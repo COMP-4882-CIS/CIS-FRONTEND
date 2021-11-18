@@ -1,24 +1,24 @@
-<ng-container *ngIf="currentData|async as event">
+<ng-container *ngIf="currentData|async as data">
   <div class="map-sidebar">
     <div class="single-breakdown" *ngIf="!isFeaturePoint && !isMulti">
       <mat-toolbar>
-        <h1 class="title">{{getTitle(event)}} - <span>{{getSubtitle(event)}}</span></h1>
+        <h1 class="title">{{getTitle(data)}} - <span>{{getSubtitle(data)}}</span></h1>
       </mat-toolbar>
       <ng-container *ngIf="!didError; else errorFetchingStats">
         <mat-tab-group dynamicHeight>
           <mat-tab label="Population">
             <div class="inner-sidebar">
-              <div class="stats" *ngIf="populationData|async as populationData; else loadingStats">
-                <app-breakdown-chart *ngIf="showGenderChart(populationData)" [chartData]="genderChartData|async"></app-breakdown-chart>
-                <app-breakdown-summary title="Population" [populationStats]="populationData" [landmarksSummary]="landmarksSummary" [district]="getDistrict(event)"></app-breakdown-summary>
+              <div class="stats">
+                <app-breakdown-chart *ngIf="showGenderChart(data)" [chartData]="data.genderChartData"></app-breakdown-chart>
+                <app-breakdown-summary title="Population" [populationStats]="data.stat" [landmarksSummary]="data.landmarks" [district]="getDistrict(data)"></app-breakdown-summary>
               </div>
             </div>
           </mat-tab>
           <mat-tab label="Poverty">
             <div class="inner-sidebar">
-              <div class="stats" *ngIf="populationData|async as populationData; else loadingStats">
-                <app-breakdown-chart *ngIf="showPovertyChart(populationData)" [chartData]="povertyChartData|async"></app-breakdown-chart>
-                <app-poverty-breakdown-summary title="Poverty" [populationStats]="populationData"></app-poverty-breakdown-summary>
+              <div class="stats">
+                <app-breakdown-chart *ngIf="showPovertyChart(data)" [chartData]="data.povertyChartData"></app-breakdown-chart>
+                <app-poverty-breakdown-summary title="Poverty" [populationStats]="data.stat"></app-poverty-breakdown-summary>
               </div>
             </div>
           </mat-tab>
@@ -28,16 +28,14 @@
 
     <div class="feature-point-summary" *ngIf="isFeaturePoint">
       <mat-toolbar>
-        <h1 class="title">{{getTitle(event)}}</h1>
+        <h1 class="title">{{getTitle(data)}}</h1>
       </mat-toolbar>
-      <ng-container *ngIf="populationData|async as populationData; else loadingStats">
         <ng-container *ngIf="!didError; else errorFetchingStats">
-          <app-breakdown-chart [chartData]="overallChartData|async"></app-breakdown-chart>
-          <app-point-feature-summary [pointFeature]="getPointFeatureData(event)"
-                                     [typeTitle]="getTitle(event)"></app-point-feature-summary>
-          <app-breakdown-summary title="Servicing Population" [populationStats]="populationData"></app-breakdown-summary>
+          <app-breakdown-chart [chartData]="data.overallChartData"></app-breakdown-chart>
+          <app-point-feature-summary [pointFeature]="getPointFeatureData(data)"
+                                     [typeTitle]="getTitle(data)"></app-point-feature-summary>
+          <app-breakdown-summary title="Servicing Population" [populationStats]="data.stat"></app-breakdown-summary>
         </ng-container>
-      </ng-container>
     </div>
 
     <ng-template #errorFetchingStats>

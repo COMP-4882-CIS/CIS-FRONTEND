@@ -1,9 +1,7 @@
 import {Component, Input} from '@angular/core';
-import {BreakdownStatResponse} from "../../backend/responses/stat";
 import {BreakdownStat} from "../../backend/types/stat/breakdown-stat.type";
 import {DistrictFeature} from "../../backend/types/geo/features/layer";
 import {LandmarkSummaryResponse} from "../../backend/responses/landmark/landmark-summary.response";
-import {Observable} from "rxjs";
 
 @Component({
   selector: 'app-breakdown-summary',
@@ -13,7 +11,7 @@ import {Observable} from "rxjs";
 export class BreakdownSummaryComponent {
 
   @Input()
-  set populationStats(newValue: BreakdownStatResponse | null) {
+  set populationStats(newValue: BreakdownStat | null) {
     if (!!newValue) {
       this._populationStats = newValue;
       this.processStats();
@@ -21,13 +19,11 @@ export class BreakdownSummaryComponent {
   }
 
   @Input()
-  set landmarksSummary(newValue: Observable<LandmarkSummaryResponse>) {
+  set landmarksSummary(newValue: LandmarkSummaryResponse | undefined) {
     if (!!newValue) {
-      newValue.subscribe(data => {
-        console.log('AAA', data);
-        this._landmarksSummary = data;
-        this.processLandmarks();
-      })
+      console.log('AAA', newValue);
+      this._landmarksSummary = newValue;
+      this.processLandmarks();
     }
   }
 
@@ -49,15 +45,13 @@ export class BreakdownSummaryComponent {
 
   showLandmarksSummary = false;
 
-  private _populationStats!: BreakdownStatResponse;
+  private _populationStats!: BreakdownStat;
   private _landmarksSummary?: LandmarkSummaryResponse;
 
   private processStats() {
-    const statData = this._populationStats;
+    const stat = this._populationStats;
 
-    if (!!statData && statData.stats.length > 0) {
-      const stat = statData.stats[0] as BreakdownStat;
-
+    if (!!stat) {
       this.underEighteenTotal = stat.populationUnder18;
       this.underEighteenMaleTotal = stat.populationUnder18Male;
       this.underEighteenFemaleTotal = stat.populationUnder18Female;
