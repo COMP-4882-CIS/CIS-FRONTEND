@@ -1,7 +1,13 @@
 import {PointFeatureType} from "../backend/types/geo/features/point/point-feature-type.enum";
 import {GeoLayer} from "../backend/types/geo";
 import {LatLng, Layer} from "leaflet";
-import {CommunityCenterFeature, LibraryFeature, ParkFeature, PointFeature} from "../backend/types/geo/features/point";
+import {
+  CommunityCenterFeature,
+  LibraryFeature,
+  ParkFeature,
+  PointFeature,
+  SchoolFeature
+} from "../backend/types/geo/features/point";
 import {DistrictFeature, LayerFeature, TractFeature, ZipcodeFeature} from "../backend/types/geo/features/layer";
 import {LayerFeatureType} from "../backend/types/geo/features/layer/layer-feature-type.enum";
 import {Feature, Geometry} from "geojson";
@@ -40,6 +46,10 @@ export class FeatureHelper {
     center: L.icon({
       iconUrl: 'assets/icons/community_center.png',
       iconSize: [31, 42],
+    }),
+    school: L.icon({
+      iconUrl: 'assets/icons/school.png',
+      iconSize: [31, 42],
     })
   }
 
@@ -60,6 +70,9 @@ export class FeatureHelper {
       case PointFeatureType.COMMUNITY_CENTER:
         icon = this.icons.center;
         break;
+      case PointFeatureType.SCHOOL:
+        icon = this.icons.school;
+        break;
     }
 
     return L.marker(coordinates, {icon, riseOnHover: true});
@@ -73,6 +86,8 @@ export class FeatureHelper {
         return new CommunityCenterFeature(data);
       case PointFeatureType.PARK:
         return new ParkFeature(data);
+      case PointFeatureType.SCHOOL:
+        return new SchoolFeature(data);
     }
   }
 

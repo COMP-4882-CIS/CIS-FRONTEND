@@ -9,7 +9,8 @@ export class LayerHelper {
     layer.setStyle(feature => {
       const style: PathOptions = {
         opacity: 1.0,
-        fillOpacity: 0.2
+        fillOpacity: 0.2,
+        weight: 3.0
       };
 
 
@@ -20,9 +21,9 @@ export class LayerHelper {
 
 
         if (layerType === LayerFeatureType.TRACT && population > 0) {
-          style.fillOpacity = Math.max(Math.min((population / maxStats.maxTract), 0.6), 0.4);
+          style.fillOpacity = Math.max(Math.min((population / maxStats.maxTract), 0.6), 0.5);
         } else if (layerType === LayerFeatureType.ZIP_CODE && population > 0) {
-          style.fillOpacity = Math.max(Math.min((population / maxStats.maxZip), 0.6), 0.4);
+          style.fillOpacity = Math.max(Math.min((population / maxStats.maxZip), 0.6), 0.5);
         }
 
         style.color = ColorsHelper.getLayerColor(layerType);
