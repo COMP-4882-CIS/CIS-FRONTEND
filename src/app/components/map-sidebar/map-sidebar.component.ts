@@ -5,6 +5,10 @@ import {Subject} from "rxjs";
 import {PointFeature} from "../../backend/types/geo/features/point";
 import {MapSidebarMode} from "./map-sidebar-mode.enum";
 import {MapSidebarData} from "./map-sidebar-data.type";
+import {filter} from "rxjs/operators";
+import {BreakdownStat} from "../../backend/types/stat/breakdown-stat.type";
+import {ReportsService} from "../../reports/reports.service";
+import {ThemePalette} from "@angular/material/core/common-behaviors/color";
 
 
 @Component({
@@ -22,18 +26,64 @@ export class MapSidebarComponent {
 
   @Input()
   set data(newValue: MapSidebarData | null | undefined) {
-    if (!!newValue) {
-      this.currentData.next(newValue);
-    }
+      if (!!newValue) {
+        this.currentData$.next(newValue);
+        this.isLoading = false;
+      } else {
+        this.isLoading = true;
+      }
   }
 
-  currentData: Subject<MapSidebarData> = new Subject<MapSidebarData>();
+  isLoading = true;
+  currentData$: Subject<MapSidebarData> = new Subject<MapSidebarData>();
 
   private titleCasePipe: TitleCasePipe = new TitleCasePipe();
 
-  constructor() {
+  constructor(private reportsService: ReportsService) {
+    this.currentData$.pipe(
+      filter(data => !!data)
+    ).subscribe(data => {
+      if (!!data && !!data.mode) {
+        this.sidebarDataMode = data?.mode;
+      }
+    })
   }
 
+  toggleReport(data: MapSidebarData) {
+    if (this.hasEntry(data)) {
+      this.removeReport(data);
+    } else {
+      this.appendReport(data);
+    }
+  }
+
+  appendReport(data: MapSidebarData) {
+    this.reportsService.createEntry(this.getTitle(data), data);
+  }
+
+  removeReport(data: MapSidebarData) {
+    this.reportsService.removeEntryByID(this.getTitle(data));
+  }
+
+  hasEntry(data: MapSidebarData) {
+    return this.reportsService.hasEntry(this.getTitle(data));
+  }
+
+  getActionIcon(data: MapSidebarData) {
+    if (this.hasEntry(data)) {
+      return 'delete';
+    }
+
+    return 'add_box';
+  }
+
+  getActionColor(data: MapSidebarData): ThemePalette {
+    if (this.hasEntry(data)) {
+      return 'warn';
+    }
+
+    return 'primary';
+  }
 
   getTitle(data: MapSidebarData): string {
     switch (this.sidebarDataMode) {
@@ -102,6 +152,10 @@ export class MapSidebarComponent {
       data.stat.populationInPoverty6To11 > 0 ||
       data.stat.populationInPoverty12To17 > 0
     )
+  }
+
+  getStat(data: MapSidebarData): BreakdownStat {
+    return data.stat
   }
 
 }

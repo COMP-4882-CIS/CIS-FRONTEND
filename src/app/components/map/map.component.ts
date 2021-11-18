@@ -12,7 +12,6 @@ import {GeoDataRequest} from "../../backend/requests/geo";
 import {GeoEvent, GeoLayer} from "../../backend/types/geo";
 import {PointFeature} from "../../backend/types/geo/features/point";
 import 'src/assets/leaflet/SmoothWheelZoom.js';
-import '../../../../node_modules/leaflet-iconmaterial/dist/leaflet.icon-material.js';
 
 @Component({
   selector: 'app-map',
@@ -68,7 +67,6 @@ export class MapComponent implements AfterViewInit {
       minZoom: 11,
       zoomControl: true,
       preferCanvas: true,
-
     }
 
     if (navigator.platform.indexOf('Mac') === 0) {

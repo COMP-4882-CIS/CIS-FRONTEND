@@ -19,9 +19,6 @@
     "lib": [
       "es2018",
       "dom"
-    ],
-    "typeRoots": [
-      "src/typings.d.ts"
     ]
   },
   "angularCompilerOptions": {

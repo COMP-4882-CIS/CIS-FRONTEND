@@ -23,4 +23,8 @@ export class Report {
   hasEntry(id: string): boolean {
    return this.entries.findIndex(entry => entry.id === id) >= 0;
   }
+
+  getEntryByID(id: string): ReportEntry | null {
+    return this.entries.find(entry => entry.id === id) || null;
+  }
 }

@@ -4,9 +4,7 @@ import {LatLng, Layer} from "leaflet";
 import {CommunityCenterFeature, LibraryFeature, ParkFeature, PointFeature} from "../backend/types/geo/features/point";
 import {DistrictFeature, LayerFeature, TractFeature, ZipcodeFeature} from "../backend/types/geo/features/layer";
 import {LayerFeatureType} from "../backend/types/geo/features/layer/layer-feature-type.enum";
-import {ColorsHelper} from "./colors.helper";
 import {Feature, Geometry} from "geojson";
-import '../../../node_modules/leaflet-iconmaterial/dist/leaflet.icon-material.js';
 import * as L from "leaflet";
 
 export class FeatureHelper {
@@ -27,21 +25,21 @@ export class FeatureHelper {
   };
 
   static icons = {
-    default: L.IconMaterial.icon({
-      icon: 'radio_button_unchecked',
-      markerColor: 'black',
+    default: L.icon({
+      iconUrl: 'assets/icons/default.png',
+      iconSize: [31, 42],
     }),
-    library: L.IconMaterial.icon({
-      icon: 'local_library',
-      markerColor: ColorsHelper.featureMarkerColors.library,
+    library:  L.icon({
+      iconUrl: 'assets/icons/library.png',
+      iconSize: [31, 42],
     }),
-    park: L.IconMaterial.icon({
-      icon: 'park',
-      markerColor: ColorsHelper.featureMarkerColors.park,
+    park: L.icon({
+      iconUrl: 'assets/icons/park.png',
+      iconSize: [31, 42],
     }),
-    center: L.IconMaterial.icon({
-      icon: 'people',
-      markerColor: ColorsHelper.featureMarkerColors.center,
+    center: L.icon({
+      iconUrl: 'assets/icons/community_center.png',
+      iconSize: [31, 42],
     })
   }
 

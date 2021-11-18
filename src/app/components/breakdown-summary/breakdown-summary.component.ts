@@ -21,7 +21,6 @@ export class BreakdownSummaryComponent {
   @Input()
   set landmarksSummary(newValue: LandmarkSummaryResponse | undefined) {
     if (!!newValue) {
-      console.log('AAA', newValue);
       this._landmarksSummary = newValue;
       this.processLandmarks();
     }

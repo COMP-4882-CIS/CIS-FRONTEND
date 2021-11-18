@@ -1,24 +1,26 @@
-<ng-container *ngIf="currentData|async as data">
-  <div class="map-sidebar">
+<div class="map-sidebar">
+<ng-container *ngIf="currentData$|async as currentData; else loadingStats">
+  <ng-container *ngIf="!isLoading; else loadingStats">
     <div class="single-breakdown" *ngIf="!isFeaturePoint && !isMulti">
       <mat-toolbar>
-        <h1 class="title">{{getTitle(data)}} - <span>{{getSubtitle(data)}}</span></h1>
+        <h1 class="title">{{getTitle(currentData)}} - <span>{{getSubtitle(currentData)}}</span></h1>
+        <button mat-icon-button [color]="getActionColor(currentData)" (click)="toggleReport(currentData)"><mat-icon>{{getActionIcon(currentData)}}</mat-icon></button>
       </mat-toolbar>
       <ng-container *ngIf="!didError; else errorFetchingStats">
         <mat-tab-group dynamicHeight>
           <mat-tab label="Population">
             <div class="inner-sidebar">
               <div class="stats">
-                <app-breakdown-chart *ngIf="showGenderChart(data)" [chartData]="data.genderChartData"></app-breakdown-chart>
-                <app-breakdown-summary title="Population" [populationStats]="data.stat" [landmarksSummary]="data.landmarks" [district]="getDistrict(data)"></app-breakdown-summary>
+                <app-breakdown-chart *ngIf="showGenderChart(currentData)" [chartData]="currentData.genderChartData"></app-breakdown-chart>
+                <app-breakdown-summary title="Population" [populationStats]="getStat(currentData)" [landmarksSummary]="currentData.landmarks" [district]="getDistrict(currentData)"></app-breakdown-summary>
               </div>
             </div>
           </mat-tab>
           <mat-tab label="Poverty">
             <div class="inner-sidebar">
               <div class="stats">
-                <app-breakdown-chart *ngIf="showPovertyChart(data)" [chartData]="data.povertyChartData"></app-breakdown-chart>
-                <app-poverty-breakdown-summary title="Poverty" [populationStats]="data.stat"></app-poverty-breakdown-summary>
+                <app-breakdown-chart *ngIf="showPovertyChart(currentData)" [chartData]="currentData.povertyChartData"></app-breakdown-chart>
+                <app-poverty-breakdown-summary title="Poverty" [populationStats]="getStat(currentData)"></app-poverty-breakdown-summary>
               </div>
             </div>
           </mat-tab>
@@ -28,23 +30,25 @@
 
     <div class="feature-point-summary" *ngIf="isFeaturePoint">
       <mat-toolbar>
-        <h1 class="title">{{getTitle(data)}}</h1>
+        <h1 class="title">{{getTitle(currentData)}}</h1>
       </mat-toolbar>
         <ng-container *ngIf="!didError; else errorFetchingStats">
-          <app-breakdown-chart [chartData]="data.overallChartData"></app-breakdown-chart>
-          <app-point-feature-summary [pointFeature]="getPointFeatureData(data)"
-                                     [typeTitle]="getTitle(data)"></app-point-feature-summary>
-          <app-breakdown-summary title="Servicing Population" [populationStats]="data.stat"></app-breakdown-summary>
+          <app-breakdown-chart [chartData]="currentData.overallChartData"></app-breakdown-chart>
+          <app-point-feature-summary [pointFeature]="getPointFeatureData(currentData)"
+                                     [typeTitle]="getTitle(currentData)"></app-point-feature-summary>
+          <app-breakdown-summary title="Servicing Population" [populationStats]="getStat(currentData)"></app-breakdown-summary>
         </ng-container>
     </div>
 
     <ng-template #errorFetchingStats>
       <h1>Could not fetch stats!</h1>
     </ng-template>
-    <ng-template #loadingStats>
-      <div class="loading-shade">
-        <mat-spinner diameter="40"></mat-spinner>
-      </div>
-    </ng-template>
-  </div>
+  </ng-container>
 </ng-container>
+
+<ng-template #loadingStats>
+  <div class="loading-shade">
+    <mat-spinner diameter="40"></mat-spinner>
+  </div>
+</ng-template>
+</div>

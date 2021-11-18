@@ -41,6 +41,14 @@ export class ReportsService {
     return this._currentReport.hasEntry(id);
   }
 
+  removeEntryByID(id: string) {
+    const entry = this._currentReport.getEntryByID(id);
+
+    if (!!entry) {
+      this.removeEntry(entry);
+    }
+  }
+
   removeEntry(entry: ReportEntry) {
     const beforeLength = Number(this._currentReport.entries.length);
 

@@ -1,6 +1,6 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {GeoEvent} from "../../backend/types/geo";
-import {Observable, of, Subject} from "rxjs";
+import {Observable, of, ReplaySubject, Subject, Subscription} from "rxjs";
 import {map, switchMap} from "rxjs/operators";
 import {LayerFeature, TractFeature, ZipcodeFeature} from "../../backend/types/geo/features/layer";
 import {LayerFeatureType} from "../../backend/types/geo/features/layer/layer-feature-type.enum";
@@ -12,6 +12,8 @@ import {LandmarkService, StatService} from "../../backend/services";
 import {BreakdownStatResponse} from "../../backend/responses/stat";
 import {ReportsService} from "../../reports/reports.service";
 import {MapSidebarData} from "../map-sidebar/map-sidebar-data.type";
+import {resettable} from "../../lib/resettable.rxjs";
+import {MapSidebarComponent} from "../map-sidebar/map-sidebar.component";
 
 @Component({
   selector: 'app-map-box',
@@ -20,16 +22,22 @@ import {MapSidebarData} from "../map-sidebar/map-sidebar-data.type";
 })
 export class MapBoxComponent implements OnInit {
 
+  @ViewChild(MapSidebarComponent) mapSidebar!: MapSidebarComponent;
+
+  drawerOpen: boolean = false;
   didErrorFetching: boolean = false;
 
-  currentData: Subject<MapSidebarData | null> = new Subject<MapSidebarData | null>();
-
+  currentData: Observable<MapSidebarData>;
   fetchedStat: Subject<BreakdownStatResponse | null> = new Subject<BreakdownStatResponse | null>();
+
+  private _currentData = resettable(() => new ReplaySubject<MapSidebarData>(1));
+  private statSubscription?: Subscription;
 
   constructor(private statService: StatService,
               private landmarkService: LandmarkService,
               private reportsService: ReportsService) {
 
+    this.currentData = this._currentData.observable;
   }
 
   ngOnInit(): void {
@@ -37,7 +45,17 @@ export class MapBoxComponent implements OnInit {
 
   popupOpened(event: GeoEvent | null) {
     if (!!event) {
+      this.drawerOpen = true;
+      this.mapSidebar.data = null;
+      this._currentData.reset();
+
+      if (!!this.mapSidebar) {
+        this.mapSidebar.data = null;
+      }
+
       this.eventUpdated(event);
+    } else {
+      this.drawerOpen = false;
     }
   }
 
@@ -113,7 +131,7 @@ export class MapBoxComponent implements OnInit {
   }
 
   private handlePointFeature(event: GeoEvent) {
-    this.getBreakdown(event).pipe(
+    return this.getBreakdown(event).pipe(
       map(response => {
         const stat = this.getStat(response);
         const overallChartData = this.getOverallChartData(response);
@@ -130,13 +148,17 @@ export class MapBoxComponent implements OnInit {
 
         return null;
       })
-    ).subscribe(this.currentData);
+    ).subscribe(data => {
+      if (!!data) {
+        this._currentData.subject.next(data);
+      }
+    });
   }
 
   private handleLayerFeature(event: GeoEvent) {
     let data: MapSidebarData;
 
-    this.getBreakdown(event).pipe(
+    return this.getBreakdown(event).pipe(
       switchMap(response => {
         const eventType: LayerFeatureType = event.type as LayerFeatureType;
         const mode: MapSidebarMode = MapBoxComponent.sidebarModeFromLayerType(eventType);
@@ -168,20 +190,28 @@ export class MapBoxComponent implements OnInit {
 
         return null;
       })
-    ).subscribe(this.currentData);
+    ).subscribe(data => {
+      if (!!data) {
+        this._currentData.subject.next(data);
+      }
+    });
   }
 
   private eventUpdated(event: GeoEvent | null) {
     this.didErrorFetching = false;
     this.fetchedStat.next(null);
 
+    if (!!this.statSubscription) {
+      this.statSubscription.unsubscribe();
+    }
+
     if (!!event) {
       const isPointFeature = Object.values(PointFeatureType).includes(event.type as PointFeatureType);
 
       if (isPointFeature) {
-        this.handlePointFeature(event);
+        this.statSubscription = this.handlePointFeature(event);
       } else {
-        this.handleLayerFeature(event);
+        this.statSubscription = this.handleLayerFeature(event);
       }
     }
   }
