@@ -12,7 +12,7 @@ import {GeoDataRequest} from "../../backend/requests/geo";
 import {GeoEvent, GeoLayer} from "../../backend/types/geo";
 import {PointFeature} from "../../backend/types/geo/features/point";
 import 'src/assets/leaflet/SmoothWheelZoom.js';
-import '../../../../node_modules/leaflet-iconmaterial/dist/leaflet.icon-material.js';
+import {environment} from "../../../environments/environment";
 
 @Component({
   selector: 'app-map',
@@ -32,6 +32,7 @@ export class MapComponent implements AfterViewInit {
   private parksGeoJSON?: GeoJSON;
   private librariesGeoJSON?: GeoJSON;
   private centersGeoJSON?: GeoJSON;
+  private schoolsGeoJSON?: GeoJSON;
 
   private zipLayers: Layer[] = [];
   private tractLayers: Layer[] = [];
@@ -68,7 +69,6 @@ export class MapComponent implements AfterViewInit {
       minZoom: 11,
       zoomControl: true,
       preferCanvas: true,
-
     }
 
     if (navigator.platform.indexOf('Mac') === 0) {
@@ -95,9 +95,10 @@ export class MapComponent implements AfterViewInit {
       .bindPopup(layer => PopupHelper.bindLayerPopup(LayerFeatureType.ZIP_CODE, layer))
       .addTo(this.map);
 
-    this.parksGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.PARK).addTo(this.map);
-    this.librariesGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.LIBRARY).addTo(this.map);
-    this.centersGeoJSON =FeatureHelper.createGeoJSON(PointFeatureType.COMMUNITY_CENTER).addTo(this.map);
+    this.parksGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.PARK, this.map);
+    this.librariesGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.LIBRARY, this.map);
+    this.centersGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.COMMUNITY_CENTER, this.map);
+    this.schoolsGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.SCHOOL, this.map);
 
     this.fetchMapData(this.map);
     this.attachEvents(this.map);
@@ -127,6 +128,7 @@ export class MapComponent implements AfterViewInit {
     const parks: GeoJSON = this.parksGeoJSON!;
     const libraries: GeoJSON = this.librariesGeoJSON!;
     const centers: GeoJSON = this.centersGeoJSON!;
+    const schools: GeoJSON = this.schoolsGeoJSON!;
 
     map.on('popupopen', (e: PopupEvent) => {
       const feature = (e.popup as unknown as { _source: any })._source.feature as Feature;
@@ -155,6 +157,7 @@ export class MapComponent implements AfterViewInit {
     parks.on('click', (event) => this.handleFeatureClick(event));
     centers.on('click', (event) => this.handleFeatureClick(event));
     libraries.on('click', (event) => this.handleFeatureClick(event));
+    schools.on('click', (event) => this.handleFeatureClick(event));
   }
 
   /**
@@ -171,6 +174,7 @@ export class MapComponent implements AfterViewInit {
       const parks = this.parksGeoJSON as GeoJSON;
       const libraries = this.librariesGeoJSON as GeoJSON;
       const centers = this.centersGeoJSON as GeoJSON;
+      const schools = this.schoolsGeoJSON as GeoJSON;
 
       this.geoTractService.getCensusTractFeatures().pipe(
         tap(f => tracts.addData(f)),
@@ -183,7 +187,9 @@ export class MapComponent implements AfterViewInit {
         switchMap(() => this.geoTractService.getLibraryFeatures()),
         tap(f => libraries.addData(f)),
         switchMap(() => this.geoTractService.getCentersFeatures()),
-        tap(f => centers.addData(f))
+        tap(f => centers.addData(f)),
+        switchMap(() => this.geoTractService.getSchoolsFeatures()),
+        tap(f => schools.addData(f))
       ).subscribe(() => {
         if (!!this.map) {
           const outerBounds = zipCodes.getBounds().pad(0.5);
@@ -210,18 +216,20 @@ export class MapComponent implements AfterViewInit {
     const parks = this.parksGeoJSON as GeoJSON;
     const libraries = this.librariesGeoJSON as GeoJSON;
     const centers = this.centersGeoJSON as GeoJSON;
+    const schools = this.schoolsGeoJSON as GeoJSON;
 
-    const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    const tiles = L.tileLayer(environment.map.tiles, {
       maxZoom: 18,
       minZoom: 3,
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      attribution: environment.map.attribution
     });
 
     const overlayLayers = {
       "Libraries": libraries,
       "Community Centers": centers,
       "Parks": parks,
-      "Districts": districts
+      "Schools": schools,
+      "Districts": districts,
     }
 
     tiles.addTo(map);
@@ -233,6 +241,7 @@ export class MapComponent implements AfterViewInit {
     parks.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.PARK, layer));
     libraries.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.LIBRARY, layer));
     centers.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.COMMUNITY_CENTER, layer));
+    schools.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.SCHOOL, layer));
 
     districts.removeFrom(map);
 

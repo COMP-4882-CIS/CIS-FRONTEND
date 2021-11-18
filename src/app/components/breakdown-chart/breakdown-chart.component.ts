@@ -46,7 +46,7 @@ export class BreakdownChartComponent implements OnInit {
   };
 
   @Input()
-  set chartData(newValue: ChartData | null) {
+  set chartData(newValue: ChartData | null | undefined) {
     if (!!newValue && this._chartData !== newValue) {
       this._chartData = newValue;
     }

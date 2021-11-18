@@ -1,5 +1,4 @@
 import {Component, Input} from '@angular/core';
-import {BreakdownStatResponse} from "../../backend/responses/stat/breakdown-stat.response";
 import {BreakdownStat} from "../../backend/types/stat/breakdown-stat.type";
 
 @Component({
@@ -10,7 +9,7 @@ import {BreakdownStat} from "../../backend/types/stat/breakdown-stat.type";
 export class PovertyBreakdownSummaryComponent {
 
   @Input()
-  set populationStats(newValue: BreakdownStatResponse | null) {
+  set populationStats(newValue: BreakdownStat) {
     if (!!newValue) {
       this._populationStats = newValue;
       this.processStats();
@@ -25,14 +24,12 @@ export class PovertyBreakdownSummaryComponent {
   twelveToSeventeenTotal: number = 0;
   total: number = 0;
 
-  private _populationStats!: BreakdownStatResponse;
+  private _populationStats!: BreakdownStat;
 
   private processStats() {
-    const statData = this._populationStats;
+    const stat = this._populationStats;
 
-    if (!!statData && statData.stats.length > 0) {
-      const stat = statData.stats[0] as BreakdownStat;
-
+    if (!!stat) {
       this.underSixTotal = stat.populationInPovertyUnder6;
       this.sixToElevenTotal = stat.populationInPoverty6To11;
       this.twelveToSeventeenTotal = stat.populationInPoverty12To17;

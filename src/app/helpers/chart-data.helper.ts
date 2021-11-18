@@ -19,7 +19,7 @@ export class ChartDataHelper {
       : colorLib(value).saturate(0.5).darken(0.1).hexString();
   }
 
-  static getOverallChartData(response: BreakdownStatResponse): ChartData|null {
+  static getOverallChartData(response: BreakdownStatResponse): ChartData | null {
     const stat = this.getStat(response);
     if (!!stat) {
       return {
@@ -39,7 +39,25 @@ export class ChartDataHelper {
     return null;
   }
 
-  static getGenderChartData(response: BreakdownStatResponse): ChartData|null {
+  static mergeOverallChartData(destination: ChartData, addition: ChartData): ChartData {
+    const destinationData = destination.datasets[0].data as number[]
+    const additionData = addition.datasets[0].data as number[]
+
+    return {
+      labels: ['Over 18', 'Under 18'],
+      datasets: [
+        {
+          label: 'Population Breakdown',
+          data: [
+            (destinationData[0] || 0) + (additionData[0] || 0),
+            (destinationData[1] || 0) + (additionData[1] || 0),
+          ]
+        }
+      ]
+    }
+  }
+
+  static getGenderChartData(response: BreakdownStatResponse): ChartData | null {
     const stat = this.getStat(response);
 
     if (!!stat) {
@@ -60,7 +78,25 @@ export class ChartDataHelper {
     return null;
   }
 
-  static getPovertyChartData(response: BreakdownStatResponse): ChartData|null {
+  static mergeGenderChartData(destination: ChartData, addition: ChartData): ChartData {
+    const destinationData = destination.datasets[0].data as number[]
+    const additionData = addition.datasets[0].data as number[]
+
+    return {
+      labels: ['Female', 'Male'],
+      datasets: [
+        {
+          label: 'Population Breakdown',
+          data: [
+            (destinationData[0] || 0) + (additionData[0] || 0),
+            (destinationData[1] || 0) + (additionData[1] || 0),
+          ]
+        }
+      ]
+    }
+  }
+
+  static getPovertyChartData(response: BreakdownStatResponse): ChartData | null {
     const stat = this.getStat(response);
 
     if (!!stat) {
@@ -85,7 +121,30 @@ export class ChartDataHelper {
     return null;
   }
 
-  private static getStat(response: BreakdownStatResponse): BreakdownStat|null {
+  static mergePovertyChartData(destination: ChartData, addition: ChartData): ChartData {
+    const destinationData = destination.datasets[0].data as number[]
+    const additionData = addition.datasets[0].data as number[]
+
+    return {
+      labels: [
+        'Under age 6',
+        'Ages 6 - 11',
+        'Ages 12 - 17',
+      ],
+      datasets: [
+        {
+          label: 'Population Breakdown',
+          data: [
+            (destinationData[0] || 0) + (additionData[0] || 0),
+            (destinationData[1] || 0) + (additionData[1] || 0),
+            (destinationData[2] || 0) + (additionData[2] || 0),
+          ]
+        }
+      ]
+    }
+  }
+
+  private static getStat(response: BreakdownStatResponse): BreakdownStat | null {
     if (response.stats.length > 0) {
       return response.stats[0];
     }

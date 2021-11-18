@@ -1,7 +1,7 @@
 import {Component, Input} from '@angular/core';
-import {BreakdownStatResponse} from "../../backend/responses/stat";
 import {BreakdownStat} from "../../backend/types/stat/breakdown-stat.type";
 import {DistrictFeature} from "../../backend/types/geo/features/layer";
+import {LandmarkSummaryResponse} from "../../backend/responses/landmark/landmark-summary.response";
 
 @Component({
   selector: 'app-breakdown-summary',
@@ -11,10 +11,18 @@ import {DistrictFeature} from "../../backend/types/geo/features/layer";
 export class BreakdownSummaryComponent {
 
   @Input()
-  set populationStats(newValue: BreakdownStatResponse | null) {
+  set populationStats(newValue: BreakdownStat | null) {
     if (!!newValue) {
       this._populationStats = newValue;
       this.processStats();
+    }
+  }
+
+  @Input()
+  set landmarksSummary(newValue: LandmarkSummaryResponse | undefined) {
+    if (!!newValue) {
+      this._landmarksSummary = newValue;
+      this.processLandmarks();
     }
   }
 
@@ -24,23 +32,43 @@ export class BreakdownSummaryComponent {
   @Input()
   district?: DistrictFeature;
 
+
+  totalParks: number = 0;
+  totalLibraries: number = 0;
+  totalCommunityCenters: number = 0;
+
   underEighteenTotal: number = 0;
   underEighteenMaleTotal: number = 0;
   underEighteenFemaleTotal: number = 0;
   overEighteenTotal: number = 0;
 
-  private _populationStats!: BreakdownStatResponse;
+  showLandmarksSummary = false;
+
+  private _populationStats!: BreakdownStat;
+  private _landmarksSummary?: LandmarkSummaryResponse;
 
   private processStats() {
-    const statData = this._populationStats;
+    const stat = this._populationStats;
 
-    if (!!statData && statData.stats.length > 0) {
-      const stat = statData.stats[0] as BreakdownStat;
-
+    if (!!stat) {
       this.underEighteenTotal = stat.populationUnder18;
       this.underEighteenMaleTotal = stat.populationUnder18Male;
       this.underEighteenFemaleTotal = stat.populationUnder18Female;
       this.overEighteenTotal = stat.totalPopulation - stat.populationUnder18;
+    }
+  }
+
+  private processLandmarks() {
+    const landmarksSummary = this._landmarksSummary;
+
+    if (!!landmarksSummary) {
+      this.showLandmarksSummary = true;
+
+      this.totalParks = landmarksSummary.totalParks;
+      this.totalLibraries = landmarksSummary.totalLibraries;
+      this.totalCommunityCenters = landmarksSummary.totalCommunityCenters;
+    } else {
+      this.showLandmarksSummary = false;
     }
   }
 

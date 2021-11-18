@@ -15,5 +15,24 @@ body {
   font-size: 1.2em
 }
 
+.anim-tooltip {
+  transition: opacity 200ms ease-in-out;
+}
 
+.marker-icon {
+  transition: width 150ms ease-in-out, height 150ms ease-in-out, margin-left 150ms ease-in-out, margin-top 150ms ease-in-out;
 
+  &.focused {
+    width: 41px !important;
+    height: 52px !important;
+    margin-left: -20.5px !important;
+    margin-top: -26px !important;
+  }
+
+  &.normal {
+    width: 31px !important;
+    height: 42px !important;
+    margin-left: -15.5px !important;
+    margin-top: -21px !important;
+  }
+}

@@ -13,7 +13,13 @@ export class ColorsHelper {
 
   static mapColors = {
     tract: '#53B3CB',
-    zipCode: '#2FDD92',
+    zipCode: [
+      '#4b7e40',
+      '#8ee098',
+      '#84b59fff',
+      '#69a297ff',
+      '#48e068'
+    ],
     districts: [
       '#0075F2',
       '#f9c80eff',
@@ -36,7 +42,7 @@ export class ColorsHelper {
   static getLayerColor(featureType: LayerFeatureType, district: number = 0): string {
     switch (featureType) {
       case LayerFeatureType.ZIP_CODE:
-        return this.mapColors.zipCode;
+        return this.random(this.mapColors.zipCode);
       case LayerFeatureType.TRACT:
         return this.mapColors.tract;
       case LayerFeatureType.DISTRICT:
@@ -44,4 +50,7 @@ export class ColorsHelper {
     }
   }
 
+  private static random<T>(array: T[]): T {
+    return array[Math.floor(Math.random() * array.length)];
+  }
 }
