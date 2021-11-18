@@ -1,11 +1,16 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {GeoEvent} from "../../backend/types/geo/geo-event.type";
-import {ReplaySubject, Subject, Subscription} from "rxjs";
+import {Observable, ReplaySubject, Subject, Subscription} from "rxjs";
 import {BreakdownStatResponse} from "../../backend/responses/stat/breakdown-stat.response";
 import {StatService} from "../../backend/services/stat.service";
 import {switchMap, tap} from "rxjs/operators";
 import {BreakdownStat} from "../../backend/types/stat/breakdown-stat.type";
 import {ChartData} from "chart.js";
+import {PointFeature} from "../../backend/types/geo/features/point-feature.type";
+import {MapSidebarMode} from "./map-sidebar-mode.enum";
+import {TitleCasePipe} from "@angular/common";
+import {ChartDataHelper} from "../../helpers/chart-data.helper";
+import {resettable} from "../../lib/resettable.rxjs";
 
 @Component({
   selector: 'app-map-sidebar',
@@ -16,29 +21,50 @@ export class MapSidebarComponent implements OnInit {
 
   @Input()
   set data(newValue: GeoEvent | null) {
+    this._overallChartData.reset();
+    this._genderChartData.reset();
+    this._povertyChartData.reset();
+
     if (!!newValue) {
       this.reloadData();
       this.currentData.next(newValue);
     }
   }
 
-  povertyChartData: ReplaySubject<ChartData> = new ReplaySubject<ChartData>();
-  genderChartData: ReplaySubject<ChartData> = new ReplaySubject<ChartData>();
+  @Input()
+  sidebarDataMode: MapSidebarMode = MapSidebarMode.SINGLE_ZIPCODE_BREAKDOWN;
+
+  overallChartData: Observable<ChartData>;
+  povertyChartData: Observable<ChartData>;
+  genderChartData: Observable<ChartData>;
 
   didError = false;
   currentData: Subject<GeoEvent> = new Subject<GeoEvent>();
   populationData: Subject<BreakdownStatResponse | null> = new Subject<BreakdownStatResponse | null>();
 
+
+  private _overallChartData = resettable(() => new ReplaySubject<ChartData>(1));
+  private _povertyChartData = resettable(() => new ReplaySubject<ChartData>(1));
+  private _genderChartData = resettable(() => new ReplaySubject<ChartData>(1));
+
   private populationSub?: Subscription;
+  private titleCasePipe: TitleCasePipe = new TitleCasePipe();
 
   constructor(private statService: StatService) {
+    this.overallChartData = this._overallChartData.observable;
+    this.povertyChartData = this._povertyChartData.observable;
+    this.genderChartData = this._genderChartData.observable;
   }
 
   ngOnInit(): void {
   }
 
   getSubtitle(data: GeoEvent) {
-    return data.type === 'zip' ? 'ZIP Code' : 'Census Tract';
+    if (['zip', 'tract'].includes(data.type)) {
+      return data.type === 'zip' ? 'ZIP Code' : 'Census Tract';
+    }
+
+    return this.titleCasePipe.transform(data.type.toString().replace('_', ' '));
   }
 
   getFormattedStat(response: BreakdownStatResponse, key: string): any {
@@ -49,6 +75,10 @@ export class MapSidebarComponent implements OnInit {
     }
 
     return 0;
+  }
+
+  getPointFeatureData(event: GeoEvent): PointFeature {
+    return (event.data as PointFeature);
   }
 
   getStat(response: BreakdownStatResponse): BreakdownStat|null {
@@ -69,50 +99,19 @@ export class MapSidebarComponent implements OnInit {
     return null;
   }
 
-  getGenderChartData(response: BreakdownStatResponse): ChartData|null {
-    const stat = this.getStat(response);
 
-    if (!!stat) {
-      return {
-        labels: ['Female', 'Male'],
-        datasets: [
-          {
-            label: 'Population Breakdown',
-            data: [
-              stat.populationUnder18Female,
-              stat.populationUnder18Male
-            ]
-          }
-        ]
-      }
-    }
+  getFeaturePointTitle(event: GeoEvent) {
+    const data: PointFeature = event.data as PointFeature;
 
-    return null;
+    return data.displayName;
   }
 
-  getPovertyChartData(response: BreakdownStatResponse): ChartData|null {
-    const stat = this.getStat(response);
+  get isMulti(): boolean {
+    return this.sidebarDataMode.toString().includes('multi');
+  }
 
-    if (!!stat) {
-      return {
-        labels: [
-          'Under age 6',
-          'Ages 6 - 11',
-          'Ages 12 - 17',
-        ],
-        datasets: [
-          {
-            data: [
-              stat.populationInPovertyUnder6,
-              stat.populationInPoverty6To11,
-              stat.populationInPoverty12To17
-            ]
-          }
-        ]
-      }
-    }
-
-    return null;
+  get isFeaturePoint(): boolean {
+    return this.sidebarDataMode === MapSidebarMode.FEATURE_POINT_SUMMARY;
   }
 
   private reloadData() {
@@ -125,32 +124,52 @@ export class MapSidebarComponent implements OnInit {
 
     this.populationSub = this.currentData.pipe(
       switchMap(ev => {
-        if (ev.type === 'zip') {
-          return this.statService.getZipCodeBreakdown(ev.data)
+        if (['zip', 'tract'].includes(ev.type)) {
+          const data: string = ev.data as string;
+
+          if (ev.type === 'zip') {
+            this.sidebarDataMode = MapSidebarMode.SINGLE_ZIPCODE_BREAKDOWN;
+            return this.statService.getZipCodeBreakdown(data);
+          }
+
+          this.sidebarDataMode = MapSidebarMode.SINGLE_TRACT_BREAKDOWN;
+
+          return this.statService.getTractBreakdown(data);
         }
 
-        return this.statService.getTractBreakdown(ev.data);
+        const data: PointFeature = ev.data as PointFeature;
+
+        this.sidebarDataMode = MapSidebarMode.FEATURE_POINT_SUMMARY;
+
+        return this.statService.getZipCodeBreakdown(data.zipCode);
       }),
       tap(response => {
-        const genderChartData = this.getGenderChartData(response);
+        const genderChartData = ChartDataHelper.getGenderChartData(response);
 
         if (!!genderChartData) {
-          this.genderChartData.next(genderChartData);
-          this.genderChartData.complete();
+          this._genderChartData.subject.next(genderChartData);
         } else {
           this.didError = true;
         }
       }),
       tap(response => {
-        const povertyChartData = this.getPovertyChartData(response);
+        const povertyChartData = ChartDataHelper.getPovertyChartData(response);
 
         if (!!povertyChartData) {
-          this.povertyChartData.next(povertyChartData);
-          this.genderChartData.complete();
+          this._povertyChartData.subject.next(povertyChartData);
         } else {
           this.didError = true;
         }
-      })
+      }),
+      tap(response => {
+        const overallChartData = ChartDataHelper.getOverallChartData(response);
+
+        if (!!overallChartData) {
+          this._overallChartData.subject.next(overallChartData);
+        } else {
+          this.didError = true;
+        }
+      }),
     ).subscribe(this.populationData);
   }
 }

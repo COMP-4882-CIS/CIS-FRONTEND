@@ -11,6 +11,8 @@ import {CensusFeature} from "../../backend/types/geo/census-feature.type";
 import {GeoDataRequest} from "../../backend/requests/geo/geo-data.request";
 import {TractFeatureProperties, ZipFeatureProperties} from "../../backend/types/geo/census-feature-properties.type";
 import {StatService} from "../../backend/services/stat.service";
+import {FeatureHelper} from "../../helpers/feature.helper";
+import {PointFeatureType} from "../../backend/types/geo/features/feature-type.enum";
 
 @Component({
   selector: 'app-map',
@@ -166,6 +168,15 @@ export class MapComponent implements AfterViewInit {
           type: eventType,
           data: (eventType === 'zip' ? feature.properties['name'] : feature.properties['tract'])
         });
+      } else if (!!feature.properties && ['park', 'library', 'community_center'].includes(feature.properties.type)) {
+        const pointFeatureType = feature.properties.type as PointFeatureType
+        const pointFeatureData = FeatureHelper.mapRawDataToFeatureData(pointFeatureType, feature.properties);
+
+        this.popupOpened.emit( {
+          type: pointFeatureData.type,
+          data: pointFeatureData
+        });
+
       } else {
         this.popupOpened.emit(null);
       }
@@ -258,6 +269,16 @@ export class MapComponent implements AfterViewInit {
       }
     });
 
+    parks.eachLayer(rawLayer => {
+      const layer = rawLayer as unknown as GeoLayer;
+
+      if (!!layer.feature.properties) {
+        layer.feature.properties.type = 'park';
+      }
+
+    });
+
+
     libraries.eachLayer(rawLayer => {
       const layer = rawLayer as unknown as GeoLayer;
 
@@ -270,7 +291,7 @@ export class MapComponent implements AfterViewInit {
       const layer = rawLayer as unknown as GeoLayer;
 
       if (!!layer.feature.properties) {
-        layer.feature.properties.type = 'centers';
+        layer.feature.properties.type = 'community_center';
       }
     });
 
@@ -329,8 +350,8 @@ export class MapComponent implements AfterViewInit {
         return style;
       });
 
-   //   this.bindLabels(tracts, 'tract', map);
-   //   this.bindLabels(zipCodes, 'zipcode', map);
+      //   this.bindLabels(tracts, 'tract', map);
+      //   this.bindLabels(zipCodes, 'zipcode', map);
 
       tracts.removeFrom(map);
 
@@ -420,4 +441,6 @@ export class MapComponent implements AfterViewInit {
       }
     }
   }
+
+
 }
