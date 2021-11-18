@@ -2,7 +2,7 @@
   <div class="map-sidebar">
     <div class="single-breakdown" *ngIf="!isFeaturePoint && !isMulti">
       <mat-toolbar>
-        <h1 class="title">{{event.data}} - <span>{{getSubtitle(event)}}</span></h1>
+        <h1 class="title">{{getTitle(event)}} - <span>{{getSubtitle(event)}}</span></h1>
       </mat-toolbar>
       <ng-container *ngIf="!didError; else errorFetchingStats">
         <mat-tab-group dynamicHeight>
@@ -10,7 +10,7 @@
             <div class="inner-sidebar">
               <div class="stats" *ngIf="populationData|async as populationData; else loadingStats">
                 <app-breakdown-chart [chartData]="genderChartData|async"></app-breakdown-chart>
-                <app-breakdown-summary title="Population" [populationStats]="populationData"></app-breakdown-summary>
+                <app-breakdown-summary title="Population" [populationStats]="populationData" [district]="getDistrict(event)"></app-breakdown-summary>
               </div>
             </div>
           </mat-tab>
@@ -28,13 +28,13 @@
 
     <div class="feature-point-summary" *ngIf="isFeaturePoint">
       <mat-toolbar>
-        <h1 class="title">{{getFeaturePointTitle(event)}}</h1>
+        <h1 class="title">{{getTitle(event)}}</h1>
       </mat-toolbar>
       <div class="stats" *ngIf="populationData|async as populationData; else loadingStats">
         <ng-container *ngIf="!didError; else errorFetchingStats">
           <app-breakdown-chart [chartData]="overallChartData|async"></app-breakdown-chart>
           <app-point-feature-summary [pointFeature]="getPointFeatureData(event)"
-                                     [typeTitle]="getFeaturePointTitle(event)"></app-point-feature-summary>
+                                     [typeTitle]="getTitle(event)"></app-point-feature-summary>
           <app-breakdown-summary title="Servicing Population" [populationStats]="populationData"></app-breakdown-summary>
         </ng-container>
       </div>

@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {ChartData, ChartOptions, ChartType, ScriptableContext} from "chart.js";
-import {Utils} from "./utils.helper";
+import {ChartDataHelper} from "../../helpers";
 
 @Component({
   selector: 'app-breakdown-chart',
@@ -8,7 +8,7 @@ import {Utils} from "./utils.helper";
   styleUrls: ['./breakdown-chart.component.scss'],
 })
 export class BreakdownChartComponent implements OnInit {
-  chartColors = Utils.CHART_COLORS;
+  chartColors = ChartDataHelper.CHART_COLORS;
   colors = [
     this.chartColors.red,
     this.chartColors.blue,
@@ -34,11 +34,11 @@ export class BreakdownChartComponent implements OnInit {
             return;
           }
           if (context.active) {
-            c = Utils.getHoverColor(c);
+            c = ChartDataHelper.getHoverColor(c);
           }
-          const mid = Utils.color(c).desaturate(0.05).darken(0.05).rgbString();
-          const start = Utils.color(c).lighten(0.1).rotate(270).rgbString();
-          const end = Utils.color(c).lighten(0.1).rgbString();
+          const mid = ChartDataHelper.color(c).desaturate(0.05).darken(0.05).rgbString();
+          const start = ChartDataHelper.color(c).lighten(0.1).rotate(270).rgbString();
+          const end = ChartDataHelper.color(c).lighten(0.1).rgbString();
           return this.createRadialGradient3(context, start, mid, end);
         },
       }

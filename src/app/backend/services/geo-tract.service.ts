@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {GeoJSONObject} from "../types/geo/geo-json.type";
+import {GeoJSONObject} from "../types/geo";
 
 @Injectable({
   providedIn: 'root'
@@ -15,6 +15,10 @@ export class GeoTractService {
 
   getZipCodeFeatures() {
     return this.http.get<GeoJSONObject>('assets/data/zipcodes.geojson');
+  }
+
+  getDistrictFeatures() {
+    return this.http.get<GeoJSONObject>('assets/data/districts.geojson');
   }
 
   getParksFeatures() {

@@ -1,4 +1,33 @@
 <mat-list>
+  <ng-container *ngIf="district as district">
+    <h3 matSubheader>{{title}} - District Information</h3>
+    <mat-list-item>
+      <div class="list-item-inner">
+        <span class="title">District</span>
+        <span class="value">{{district.id}}</span>
+      </div>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <div class="list-item-inner">
+        <span class="title">Representative</span>
+        <span class="value">{{district.representative}}</span>
+      </div>
+    </mat-list-item>
+
+    <ng-container *ngIf="district.websiteURL as districtWebsiteURL">
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <div class="list-item-inner">
+          <span class="title">More Information</span>
+          <a mat-icon-button target="_blank" [href]="districtWebsiteURL">
+            <mat-icon>open_in_new</mat-icon>
+          </a>
+        </div>
+      </mat-list-item>
+    </ng-container>
+  </ng-container>
+
   <h3 matSubheader>{{title}} - Under 18</h3>
   <mat-list-item>
     <div class="list-item-inner">

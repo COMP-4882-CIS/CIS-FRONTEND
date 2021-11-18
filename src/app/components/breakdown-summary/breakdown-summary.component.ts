@@ -1,6 +1,7 @@
 import {Component, Input} from '@angular/core';
-import {BreakdownStatResponse} from "../../backend/responses/stat/breakdown-stat.response";
+import {BreakdownStatResponse} from "../../backend/responses/stat";
 import {BreakdownStat} from "../../backend/types/stat/breakdown-stat.type";
+import {DistrictFeature} from "../../backend/types/geo/features/layer";
 
 @Component({
   selector: 'app-breakdown-summary',
@@ -20,6 +21,9 @@ export class BreakdownSummaryComponent {
   @Input()
   title!: string;
 
+  @Input()
+  district?: DistrictFeature;
+
   underEighteenTotal: number = 0;
   underEighteenMaleTotal: number = 0;
   underEighteenFemaleTotal: number = 0;
@@ -38,5 +42,9 @@ export class BreakdownSummaryComponent {
       this.underEighteenFemaleTotal = stat.populationUnder18Female;
       this.overEighteenTotal = stat.totalPopulation - stat.populationUnder18;
     }
+  }
+
+  get hasDistrictWebsiteURL(): boolean {
+    return !!this.district && !!this.district.websiteURL;
   }
 }
