@@ -3,7 +3,7 @@
   <mat-list-item>
     <div class="list-item-inner">
       <span class="title">Location</span>
-      <span class="value">{{pointFeature.streetAddress}}</span>
+      <span class="value">{{pointFeature.streetAddress|titlecase}}</span>
     </div>
   </mat-list-item>
   <mat-divider></mat-divider>
@@ -20,6 +20,24 @@
       <div class="list-item-inner">
         <span class="title">Contact Number</span>
         <span class="value">{{getValue('phoneNumber')}}</span>
+      </div>
+    </mat-list-item>
+  </ng-container>
+
+  <ng-container *ngIf="getSchoolFeature() as schoolFeature">
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <div class="list-item-inner">
+        <span class="title">School Category</span>
+        <span class="value">{{schoolFeature.category}}</span>
+      </div>
+    </mat-list-item>
+
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <div class="list-item-inner">
+        <span class="title">School Principal</span>
+        <span class="value">{{schoolFeature.principal}}</span>
       </div>
     </mat-list-item>
   </ng-container>

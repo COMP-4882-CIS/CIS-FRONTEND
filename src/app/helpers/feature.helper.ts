@@ -12,20 +12,21 @@ import {DistrictFeature, LayerFeature, TractFeature, ZipcodeFeature} from "../ba
 import {LayerFeatureType} from "../backend/types/geo/features/layer/layer-feature-type.enum";
 import {Feature, Geometry} from "geojson";
 import * as L from "leaflet";
+import {TooltipHelper} from "./tooltip.helper";
 
 export class FeatureHelper {
 
-  static geoJSONOptions = (type: PointFeatureType): L.GeoJSONOptions => {
+  static geoJSONOptions = (type: PointFeatureType, map: L.Map, animate: boolean = true): L.GeoJSONOptions => {
     if (type === PointFeatureType.PARK) {
       return {
-        pointToLayer: (_, coordinates) => FeatureHelper.getMarkerIcon(type, coordinates),
+        pointToLayer: (_, coordinates) => FeatureHelper.getMarkerIcon(type, coordinates, map, animate),
         filter: (geoJsonFeature: Feature<Geometry, any>) => {
           return FeatureHelper.parkHasParkName(geoJsonFeature)
         }
       }
     } else {
       return {
-        pointToLayer: (_, coordinates) => FeatureHelper.getMarkerIcon(type, coordinates)
+        pointToLayer: (_, coordinates) => FeatureHelper.getMarkerIcon(type, coordinates, map, animate)
       }
     }
   };
@@ -35,7 +36,7 @@ export class FeatureHelper {
       iconUrl: 'assets/icons/default.png',
       iconSize: [31, 42],
     }),
-    library:  L.icon({
+    library: L.icon({
       iconUrl: 'assets/icons/library.png',
       iconSize: [31, 42],
     }),
@@ -53,11 +54,14 @@ export class FeatureHelper {
     })
   }
 
-  static createGeoJSON(type: PointFeatureType): L.GeoJSON {
-    return L.geoJSON(undefined, this.geoJSONOptions(type))
+  static createGeoJSON(type: PointFeatureType, map: L.Map, animate: boolean = true): L.GeoJSON {
+    return L.geoJSON(undefined, this.geoJSONOptions(type, map, animate))
+      .bindTooltip(layer => TooltipHelper.bindPointTooltip(layer), {
+        className: (animate ? 'anim-tooltip' : '')
+      }).addTo(map);
   }
 
-  static getMarkerIcon(type: PointFeatureType, coordinates: LatLng): L.Marker {
+  static getMarkerIcon(type: PointFeatureType, coordinates: LatLng, map: L.Map, animate: boolean = true): L.Marker {
     let icon: L.DivIcon = this.icons.default;
 
     switch (type) {
@@ -75,7 +79,13 @@ export class FeatureHelper {
         break;
     }
 
-    return L.marker(coordinates, {icon, riseOnHover: true});
+    const marker = L.marker(coordinates, {icon, riseOnHover: true, riseOffset: 10});
+
+    if (animate) {
+      return this.attachTooltipEvents(marker, map);
+    }
+
+    return marker;
   }
 
   static mapRawDataToFeatureData(type: PointFeatureType, data: any): PointFeature {
@@ -120,5 +130,15 @@ export class FeatureHelper {
 
   private static parkHasParkName(feature: Feature<Geometry, any>): boolean {
     return feature.properties.hasOwnProperty('park_nam_1') && !!feature.properties.park_nam_1;
+  }
+
+  private static attachTooltipEvents(marker: L.Marker, map: L.Map): L.Marker {
+    return marker.on('tooltipopen', (event) => {
+      TooltipHelper.handleTooltipOpen(event.sourceTarget['_icon']);
+    }).on('tooltipclose', (event) => {
+      TooltipHelper.handleTooltipClose(event.sourceTarget['_icon'])
+    }).on('click', (event) => {
+      map.setView((event as any)['latlng'], 13);
+    })
   }
 }

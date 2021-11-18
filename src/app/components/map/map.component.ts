@@ -95,10 +95,10 @@ export class MapComponent implements AfterViewInit {
       .bindPopup(layer => PopupHelper.bindLayerPopup(LayerFeatureType.ZIP_CODE, layer))
       .addTo(this.map);
 
-    this.parksGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.PARK).addTo(this.map);
-    this.librariesGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.LIBRARY).addTo(this.map);
-    this.centersGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.COMMUNITY_CENTER).addTo(this.map);
-    this.schoolsGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.SCHOOL).addTo(this.map);
+    this.parksGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.PARK, this.map);
+    this.librariesGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.LIBRARY, this.map);
+    this.centersGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.COMMUNITY_CENTER, this.map);
+    this.schoolsGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.SCHOOL, this.map);
 
     this.fetchMapData(this.map);
     this.attachEvents(this.map);
