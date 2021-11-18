@@ -2,6 +2,8 @@ import {Component, Input} from '@angular/core';
 import {BreakdownStatResponse} from "../../backend/responses/stat";
 import {BreakdownStat} from "../../backend/types/stat/breakdown-stat.type";
 import {DistrictFeature} from "../../backend/types/geo/features/layer";
+import {LandmarkSummaryResponse} from "../../backend/responses/landmark/landmark-summary.response";
+import {Observable} from "rxjs";
 
 @Component({
   selector: 'app-breakdown-summary',
@@ -19,17 +21,36 @@ export class BreakdownSummaryComponent {
   }
 
   @Input()
+  set landmarksSummary(newValue: Observable<LandmarkSummaryResponse>) {
+    if (!!newValue) {
+      newValue.subscribe(data => {
+        console.log('AAA', data);
+        this._landmarksSummary = data;
+        this.processLandmarks();
+      })
+    }
+  }
+
+  @Input()
   title!: string;
 
   @Input()
   district?: DistrictFeature;
+
+
+  totalParks: number = 0;
+  totalLibraries: number = 0;
+  totalCommunityCenters: number = 0;
 
   underEighteenTotal: number = 0;
   underEighteenMaleTotal: number = 0;
   underEighteenFemaleTotal: number = 0;
   overEighteenTotal: number = 0;
 
+  showLandmarksSummary = false;
+
   private _populationStats!: BreakdownStatResponse;
+  private _landmarksSummary?: LandmarkSummaryResponse;
 
   private processStats() {
     const statData = this._populationStats;
@@ -41,6 +62,20 @@ export class BreakdownSummaryComponent {
       this.underEighteenMaleTotal = stat.populationUnder18Male;
       this.underEighteenFemaleTotal = stat.populationUnder18Female;
       this.overEighteenTotal = stat.totalPopulation - stat.populationUnder18;
+    }
+  }
+
+  private processLandmarks() {
+    const landmarksSummary = this._landmarksSummary;
+
+    if (!!landmarksSummary) {
+      this.showLandmarksSummary = true;
+
+      this.totalParks = landmarksSummary.totalParks;
+      this.totalLibraries = landmarksSummary.totalLibraries;
+      this.totalCommunityCenters = landmarksSummary.totalCommunityCenters;
+    } else {
+      this.showLandmarksSummary = false;
     }
   }
 

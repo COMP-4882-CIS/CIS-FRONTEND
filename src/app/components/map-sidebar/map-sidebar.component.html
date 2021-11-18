@@ -9,15 +9,15 @@
           <mat-tab label="Population">
             <div class="inner-sidebar">
               <div class="stats" *ngIf="populationData|async as populationData; else loadingStats">
-                <app-breakdown-chart [chartData]="genderChartData|async"></app-breakdown-chart>
-                <app-breakdown-summary title="Population" [populationStats]="populationData" [district]="getDistrict(event)"></app-breakdown-summary>
+                <app-breakdown-chart *ngIf="showGenderChart(populationData)" [chartData]="genderChartData|async"></app-breakdown-chart>
+                <app-breakdown-summary title="Population" [populationStats]="populationData" [landmarksSummary]="landmarksSummary" [district]="getDistrict(event)"></app-breakdown-summary>
               </div>
             </div>
           </mat-tab>
           <mat-tab label="Poverty">
             <div class="inner-sidebar">
               <div class="stats" *ngIf="populationData|async as populationData; else loadingStats">
-                <app-breakdown-chart [chartData]="povertyChartData|async"></app-breakdown-chart>
+                <app-breakdown-chart *ngIf="showPovertyChart(populationData)" [chartData]="povertyChartData|async"></app-breakdown-chart>
                 <app-poverty-breakdown-summary title="Poverty" [populationStats]="populationData"></app-poverty-breakdown-summary>
               </div>
             </div>

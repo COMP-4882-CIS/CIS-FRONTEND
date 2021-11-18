@@ -1,19 +1,20 @@
 import {Component, Input} from '@angular/core';
-import {switchMap, tap} from "rxjs/operators";
+import {filter, switchMap, tap} from "rxjs/operators";
 import {ChartData} from "chart.js";
 import {TitleCasePipe} from "@angular/common";
 import {ChartDataHelper} from "../../helpers";
 import {resettable} from "../../lib/resettable.rxjs";
 import {DistrictFeature, LayerFeature, TractFeature, ZipcodeFeature} from "../../backend/types/geo/features/layer";
 import {PointFeatureType} from "../../backend/types/geo/features/point/point-feature-type.enum";
-import {Observable, ReplaySubject, Subject, Subscription} from "rxjs";
+import {Observable, of, ReplaySubject, Subject, Subscription} from "rxjs";
 import {BreakdownStat} from "../../backend/types/stat/breakdown-stat.type";
 import {PointFeature} from "../../backend/types/geo/features/point";
 import {BreakdownStatResponse} from "../../backend/responses/stat";
 import {LayerFeatureType} from "../../backend/types/geo/features/layer/layer-feature-type.enum";
 import {MapSidebarMode} from "./map-sidebar-mode.enum";
-import {StatService} from "../../backend/services";
+import {LandmarkService, StatService} from "../../backend/services";
 import {GeoEvent} from "../../backend/types/geo";
+import {LandmarkSummaryResponse} from "../../backend/responses/landmark/landmark-summary.response";
 
 
 @Component({
@@ -28,6 +29,7 @@ export class MapSidebarComponent {
     this._overallChartData.reset();
     this._genderChartData.reset();
     this._povertyChartData.reset();
+    this._landmarksSummary.reset();
 
     if (!!newValue) {
       this.reloadData();
@@ -41,6 +43,7 @@ export class MapSidebarComponent {
   overallChartData: Observable<ChartData>;
   povertyChartData: Observable<ChartData>;
   genderChartData: Observable<ChartData>;
+  landmarksSummary: Observable<LandmarkSummaryResponse>;
 
   didError = false;
   currentData: Subject<GeoEvent> = new Subject<GeoEvent>();
@@ -51,13 +54,16 @@ export class MapSidebarComponent {
   private _povertyChartData = resettable(() => new ReplaySubject<ChartData>(1));
   private _genderChartData = resettable(() => new ReplaySubject<ChartData>(1));
 
+  private _landmarksSummary = resettable(() => new ReplaySubject<LandmarkSummaryResponse>(1));
+
   private populationSub?: Subscription;
   private titleCasePipe: TitleCasePipe = new TitleCasePipe();
 
-  constructor(private statService: StatService) {
+  constructor(private statService: StatService, private landmarkService: LandmarkService) {
     this.overallChartData = this._overallChartData.observable;
     this.povertyChartData = this._povertyChartData.observable;
     this.genderChartData = this._genderChartData.observable;
+    this.landmarksSummary = this._landmarksSummary.observable;
   }
 
 
@@ -114,6 +120,24 @@ export class MapSidebarComponent {
     return this.sidebarDataMode === MapSidebarMode.FEATURE_POINT_SUMMARY;
   }
 
+  showGenderChart(response: BreakdownStatResponse | null) {
+    if (!!response) {
+      return this.getStat(response)!.populationUnder18 > 0
+    }
+    return false;
+  }
+
+  showPovertyChart(response: BreakdownStatResponse | null) {
+    if (!!response) {
+      return (
+        this.getStat(response)!.populationInPovertyUnder6 > 0 ||
+        this.getStat(response)!.populationInPoverty6To11 > 0 ||
+        this.getStat(response)!.populationInPoverty12To17 > 0
+      )
+    }
+    return false;
+  }
+
   private reloadData() {
     this.didError = false;
     this.populationData.next(null);
@@ -122,7 +146,15 @@ export class MapSidebarComponent {
       this.populationSub.unsubscribe();
     }
 
+
     this.populationSub = this.currentData.pipe(
+      tap(event => {
+        if (event.data instanceof ZipcodeFeature) {
+          this.landmarkService.getLandmarksSummary((event.data as LayerFeature).id).subscribe(data => {
+            this._landmarksSummary.subject.next(data);
+          });
+        }
+      }),
       switchMap(event => {
         switch (event.type) {
           case LayerFeatureType.ZIP_CODE:

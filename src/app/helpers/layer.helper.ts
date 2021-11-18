@@ -20,9 +20,9 @@ export class LayerHelper {
 
 
         if (layerType === LayerFeatureType.TRACT && population > 0) {
-          style.fillOpacity = Math.max(Math.min((population / maxStats.maxTract), 0.6), 0.2);
+          style.fillOpacity = Math.max(Math.min((population / maxStats.maxTract), 0.6), 0.4);
         } else if (layerType === LayerFeatureType.ZIP_CODE && population > 0) {
-          style.fillOpacity = Math.max(Math.min((population / maxStats.maxZip), 0.6), 0.2);
+          style.fillOpacity = Math.max(Math.min((population / maxStats.maxZip), 0.6), 0.4);
         }
 
         style.color = ColorsHelper.getLayerColor(layerType);
