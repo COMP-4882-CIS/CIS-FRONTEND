@@ -9,6 +9,7 @@ export class SchoolFeature implements PointFeature {
   properties: {[key: string]: any};
   principal: string;
   category: string;
+  schoolID: number;
 
   /**
    * @param rawJSON
@@ -19,12 +20,14 @@ export class SchoolFeature implements PointFeature {
     this.zipCode = rawJSON['schoolzip'];
     this.principal = rawJSON['principal'];
     this.category = rawJSON['school_cat'];
+    this.schoolID = Number(rawJSON['schl_id']) || -1;
 
     delete rawJSON['name'];
     delete rawJSON['address'];
     delete rawJSON['schoolzip'];
     delete rawJSON['principal'];
     delete rawJSON['category'];
+    delete rawJSON['schl_id'];
 
     this.properties = rawJSON;
   }

@@ -1,8 +1,10 @@
 import {Component, Input} from '@angular/core';
-import {PointFeature} from "../../backend/types/geo/features/point/point-feature.type";
-import {LibraryFeature} from "../../backend/types/geo/features/point/types/library-feature.type";
-import {CommunityCenterFeature} from "../../backend/types/geo/features/point/types/community-center-feature.type";
-import {SchoolFeature} from "../../backend/types/geo/features/point";
+import {
+  CommunityCenterFeature,
+  LibraryFeature,
+  PointFeature,
+  SchoolFeature
+} from "../../backend/types/geo/features/point";
 
 @Component({
   selector: 'app-point-feature-summary',
@@ -25,10 +27,6 @@ export class PointFeatureSummaryComponent {
   get hasWebsiteURL(): boolean {
     return this.pointFeature instanceof CommunityCenterFeature &&
       !!(this.pointFeature as CommunityCenterFeature).websiteURL;
-  }
-
-  getSchoolFeature(): SchoolFeature {
-    return this.pointFeature as SchoolFeature;
   }
 
   getValue(key: string): any {

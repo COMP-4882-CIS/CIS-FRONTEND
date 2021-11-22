@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  min-width: 360px;
+  width: 400px;
 }
 
 .mat-tab-group {
@@ -42,7 +42,7 @@
 
 app-breakdown-chart {
   margin-bottom: 2em;
-  display: block;
+  margin-top: 1em;
 }
 
 .loading-shade {
@@ -59,4 +59,22 @@ app-breakdown-chart {
 
 .mat-toolbar {
   justify-content: space-between;
+}
+
+.school-chart-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.show {
+  display: block;
+  opacity: 1;
+  position: relative;
+}
+
+.hide {
+  position: absolute;
+  opacity: 0;
 }

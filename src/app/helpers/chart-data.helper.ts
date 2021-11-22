@@ -3,8 +3,11 @@ import {ChartData} from "chart.js";
 import {BreakdownStat} from "../backend/types/stat/breakdown-stat.type";
 import {ColorsHelper} from "./colors.helper";
 import colorLib, {Color} from "@kurkle/color";
+import {SchoolSummaryResponse} from "../backend/responses/landmark/school-summary.response";
+import ColorHash from 'color-hash'
 
 export class ChartDataHelper {
+  private static colorHash = new ColorHash();
   static CHART_COLORS = ColorsHelper.chartColors;
 
   static isPatternOrGradient = (value: any) => value instanceof CanvasGradient || value instanceof CanvasPattern;
@@ -17,6 +20,30 @@ export class ChartDataHelper {
     return this.isPatternOrGradient(value)
       ? value
       : colorLib(value).saturate(0.5).darken(0.1).hexString();
+  }
+
+  static getSchoolGenderChartData(response: SchoolSummaryResponse): ChartData | null {
+      return {
+        labels: response.gendersEnrolled,
+        datasets: [
+          {
+            backgroundColor: Object.keys(response.genderEnrollmentBreakdown).map(name => this.colorHash.hex(name)),
+            data: Object.values(response.genderEnrollmentBreakdown)
+          }
+        ]
+      }
+  }
+
+  static getSchoolGradeChartData(response: SchoolSummaryResponse): ChartData | null {
+    return {
+      labels: response.gradesTaught,
+      datasets: [
+        {
+          backgroundColor: Object.keys(response.gradeEnrollmentBreakdown).map(name => this.colorHash.hex(name)),
+          data: Object.values(response.gradeEnrollmentBreakdown)
+        }
+      ]
+    }
   }
 
   static getOverallChartData(response: BreakdownStatResponse): ChartData | null {

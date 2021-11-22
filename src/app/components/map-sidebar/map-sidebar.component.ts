@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, ViewChild} from '@angular/core';
 import {TitleCasePipe} from "@angular/common";
 import {DistrictFeature, TractFeature, ZipcodeFeature} from "../../backend/types/geo/features/layer";
 import {Subject} from "rxjs";
@@ -9,7 +9,9 @@ import {filter} from "rxjs/operators";
 import {BreakdownStat} from "../../backend/types/stat/breakdown-stat.type";
 import {ReportsService} from "../../reports/reports.service";
 import {ThemePalette} from "@angular/material/core/common-behaviors/color";
-
+import {PointFeatureType} from "../../backend/types/geo/features/point/point-feature-type.enum";
+import {SchoolSummaryResponse} from "../../backend/responses/landmark/school-summary.response";
+import {MatButtonToggleChange} from "@angular/material/button-toggle";
 
 @Component({
   selector: 'app-map-sidebar',
@@ -17,6 +19,7 @@ import {ThemePalette} from "@angular/material/core/common-behaviors/color";
   styleUrls: ['./map-sidebar.component.scss'],
 })
 export class MapSidebarComponent {
+
 
   @Input()
   didError = false;
@@ -34,6 +37,8 @@ export class MapSidebarComponent {
       }
   }
 
+  showSchoolGradeChart = true;
+  showSchoolGenderChart = false;
   isLoading = true;
   currentData$: Subject<MapSidebarData> = new Subject<MapSidebarData>();
 
@@ -130,6 +135,10 @@ export class MapSidebarComponent {
     return (data.pointFeatureData as PointFeature);
   }
 
+  getSchoolSummaryData(data: MapSidebarData): SchoolSummaryResponse {
+    return (data.schoolSummaryData as SchoolSummaryResponse);
+  }
+
   get isMulti(): boolean {
     return this.sidebarDataMode.toString().includes('multi');
   }
@@ -138,12 +147,20 @@ export class MapSidebarComponent {
     return this.sidebarDataMode === MapSidebarMode.FEATURE_POINT_SUMMARY;
   }
 
+  isSchool(data: MapSidebarData) {
+    return data.pointFeatureData!.type === PointFeatureType.SCHOOL;
+  }
+
   showGenderChart(data: MapSidebarData) {
     if (!!data.genderChartData) {
       return data.stat.populationUnder18 > 0
     }
 
     return false;
+  }
+
+  showSchoolChart(data: MapSidebarData) {
+    return !!data.schoolSummaryData;
   }
 
   showPovertyChart(data: MapSidebarData) {
@@ -156,6 +173,22 @@ export class MapSidebarComponent {
 
   getStat(data: MapSidebarData): BreakdownStat {
     return data.stat
+  }
+
+  updateSchoolChartMode(event?: MatButtonToggleChange, value?: string) {
+    let actualValue = value;
+
+    if (!!event) {
+      actualValue = event.value;
+    }
+
+    if (actualValue === 'grade') {
+      this.showSchoolGradeChart = true;
+      this.showSchoolGenderChart = false;
+    } else {
+      this.showSchoolGradeChart = false;
+      this.showSchoolGenderChart = true;
+    }
   }
 
 }
