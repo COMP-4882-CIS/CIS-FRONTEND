@@ -45,6 +45,22 @@ export class SchoolFeatureSummaryComponent implements OnInit {
     return null;
   }
 
+  get femaleEnrollment(): number {
+    if (!!this.schoolSummary) {
+      return this.schoolSummary.genderEnrollmentBreakdown['Female'] as number;
+    }
+
+    return -1;
+  }
+
+  get maleEnrollment(): number {
+    if (!!this.schoolSummary) {
+      return this.schoolSummary.genderEnrollmentBreakdown['Male'] as number;
+    }
+
+    return -1;
+  }
+
   private static stripGrade(grade: string): string {
     return grade.replace(' Grade', '');
   }

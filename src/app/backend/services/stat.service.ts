@@ -3,7 +3,7 @@ import {HttpClient} from "@angular/common/http";
 import {forkJoin, Observable} from "rxjs";
 import {Burly} from "kb-burly";
 import {environment} from "../../../environments/environment";
-import {map} from "rxjs/operators";
+import {map, retry} from "rxjs/operators";
 import {LayerFeatureType} from "../types/geo/features/layer/layer-feature-type.enum";
 import {TractBreakdownStatResponse, ZipCodeBreakdownStatResponse} from "../responses/stat";
 import {GeoDataRequest} from "../requests/geo";
@@ -25,7 +25,9 @@ export class StatService {
       .addQuery('zipCode', zipCode)
       .get;
 
-    return this.http.get<ZipCodeBreakdownStatResponse>(url);
+    return this.http.get<ZipCodeBreakdownStatResponse>(url).pipe(
+      retry(2)
+    )
   }
 
   getTractBreakdown(tract: number | string): Observable<TractBreakdownStatResponse> {
@@ -35,7 +37,9 @@ export class StatService {
       .addQuery('tract', tract)
       .get;
 
-    return this.http.get<TractBreakdownStatResponse>(url);
+    return this.http.get<TractBreakdownStatResponse>(url).pipe(
+      retry(2)
+    )
   }
 
   requestMapGeoStats(requests: GeoDataRequest[]) {
@@ -64,7 +68,8 @@ export class StatService {
           layers: requests.map(r => r.layer),
           max: response.stats[0].populationUnder18
         };
-      })
+      }),
+      retry(2)
     )
   }
 
@@ -88,7 +93,8 @@ export class StatService {
           layers: requests.map(r => r.layer),
           max: response.stats[0].populationUnder18
         };
-      })
+      }),
+      retry(2)
     )
   }
 }

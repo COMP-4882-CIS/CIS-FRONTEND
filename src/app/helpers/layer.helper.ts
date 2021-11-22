@@ -16,7 +16,7 @@ export class LayerHelper {
 
       if (!!feature && !!feature.properties) {
         const layerFeature: ZipcodeFeature | TractFeature = feature.properties;
-        const layerType: LayerFeatureType = (layerFeature instanceof  TractFeature ? LayerFeatureType.TRACT : LayerFeatureType.ZIP_CODE);
+        const layerType: LayerFeatureType = (layerFeature instanceof TractFeature ? LayerFeatureType.TRACT : LayerFeatureType.ZIP_CODE);
         const population = layerFeature.populationUnder18;
 
 
@@ -26,7 +26,7 @@ export class LayerHelper {
           style.fillOpacity = Math.max(Math.min((population / maxStats.maxZip), 0.6), 0.5);
         }
 
-        style.color = ColorsHelper.getLayerColor(layerType);
+        style.color = ColorsHelper.getIdentifiableHexColor(layerFeature.id);
       }
 
       return style;
@@ -43,14 +43,11 @@ export class LayerHelper {
         weight: 8.0
       };
 
-
       if (!!feature && !!feature.properties) {
         const layerFeature: DistrictFeature = feature.properties;
-        const districtNumber = Number(layerFeature.id);
 
-        style.color = ColorsHelper.getLayerColor(LayerFeatureType.DISTRICT, districtNumber);
+        style.color = ColorsHelper.getIdentifiableHexColor(layerFeature.id);
       }
-
 
       return style;
     });

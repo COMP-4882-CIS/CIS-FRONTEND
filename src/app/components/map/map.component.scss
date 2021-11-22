@@ -39,3 +39,12 @@
     }
   }
 }
+
+.button-wrapper {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+}

@@ -31,6 +31,27 @@
         <span class="value">{{schoolSummary.totalEnrolled}}</span>
       </div>
     </mat-list-item>
+
+    <ng-container *ngIf="maleEnrollment > -1">
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <div class="list-item-inner">
+          <span class="title">Total Male Students</span>
+          <span class="value">{{maleEnrollment}}</span>
+        </div>
+      </mat-list-item>
+    </ng-container>
+
+    <ng-container *ngIf="femaleEnrollment > -1">
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <div class="list-item-inner">
+          <span class="title">Total Female Students</span>
+          <span class="value">{{femaleEnrollment}}</span>
+        </div>
+      </mat-list-item>
+    </ng-container>
+
     <ng-container *ngIf="gradeRange as gradeRange">
       <mat-divider></mat-divider>
       <mat-list-item>

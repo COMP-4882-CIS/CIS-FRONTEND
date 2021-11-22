@@ -1,0 +1,25 @@
+<div class="works-cited">
+  <h1>Child Impact Statements</h1>
+  <h2>Works Cited</h2>
+
+  <div class="list-wrapper">
+    <mat-list>
+      <ng-container *ngFor="let type of worksCitedTypes; last as last">
+        <div class="list-subheader" mat-subheader>{{type}}</div>
+        <mat-list-item class="data-item" *ngFor="let workCited of getByType(type)">
+
+          <div mat-line><span class="topic">{{workCited.topic}}</span></div>
+          <div mat-line><span class="url">{{workCited.url}}</span></div>
+          <div mat-line><span class="description">{{workCited.description}}</span></div>
+        </mat-list-item>
+        <mat-divider class="list-break" *ngIf="!last"></mat-divider>
+      </ng-container>
+    </mat-list>
+
+  </div>
+
+  <div class="button-wrapper">
+    <button mat-button routerLink="/" [queryParams]="{reload: true}" disableRipple>Return Home</button>
+    <button mat-button (click)="print()"  disableRipple>Print</button>
+  </div>
+</div>
