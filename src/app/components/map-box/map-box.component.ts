@@ -1,12 +1,12 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {GeoEvent} from "../../backend/types/geo";
 import {Observable, of, ReplaySubject, Subject, Subscription} from "rxjs";
-import {map, switchMap} from "rxjs/operators";
+import {catchError, map, switchMap} from "rxjs/operators";
 import {LayerFeature, TractFeature, ZipcodeFeature} from "../../backend/types/geo/features/layer";
 import {LayerFeatureType} from "../../backend/types/geo/features/layer/layer-feature-type.enum";
 import {MapSidebarMode} from "../map-sidebar/map-sidebar-mode.enum";
 import {PointFeatureType} from "../../backend/types/geo/features/point/point-feature-type.enum";
-import {PointFeature} from "../../backend/types/geo/features/point";
+import {PointFeature, SchoolFeature} from "../../backend/types/geo/features/point";
 import {ChartDataHelper} from "../../helpers";
 import {LandmarkService, StatService} from "../../backend/services";
 import {BreakdownStatResponse} from "../../backend/responses/stat";
@@ -14,6 +14,7 @@ import {ReportsService} from "../../reports/reports.service";
 import {MapSidebarData} from "../map-sidebar/map-sidebar-data.type";
 import {resettable} from "../../lib/resettable.rxjs";
 import {MapSidebarComponent} from "../map-sidebar/map-sidebar.component";
+import {SchoolSummaryResponse} from "../../backend/responses/landmark/school-summary.response";
 
 @Component({
   selector: 'app-map-box',
@@ -83,6 +84,12 @@ export class MapBoxComponent implements OnInit {
     }
   }
 
+  private getSchoolSummaryData(event: GeoEvent) {
+    const schoolID = (event.data as SchoolFeature).schoolID;
+
+    return this.landmarkService.getSchoolSummary(schoolID);
+  }
+
   private getGenderChartData(response: BreakdownStatResponse) {
     const genderChartData = ChartDataHelper.getGenderChartData(response);
 
@@ -99,6 +106,30 @@ export class MapBoxComponent implements OnInit {
     if (!!povertyChartData) {
       return povertyChartData;
     }
+    this.didErrorFetching = true;
+
+    return null;
+  }
+
+  private getSchoolGradeChartData(response: SchoolSummaryResponse) {
+    const gradeChartData = ChartDataHelper.getSchoolGradeChartData(response);
+
+    if (!!gradeChartData) {
+      return gradeChartData;
+    }
+
+    this.didErrorFetching = true;
+
+    return null;
+  }
+
+  private getSchoolGenderChartData(response: SchoolSummaryResponse) {
+    const genderChartData = ChartDataHelper.getSchoolGenderChartData(response);
+
+    if (!!genderChartData) {
+      return genderChartData;
+    }
+
     this.didErrorFetching = true;
 
     return null;
@@ -131,14 +162,18 @@ export class MapBoxComponent implements OnInit {
   }
 
   private handlePointFeature(event: GeoEvent) {
+    let data: MapSidebarData;
+
+    const eventType: PointFeatureType = event.type as PointFeatureType;
+
     return this.getBreakdown(event).pipe(
-      map(response => {
+      switchMap(response => {
         const stat = this.getStat(response);
         const overallChartData = this.getOverallChartData(response);
         const pointFeatureData = event.data as PointFeature;
 
         if (!!stat && !!overallChartData) {
-          return {
+          data = {
             mode: MapSidebarMode.FEATURE_POINT_SUMMARY,
             overallChartData,
             stat,
@@ -146,7 +181,33 @@ export class MapBoxComponent implements OnInit {
           };
         }
 
-        return null;
+        if (eventType === PointFeatureType.SCHOOL) {
+          return this.getSchoolSummaryData(event).pipe(
+            catchError(() => of(null))
+          )
+        }
+
+        return of(null);
+      }),
+      map(schoolSummaryData => {
+        if (!!data && !!schoolSummaryData) {
+          data.schoolSummaryData = schoolSummaryData;
+
+          const schoolGradeChartData =  this.getSchoolGradeChartData(schoolSummaryData);
+          const schoolGenderChartData =  this.getSchoolGenderChartData(schoolSummaryData);
+
+          if (!!schoolGradeChartData) {
+            data.schoolGradeChartData = schoolGradeChartData;
+          }
+
+          if (!!schoolGenderChartData) {
+            data.schoolGenderChartData = schoolGenderChartData;
+          }
+
+          return data;
+        }
+
+        return data;
       })
     ).subscribe(data => {
       if (!!data) {
@@ -158,10 +219,11 @@ export class MapBoxComponent implements OnInit {
   private handleLayerFeature(event: GeoEvent) {
     let data: MapSidebarData;
 
+    const eventType: LayerFeatureType = event.type as LayerFeatureType;
+    const mode: MapSidebarMode = MapBoxComponent.sidebarModeFromLayerType(eventType);
+
     return this.getBreakdown(event).pipe(
       switchMap(response => {
-        const eventType: LayerFeatureType = event.type as LayerFeatureType;
-        const mode: MapSidebarMode = MapBoxComponent.sidebarModeFromLayerType(eventType);
         const stat = this.getStat(response);
         const povertyChartData = this.getPovertyChartData(response);
         const genderChartData = this.getGenderChartData(response);
@@ -189,7 +251,7 @@ export class MapBoxComponent implements OnInit {
         }
 
         return null;
-      })
+      }),
     ).subscribe(data => {
       if (!!data) {
         this._currentData.subject.next(data);

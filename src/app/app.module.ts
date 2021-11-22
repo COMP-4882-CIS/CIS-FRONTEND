@@ -25,6 +25,11 @@ import {MatTabsModule} from "@angular/material/tabs";
 import { PointFeatureSummaryComponent } from './components/point-feature-summary/point-feature-summary.component';
 import { BreakdownSummaryComponent } from './components/breakdown-summary/breakdown-summary.component';
 import { PovertyBreakdownSummaryComponent } from './components/poverty-breakdown-summary/poverty-breakdown-summary.component';
+import { SchoolFeatureSummaryComponent } from './components/school-feature-summary/school-feature-summary.component';
+import { FetchErrorComponent } from './components/fetch-error/fetch-error.component';
+import {MatSlideToggleModule} from "@angular/material/slide-toggle";
+import {FormsModule} from "@angular/forms";
+import {MatButtonToggleModule} from "@angular/material/button-toggle";
 
 @NgModule({
   declarations: [
@@ -37,25 +42,30 @@ import { PovertyBreakdownSummaryComponent } from './components/poverty-breakdown
     PointFeatureSummaryComponent,
     BreakdownSummaryComponent,
     PovertyBreakdownSummaryComponent,
+    SchoolFeatureSummaryComponent,
+    FetchErrorComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatCardModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatListModule,
-    MatIconModule,
-    MatProgressSpinnerModule,
-    MatSidenavModule,
-    MatDividerModule,
-    NgChartsModule,
-    MatTabsModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        BrowserAnimationsModule,
+        MatToolbarModule,
+        MatButtonModule,
+        MatCardModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatListModule,
+        MatIconModule,
+        MatProgressSpinnerModule,
+        MatSidenavModule,
+        MatDividerModule,
+        NgChartsModule,
+        MatTabsModule,
+        MatSlideToggleModule,
+        FormsModule,
+        MatButtonToggleModule
+    ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

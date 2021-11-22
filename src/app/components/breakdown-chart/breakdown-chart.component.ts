@@ -1,13 +1,15 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {AfterViewInit, ChangeDetectorRef, Component, Input, OnInit, ViewChild} from '@angular/core';
 import {ChartData, ChartOptions, ChartType, ScriptableContext} from "chart.js";
 import {ChartDataHelper} from "../../helpers";
+
 
 @Component({
   selector: 'app-breakdown-chart',
   templateUrl: './breakdown-chart.component.html',
   styleUrls: ['./breakdown-chart.component.scss'],
 })
-export class BreakdownChartComponent implements OnInit {
+export class BreakdownChartComponent implements AfterViewInit {
+
   chartColors = ChartDataHelper.CHART_COLORS;
   colors = [
     this.chartColors.red,
@@ -26,23 +28,6 @@ export class BreakdownChartComponent implements OnInit {
         position: 'bottom'
       }
     },
-    elements: {
-      arc: {
-        backgroundColor: (context) => {
-          let c = this.colors[context.dataIndex];
-          if (!c) {
-            return;
-          }
-          if (context.active) {
-            c = ChartDataHelper.getHoverColor(c);
-          }
-          const mid = ChartDataHelper.color(c).desaturate(0.05).darken(0.05).rgbString();
-          const start = ChartDataHelper.color(c).lighten(0.1).rotate(270).rgbString();
-          const end = ChartDataHelper.color(c).lighten(0.1).rgbString();
-          return this.createRadialGradient3(context, start, mid, end);
-        },
-      }
-    }
   };
 
   @Input()
@@ -61,9 +46,16 @@ export class BreakdownChartComponent implements OnInit {
   private height: number|null = null;
   private cache: Map<string, CanvasGradient> = new Map<string, CanvasGradient>();
 
-  constructor() { }
 
-  ngOnInit(): void {
+  constructor(private changeDetector: ChangeDetectorRef) {
+  }
+ngAfterViewInit() {
+  this.update();
+}
+
+  update() {
+    window.dispatchEvent(new Event('resize'));
+    this.changeDetector.detectChanges();
   }
 
   private createRadialGradient3(context: ScriptableContext<any>, c1: string, c2: string, c3: string) {

@@ -1,54 +1,89 @@
 <div class="map-sidebar">
-<ng-container *ngIf="currentData$|async as currentData; else loadingStats">
-  <ng-container *ngIf="!isLoading; else loadingStats">
-    <div class="single-breakdown" *ngIf="!isFeaturePoint && !isMulti">
-      <mat-toolbar>
-        <h1 class="title">{{getTitle(currentData)}} - <span>{{getSubtitle(currentData)}}</span></h1>
-        <button mat-icon-button [color]="getActionColor(currentData)" (click)="toggleReport(currentData)"><mat-icon>{{getActionIcon(currentData)}}</mat-icon></button>
-      </mat-toolbar>
-      <ng-container *ngIf="!didError; else errorFetchingStats">
-        <mat-tab-group dynamicHeight>
-          <mat-tab label="Population">
-            <div class="inner-sidebar">
-              <div class="stats">
-                <app-breakdown-chart *ngIf="showGenderChart(currentData)" [chartData]="currentData.genderChartData"></app-breakdown-chart>
-                <app-breakdown-summary title="Population" [populationStats]="getStat(currentData)" [landmarksSummary]="currentData.landmarks" [district]="getDistrict(currentData)"></app-breakdown-summary>
-              </div>
-            </div>
-          </mat-tab>
-          <mat-tab label="Poverty">
-            <div class="inner-sidebar">
-              <div class="stats">
-                <app-breakdown-chart *ngIf="showPovertyChart(currentData)" [chartData]="currentData.povertyChartData"></app-breakdown-chart>
-                <app-poverty-breakdown-summary title="Poverty" [populationStats]="getStat(currentData)"></app-poverty-breakdown-summary>
-              </div>
-            </div>
-          </mat-tab>
-        </mat-tab-group>
-      </ng-container>
-    </div>
-
-    <div class="feature-point-summary" *ngIf="isFeaturePoint">
-      <mat-toolbar>
-        <h1 class="title">{{getTitle(currentData)}}</h1>
-      </mat-toolbar>
+  <ng-container *ngIf="currentData$|async as currentData; else loadingStats">
+    <ng-container *ngIf="!isLoading; else loadingStats">
+      <div class="single-breakdown" *ngIf="!isFeaturePoint && !isMulti">
+        <mat-toolbar>
+          <h1 class="title">{{getTitle(currentData)}} - <span>{{getSubtitle(currentData)}}</span></h1>
+          <button mat-icon-button [color]="getActionColor(currentData)" (click)="toggleReport(currentData)">
+            <mat-icon>{{getActionIcon(currentData)}}</mat-icon>
+          </button>
+        </mat-toolbar>
         <ng-container *ngIf="!didError; else errorFetchingStats">
-          <app-breakdown-chart [chartData]="currentData.overallChartData"></app-breakdown-chart>
-          <app-point-feature-summary [pointFeature]="getPointFeatureData(currentData)"
-                                     [typeTitle]="getTitle(currentData)"></app-point-feature-summary>
-          <app-breakdown-summary title="Servicing Population" [populationStats]="getStat(currentData)"></app-breakdown-summary>
+          <mat-tab-group dynamicHeight>
+            <mat-tab label="Population">
+              <div class="inner-sidebar">
+                <div class="stats">
+                  <app-breakdown-chart *ngIf="showGenderChart(currentData)"
+                                       [chartData]="currentData.genderChartData"></app-breakdown-chart>
+                  <app-breakdown-summary title="Population" [populationStats]="getStat(currentData)"
+                                         [landmarksSummary]="currentData.landmarks"
+                                         [district]="getDistrict(currentData)"></app-breakdown-summary>
+                </div>
+              </div>
+            </mat-tab>
+            <mat-tab label="Poverty">
+              <div class="inner-sidebar">
+                <div class="stats">
+                  <app-breakdown-chart *ngIf="showPovertyChart(currentData)"
+                                       [chartData]="currentData.povertyChartData"></app-breakdown-chart>
+                  <app-poverty-breakdown-summary title="Poverty"
+                                                 [populationStats]="getStat(currentData)"></app-poverty-breakdown-summary>
+                </div>
+              </div>
+            </mat-tab>
+          </mat-tab-group>
         </ng-container>
-    </div>
+      </div>
 
-    <ng-template #errorFetchingStats>
-      <h1>Could not fetch stats!</h1>
-    </ng-template>
+      <div class="feature-point-summary" *ngIf="isFeaturePoint">
+        <mat-toolbar>
+          <h1 class="title">{{getTitle(currentData)}}</h1>
+        </mat-toolbar>
+        <ng-container *ngIf="!didError; else errorFetchingStats">
+          <ng-container *ngIf="isSchool(currentData); else regularPointFeature">
+
+            <mat-tab-group dynamicHeight>
+              <mat-tab label="School">
+                <div class="school-chart-wrapper" [class.hide]="!showSchoolChart(currentData)">
+                    <app-breakdown-chart [class.show]="showSchoolGenderChart" [class.hide]="showSchoolGradeChart" [chartData]="currentData.schoolGenderChartData"></app-breakdown-chart>
+                    <app-breakdown-chart [class.show]="showSchoolGradeChart" [class.hide]="showSchoolGenderChart" [chartData]="currentData.schoolGradeChartData"></app-breakdown-chart>
+
+                  <mat-button-toggle-group (change)="updateSchoolChartMode($event)">
+                    <mat-button-toggle [value]="'grade'" checked>Grade</mat-button-toggle>
+                    <mat-button-toggle [value]="'gender'">Gender</mat-button-toggle>
+                  </mat-button-toggle-group>
+                </div>
+
+                <app-point-feature-summary [pointFeature]="getPointFeatureData(currentData)"
+                                           [typeTitle]="getTitle(currentData)"></app-point-feature-summary>
+
+                <app-school-feature-summary [schoolFeature]="getPointFeatureData(currentData)" [schoolSummary]="getSchoolSummaryData(currentData)"></app-school-feature-summary>
+              </mat-tab>
+              <mat-tab label="Servicing Population">
+                <ng-template [ngTemplateOutlet]="regularPointFeature"></ng-template>
+              </mat-tab>
+            </mat-tab-group>
+
+          </ng-container>
+          <ng-template #regularPointFeature>
+            <app-breakdown-chart [chartData]="currentData.overallChartData"></app-breakdown-chart>
+            <app-point-feature-summary *ngIf="!isSchool(currentData)" [pointFeature]="getPointFeatureData(currentData)"
+                                       [typeTitle]="getTitle(currentData)"></app-point-feature-summary>
+            <app-breakdown-summary title="Servicing Population"
+                                   [populationStats]="getStat(currentData)"></app-breakdown-summary>
+          </ng-template>
+        </ng-container>
+      </div>
+
+      <ng-template #errorFetchingStats>
+        <h1>Could not fetch stats!</h1>
+      </ng-template>
+    </ng-container>
   </ng-container>
-</ng-container>
 
-<ng-template #loadingStats>
-  <div class="loading-shade">
-    <mat-spinner diameter="40"></mat-spinner>
-  </div>
-</ng-template>
+  <ng-template #loadingStats>
+    <div class="loading-shade">
+      <mat-spinner diameter="40"></mat-spinner>
+    </div>
+  </ng-template>
 </div>

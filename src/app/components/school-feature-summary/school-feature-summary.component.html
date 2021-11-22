@@ -1,0 +1,51 @@
+<ng-container *ngIf="schoolFeatureData as schoolFeature">
+  <mat-list class="school-info-list">
+    <ng-container *ngIf="schoolFeature.category && schoolFeature.category.length > 0">
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <div class="list-item-inner">
+          <span class="title">School Category</span>
+          <span class="value">{{schoolFeature.category}}</span>
+        </div>
+      </mat-list-item>
+    </ng-container>
+
+    <ng-container *ngIf="schoolFeature.principal && schoolFeature.principal.length > 0">
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <div class="list-item-inner">
+          <span class="title">School Principal</span>
+          <span class="value">{{schoolFeature.principal}}</span>
+        </div>
+      </mat-list-item>
+    </ng-container>
+  </mat-list>
+</ng-container>
+
+<ng-container *ngIf="schoolSummary as schoolSummary; else errorFetchingStats">
+  <mat-list>
+    <h3 matSubheader>School Statistics</h3>
+    <mat-list-item>
+      <div class="list-item-inner">
+        <span class="title">Total Students</span>
+        <span class="value">{{schoolSummary.totalEnrolled}}</span>
+      </div>
+    </mat-list-item>
+    <ng-container *ngIf="gradeRange as gradeRange">
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <div class="list-item-inner">
+          <span class="title">Grades Taught</span>
+          <span class="value">
+         {{gradeRange}}
+        </span>
+        </div>
+      </mat-list-item>
+    </ng-container>
+  </mat-list>
+</ng-container>
+
+<ng-template #errorFetchingStats>
+  <app-fetch-error statType="school"
+                   detailMessage="The Shelby County data does not have this school listed"></app-fetch-error>
+</ng-template>
