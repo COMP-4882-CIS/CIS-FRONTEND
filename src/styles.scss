@@ -1,3 +1,6 @@
+@use '@angular/material' as mat;
+@use './src/app/pages/works-cited/works-cited.theme' as works-cited;
+
 html, body {
   height: 100%;
   overscroll-behavior-y: none;
@@ -8,6 +11,17 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
   background: #fafafa;
 }
+
+$primary: mat.define-palette(mat.$indigo-palette, 500);
+$accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$theme: mat.define-light-theme((
+  color: (
+    primary: $primary,
+    accent: $accent,
+  )
+));
+
+@include works-cited.theme($theme);
 
 .logo {
   text-decoration: none;
@@ -34,5 +48,14 @@ body {
     height: 42px !important;
     margin-left: -15.5px !important;
     margin-top: -21px !important;
+  }
+}
+
+@media print {
+  @page {
+    margin: 1em 0 !important;
+  }
+  body {
+  padding: 0!important;
   }
 }

@@ -1,0 +1,68 @@
+:host {
+  display: flex;
+  flex: 1;
+}
+
+.works-cited {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 2em;
+
+  h1 {
+    margin-bottom: 0;
+    font-size: 2.2em;
+  }
+
+  h2 {
+    margin-top: 12px;
+    margin-bottom: 1em;
+    font-weight: normal;
+    font-size: 1.6em;
+  }
+
+  .list-subheader {
+    font-weight: bold;
+  }
+
+  .button-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    @media print {
+      display: none !important;
+    }
+  }
+
+  .data-item {
+    min-height: 72px;
+    height: unset !important;
+
+    ::ng-deep {
+      .mat-line {
+        white-space: unset !important;
+      }
+    }
+
+    span.topic {
+      font-size: 1.1em;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    span.description {
+      margin-bottom: 2em;
+      display: block;
+    }
+
+    span.url {
+      margin-bottom: 1em;
+      display: block;
+    }
+  }
+
+  .list-break {
+    margin-bottom: 2em;
+  }
+}

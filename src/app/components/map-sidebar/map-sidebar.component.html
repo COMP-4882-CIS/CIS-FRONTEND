@@ -9,7 +9,7 @@
           </button>
         </mat-toolbar>
         <ng-container *ngIf="!didError; else errorFetchingStats">
-          <mat-tab-group dynamicHeight>
+          <mat-tab-group dynamicHeight mat-align-tabs="center">
             <mat-tab label="Population">
               <div class="inner-sidebar">
                 <div class="stats">
@@ -42,7 +42,7 @@
         <ng-container *ngIf="!didError; else errorFetchingStats">
           <ng-container *ngIf="isSchool(currentData); else regularPointFeature">
 
-            <mat-tab-group dynamicHeight>
+            <mat-tab-group dynamicHeight mat-align-tabs="center">
               <mat-tab label="School">
                 <div class="school-chart-wrapper" [class.hide]="!showSchoolChart(currentData)">
                     <app-breakdown-chart [class.show]="showSchoolGenderChart" [class.hide]="showSchoolGradeChart" [chartData]="currentData.schoolGenderChartData"></app-breakdown-chart>

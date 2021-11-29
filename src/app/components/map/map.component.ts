@@ -13,6 +13,7 @@ import {GeoEvent, GeoLayer} from "../../backend/types/geo";
 import {PointFeature} from "../../backend/types/geo/features/point";
 import 'src/assets/leaflet/SmoothWheelZoom.js';
 import {environment} from "../../../environments/environment";
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-map',
@@ -38,9 +39,12 @@ export class MapComponent implements AfterViewInit {
   private tractLayers: Layer[] = [];
   private popupOpen = false;
   private map?: L.Map;
+  private shouldReload = false;
 
   constructor(private geoTractService: GeoTractService,
-              private statService: StatService) {
+              private statService: StatService,
+              private activatedRoute: ActivatedRoute,
+              private router: Router) {
 
     // This logic ensures the Leaflet container is only resized when needed
     this.popupOpened.subscribe((d) => {
@@ -52,6 +56,13 @@ export class MapComponent implements AfterViewInit {
         this.popupOpen = false;
       }
     });
+
+    this.activatedRoute.queryParamMap.subscribe(params => {
+      if (params.has('reload')) {
+        this.shouldReload = (params.get('reload') === 'true');
+        this.router.navigate([]).then();
+      }
+    })
   }
 
   ngAfterViewInit(): void {
@@ -102,6 +113,11 @@ export class MapComponent implements AfterViewInit {
 
     this.fetchMapData(this.map);
     this.attachEvents(this.map);
+
+    if (this.shouldReload) {
+      this.resizeMap(0);
+      this.shouldReload = false;
+    }
   }
 
   /**
@@ -110,12 +126,12 @@ export class MapComponent implements AfterViewInit {
    * Internally calls invalidate size after ensuring the L.map object is defined
    * @private
    */
-  private resizeMap() {
+  private resizeMap(waitTime = 350) {
     setTimeout(() => {
       if (!!this.map) {
         this.map.invalidateSize({animate: true});
       }
-    }, 350);
+    }, waitTime);
   }
 
   /**
