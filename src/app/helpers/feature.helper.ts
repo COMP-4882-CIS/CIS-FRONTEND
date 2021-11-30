@@ -138,7 +138,12 @@ export class FeatureHelper {
     }).on('tooltipclose', (event) => {
       TooltipHelper.handleTooltipClose(event.sourceTarget['_icon'])
     }).on('click', (event) => {
+      if (map.getZoom() <= 13) {
       map.setView((event as any)['latlng'], 13);
+      }
+      else {
+        return;
+      }
     })
   }
 }
