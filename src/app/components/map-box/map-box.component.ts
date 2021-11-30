@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
+import {Component, ViewChild} from '@angular/core';
 import {GeoEvent} from "../../backend/types/geo";
 import {Observable, of, ReplaySubject, Subject, Subscription} from "rxjs";
 import {catchError, map, switchMap} from "rxjs/operators";
@@ -10,20 +10,23 @@ import {PointFeature, SchoolFeature} from "../../backend/types/geo/features/poin
 import {ChartDataHelper} from "../../helpers";
 import {LandmarkService, StatService} from "../../backend/services";
 import {BreakdownStatResponse} from "../../backend/responses/stat";
-import {ReportsService} from "../../reports/reports.service";
 import {MapSidebarData} from "../map-sidebar/map-sidebar-data.type";
 import {resettable} from "../../lib/resettable.rxjs";
 import {MapSidebarComponent} from "../map-sidebar/map-sidebar.component";
 import {SchoolSummaryResponse} from "../../backend/responses/landmark/school-summary.response";
+import {environment} from "../../../environments/environment";
 
 @Component({
   selector: 'app-map-box',
   templateUrl: './map-box.component.html',
   styleUrls: ['./map-box.component.scss']
 })
-export class MapBoxComponent implements OnInit {
+export class MapBoxComponent {
 
   @ViewChild(MapSidebarComponent) mapSidebar!: MapSidebarComponent;
+
+  appTitle: string;
+  appVersion: string;
 
   drawerOpen: boolean = false;
   didErrorFetching: boolean = false;
@@ -34,14 +37,10 @@ export class MapBoxComponent implements OnInit {
   private _currentData = resettable(() => new ReplaySubject<MapSidebarData>(1));
   private statSubscription?: Subscription;
 
-  constructor(private statService: StatService,
-              private landmarkService: LandmarkService,
-              private reportsService: ReportsService) {
-
+  constructor(private statService: StatService, private landmarkService: LandmarkService) {
     this.currentData = this._currentData.observable;
-  }
-
-  ngOnInit(): void {
+    this.appTitle = environment.appTitle;
+    this.appVersion = environment.appVersion;
   }
 
   popupOpened(event: GeoEvent | null) {
@@ -58,10 +57,6 @@ export class MapBoxComponent implements OnInit {
     } else {
       this.drawerOpen = false;
     }
-  }
-
-  appendToReport(id: string, data: MapSidebarData) {
-    this.reportsService.createEntry(id, data);
   }
 
   private getBreakdown(event: GeoEvent): Observable<BreakdownStatResponse> {

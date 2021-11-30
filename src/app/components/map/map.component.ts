@@ -1,6 +1,6 @@
-import {AfterViewInit, Component, EventEmitter, Output} from '@angular/core';
 import * as L from 'leaflet';
-import {GeoJSON, Layer, LeafletEvent, PopupEvent} from 'leaflet';
+import {AfterViewInit, Component, EventEmitter, Output} from '@angular/core';
+import {GeoJSON, LeafletEvent, PopupEvent} from 'leaflet';
 import {map as rxMap, switchMap, tap} from "rxjs/operators";
 import {Feature} from "geojson";
 import {FeatureHelper, LayerHelper, PopupHelper} from "../../helpers";
@@ -35,8 +35,6 @@ export class MapComponent implements AfterViewInit {
   private centersGeoJSON?: GeoJSON;
   private schoolsGeoJSON?: GeoJSON;
 
-  private zipLayers: Layer[] = [];
-  private tractLayers: Layer[] = [];
   private popupOpen = false;
   private map?: L.Map;
   private shouldReload = false;
@@ -310,10 +308,6 @@ export class MapComponent implements AfterViewInit {
     });
 
     return this.statService.requestMapGeoStats(requestItems).pipe(
-      tap(layerResults => {
-        this.zipLayers = layerResults[0].layers;
-        this.tractLayers = layerResults[1].layers;
-      }),
       rxMap(layerResults => {
         return {
           maxZip: layerResults[0].max,

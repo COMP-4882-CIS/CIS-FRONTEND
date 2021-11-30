@@ -1,4 +1,4 @@
-import {Component, Input, ViewChild} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {TitleCasePipe} from "@angular/common";
 import {DistrictFeature, TractFeature, ZipcodeFeature} from "../../backend/types/geo/features/layer";
 import {Subject} from "rxjs";
@@ -7,8 +7,6 @@ import {MapSidebarMode} from "./map-sidebar-mode.enum";
 import {MapSidebarData} from "./map-sidebar-data.type";
 import {filter} from "rxjs/operators";
 import {BreakdownStat} from "../../backend/types/stat/breakdown-stat.type";
-import {ReportsService} from "../../reports/reports.service";
-import {ThemePalette} from "@angular/material/core/common-behaviors/color";
 import {PointFeatureType} from "../../backend/types/geo/features/point/point-feature-type.enum";
 import {SchoolSummaryResponse} from "../../backend/responses/landmark/school-summary.response";
 import {MatButtonToggleChange} from "@angular/material/button-toggle";
@@ -44,7 +42,7 @@ export class MapSidebarComponent {
 
   private titleCasePipe: TitleCasePipe = new TitleCasePipe();
 
-  constructor(private reportsService: ReportsService) {
+  constructor() {
     this.currentData$.pipe(
       filter(data => !!data)
     ).subscribe(data => {
@@ -52,42 +50,6 @@ export class MapSidebarComponent {
         this.sidebarDataMode = data?.mode;
       }
     })
-  }
-
-  toggleReport(data: MapSidebarData) {
-    if (this.hasEntry(data)) {
-      this.removeReport(data);
-    } else {
-      this.appendReport(data);
-    }
-  }
-
-  appendReport(data: MapSidebarData) {
-    this.reportsService.createEntry(this.getTitle(data), data);
-  }
-
-  removeReport(data: MapSidebarData) {
-    this.reportsService.removeEntryByID(this.getTitle(data));
-  }
-
-  hasEntry(data: MapSidebarData) {
-    return this.reportsService.hasEntry(this.getTitle(data));
-  }
-
-  getActionIcon(data: MapSidebarData) {
-    if (this.hasEntry(data)) {
-      return 'delete';
-    }
-
-    return 'add_box';
-  }
-
-  getActionColor(data: MapSidebarData): ThemePalette {
-    if (this.hasEntry(data)) {
-      return 'warn';
-    }
-
-    return 'primary';
   }
 
   getTitle(data: MapSidebarData): string {

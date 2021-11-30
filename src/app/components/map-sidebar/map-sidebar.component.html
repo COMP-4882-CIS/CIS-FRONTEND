@@ -4,9 +4,6 @@
       <div class="single-breakdown" *ngIf="!isFeaturePoint && !isMulti">
         <mat-toolbar>
           <h1 class="title">{{getTitle(currentData)}} - <span>{{getSubtitle(currentData)}}</span></h1>
-          <button mat-icon-button [color]="getActionColor(currentData)" (click)="toggleReport(currentData)">
-            <mat-icon>{{getActionIcon(currentData)}}</mat-icon>
-          </button>
         </mat-toolbar>
         <ng-container *ngIf="!didError; else errorFetchingStats">
           <mat-tab-group dynamicHeight mat-align-tabs="center">

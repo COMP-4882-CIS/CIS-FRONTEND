@@ -2,9 +2,13 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+const packageInfo = require('../../package.json');
+
 export const environment = {
   production: false,
   apiURL: 'http://localhost:3000',
+  appTitle: 'Child Impact Statements - Development',
+  appVersion: packageInfo.version,
   map: {
     // Another option is https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png
     tiles: 'https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
