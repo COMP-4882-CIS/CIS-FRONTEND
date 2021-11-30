@@ -1,6 +1,15 @@
 <mat-drawer-container class="map-box-container">
-  <mat-drawer-content>
+  <mat-drawer-content class="map-box-content">
     <app-map (popupOpened)="popupOpened($event)"></app-map>
+    <mat-toolbar color="accent" class="map-box-toolbar">
+      <div class="inner-toolbar">
+        <span class="app-title">{{appTitle}}</span>
+        <span class="app-version">v{{appVersion}}</span>
+      </div>
+      <button routerLink="works-cited" color="accent" mat-flat-button>Works Cited</button>
+      <!-- TODO: Point this to the YouTube tutorial link -->
+      <a href="#" color="accent" mat-flat-button>Help</a>
+    </mat-toolbar>
   </mat-drawer-content>
   <mat-drawer mode="side" position="end" [opened]="drawerOpen">
     <app-map-sidebar [data]="currentData|async"></app-map-sidebar>
