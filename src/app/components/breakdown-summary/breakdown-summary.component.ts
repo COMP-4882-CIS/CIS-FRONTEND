@@ -2,6 +2,7 @@ import {Component, Input} from '@angular/core';
 import {BreakdownStat} from "../../backend/types/stat/breakdown-stat.type";
 import {DistrictFeature} from "../../backend/types/geo/features/layer";
 import {LandmarkSummaryResponse} from "../../backend/responses/landmark/landmark-summary.response";
+import {ExportService} from "../../backend/services/export.service";
 
 @Component({
   selector: 'app-breakdown-summary',
@@ -46,6 +47,13 @@ export class BreakdownSummaryComponent {
 
   private _populationStats!: BreakdownStat;
   private _landmarksSummary?: LandmarkSummaryResponse;
+
+  constructor(private exportService: ExportService) {
+  }
+
+  exportBreakdown() {
+
+  }
 
   private processStats() {
     const stat = this._populationStats;

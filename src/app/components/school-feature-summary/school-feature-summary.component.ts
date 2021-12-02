@@ -1,13 +1,14 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {SchoolSummaryResponse} from "../../backend/responses/landmark/school-summary.response";
 import {PointFeature, SchoolFeature} from "../../backend/types/geo/features/point";
+import {ExportService} from "../../backend/services/export.service";
 
 @Component({
   selector: 'app-school-feature-summary',
   templateUrl: './school-feature-summary.component.html',
   styleUrls: ['./school-feature-summary.component.scss']
 })
-export class SchoolFeatureSummaryComponent implements OnInit {
+export class SchoolFeatureSummaryComponent {
 
   @Input()
   schoolSummary?: SchoolSummaryResponse;
@@ -22,9 +23,12 @@ export class SchoolFeatureSummaryComponent implements OnInit {
 
   private _schoolFeature?: SchoolFeature;
 
-  constructor() { }
+  constructor(private exportService: ExportService) { }
 
-  ngOnInit(): void {
+  exportSchoolData() {
+    if (!!this._schoolFeature && !!this.schoolSummary) {
+      this.exportService.exportSchoolData(this.schoolSummary, this._schoolFeature);
+    }
   }
 
   get schoolFeatureData(): SchoolFeature | null {
