@@ -11,7 +11,7 @@
       <a href="#" color="accent" mat-flat-button>Help</a>
     </mat-toolbar>
   </mat-drawer-content>
-  <mat-drawer mode="side" position="end" [opened]="drawerOpen">
+  <mat-drawer mode="side" position="end" [opened]="drawerOpen" class="drawer-sidebar">
     <app-map-sidebar [data]="currentData|async"></app-map-sidebar>
   </mat-drawer>
 </mat-drawer-container>

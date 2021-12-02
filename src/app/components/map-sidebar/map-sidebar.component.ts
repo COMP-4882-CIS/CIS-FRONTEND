@@ -10,6 +10,7 @@ import {BreakdownStat} from "../../backend/types/stat/breakdown-stat.type";
 import {PointFeatureType} from "../../backend/types/geo/features/point/point-feature-type.enum";
 import {SchoolSummaryResponse} from "../../backend/responses/landmark/school-summary.response";
 import {MatButtonToggleChange} from "@angular/material/button-toggle";
+import {MapBoxComponent} from "../map-box/map-box.component";
 
 @Component({
   selector: 'app-map-sidebar',
@@ -42,14 +43,18 @@ export class MapSidebarComponent {
 
   private titleCasePipe: TitleCasePipe = new TitleCasePipe();
 
-  constructor() {
+  constructor(private mapBoxComponent: MapBoxComponent) {
     this.currentData$.pipe(
       filter(data => !!data)
     ).subscribe(data => {
       if (!!data && !!data.mode) {
         this.sidebarDataMode = data?.mode;
       }
-    })
+    });
+  }
+
+  close() {
+    this.mapBoxComponent.popupOpened(null);
   }
 
   getTitle(data: MapSidebarData): string {
