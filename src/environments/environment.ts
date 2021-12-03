@@ -9,6 +9,7 @@ export const environment = {
   apiURL: 'http://localhost:3000',
   appTitle: 'Child Impact Statements - Development',
   appVersion: packageInfo.version,
+  helpURL: "#",
   map: {
     // Another option is https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png
     tiles: 'https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',

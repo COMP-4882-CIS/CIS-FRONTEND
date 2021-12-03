@@ -6,9 +6,16 @@
         <span class="app-title">{{appTitle}}</span>
         <span class="app-version">v{{appVersion}}</span>
       </div>
-      <button routerLink="works-cited" color="accent" mat-flat-button>Works Cited</button>
-      <!-- TODO: Point this to the YouTube tutorial link -->
-      <a href="#" color="accent" mat-flat-button>Help</a>
+      <mat-menu #infoMenu="matMenu">
+        <button mat-menu-item routerLink="works-cited">Works Cited</button>
+        <button mat-menu-item routerLink="poverty-level">Detailed Poverty Information</button>
+      </mat-menu>
+      <button mat-icon-button [matMenuTriggerFor]="infoMenu"  matTooltip="Get more information about this data">
+        <mat-icon>more_horiz</mat-icon>
+      </button>
+      <a [href]="helpURL" mat-icon-button matTooltip="View a YouTube tutorial on how to use this tool">
+        <mat-icon>help</mat-icon>
+      </a>
     </mat-toolbar>
   </mat-drawer-content>
   <mat-drawer mode="side" position="end" [opened]="drawerOpen" class="drawer-sidebar">

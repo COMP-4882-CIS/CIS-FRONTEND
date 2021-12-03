@@ -7,3 +7,4 @@ export * from './map-sidebar/map-sidebar.component';
 export * from './point-feature-summary/point-feature-summary.component';
 export * from './poverty-breakdown-summary/poverty-breakdown-summary.component';
 export * from './school-feature-summary/school-feature-summary.component';
+export * from './poverty-chart/poverty-chart.component';
