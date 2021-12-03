@@ -27,6 +27,7 @@ export class MapBoxComponent {
 
   appTitle: string;
   appVersion: string;
+  helpURL: string;
 
   drawerOpen: boolean = false;
   didErrorFetching: boolean = false;
@@ -41,6 +42,7 @@ export class MapBoxComponent {
     this.currentData = this._currentData.observable;
     this.appTitle = environment.appTitle;
     this.appVersion = environment.appVersion;
+    this.helpURL = environment.helpURL;
   }
 
   popupOpened(event: GeoEvent | null) {

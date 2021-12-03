@@ -13,3 +13,12 @@
     text-align: right;
   }
 }
+
+.info-button-wrapper {
+  display: flex;
+  padding: 1em;
+
+  button {
+    flex: 1;
+  }
+}

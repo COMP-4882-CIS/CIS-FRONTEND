@@ -1,0 +1,23 @@
+<div class="poverty-chart" [class.main]="mainChart">
+  <h2>{{data.area}}</h2>
+  <div class="people">
+    <span>People living in poverty</span>
+    <div class="bar-wrapper">
+      <div class="bar" [ngStyle]="getPeopleColorStyle(data)" [style.width]="getPeopleWidth(data)"></div>
+      <h2>{{data.peoplePercentage}}%</h2>
+    </div>
+  </div>
+
+  <div class="children">
+    <span>Children living in poverty</span>
+    <div class="bar-wrapper">
+      <div class="bar" [ngStyle]="getChildrenColorStyle(data)" [style.width]="getChildWidth(data)"></div>
+      <h2>{{data.childrenPercentage}}%</h2>
+    </div>
+  </div>
+
+  <div class="content-wrapper">
+    <mat-divider [class.main-divider]="mainChart"></mat-divider>
+    <ng-content></ng-content>
+  </div>
+</div>

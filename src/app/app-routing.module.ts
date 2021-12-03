@@ -1,12 +1,13 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {HomeComponent} from './pages';
-import {WorksCitedComponent} from "./pages/works-cited/works-cited.component";
+import {HomeComponent, PovertyLevelComponent} from './pages';
+import {WorksCitedComponent} from "./pages";
 
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'works-cited', component: WorksCitedComponent}
+  {path: 'works-cited', component: WorksCitedComponent},
+  {path: 'poverty-level', component: PovertyLevelComponent}
 ];
 
 @NgModule({

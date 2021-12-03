@@ -11,6 +11,7 @@ import {PointFeatureType} from "../../backend/types/geo/features/point/point-fea
 import {SchoolSummaryResponse} from "../../backend/responses/landmark/school-summary.response";
 import {MatButtonToggleChange} from "@angular/material/button-toggle";
 import {MapBoxComponent} from "../map-box/map-box.component";
+import {ChartData} from "chart.js";
 
 @Component({
   selector: 'app-map-sidebar',
@@ -18,7 +19,6 @@ import {MapBoxComponent} from "../map-box/map-box.component";
   styleUrls: ['./map-sidebar.component.scss'],
 })
 export class MapSidebarComponent {
-
 
   @Input()
   didError = false;
@@ -28,16 +28,16 @@ export class MapSidebarComponent {
 
   @Input()
   set data(newValue: MapSidebarData | null | undefined) {
-      if (!!newValue) {
-        this.currentData$.next(newValue);
-        this.isLoading = false;
-      } else {
-        this.isLoading = true;
-      }
+    if (!!newValue) {
+      this.currentData$.next(newValue);
+      this.isLoading = false;
+    } else {
+      this.isLoading = true;
+    }
   }
 
+  schoolChartData: ChartData = {datasets: []};
   showSchoolGradeChart = true;
-  showSchoolGenderChart = false;
   isLoading = true;
   currentData$: Subject<MapSidebarData> = new Subject<MapSidebarData>();
 
@@ -49,6 +49,7 @@ export class MapSidebarComponent {
     ).subscribe(data => {
       if (!!data && !!data.mode) {
         this.sidebarDataMode = data?.mode;
+        this._updateSchoolChartMode('grade', data!);
       }
     });
   }
@@ -142,20 +143,11 @@ export class MapSidebarComponent {
     return data.stat
   }
 
-  updateSchoolChartMode(event?: MatButtonToggleChange, value?: string) {
-    let actualValue = value;
-
-    if (!!event) {
-      actualValue = event.value;
-    }
-
-    if (actualValue === 'grade') {
-      this.showSchoolGradeChart = true;
-      this.showSchoolGenderChart = false;
-    } else {
-      this.showSchoolGradeChart = false;
-      this.showSchoolGenderChart = true;
-    }
+  updateSchoolChartMode(event: MatButtonToggleChange, data: MapSidebarData) {
+    this._updateSchoolChartMode(event.value, data);
   }
 
+  private _updateSchoolChartMode(mode: string, data: MapSidebarData) {
+    this.schoolChartData = ((mode === 'grade') ? data.schoolGradeChartData : data.schoolGenderChartData) || {datasets: []};
+  }
 }

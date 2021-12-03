@@ -1,0 +1,28 @@
+@use 'sass:map';
+@use '@angular/material' as mat;
+
+
+@mixin color($theme) {
+  $color-config: mat.get-color-config($theme);
+  $foreground: map.get($color-config, foreground);
+
+  .bar {
+    border: 3px solid mat.get-color-from-palette($foreground, divider);
+  }
+}
+
+
+@mixin theme($theme) {
+  $color-config: mat.get-color-config($theme);
+  @if $color-config != null {
+    @include color($theme);
+  }
+
+  .bar {
+    @include mat.elevation-transition();
+
+    &:hover {
+      @include mat.elevation(8);
+    }
+  }
+}
