@@ -81,7 +81,7 @@
   flex: 1;
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
 
   @media (max-width: 1500px) {
     flex-wrap: wrap-reverse;
