@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {PovertyData, PovertyScheduleData} from "../../misc";
+import {Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-poverty-level',
@@ -56,6 +57,9 @@ export class PovertyLevelComponent {
       peoplePercentage: 18.6,
       childrenPercentage: 27
     },
-  ]
+  ];
 
+  constructor(private title: Title) {
+    this.title.setTitle('Child Impact Statements: Poverty Details');
+  }
 }
