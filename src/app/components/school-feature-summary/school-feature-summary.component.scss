@@ -18,3 +18,12 @@
   padding-top: 0!important;
   padding-bottom: 16px!important;
 }
+
+.export-wrapper {
+  display: flex;
+  padding: 1em;
+
+  button {
+    flex: 1;
+  }
+}
