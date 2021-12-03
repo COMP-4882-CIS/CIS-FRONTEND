@@ -7,7 +7,7 @@ const packageInfo = require('../../package.json');
 export const environment = {
   production: false,
   apiURL: 'http://localhost:3000',
-  appTitle: 'Child Impact Statements - Development',
+  appTitle: 'Child Impact Resources [Libraries] - Development',
   appVersion: packageInfo.version,
   map: {
     // Another option is https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png
