@@ -20,13 +20,18 @@ import {MatTabsModule} from "@angular/material/tabs";
 import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 import {FormsModule} from "@angular/forms";
 import {MatButtonToggleModule} from "@angular/material/button-toggle";
-import {HomeComponent, WorksCitedComponent} from "./pages";
+import {MatGridListModule} from "@angular/material/grid-list";
+import {MatTableModule} from "@angular/material/table";
+import {MatTooltipModule} from "@angular/material/tooltip";
+import {MatMenuModule} from "@angular/material/menu";
+import {HomeComponent, PovertyLevelComponent, WorksCitedComponent} from "./pages";
 import {
   BreakdownChartComponent,
   BreakdownSummaryComponent, FetchErrorComponent,
   MapBoxComponent,
   MapComponent, MapSidebarComponent, PointFeatureSummaryComponent,
-  PovertyBreakdownSummaryComponent, SchoolFeatureSummaryComponent
+  PovertyBreakdownSummaryComponent, SchoolFeatureSummaryComponent,
+  PovertyChartComponent
 } from "./components";
 
 @NgModule({
@@ -43,6 +48,8 @@ import {
     SchoolFeatureSummaryComponent,
     FetchErrorComponent,
     WorksCitedComponent,
+    PovertyLevelComponent,
+    PovertyChartComponent,
   ],
   imports: [
     BrowserModule,
@@ -63,7 +70,11 @@ import {
     MatTabsModule,
     MatSlideToggleModule,
     FormsModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatGridListModule,
+    MatTableModule,
+    MatTooltipModule,
+    MatMenuModule,
   ],
   bootstrap: [AppComponent]
 })

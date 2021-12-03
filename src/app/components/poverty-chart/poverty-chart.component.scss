@@ -1,0 +1,53 @@
+.poverty-chart {
+  h2 {
+    margin: 0;
+  }
+
+  .people {
+    margin-bottom: 12px;
+  }
+
+  .people, .children {
+    padding-right: 1em;
+
+    .bar-wrapper {
+      display: flex;
+      align-items: center;
+
+      .bar {
+        height: 48px;
+      }
+
+      h2 {
+        margin: 0;
+        padding-left: 8px;
+      }
+    }
+  }
+}
+
+.poverty-chart {
+  .content-wrapper {
+    display: none;
+  }
+}
+
+.poverty-chart.main {
+  .content-wrapper {
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+    .main-divider {
+      width: 100%;
+      margin-bottom: 12px;
+    }
+
+    ::ng-deep {
+      app-poverty-chart {
+        min-width: 220px;
+      }
+    }
+  }
+}

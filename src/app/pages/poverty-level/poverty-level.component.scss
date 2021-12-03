@@ -1,0 +1,96 @@
+:host {
+  display: flex;
+  flex: 1;
+}
+
+.poverty-level {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 2em;
+
+  h1 {
+    margin-bottom: 0;
+    font-size: 2.2em;
+  }
+
+  h2 {
+    margin-top: 12px;
+    margin-bottom: 1em;
+    font-weight: normal;
+    font-size: 1.6em;
+  }
+}
+
+.poverty-schedule-wrapper {
+  min-width: 450px;
+  margin-right: 3em;
+  margin-top: 1.2em;
+  flex: 1;
+  position: relative;
+
+  .mat-divider-vertical {
+    position: absolute !important;
+    left: -8px;
+    top: 0;
+    bottom: 10px;
+    width: 1px;
+
+    @media (max-width: 1500px) {
+      display: none;
+    }
+  }
+
+  h3 {
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .schedule-list-item ::ng-deep {
+    .mat-list-item-content {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  .schedule-item {
+    display: flex !important;
+    justify-content: space-between;
+  }
+
+  .guideline, .household {
+    display: flex;
+    align-items: center;
+
+    span {
+      display: block;
+
+      &:first-child {
+        color: grey;
+        margin-right: 1em;
+      }
+
+      &:last-child {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.poverty-level-data-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+
+  @media (max-width: 1500px) {
+    flex-wrap: wrap-reverse;
+  }
+}
+
+.poverty-chart-wrapper {
+  flex: 2;
+  min-width: 790px;
+  margin-top: 1.2em;
+  margin-right: 1em;
+}
