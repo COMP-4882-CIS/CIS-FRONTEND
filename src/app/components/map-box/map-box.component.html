@@ -13,8 +13,7 @@
       <button mat-icon-button [matMenuTriggerFor]="infoMenu"  matTooltip="Get more information about this data">
         <mat-icon>more_horiz</mat-icon>
       </button>
-      <!-- TODO: Point this to the YouTube tutorial link -->
-      <a href="#" mat-icon-button matTooltip="View a YouTube tutorial on how to use this tool">
+      <a [href]="helpURL" mat-icon-button matTooltip="View a YouTube tutorial on how to use this tool">
         <mat-icon>help</mat-icon>
       </a>
     </mat-toolbar>
