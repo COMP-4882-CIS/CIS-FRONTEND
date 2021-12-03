@@ -3,7 +3,7 @@ const packageInfo = require('../../package.json');
 export const environment = {
   production: true,
   apiURL: 'https://cis-backend-comp-4882.herokuapp.com',
-  appTitle: 'Child Impact Statements',
+  appTitle: 'Child Impact Resources',
   appVersion: packageInfo.version,
   helpURL: "#",
   map: {

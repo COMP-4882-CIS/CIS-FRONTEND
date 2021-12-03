@@ -7,7 +7,7 @@ const packageInfo = require('../../package.json');
 export const environment = {
   production: false,
   apiURL: 'http://localhost:3000',
-  appTitle: 'Child Impact Resources [Libraries] - Development',
+  appTitle: 'Child Impact Resources - Development',
   appVersion: packageInfo.version,
   helpURL: "#",
   map: {
