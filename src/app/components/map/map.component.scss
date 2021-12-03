@@ -19,10 +19,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.28);
+  flex-direction: column;
+  padding-top: 1em;
 
   .mat-spinner {
     z-index: 9999;
+  }
+
+  .loading-text {
+    opacity: 0.7;
+    margin-top: 1em;
   }
 }
 

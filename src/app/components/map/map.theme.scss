@@ -1,0 +1,25 @@
+@use 'sass:map';
+@use '@angular/material' as mat;
+
+@mixin color($theme) {
+  $color-config: mat.get-color-config($theme);
+  $accent: map.get($color-config, accent);
+
+  .map-container {
+    .loading-shade {
+      background: mat.get-color-from-palette($accent) !important;
+      color: mat.get-color-from-palette($accent, default-contrast);
+    }
+
+    .map-spinner circle {
+      stroke: white!important;
+    }
+  }
+}
+
+@mixin theme($theme) {
+  $color-config: mat.get-color-config($theme);
+  @if $color-config != null {
+    @include color($theme);
+  }
+}
