@@ -14,11 +14,19 @@ import {PointFeature} from "../../backend/types/geo/features/point";
 import 'src/assets/leaflet/SmoothWheelZoom.js';
 import {environment} from "../../../environments/environment";
 import {ActivatedRoute, Router} from "@angular/router";
+import {animate, style, transition, trigger} from "@angular/animations";
 
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
-  styleUrls: ['./map.component.scss']
+  styleUrls: ['./map.component.scss'],
+  animations: [
+    trigger('fadeOut', [
+      transition(':leave', [
+        animate(300, style({ opacity: 0 }))
+      ]),
+    ])
+  ]
 })
 export class MapComponent implements AfterViewInit {
 
@@ -274,7 +282,10 @@ export class MapComponent implements AfterViewInit {
       tracts.removeFrom(map);
 
       this.bindDistrictLabels(districts, map);
-      this.isLoading = false;
+
+      setTimeout(() => {
+        this.isLoading =  false;
+      }, 100);
     });
   }
 

@@ -1,6 +1,7 @@
 <div class="map-container">
-  <div class="loading-shade" *ngIf="isLoading">
-    <mat-spinner diameter="40"></mat-spinner>
+  <div class="loading-shade" *ngIf="isLoading" @fadeOut>
+    <mat-spinner diameter="45" class="map-spinner"></mat-spinner>
+    <h2 class="loading-text">Loading map...</h2>
   </div>
   <div id="map"></div>
 </div>

@@ -1,6 +1,7 @@
 @use '@angular/material' as mat;
 @use './src/app/pages/works-cited/works-cited.theme' as works-cited;
 @use './src/app/components/poverty-chart/poverty-chart.theme' as poverty-chart;
+@use './src/app/components/map/map.theme' as mapc;
 
 html, body {
   height: 100%;
@@ -24,6 +25,7 @@ $theme: mat.define-light-theme((
 
 @include works-cited.theme($theme);
 @include poverty-chart.theme($theme);
+@include mapc.theme($theme);
 
 .logo {
   text-decoration: none;
