@@ -3,6 +3,9 @@
     <ng-container *ngIf="!isLoading; else loadingStats">
       <div class="single-breakdown" *ngIf="!isFeaturePoint && !isMulti">
         <mat-toolbar>
+          <button mat-icon-button (click)="close()">
+            <mat-icon>arrow_back_ios</mat-icon>
+          </button>
           <h1 class="title">{{getTitle(currentData)}} - <span>{{getSubtitle(currentData)}}</span></h1>
         </mat-toolbar>
         <ng-container *ngIf="!didError; else errorFetchingStats">
@@ -34,6 +37,9 @@
 
       <div class="feature-point-summary" *ngIf="isFeaturePoint">
         <mat-toolbar>
+          <button mat-icon-button (click)="close()">
+            <mat-icon>arrow_back_ios</mat-icon>
+          </button>
           <h1 class="title">{{getTitle(currentData)}}</h1>
         </mat-toolbar>
         <ng-container *ngIf="!didError; else errorFetchingStats">
@@ -42,8 +48,10 @@
             <mat-tab-group dynamicHeight mat-align-tabs="center">
               <mat-tab label="School">
                 <div class="school-chart-wrapper" [class.hide]="!showSchoolChart(currentData)">
-                    <app-breakdown-chart [class.show]="showSchoolGenderChart" [class.hide]="showSchoolGradeChart" [chartData]="currentData.schoolGenderChartData"></app-breakdown-chart>
-                    <app-breakdown-chart [class.show]="showSchoolGradeChart" [class.hide]="showSchoolGenderChart" [chartData]="currentData.schoolGradeChartData"></app-breakdown-chart>
+                  <app-breakdown-chart [class.show]="showSchoolGenderChart" [class.hide]="showSchoolGradeChart"
+                                       [chartData]="currentData.schoolGenderChartData"></app-breakdown-chart>
+                  <app-breakdown-chart [class.show]="showSchoolGradeChart" [class.hide]="showSchoolGenderChart"
+                                       [chartData]="currentData.schoolGradeChartData"></app-breakdown-chart>
 
                   <mat-button-toggle-group (change)="updateSchoolChartMode($event)">
                     <mat-button-toggle [value]="'grade'" checked>Grade</mat-button-toggle>
@@ -54,7 +62,8 @@
                 <app-point-feature-summary [pointFeature]="getPointFeatureData(currentData)"
                                            [typeTitle]="getTitle(currentData)"></app-point-feature-summary>
 
-                <app-school-feature-summary [schoolFeature]="getPointFeatureData(currentData)" [schoolSummary]="getSchoolSummaryData(currentData)"></app-school-feature-summary>
+                <app-school-feature-summary [schoolFeature]="getPointFeatureData(currentData)"
+                                            [schoolSummary]="getSchoolSummaryData(currentData)"></app-school-feature-summary>
               </mat-tab>
               <mat-tab label="Servicing Population">
                 <ng-template [ngTemplateOutlet]="regularPointFeature"></ng-template>
