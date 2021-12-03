@@ -51,7 +51,7 @@ export class BreakdownSummaryComponent {
   constructor(private exportService: ExportService) {
   }
 
-  export(){
+  exportData(){
     if((this._populationStats as TractBreakdownStat).censusTract){
       this.exportTractBreakdown();
     } else{
