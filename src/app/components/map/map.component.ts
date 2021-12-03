@@ -284,6 +284,7 @@ export class MapComponent implements AfterViewInit {
       this.bindDistrictLabels(districts, map);
 
       setTimeout(() => {
+        map.invalidateSize();
         this.isLoading =  false;
       }, 100);
     });
