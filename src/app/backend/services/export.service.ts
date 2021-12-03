@@ -38,21 +38,7 @@ export class ExportService {
     .addSegment('/tract')
     .get;
 
-    this.http.post< HttpResponse<any>>(url, requestBody,  {
-      responseType: 'blob' as 'json',
-      observe: 'response' as 'body'
-    }).subscribe((response) => {
-      const contentDispositionHeader = response.headers.get('Content-Disposition');
-      let fileName = 'unknown.xlsx';
-
-      if (!!contentDispositionHeader) {
-        fileName = contentDispositionHeader.split(';')[1].trim().split('=')[1].replace(/"/g, '');
-      }
-
-      console.log(fileName);
-
-      return saveAs(response.body, fileName);
-    })
+    return this.doExport(url, requestBody);
   }
 
   exportZIPData(stat: ZipCodeBreakdownStat, landmarkSummary: LandmarkSummaryResponse) {
@@ -75,22 +61,7 @@ export class ExportService {
     .addSegment('/zip')
     .get;
 
-    this.http.post< HttpResponse<any>>(url, requestBody,  {
-      responseType: 'blob' as 'json',
-      observe: 'response' as 'body'
-    }).subscribe((response) => {
-      const contentDispositionHeader = response.headers.get('Content-Disposition');
-      let fileName = 'unknown.xlsx';
-
-      if (!!contentDispositionHeader) {
-        fileName = contentDispositionHeader.split(';')[1].trim().split('=')[1].replace(/"/g, '');
-      }
-
-      console.log(fileName);
-
-      return saveAs(response.body, fileName);
-    })
-    
+    return this.doExport(url, requestBody);
   }
 
   exportSchoolData(summaryResponse: SchoolSummaryResponse, feature: SchoolFeature) {
@@ -124,6 +95,10 @@ export class ExportService {
       .addSegment('/school')
       .get;
 
+    return this.doExport(url, requestBody);
+  }
+
+  private doExport(url: string, requestBody: any) {
     this.http.post< HttpResponse<any>>(url, requestBody,  {
       responseType: 'blob' as 'json',
       observe: 'response' as 'body'
@@ -134,8 +109,6 @@ export class ExportService {
       if (!!contentDispositionHeader) {
         fileName = contentDispositionHeader.split(';')[1].trim().split('=')[1].replace(/"/g, '');
       }
-
-      console.log(fileName);
 
       return saveAs(response.body, fileName);
     })
