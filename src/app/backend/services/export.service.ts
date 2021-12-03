@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpResponse} from "@angular/common/http";
 import {SchoolSummaryResponse} from "../responses/landmark/school-summary.response";
-import {SchoolExportRequest, TractExportRequest} from "../requests/export";
+import {SchoolExportRequest, TractExportRequest, ZipExportRequest} from "../requests/export";
 import {SchoolFeature} from "../types/geo/features/point";
 import {Burly} from "kb-burly";
 import {environment} from "../../../environments/environment";
@@ -18,16 +18,79 @@ export class ExportService {
   }
 
   exportTractData(stat: TractBreakdownStat, landmarkSummary: LandmarkSummaryResponse, district: string) {
- /*   const requestBody: TractExportRequest = {
+    const requestBody: TractExportRequest = {
       tract: `${stat.censusTract}`,
       district,
       totalPopulation: stat.totalPopulation,
+      populationUnder18: stat.populationUnder18,
+      populationUnder18Male: stat.populationUnder18Male,
+      populationUnder18Female: stat.populationUnder18Female,
+      populationInPovertyUnder6: stat.populationInPovertyUnder6,
+      populationInPoverty6To11: stat.populationInPoverty6To11,
+      populationInPoverty12To17: stat.populationInPoverty12To17,
+      parkCount: landmarkSummary.totalParks,
+      libraryCount: landmarkSummary.totalLibraries,
+      communityCenterCount: landmarkSummary.totalCommunityCenters
+    }
 
-    }*/
+    const url = Burly(environment.apiURL)
+    .addSegment('/export')
+    .addSegment('/tract')
+    .get;
+
+    this.http.post< HttpResponse<any>>(url, requestBody,  {
+      responseType: 'blob' as 'json',
+      observe: 'response' as 'body'
+    }).subscribe((response) => {
+      const contentDispositionHeader = response.headers.get('Content-Disposition');
+      let fileName = 'unknown.xlsx';
+
+      if (!!contentDispositionHeader) {
+        fileName = contentDispositionHeader.split(';')[1].trim().split('=')[1].replace(/"/g, '');
+      }
+
+      console.log(fileName);
+
+      return saveAs(response.body, fileName);
+    })
   }
 
   exportZIPData(stat: ZipCodeBreakdownStat, landmarkSummary: LandmarkSummaryResponse) {
+    const requestBody : ZipExportRequest = {
+      zipCode: `${stat.zipCode}`,
+      totalPopulation: stat.totalPopulation,
+      populationUnder18: stat.populationUnder18,
+      populationUnder18Male: stat.populationUnder18Male,
+      populationUnder18Female: stat.populationUnder18Female,
+      populationInPovertyUnder6: stat.populationInPovertyUnder6,
+      populationInPoverty6To11: stat.populationInPoverty6To11,
+      populationInPoverty12To17: stat.populationInPoverty12To17,
+      parkCount: landmarkSummary.totalParks,
+      libraryCount: landmarkSummary.totalLibraries,
+      communityCenterCount: landmarkSummary.totalCommunityCenters
+    }
 
+    const url = Burly(environment.apiURL)
+    .addSegment('/export')
+    .addSegment('/zip')
+    .get;
+
+    this.http.post< HttpResponse<any>>(url, requestBody,  {
+      responseType: 'blob' as 'json',
+      observe: 'response' as 'body'
+    }).subscribe((response) => {
+      const contentDispositionHeader = response.headers.get('Content-Disposition');
+      let fileName = 'unknown.xlsx';
+
+      if (!!contentDispositionHeader) {
+        fileName = contentDispositionHeader.split(';')[1].trim().split('=')[1].replace(/"/g, '');
+      }
+
+      console.log(fileName);
+
+      return saveAs(response.body, fileName);
+    })
+    
   }
 
   exportSchoolData(summaryResponse: SchoolSummaryResponse, feature: SchoolFeature) {
