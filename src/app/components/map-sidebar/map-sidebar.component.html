@@ -50,7 +50,6 @@
                 <ng-template matTabContent>
                 <div class="school-chart-wrapper" [class.hide]="!showSchoolChart(currentData)">
                   <app-breakdown-chart [chartData]="schoolChartData"></app-breakdown-chart>
-
                   <mat-button-toggle-group (change)="updateSchoolChartMode($event, currentData)">
                     <mat-button-toggle [value]="'grade'" checked>Grade</mat-button-toggle>
                     <mat-button-toggle [value]="'gender'">Gender</mat-button-toggle>
