@@ -1,7 +1,8 @@
 import {Component, Input} from '@angular/core';
-import {BreakdownStat} from "../../backend/types/stat/breakdown-stat.type";
+import {BreakdownStat, TractBreakdownStat, ZipCodeBreakdownStat} from "../../backend/types/stat/breakdown-stat.type";
 import {DistrictFeature} from "../../backend/types/geo/features/layer";
 import {LandmarkSummaryResponse} from "../../backend/responses/landmark/landmark-summary.response";
+import {ExportService} from "../../backend/services/export.service";
 
 @Component({
   selector: 'app-breakdown-summary',
@@ -46,6 +47,29 @@ export class BreakdownSummaryComponent {
 
   private _populationStats!: BreakdownStat;
   private _landmarksSummary?: LandmarkSummaryResponse;
+
+  constructor(private exportService: ExportService) {
+  }
+
+  exportData(){
+    if((this._populationStats as TractBreakdownStat).censusTract){
+      this.exportTractBreakdown();
+    } else{
+      this.exportZIPBreakdown();
+    }
+  }
+
+  exportTractBreakdown() {
+    this.exportService.exportTractData(this._populationStats as TractBreakdownStat, this._landmarksSummary as LandmarkSummaryResponse, this.district?.id as string);
+
+  }
+
+  exportZIPBreakdown(){
+    if(!!this._populationStats && this._landmarksSummary){
+      this.exportService.exportZIPData(this._populationStats as ZipCodeBreakdownStat, this._landmarksSummary);
+    }
+    
+  }
 
   private processStats() {
     const stat = this._populationStats;
