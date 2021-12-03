@@ -47,13 +47,11 @@
 
             <mat-tab-group dynamicHeight mat-align-tabs="center">
               <mat-tab label="School">
+                <ng-template matTabContent>
                 <div class="school-chart-wrapper" [class.hide]="!showSchoolChart(currentData)">
-                  <app-breakdown-chart [class.show]="showSchoolGenderChart" [class.hide]="showSchoolGradeChart"
-                                       [chartData]="currentData.schoolGenderChartData"></app-breakdown-chart>
-                  <app-breakdown-chart [class.show]="showSchoolGradeChart" [class.hide]="showSchoolGenderChart"
-                                       [chartData]="currentData.schoolGradeChartData"></app-breakdown-chart>
+                  <app-breakdown-chart [chartData]="schoolChartData"></app-breakdown-chart>
 
-                  <mat-button-toggle-group (change)="updateSchoolChartMode($event)">
+                  <mat-button-toggle-group (change)="updateSchoolChartMode($event, currentData)">
                     <mat-button-toggle [value]="'grade'" checked>Grade</mat-button-toggle>
                     <mat-button-toggle [value]="'gender'">Gender</mat-button-toggle>
                   </mat-button-toggle-group>
@@ -64,6 +62,7 @@
 
                 <app-school-feature-summary [schoolFeature]="getPointFeatureData(currentData)"
                                             [schoolSummary]="getSchoolSummaryData(currentData)"></app-school-feature-summary>
+                </ng-template>
               </mat-tab>
               <mat-tab label="Servicing Population">
                 <ng-template [ngTemplateOutlet]="regularPointFeature"></ng-template>
