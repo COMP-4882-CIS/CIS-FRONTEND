@@ -121,7 +121,7 @@ export class MapSidebarComponent {
 
   showGenderChart(data: MapSidebarData) {
     if (!!data.genderChartData) {
-      return data.stat.populationUnder18 > 0
+      return data.stat.totalPopulation > 0
     }
 
     return false;

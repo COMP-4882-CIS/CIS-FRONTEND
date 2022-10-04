@@ -30,25 +30,25 @@ export class ChartDataHelper {
     }
   }
 
-  static getOverallChartData(response: BreakdownStatResponse): ChartData | null {
-    const stat = this.getStat(response);
-    if (!!stat) {
-      return {
-        labels: ['Over 18', 'Under 18'],
-        datasets: [
-          {
-            label: 'Population Breakdown',
-            data: [
-              stat.totalPopulation - stat.populationUnder18,
-              stat.populationUnder18,
-            ]
-          }
-        ]
-      }
-    }
+  // static getOverallChartData(response: BreakdownStatResponse): ChartData | null {
+  //   const stat = this.getStat(response);
+  //   if (!!stat) {
+  //     return {
+  //       labels: ['Over 18', 'Under 18'],
+  //       datasets: [
+  //         {
+  //           label: 'Population Breakdown',
+  //           data: [
+  //             stat.totalPopulation - stat.totalPopulation,
+  //             stat.totalPopulation,
+  //           ]
+  //         }
+  //       ]
+  //     }
+  //   }
 
-    return null;
-  }
+  //   return null;
+  // }
 
   static mergeOverallChartData(destination: ChartData, addition: ChartData): ChartData {
     const destinationData = destination.datasets[0].data as number[]
@@ -68,18 +68,21 @@ export class ChartDataHelper {
     }
   }
 
-  static getGenderChartData(response: BreakdownStatResponse): ChartData | null {
+  static getAgeChartData(response: BreakdownStatResponse): ChartData | null {
     const stat = this.getStat(response);
 
     if (!!stat) {
       return {
-        labels: ['Female', 'Male'],
+        labels: ['Under 5', '5 - 9', '10 - 14', '15 - 19'],
         datasets: [
           {
             label: 'Population Breakdown',
             data: [
-              stat.populationUnder18Female,
-              stat.populationUnder18Male
+              stat.ageUnder5,
+              stat.age5To9,
+              stat.age10To14,
+              stat.age15To19,
+            
             ]
           }
         ]

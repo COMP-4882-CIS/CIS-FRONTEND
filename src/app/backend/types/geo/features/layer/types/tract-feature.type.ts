@@ -11,9 +11,10 @@ export class TractFeature implements LayerFeature, BreakdownStat {
   populationInPoverty12To17: number = 0;
   populationInPoverty6To11: number = 0;
   populationInPovertyUnder6: number = 0;
-  populationUnder18Female: number = 0;
-  populationUnder18Male: number = 0;
-  populationUnder18: number = 0;
+  ageUnder5: number = 0;
+  age5To9: number = 0;
+  age10To14: number = 0;
+  age15To19: number= 0;
   totalPopulation: number = 0;
   district?: DistrictFeature;
 
@@ -27,9 +28,10 @@ export class TractFeature implements LayerFeature, BreakdownStat {
 
   update(stat: BreakdownStat) {
     this.totalPopulation = stat.totalPopulation;
-    this.populationUnder18 = stat.populationUnder18;
-    this.populationUnder18Male = stat.populationUnder18Male;
-    this.populationUnder18Female = stat.populationUnder18Female;
+    this.ageUnder5 = stat.ageUnder5;
+    this.age5To9 = stat.age5To9;
+    this.age10To14 = stat.age10To14;
+    this.age15To19 = stat.age15To19;
     this.populationInPovertyUnder6 = stat.populationInPovertyUnder6;
     this.populationInPoverty6To11 = stat.populationInPoverty6To11;
     this.populationInPoverty12To17 = stat.populationInPoverty12To17;
