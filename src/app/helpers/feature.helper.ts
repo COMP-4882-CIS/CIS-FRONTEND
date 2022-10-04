@@ -6,7 +6,8 @@ import {
   LibraryFeature,
   ParkFeature,
   PointFeature,
-  SchoolFeature
+  SchoolFeature,
+  ChildCareFeature
 } from "../backend/types/geo/features/point";
 import {DistrictFeature, LayerFeature, TractFeature, ZipcodeFeature} from "../backend/types/geo/features/layer";
 import {LayerFeatureType} from "../backend/types/geo/features/layer/layer-feature-type.enum";
@@ -48,6 +49,10 @@ export class FeatureHelper {
       iconUrl: 'assets/icons/community_center.png',
       iconSize: [31, 42],
     }),
+    childcare: L.icon({
+      iconUrl: 'assets/icons/scorpion.png',
+      iconSize: [31, 42],
+    }),
     school: L.icon({
       iconUrl: 'assets/icons/school.png',
       iconSize: [31, 42],
@@ -74,6 +79,9 @@ export class FeatureHelper {
       case PointFeatureType.COMMUNITY_CENTER:
         icon = this.icons.center;
         break;
+      case PointFeatureType.CHILDCARE:
+        icon = this.icons.childcare;
+        break;
       case PointFeatureType.SCHOOL:
         icon = this.icons.school;
         break;
@@ -98,6 +106,8 @@ export class FeatureHelper {
         return new ParkFeature(data);
       case PointFeatureType.SCHOOL:
         return new SchoolFeature(data);
+      case PointFeatureType.CHILDCARE:
+        return new ChildCareFeature(data);
     }
   }
 
