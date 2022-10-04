@@ -88,7 +88,7 @@ export class MapBoxComponent {
   }
 
   private getGenderChartData(response: BreakdownStatResponse) {
-    const genderChartData = ChartDataHelper.getGenderChartData(response);
+    const genderChartData = ChartDataHelper.getAgeChartData(response);
 
     if (!!genderChartData) {
       return genderChartData;
@@ -133,7 +133,7 @@ export class MapBoxComponent {
   }
 
   private getOverallChartData(response: BreakdownStatResponse) {
-    const overallChartData = ChartDataHelper.getOverallChartData(response);
+    const overallChartData = ChartDataHelper.getAgeChartData(response);
 
     if (!!overallChartData) {
       return overallChartData;
