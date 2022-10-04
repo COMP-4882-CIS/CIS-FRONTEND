@@ -38,10 +38,11 @@ export class BreakdownSummaryComponent {
   totalLibraries: number = 0;
   totalCommunityCenters: number = 0;
 
-  underEighteenTotal: number = 0;
-  underEighteenMaleTotal: number = 0;
-  underEighteenFemaleTotal: number = 0;
-  overEighteenTotal: number = 0;
+  ageUnder5: number = 0;
+  age5To9: number = 0;
+  age10To14: number = 0;
+  age15To19: number = 0;
+  totalPopulation: number = 0;
 
   showLandmarksSummary = false;
 
@@ -75,10 +76,11 @@ export class BreakdownSummaryComponent {
     const stat = this._populationStats;
 
     if (!!stat) {
-      this.underEighteenTotal = stat.populationUnder18;
-      this.underEighteenMaleTotal = stat.populationUnder18Male;
-      this.underEighteenFemaleTotal = stat.populationUnder18Female;
-      this.overEighteenTotal = stat.totalPopulation - stat.populationUnder18;
+      this.ageUnder5 = stat.ageUnder5;
+      this.age5To9 = stat.age5To9;
+      this.age10To14 = stat.age10To14;
+      this.age15To19 = stat.age15To19;
+      this.totalPopulation = stat.totalPopulation;
     }
   }
 

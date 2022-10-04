@@ -17,7 +17,7 @@ export class LayerHelper {
       if (!!feature && !!feature.properties) {
         const layerFeature: ZipcodeFeature | TractFeature = feature.properties;
         const layerType: LayerFeatureType = (layerFeature instanceof TractFeature ? LayerFeatureType.TRACT : LayerFeatureType.ZIP_CODE);
-        const population = layerFeature.populationUnder18;
+        const population = layerFeature.totalPopulation;
 
 
         if (layerType === LayerFeatureType.TRACT && population > 0) {

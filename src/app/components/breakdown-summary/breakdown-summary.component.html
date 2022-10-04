@@ -53,32 +53,39 @@
     </mat-list-item>
   </ng-container>
 
-  <h3 matSubheader>{{title}} - Under 18</h3>
+  <h3 matSubheader>{{title}} - By Age</h3>
   <mat-list-item>
     <div class="list-item-inner">
-      <span class="title">Male Total</span>
-      <span class="value">{{underEighteenMaleTotal}}</span>
+      <span class="title">Under 5</span>
+      <span class="value">{{ageUnder5}}</span>
     </div>
   </mat-list-item>
   <mat-divider></mat-divider>
   <mat-list-item>
     <div class="list-item-inner">
-      <span class="title">Female Total</span>
-      <span class="value">{{underEighteenFemaleTotal}}</span>
+      <span class="title">5 - 9</span>
+      <span class="value">{{age5To9}}</span>
     </div>
   </mat-list-item>
   <mat-divider></mat-divider>
   <mat-list-item>
     <div class="list-item-inner">
-      <span class="title">Total</span>
-      <span class="value">{{underEighteenTotal}}</span>
+      <span class="title">10 - 14</span>
+      <span class="value">{{age10To14}}</span>
     </div>
   </mat-list-item>
-  <h3 matSubheader>{{title}} - Over 18</h3>
+  <mat-divider></mat-divider>
+  <mat-list-item>
+    <div class="list-item-inner">
+      <span class="title">15 - 19</span>
+      <span class="value">{{age15To19}}</span>
+    </div>
+  </mat-list-item>
+  <h3 matSubheader>{{title}} - All ages</h3>
   <mat-list-item>
     <div class="list-item-inner">
       <span class="title">Total</span>
-      <span class="value">{{overEighteenTotal}}</span>
+      <span class="value">{{totalPopulation}}</span>
     </div>
   </mat-list-item>
   <div class="export-wrapper">

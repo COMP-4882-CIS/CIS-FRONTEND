@@ -39,8 +39,8 @@ export class ChartDataHelper {
           {
             label: 'Population Breakdown',
             data: [
-              stat.totalPopulation - stat.populationUnder18,
-              stat.populationUnder18,
+              stat.totalPopulation - stat.totalPopulation,
+              stat.totalPopulation,
             ]
           }
         ]
@@ -78,8 +78,8 @@ export class ChartDataHelper {
           {
             label: 'Population Breakdown',
             data: [
-              stat.populationUnder18Female,
-              stat.populationUnder18Male
+              stat.totalPopulation,
+              stat.totalPopulation
             ]
           }
         ]

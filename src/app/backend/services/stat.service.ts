@@ -66,7 +66,7 @@ export class StatService {
 
         return {
           layers: requests.map(r => r.layer),
-          max: response.stats[0].populationUnder18
+          max: response.stats[0].totalPopulation
         };
       }),
       retry(2)
@@ -91,7 +91,7 @@ export class StatService {
 
         return {
           layers: requests.map(r => r.layer),
-          max: response.stats[0].populationUnder18
+          max: response.stats[0].totalPopulation
         };
       }),
       retry(2)
