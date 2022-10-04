@@ -1,0 +1,500 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "Index": 1,
+          "County": "SHELBY",
+          "Agency": "Super Kids Child Care Center",
+          "Address": "3272 Chelsea, Memphis TN 38108",
+          "Street": "3272 Chelsea",
+          "City": "Memphis",
+          "State": "TN",
+          "Zip": 38108,
+          "Phone": "(901) 324-9115",
+          "Contact": "L. Nicole Johnson",
+          "MinAge": "6WK",
+          "MaxAge": "12YR",
+          "StarRating": 3,
+          "Provider": "Center",
+          "Capacity": 75,
+          "Open": "7:00 AM",
+          "Close": "4:00 PM",
+          "RegAgency": "DHS Licensing",
+          "RegStatus": "Licensed",
+          "LicAppDate": "10/1/2021",
+          "DateOpen": "5/1/2003"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -89.951174,
+            35.1735489
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Index": 2,
+          "County": "SHELBY",
+          "Agency": "Mrs. De's Family Child Care",
+          "Address": "27 W. Norwood Street, Memphis TN 38109",
+          "Street": "27 W. Norwood Street",
+          "City": "Memphis",
+          "State": "TN",
+          "Zip": 38109,
+          "Phone": "(901) 947-4002",
+          "Contact": "Delorace Parker",
+          "MinAge": "6WK",
+          "MaxAge": "12YR",
+          "StarRating": 3,
+          "Provider": "Family",
+          "Capacity": 7,
+          "Open": "6:00 AM",
+          "Close": "6:00 PM",
+          "RegAgency": "DHS Licensing",
+          "RegStatus": "Licensed",
+          "LicAppDate": "2/1/2021",
+          "DateOpen": "2/2/2004"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -90.064057,
+            35.0914843
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Index": 3,
+          "County": "SHELBY",
+          "Agency": "Kid's Come First Family Day Home",
+          "Address": "39 East McKellar, Memphis TN 38109",
+          "Street": "39 East McKellar",
+          "City": "Memphis",
+          "State": "TN",
+          "Zip": 38109,
+          "Phone": "(901) 520-5681",
+          "Contact": "Marilyn Perry",
+          "MinAge": "6WK",
+          "MaxAge": "12YR",
+          "StarRating": 3,
+          "Provider": "Family",
+          "Capacity": 7,
+          "Open": "6:00 AM",
+          "Close": "11:59 PM",
+          "RegAgency": "DHS Licensing",
+          "RegStatus": "Licensed",
+          "LicAppDate": "6/1/2021",
+          "DateOpen": "2/10/2020"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -90.0615941,
+            35.0894003
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Index": 4,
+          "County": "SHELBY",
+          "Agency": "JoAnn's Kids Learning Academy",
+          "Address": "3277  N. Watkins, Memphis TN 38127",
+          "Street": "3277  N. Watkins",
+          "City": "Memphis",
+          "State": "TN",
+          "Zip": 38127,
+          "Phone": "(901) 353-4522",
+          "Contact": "Cheryl Mimms",
+          "MinAge": "6WK",
+          "MaxAge": "12YR",
+          "StarRating": 3,
+          "Provider": "Center",
+          "Capacity": 150,
+          "Open": "5:30 AM",
+          "Close": "6:00 PM",
+          "RegAgency": "DHS Licensing",
+          "RegStatus": "Licensed",
+          "LicAppDate": "1/1/2022",
+          "DateOpen": "9/20/2013"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -90.0039708,
+            35.2152332
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Index": 5,
+          "County": "SHELBY",
+          "Agency": "La Kids Academy",
+          "Address": "4098 Barton Drive, Memphis TN 38116",
+          "Street": "4098 Barton Drive",
+          "City": "Memphis",
+          "State": "TN",
+          "Zip": 38116,
+          "Phone": "(901) 345-5011",
+          "Contact": "Emmanuel Tom",
+          "MinAge": "6WK",
+          "MaxAge": "12YR",
+          "StarRating": 3,
+          "Provider": "Center",
+          "Capacity": 40,
+          "Open": "6:30 AM",
+          "Close": "6:00 PM",
+          "RegAgency": "DHS Licensing",
+          "RegStatus": "Licensed",
+          "LicAppDate": "8/1/2021",
+          "DateOpen": "4/3/2006"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -90.0219175,
+            35.036857
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Index": 6,
+          "County": "SHELBY",
+          "Agency": "Gateway Learning Academy, LLC",
+          "Address": "185 East Norwood Avenue, Memphis TN 38109",
+          "Street": "185 East Norwood Avenue",
+          "City": "Memphis",
+          "State": "TN",
+          "Zip": 38109,
+          "Phone": "(901) 774-9553",
+          "Contact": "Frankie Briggs",
+          "MinAge": "6WK",
+          "MaxAge": "14YR",
+          "StarRating": 3,
+          "Provider": "Center",
+          "Capacity": 138,
+          "Open": "6:30 AM",
+          "Close": "5:30 PM",
+          "RegAgency": "DHS Licensing",
+          "RegStatus": "Licensed",
+          "LicAppDate": "6/1/2021",
+          "DateOpen": "2/1/2005"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -90.056593,
+            35.0912135
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Index": 7,
+          "County": "SHELBY",
+          "Agency": "Bearly Tots Enrichment Center, Inc.",
+          "Address": "8921 Highway 51 North, Millington TN 38053",
+          "Street": "8921 Highway 51 North",
+          "City": "Millington",
+          "State": "TN",
+          "Zip": 38053,
+          "Phone": "(901) 873-4838",
+          "Contact": "Melissa Strauser",
+          "MinAge": "12MO",
+          "MaxAge": "13YR",
+          "StarRating": 2,
+          "Provider": "Center",
+          "Capacity": 80,
+          "Open": "6:00 AM",
+          "Close": "6:00 PM",
+          "RegAgency": "DHS Licensing",
+          "RegStatus": "Licensed",
+          "LicAppDate": "8/1/2021",
+          "DateOpen": "3/16/2004"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -89.88637,
+            35.369976
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Index": 8,
+          "County": "SHELBY",
+          "Agency": "Abundance of Love Enrichment Center",
+          "Address": "436  E. Raines Rd., MEMPHIS TN 38109",
+          "Street": "436  E. Raines Rd.",
+          "City": "MEMPHIS",
+          "State": "TN",
+          "Zip": 38109,
+          "Phone": "(901) 348-9275",
+          "Contact": "Waltrell Branch",
+          "MinAge": "6WK",
+          "MaxAge": "12YR",
+          "StarRating": 3,
+          "Provider": "Center",
+          "Capacity": 24,
+          "Open": "6:00 AM",
+          "Close": "11:59 PM",
+          "RegAgency": "DHS Licensing",
+          "RegStatus": "Licensed",
+          "LicAppDate": "1/1/2022",
+          "DateOpen": "9/21/2009"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -90.0494917,
+            35.0349236
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Index": 9,
+          "County": "SHELBY",
+          "Agency": "Klassy Kids Academy #5",
+          "Address": "2979 Elmore Park Road, Bartlett TN 38134",
+          "Street": "2979 Elmore Park Road",
+          "City": "Bartlett",
+          "State": "TN",
+          "Zip": 38134,
+          "Phone": "(901) 417-6137",
+          "Contact": "",
+          "MinAge": "6WK",
+          "MaxAge": "12YR",
+          "StarRating": 3,
+          "Provider": "Center",
+          "Capacity": 113,
+          "Open": "6:00 AM",
+          "Close": "6:00 PM",
+          "RegAgency": "DHS Licensing",
+          "RegStatus": "Licensed",
+          "LicAppDate": "7/1/2021",
+          "DateOpen": "3/19/2012"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -89.857607,
+            35.2073057
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Index": 10,
+          "County": "SHELBY",
+          "Agency": "Klassy Kids Academy #2, Inc.",
+          "Address": "3750 Ridgeway Road, Memphis TN 38115",
+          "Street": "3750 Ridgeway Road",
+          "City": "Memphis",
+          "State": "TN",
+          "Zip": 38115,
+          "Phone": "(901) 417-6553",
+          "Contact": "Veronica McKinney",
+          "MinAge": "6WK",
+          "MaxAge": "12YR",
+          "StarRating": 3,
+          "Provider": "Center",
+          "Capacity": 203,
+          "Open": "6:00 AM",
+          "Close": "6:00 PM",
+          "RegAgency": "DHS Licensing",
+          "RegStatus": "Licensed",
+          "LicAppDate": "7/1/2021",
+          "DateOpen": "3/1/2015"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -89.8563976,
+            35.0453346
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Index": 11,
+          "County": "SHELBY",
+          "Agency": "My Cup Runneth Over FDH",
+          "Address": "457 Delta Road, Memphis TN 38109",
+          "Street": "457 Delta Road",
+          "City": "Memphis",
+          "State": "TN",
+          "Zip": 38109,
+          "Phone": "(901) 233-8756",
+          "Contact": "Deeric Hawkins",
+          "MinAge": "6WK",
+          "MaxAge": "12YR",
+          "StarRating": "",
+          "Provider": "Family",
+          "Capacity": 7,
+          "Open": "7:30 AM",
+          "Close": "7:30 PM",
+          "RegAgency": "DHS Licensing",
+          "RegStatus": "Licensed",
+          "LicAppDate": "5/1/2021",
+          "DateOpen": "1/4/2021"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -90.0793306,
+            35.0179011
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Index": 12,
+          "County": "SHELBY",
+          "Agency": "Knowledge Universe Education LLC@Raines",
+          "Address": "6424 East Raines Rd, Memphis TN 38115",
+          "Street": "6424 East Raines Rd",
+          "City": "Memphis",
+          "State": "TN",
+          "Zip": 38115,
+          "Phone": "(901) 795-7420",
+          "Contact": "Kendra Williams",
+          "MinAge": "6WK",
+          "MaxAge": "12YR",
+          "StarRating": 3,
+          "Provider": "Center",
+          "Capacity": 151,
+          "Open": "6:30 AM",
+          "Close": "6:30 PM",
+          "RegAgency": "DHS Licensing",
+          "RegStatus": "Licensed",
+          "LicAppDate": "11/1/2021",
+          "DateOpen": "12/21/1990"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -89.8489286,
+            35.0354961
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Index": 13,
+          "County": "SHELBY",
+          "Agency": "Countrywood KinderCare ",
+          "Address": "9434 U.S. Hwy 64, Lakeland TN 38002",
+          "Street": "9434 U.S. Hwy 64",
+          "City": "Lakeland",
+          "State": "TN",
+          "Zip": 38002,
+          "Phone": "(901) 379-2042",
+          "Contact": "Shavodka McNutt",
+          "MinAge": "6WK",
+          "MaxAge": "12MO",
+          "StarRating": 3,
+          "Provider": "Center",
+          "Capacity": 136,
+          "Open": "6:30 AM",
+          "Close": "6:00 PM",
+          "RegAgency": "DHS Licensing",
+          "RegStatus": "Licensed",
+          "LicAppDate": "5/1/2022",
+          "DateOpen": "1/26/2021"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -89.7478603,
+            35.2052691
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Index": 14,
+          "County": "SHELBY",
+          "Agency": "Perea Preschool",
+          "Address": "1250 Vollintine Ave, Memphis TN 38107",
+          "Street": "1250 Vollintine Ave",
+          "City": "Memphis",
+          "State": "TN",
+          "Zip": 38107,
+          "Phone": "(901) 726-4300",
+          "Contact": "Perea Preschool",
+          "MinAge": "3YR",
+          "MaxAge": "5YR",
+          "StarRating": 3,
+          "Provider": "Center",
+          "Capacity": 176,
+          "Open": "7:15 AM",
+          "Close": "5:30 PM",
+          "RegAgency": "DHS Licensing",
+          "RegStatus": "Licensed",
+          "LicAppDate": "12/1/2021",
+          "DateOpen": "8/12/2010"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -90.0148289,
+            35.1658475
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Index": 15,
+          "County": "SHELBY",
+          "Agency": "Hutchison Early Childhood Center",
+          "Address": "1740 Ridgeway Road, Memphis TN 38119",
+          "Street": "1740 Ridgeway Road",
+          "City": "Memphis",
+          "State": "TN",
+          "Zip": 38119,
+          "Phone": "(901) 762-6669",
+          "Contact": "Janie Baker",
+          "MinAge": "6WK",
+          "MaxAge": "4YR",
+          "StarRating": "",
+          "Provider": "Center",
+          "Capacity": 240,
+          "Open": "7:30 AM",
+          "Close": "3:00 PM",
+          "RegAgency": "Department Of Education",
+          "RegStatus": "Approved",
+          "LicAppDate": "10/1/2021",
+          "DateOpen": "9/10/2001"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -89.8552788,
+            35.0918123
+          ]
+        }
+      }
+    ]
+  }
