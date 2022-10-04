@@ -6,7 +6,8 @@ export class ColorsHelper {
   static featureMarkerColors = {
     library: '#0075F2',
     park: '#09E85E',
-    center: '#7F7EFF'
+    center: '#7F7EFF',
+    childCare: '#D26E58'
   }
 
   static getIdentifiableHexColor(identifier: string): string {

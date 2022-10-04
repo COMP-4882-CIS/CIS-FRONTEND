@@ -24,6 +24,56 @@
     </mat-list-item>
   </ng-container>
 
+  <ng-container *ngIf="hasMinAge">
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <div class="list-item-inner">
+        <span class="title">Minimum Age</span>
+        <span class="value">{{getValue('minAge')}}</span>
+      </div>
+    </mat-list-item>
+  </ng-container>
+
+  <ng-container *ngIf="hasMaxAge">
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <div class="list-item-inner">
+        <span class="title">Maximum Age</span>
+        <span class="value">{{getValue('maxAge')}}</span>
+      </div>
+    </mat-list-item>
+  </ng-container>
+
+  <ng-container *ngIf="hasCapacity">
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <div class="list-item-inner">
+        <span class="title">Capacity</span>
+        <span class="value">{{getValue('capacity')}}</span>
+      </div>
+    </mat-list-item>
+  </ng-container>
+
+  <ng-container *ngIf="hasRegStatus">
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <div class="list-item-inner">
+        <span class="title">Regulatory Status</span>
+        <span class="value">{{getValue('regStatus')}}</span>
+      </div>
+    </mat-list-item>
+  </ng-container>
+
+  <ng-container *ngIf="hasRegAgency">
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <div class="list-item-inner">
+        <span class="title">Regulator Agency</span>
+        <span class="value">{{getValue('regAgency')}}</span>
+      </div>
+    </mat-list-item>
+  </ng-container>
+
   <ng-container *ngIf="hasWebsiteURL">
     <mat-divider></mat-divider>
     <mat-list-item>

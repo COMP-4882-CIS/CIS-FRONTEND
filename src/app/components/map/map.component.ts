@@ -42,6 +42,7 @@ export class MapComponent implements AfterViewInit {
   private librariesGeoJSON?: GeoJSON;
   private centersGeoJSON?: GeoJSON;
   private schoolsGeoJSON?: GeoJSON;
+  private childcaresGeoJSON?: GeoJSON;
 
   private popupOpen = false;
   private map?: L.Map;
@@ -116,6 +117,7 @@ export class MapComponent implements AfterViewInit {
     this.librariesGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.LIBRARY, this.map);
     this.centersGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.COMMUNITY_CENTER, this.map);
     this.schoolsGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.SCHOOL, this.map);
+    this.childcaresGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.CHILDCARE, this.map);
 
     this.fetchMapData(this.map);
     this.attachEvents(this.map);
@@ -151,6 +153,7 @@ export class MapComponent implements AfterViewInit {
     const libraries: GeoJSON = this.librariesGeoJSON!;
     const centers: GeoJSON = this.centersGeoJSON!;
     const schools: GeoJSON = this.schoolsGeoJSON!;
+    const childcares: GeoJSON = this.childcaresGeoJSON!;
 
     map.on('popupopen', (e: PopupEvent) => {
       const feature = (e.popup as unknown as { _source: any })._source.feature as Feature;
@@ -180,6 +183,7 @@ export class MapComponent implements AfterViewInit {
     centers.on('click', (event) => this.handleFeatureClick(event));
     libraries.on('click', (event) => this.handleFeatureClick(event));
     schools.on('click', (event) => this.handleFeatureClick(event));
+    childcares.on('click', (event) => this.handleFeatureClick(event));
   }
 
   /**
@@ -197,6 +201,7 @@ export class MapComponent implements AfterViewInit {
       const libraries = this.librariesGeoJSON as GeoJSON;
       const centers = this.centersGeoJSON as GeoJSON;
       const schools = this.schoolsGeoJSON as GeoJSON;
+      const childcares = this.childcaresGeoJSON as GeoJSON;
 
       this.geoTractService.getCensusTractFeatures().pipe(
         tap(f => tracts.addData(f)),
@@ -211,7 +216,9 @@ export class MapComponent implements AfterViewInit {
         switchMap(() => this.geoTractService.getCentersFeatures()),
         tap(f => centers.addData(f)),
         switchMap(() => this.geoTractService.getSchoolsFeatures()),
-        tap(f => schools.addData(f))
+        tap(f => schools.addData(f)),
+        switchMap(() => this.geoTractService.getChildCareFeatures()),
+        tap(f => childcares.addData(f))
       ).subscribe(() => {
         if (!!this.map) {
           const outerBounds = zipCodes.getBounds().pad(0.5);
@@ -239,6 +246,7 @@ export class MapComponent implements AfterViewInit {
     const libraries = this.librariesGeoJSON as GeoJSON;
     const centers = this.centersGeoJSON as GeoJSON;
     const schools = this.schoolsGeoJSON as GeoJSON;
+    const childcares = this.childcaresGeoJSON as GeoJSON;
 
     const tiles = L.tileLayer(environment.map.tiles, {
       maxZoom: 18,
@@ -251,6 +259,7 @@ export class MapComponent implements AfterViewInit {
       "Community Centers": centers,
       "Parks": parks,
       "Schools": schools,
+      "ChildCare": childcares,
       "Districts": districts,
     }
 
@@ -264,6 +273,7 @@ export class MapComponent implements AfterViewInit {
     libraries.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.LIBRARY, layer));
     centers.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.COMMUNITY_CENTER, layer));
     schools.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.SCHOOL, layer));
+    childcares.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.CHILDCARE, layer));
 
     districts.removeFrom(map);
 
