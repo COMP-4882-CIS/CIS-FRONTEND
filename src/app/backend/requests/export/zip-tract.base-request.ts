@@ -10,4 +10,5 @@ export interface ZipTractBaseRequest {
   parkCount: number;
   libraryCount: number;
   communityCenterCount: number;
+  childCareCount: number;
 }

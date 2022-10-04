@@ -71,32 +71,40 @@ export class SidebarDataHelper {
     let totalParks: number = 0;
     let totalCommunityCenters: number = 0;
     let totalLibraries: number = 0;
+    let totalChildCare: number = 0;
     let parks: Landmark[] = [];
     let communityCenters: Landmark[] = [];
     let libraries: Landmark[] = [];
+    let childCare: Landmark[] = [];
 
     if (!!destination && !!addition) {
       totalParks = destination.totalParks + addition.totalParks;
       totalCommunityCenters = destination.totalCommunityCenters + addition.totalCommunityCenters;
       totalLibraries = destination.totalLibraries + destination.totalLibraries;
+      totalChildCare = destination.totalChildCare + destination.totalChildCare;
 
       parks = [...destination.parks, ...addition.parks];
       communityCenters = [...destination.communityCenters, ...addition.communityCenters];
       libraries = [...destination.libraries, ...addition.libraries];
+      childCare = [...destination.childCare, ...addition.childCare];
     } else if (!!destination) {
       totalParks = destination.totalParks;
+      totalChildCare = destination.totalChildCare;
       totalCommunityCenters = destination.totalCommunityCenters;
       totalLibraries = destination.totalLibraries;
 
       parks = destination.parks;
       communityCenters = destination.communityCenters;
       libraries = destination.libraries;
+      childCare = destination.childCare;
     } else if (!!addition) {
       totalParks = addition.totalParks;
       totalCommunityCenters = addition.totalCommunityCenters;
       totalLibraries = addition.totalLibraries;
+      totalChildCare = addition.totalChildCare;
 
       parks = addition.parks;
+      childCare = addition.childCare;
       communityCenters = addition.communityCenters;
       libraries = addition.libraries;
     }
@@ -105,9 +113,11 @@ export class SidebarDataHelper {
       totalParks,
       totalCommunityCenters,
       totalLibraries,
+      totalChildCare,
       parks,
       communityCenters,
       libraries,
+      childCare
     }
   }
 }

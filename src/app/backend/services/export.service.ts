@@ -31,6 +31,7 @@ export class ExportService {
       populationInPoverty12To17: stat.populationInPoverty12To17,
       parkCount: landmarkSummary.totalParks,
       libraryCount: landmarkSummary.totalLibraries,
+      childCareCount: landmarkSummary.totalChildCare,
       communityCenterCount: landmarkSummary.totalCommunityCenters
     }
 
@@ -55,6 +56,7 @@ export class ExportService {
       populationInPoverty12To17: stat.populationInPoverty12To17,
       parkCount: landmarkSummary.totalParks,
       libraryCount: landmarkSummary.totalLibraries,
+      childCareCount: landmarkSummary.totalChildCare,
       communityCenterCount: landmarkSummary.totalCommunityCenters
     }
 

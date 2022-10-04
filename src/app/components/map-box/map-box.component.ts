@@ -74,6 +74,7 @@ export class MapBoxComponent {
       case LayerFeatureType.DISTRICT:
       case PointFeatureType.PARK:
       case PointFeatureType.COMMUNITY_CENTER:
+      case PointFeatureType.CHILDCARE:
       default:
         const data: PointFeature = event.data as PointFeature;
 
