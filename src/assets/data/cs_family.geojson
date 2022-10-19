@@ -1,0 +1,5219 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 1,
+        "County": "SHELBY",
+        "Agency": "Mrs. De's Family Child Care",
+        "Address": "27 W. Norwood Street, Memphis TN 38109",
+        "Street": "27 W. Norwood Street",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38109,
+        "Phone": "(901) 947-4002",
+        "Contact": "Delorace Parker",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "2/1/2021",
+        "DateOpen": "2/2/2004"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.064057,
+          35.0914843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 2,
+        "County": "SHELBY",
+        "Agency": "Kid's Come First Family Day Home",
+        "Address": "39 East McKellar, Memphis TN 38109",
+        "Street": "39 East McKellar",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38109,
+        "Phone": "(901) 520-5681",
+        "Contact": "Marilyn Perry",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "11:59 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "6/1/2021",
+        "DateOpen": "2/10/2020"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0615941,
+          35.0894003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 3,
+        "County": "SHELBY",
+        "Agency": "My Cup Runneth Over FDH",
+        "Address": "457 Delta Road, Memphis TN 38109",
+        "Street": "457 Delta Road",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38109,
+        "Phone": "(901) 233-8756",
+        "Contact": "Deeric Hawkins",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:30 AM",
+        "Close": "7:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "5/1/2021",
+        "DateOpen": "1/4/2021"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0793306,
+          35.0179011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 4,
+        "County": "SHELBY",
+        "Agency": "Daphne Building Blocks",
+        "Address": "4349 Northwood Hills Dr., Memphis TN 38128",
+        "Street": "4349 Northwood Hills Dr.",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38128,
+        "Phone": "(901) 373-4314",
+        "Contact": "Daphne Erby",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "1/1/2021",
+        "DateOpen": "1/1/2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9020483,
+          35.2444459
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 5,
+        "County": "SHELBY",
+        "Agency": "Lil Learners FDH",
+        "Address": "2739 McGregor Ave., Memphis TN 38127",
+        "Street": "2739 McGregor Ave.",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38127,
+        "Phone": "(901) 490-0184",
+        "Contact": "Erma Wells",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "5:00 AM",
+        "Close": "11:59 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "11/1/2021",
+        "DateOpen": "7/1/2015"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9724325,
+          35.2194158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 6,
+        "County": "SHELBY",
+        "Agency": "Kidz Kreation Home Daycare",
+        "Address": "3118 Kingsgate Ave, Memphis TN 38118",
+        "Street": "3118 Kingsgate Ave",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38118,
+        "Phone": "(901) 550-6505",
+        "Contact": "Bernita  Carter",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:30 AM",
+        "Close": "5:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "3/8/2022",
+        "DateOpen": "3/8/2022"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9597991,
+          35.0381645
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 7,
+        "County": "SHELBY",
+        "Agency": "Taria's Tots FCCH",
+        "Address": "3390 Northmoor Avenue, Memphis TN 38128",
+        "Street": "3390 Northmoor Avenue",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38128,
+        "Phone": "(901) 213-3832",
+        "Contact": "Taria Foster",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "7/1/2021",
+        "DateOpen": "7/1/2002"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9162158,
+          35.2181022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 8,
+        "County": "SHELBY",
+        "Agency": "Wonder Years",
+        "Address": "6381 Davidson Cove, Memphis TN 38119",
+        "Street": "6381 Davidson Cove",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38119,
+        "Phone": "(901) 277-3729",
+        "Contact": "Tanisha  Wright",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:00 AM",
+        "Close": "5:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "3/1/2022",
+        "DateOpen": "11/5/2021"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8505194,
+          35.0803376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 9,
+        "County": "SHELBY",
+        "Agency": "Little Bears Home Care Family Childcare ",
+        "Address": "4365 Northwood Hills Drive, Memphis TN 38128",
+        "Street": "4365 Northwood Hills Drive",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38128,
+        "Phone": "(901) 283-5389",
+        "Contact": "Aundrea Allen",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "5:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "1/1/2022",
+        "DateOpen": "1/1/1996"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9020483,
+          35.2448321
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 10,
+        "County": "SHELBY",
+        "Agency": "Mother Natures Loving FCCH",
+        "Address": "1973 Tacoma, Memphis TN 38116",
+        "Street": "1973 Tacoma",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38116,
+        "Phone": "(901) 288-0575",
+        "Contact": "",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "9/1/2021",
+        "DateOpen": "9/1/2021"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9979782,
+          35.0496786
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 11,
+        "County": "SHELBY",
+        "Agency": "Just Like Home Enrichment Child Care",
+        "Address": "1916 Pomona Avenue, Memphis TN 38116",
+        "Street": "1916 Pomona Avenue",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38116,
+        "Phone": "(901) 398-2711",
+        "Contact": "Debra Esters",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:30 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "2/1/2021",
+        "DateOpen": "8/9/2005"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9999089,
+          35.0019605
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 12,
+        "County": "SHELBY",
+        "Agency": "Busy Little Babies Home Day Care",
+        "Address": "3552 Denver Street, MEMPHIS TN 38127",
+        "Street": "3552 Denver Street",
+        "City": "MEMPHIS",
+        "State": "TN",
+        "Zip": 38127,
+        "Phone": "(901) 353-0118",
+        "Contact": "Chalissa Houston",
+        "MinAge": "6WK",
+        "MaxAge": "16YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:01 AM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "8/1/2021",
+        "DateOpen": "8/1/2006"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9956102,
+          35.2225096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 13,
+        "County": "SHELBY",
+        "Agency": "Busy Learning Academy",
+        "Address": "2026 Tulsa Street, Memphis TN 38127",
+        "Street": "2026 Tulsa Street",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38127,
+        "Phone": "(901) 353-1995",
+        "Contact": "Tanisia Boyd",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:01 AM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "12/1/2021",
+        "DateOpen": "12/3/2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9961931,
+          35.2224667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 14,
+        "County": "SHELBY",
+        "Agency": "Edna's Precious Ones",
+        "Address": "3124 Old Brownsville Road, Bartlett TN 38134",
+        "Street": "3124 Old Brownsville Road",
+        "City": "Bartlett",
+        "State": "TN",
+        "Zip": 38134,
+        "Phone": "(901) 388-4670",
+        "Contact": "Edna Ward",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "9/1/2021",
+        "DateOpen": "4/11/2007"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8801478,
+          35.2109669
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 15,
+        "County": "SHELBY",
+        "Agency": "Raleigh Hill Christian Academy",
+        "Address": "3458 Raleigh-Millington Road, Memphis TN 38128",
+        "Street": "3458 Raleigh-Millington Road",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38128,
+        "Phone": "(901) 314-3414",
+        "Contact": "Glenda HopkinsYarbroug",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "2.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:30 AM",
+        "Close": "5:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "8/1/2021",
+        "DateOpen": "8/1/2008"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9285077,
+          35.2200311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 16,
+        "County": "SHELBY",
+        "Agency": "Alexander's Christian Home Day Care",
+        "Address": "4207 Arrowhead, Memphis TN 38118",
+        "Street": "4207 Arrowhead",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38118,
+        "Phone": "(901) 794-4252",
+        "Contact": "Ruthie Alexander",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "11:59 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "9/1/2021",
+        "DateOpen": "4/16/2007"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9232611,
+          35.0714177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 17,
+        "County": "SHELBY",
+        "Agency": "Wright Touch Child Care Inc.",
+        "Address": "2891 Clearwood Road , Memphis TN 38134",
+        "Street": "2891 Clearwood Road",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38134,
+        "Phone": "(901) 644-6746",
+        "Contact": "Sandra Brooks",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "8/1/2021",
+        "DateOpen": "4/18/2005"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8908896,
+          35.2041075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 18,
+        "County": "SHELBY",
+        "Agency": "Toddler's Corner FDH",
+        "Address": "6615 Moorquake Cove, Memphis TN 38119",
+        "Street": "6615 Moorquake Cove",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38119,
+        "Phone": "(901) 753-0888",
+        "Contact": "Annie Taylor",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:45 AM",
+        "Close": "5:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "5/1/2022",
+        "DateOpen": "1/14/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8427293,
+          35.0767157
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 19,
+        "County": "SHELBY",
+        "Agency": "Mrs. Nell's Home Daycare",
+        "Address": "6594 Split Oak Drive, MEMPHIS TN 38115",
+        "Street": "6594 Split Oak Drive",
+        "City": "MEMPHIS",
+        "State": "TN",
+        "Zip": 38115,
+        "Phone": "(901) 365-2597",
+        "Contact": "Anthonell Cox",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "5/1/2022",
+        "DateOpen": "5/7/2007"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8434243,
+          35.0575356
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 20,
+        "County": "SHELBY",
+        "Agency": "Shapes & Colors Academic Family Day Home",
+        "Address": "6355 Fiske Road, Bartlett TN 38135",
+        "Street": "6355 Fiske Road",
+        "City": "Bartlett",
+        "State": "TN",
+        "Zip": 38135,
+        "Phone": "(901) 488-7630",
+        "Contact": "Kiwanna Nickson",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "10:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "2/1/2022",
+        "DateOpen": "9/27/2005"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8509583,
+          35.2439648
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 21,
+        "County": "SHELBY",
+        "Agency": "Infants Inn",
+        "Address": "360 Avon Rd, Memphis TN 38117",
+        "Street": "360 Avon Rd",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38117,
+        "Phone": "(901) 683-3674",
+        "Contact": "Stephanie O'Dell",
+        "MinAge": "6WK",
+        "MaxAge": "3YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:30 AM",
+        "Close": "5:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "8/1/2021",
+        "DateOpen": "4/19/2016"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9017561,
+          35.1409119
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 22,
+        "County": "SHELBY",
+        "Agency": "Hippie Hop Family Day Home",
+        "Address": "3903 Ajanders Drive, Memphis TN 38127",
+        "Street": "3903 Ajanders Drive",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38127,
+        "Phone": "(901) 570-4968",
+        "Contact": "Ordameassa Taylor",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "11:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "9/1/2021",
+        "DateOpen": "3/24/2008"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9644847,
+          35.2325917
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 23,
+        "County": "SHELBY",
+        "Agency": "Little Lights of Love In-Home Child Care",
+        "Address": "4940 Copper Valley, Memphis TN 38141",
+        "Street": "4940 Copper Valley",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38141,
+        "Phone": "(901) 596-7732",
+        "Contact": "Beverly Clark",
+        "MinAge": "6WK",
+        "MaxAge": "5YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "11:59 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "10/1/2021",
+        "DateOpen": "6/22/2015"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8461229,
+          35.0138128
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 24,
+        "County": "SHELBY",
+        "Agency": "C J's Learning Academy ",
+        "Address": "3280 Debby , Memphis TN 38127",
+        "Street": "3280 Debby",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38127,
+        "Phone": "(901) 337-8874",
+        "Contact": "Carolyn Taylor",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "5:59 AM",
+        "Close": "6:00 AM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "11/1/2021",
+        "DateOpen": "7/23/2018"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.981308,
+          35.2153177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 25,
+        "County": "SHELBY",
+        "Agency": "Patsy's Prestigious Day Home",
+        "Address": "2241 Pratt Street, Memphis TN 38106",
+        "Street": "2241 Pratt Street",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38106,
+        "Phone": "(901) 487-9860",
+        "Contact": "Patsy Moss",
+        "MinAge": "6WK",
+        "MaxAge": "13YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "5/1/2021",
+        "DateOpen": "2/1/2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0215166,
+          35.0840824
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 26,
+        "County": "SHELBY",
+        "Agency": "Future Scholars Learning Academy",
+        "Address": "4838 Phipps Dr., Memphis TN 38125",
+        "Street": "4838 Phipps Dr.",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38125,
+        "Phone": "(901) 482-4373",
+        "Contact": "Rosalyn Hall",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:00 AM",
+        "Close": "5:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "1/1/2022",
+        "DateOpen": "9/2/2008"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8058237,
+          35.0163307
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 27,
+        "County": "SHELBY",
+        "Agency": "Everlina Miracle & Blessing FDH",
+        "Address": "3514 Pine Ridge Lane, Memphis TN 38118",
+        "Street": "3514 Pine Ridge Lane",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38118,
+        "Phone": "(901) 314-7549",
+        "Contact": "Evelyn Berryhill",
+        "MinAge": "6WK",
+        "MaxAge": "10YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "10/1/2021",
+        "DateOpen": "6/1/2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9466874,
+          35.0262631
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 28,
+        "County": "SHELBY",
+        "Agency": "Mrs. Bryson's FDH",
+        "Address": "3896 Point Church, Memphis TN 38127",
+        "Street": "3896 Point Church",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38127,
+        "Phone": "(901) 357-5379",
+        "Contact": " Frances   Bryson",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "3/1/2022",
+        "DateOpen": "3/1/1996"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9660785,
+          35.2318984
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 29,
+        "County": "SHELBY",
+        "Agency": "White House Academy II",
+        "Address": "373 Gaston Street, Memphis TN 38126",
+        "Street": "373 Gaston Street",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38126,
+        "Phone": "(901) 690-4301",
+        "Contact": "Thyais Robinson",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "5/1/2021",
+        "DateOpen": "5/1/2016"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0497561,
+          35.1176275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 30,
+        "County": "SHELBY",
+        "Agency": "Christ the Way Learning Academy",
+        "Address": "3272 Princeton Avenue, Memphis  TN 38112",
+        "Street": "3272 Princeton Avenue",
+        "City": "Memphis ",
+        "State": "TN",
+        "Zip": 38112,
+        "Phone": "(901) 864-3742",
+        "Contact": " Brenda  Haley",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "2.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "11:59 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "10/1/2021",
+        "DateOpen": "6/17/2019"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9520493,
+          35.1457545
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 31,
+        "County": "SHELBY",
+        "Agency": "A Mother's Wish, LLC",
+        "Address": "7573 Madison Woods Lane, Arlington TN 38002",
+        "Street": "7573 Madison Woods Lane",
+        "City": "Arlington",
+        "State": "TN",
+        "Zip": 38002,
+        "Phone": "(901) 382-0053",
+        "Contact": "Amelia Wilson",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "11:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "9/1/2021",
+        "DateOpen": "4/16/2008"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8107477,
+          35.2461834
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 32,
+        "County": "SHELBY",
+        "Agency": "Twice As Nice FCCH",
+        "Address": "399 Military Rd., Collierville TN 38017",
+        "Street": "399 Military Rd.",
+        "City": "Collierville",
+        "State": "TN",
+        "Zip": 38017,
+        "Phone": "(901) 861-0205",
+        "Contact": "Renata Braden",
+        "MinAge": "6WK",
+        "MaxAge": "5YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:00 AM",
+        "Close": "5:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "3/1/2022",
+        "DateOpen": "11/28/2007"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.6828329,
+          35.0106505
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 33,
+        "County": "SHELBY",
+        "Agency": "Lauren's Learning Academy",
+        "Address": "1451 Oberle Avenue, Memphis TN 38127",
+        "Street": "1451 Oberle Avenue",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38127,
+        "Phone": "(901) 239-1663",
+        "Contact": "Erica  Marks",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "11:59 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "2/1/2022",
+        "DateOpen": "10/3/2019"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0154346,
+          35.2011498
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 34,
+        "County": "SHELBY",
+        "Agency": "Giant Steps FDH",
+        "Address": "1655 Gregory, Memphis TN 38127",
+        "Street": "1655 Gregory",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38127,
+        "Phone": "(901) 353-1744",
+        "Contact": "Ruby  Cranford",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "11:59 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "5/1/2022",
+        "DateOpen": "1/1/2012"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0085068,
+          35.2146964
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 35,
+        "County": "SHELBY",
+        "Agency": "Ruby's Daycare Corners #2",
+        "Address": "3528 Watkins, Memphis TN 38127",
+        "Street": "3528 Watkins",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38127,
+        "Phone": "(901) 353-2006",
+        "Contact": "Ruby Williams",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "11:59 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "12/1/2019",
+        "DateOpen": "12/12/2007"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0028961,
+          35.2219946
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 36,
+        "County": "SHELBY",
+        "Agency": "Ms. Pats All Smiles Child Care",
+        "Address": "6669 Reindeer , Memphis TN 38115",
+        "Street": "6669 Reindeer",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38115,
+        "Phone": "(901) 612-1656",
+        "Contact": "N'gina Richardson",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "5:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "6/1/2021",
+        "DateOpen": "2/25/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8407541,
+          35.0457461
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 37,
+        "County": "SHELBY",
+        "Agency": "Evidence FCCH",
+        "Address": "7781 Birdwood Dr, Memphis TN 38125",
+        "Street": "7781 Birdwood Dr",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38125,
+        "Phone": "(901) 791-2505",
+        "Contact": "Javita Nash",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:30 AM",
+        "Close": "5:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "3/1/2022",
+        "DateOpen": "10/24/2012"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.803572,
+          35.0216845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 38,
+        "County": "SHELBY",
+        "Agency": "Little Midgett's Family Day Home",
+        "Address": "2390 Malone Street, Memphis TN 38114",
+        "Street": "2390 Malone Street",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38114,
+        "Phone": "(901) 365-1080",
+        "Contact": "Yvonne  Midgett",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:30 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "1/1/2022",
+        "DateOpen": "9/1/2012"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9831485,
+          35.1025703
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 39,
+        "County": "SHELBY",
+        "Agency": "Katies Klassy Kidz FDH",
+        "Address": "4327 Yale Road, Memphis TN 38128",
+        "Street": "4327 Yale Road",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38128,
+        "Phone": "(901) 382-7280",
+        "Contact": "Katie Woods",
+        "MinAge": "1YR",
+        "MaxAge": "5YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "11:59 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "9/1/2021",
+        "DateOpen": "10/1/2004"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9190633,
+          35.221152
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 40,
+        "County": "SHELBY",
+        "Agency": "Bev's Teddy Grahams",
+        "Address": "3721 Rippling Creek Cove, Bartlett TN 38135",
+        "Street": "3721 Rippling Creek Cove",
+        "City": "Bartlett",
+        "State": "TN",
+        "Zip": 38135,
+        "Phone": "(901) 381-9755",
+        "Contact": "Beverly  Graham",
+        "MinAge": "8WK",
+        "MaxAge": "12YR",
+        "StarRating": "1.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "3/1/2022",
+        "DateOpen": "10/14/2003"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8830162,
+          35.2273899
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 41,
+        "County": "SHELBY",
+        "Agency": "A Good Start Family Day Care Home",
+        "Address": "3651 Hazelhedge Drive, MEMPHIS TN 38116",
+        "Street": "3651 Hazelhedge Drive",
+        "City": "MEMPHIS",
+        "State": "TN",
+        "Zip": 38116,
+        "Phone": "(901) 736-6884",
+        "Contact": "JACQUELINE WRIGHT",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:30 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "12/1/2021",
+        "DateOpen": "8/1/2006"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0114218,
+          35.0489468
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 42,
+        "County": "SHELBY",
+        "Agency": "Gabriel Empowerment Center ",
+        "Address": "1043 Beverly St., Memphis TN 38114",
+        "Street": "1043 Beverly St.",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38114,
+        "Phone": "(901) 743-1969",
+        "Contact": "Wanda Haymon",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "2.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:30 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "3/1/2022",
+        "DateOpen": "11/1/2005"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9682401,
+          35.1032551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 43,
+        "County": "SHELBY",
+        "Agency": "Antonia's Kiddie Care",
+        "Address": "1087 Greenwood St., Memphis TN 38106",
+        "Street": "1087 Greenwood St.",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38106,
+        "Phone": "(901) 691-3238",
+        "Contact": "Antonia Tribbitt",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:30 AM",
+        "Close": "5:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "12/1/2021",
+        "DateOpen": "8/1/2008"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.024469,
+          35.117012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 44,
+        "County": "SHELBY",
+        "Agency": "Dee's Home Daycare Service",
+        "Address": "5366 Santa Barbara, Memphis TN 38116",
+        "Street": "5366 Santa Barbara",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38116,
+        "Phone": "(901) 828-0855",
+        "Contact": "Emma Huey",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "8/1/2021",
+        "DateOpen": "4/21/2015"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0034426,
+          35.0018313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 45,
+        "County": "SHELBY",
+        "Agency": "Collins Family Day Home",
+        "Address": "6531 Goldeneye Drive, Memphis TN 38141",
+        "Street": "6531 Goldeneye Drive",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38141,
+        "Phone": "(901) 530-5293",
+        "Contact": "Brinda Collins",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:00 AM",
+        "Close": "5:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "9/1/2021",
+        "DateOpen": "5/4/2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8456554,
+          35.0132677
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 46,
+        "County": "SHELBY",
+        "Agency": "House of Scholars Family Enrichment Cntr",
+        "Address": "2878 Manndale Drive, Memphis TN 38127",
+        "Street": "2878 Manndale Drive",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38127,
+        "Phone": "(901) 826-1621",
+        "Contact": "Cresha Burks",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "11:59 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "9/1/2020",
+        "DateOpen": "5/2/2012"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0171613,
+          35.2041552
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 47,
+        "County": "SHELBY",
+        "Agency": "Joy Of Learning",
+        "Address": "3511 Lehi Dr, Memphis TN 38128",
+        "Street": "3511 Lehi Dr",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38128,
+        "Phone": "(901) 381-9556",
+        "Contact": "Cybil Dorsey",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:00 AM",
+        "Close": "5:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "4/1/2022",
+        "DateOpen": "4/1/2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9249766,
+          35.2215422
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 48,
+        "County": "SHELBY",
+        "Agency": "Phaze 2 Learning",
+        "Address": "2581 E Wellons, Memphis TN 38127",
+        "Street": "2581 E Wellons",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38127,
+        "Phone": "(901) 357-4699",
+        "Contact": "Nina Sanders",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "11:59 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "12/1/2021",
+        "DateOpen": "12/1/2004"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9775684,
+          35.2367504
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 49,
+        "County": "SHELBY",
+        "Agency": "Houston's Little Helper's II",
+        "Address": "3423 Hadley , Memphis TN 38111",
+        "Street": "3423 Hadley",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38111,
+        "Phone": "(901) 864-4423",
+        "Contact": "Priscilla Houston",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "11:59 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "12/1/2021",
+        "DateOpen": "8/17/2018"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9487666,
+          35.1055698
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 50,
+        "County": "SHELBY",
+        "Agency": "Ewing Family Day Home",
+        "Address": "2178 Theda, Memphis TN 38127",
+        "Street": "2178 Theda",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38127,
+        "Phone": "(901) 590-9952",
+        "Contact": "Rosie Ewing",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "0.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:30 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "12/1/2021",
+        "DateOpen": "6/17/2003"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9911288,
+          35.2208782
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 51,
+        "County": "SHELBY",
+        "Agency": "Today's Future Child Care Home",
+        "Address": "4319 Elysian Cove, Memphis TN 38128",
+        "Street": "4319 Elysian Cove",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38128,
+        "Phone": "(901) 388-2535",
+        "Contact": "Carolyn Holloway",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "10:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "2/1/2021",
+        "DateOpen": "2/1/2008"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.921728,
+          35.2433014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 52,
+        "County": "SHELBY",
+        "Agency": "Miniature Minds FDH",
+        "Address": "5197 Sea Isle Rd, Memphis TN 38117",
+        "Street": "5197 Sea Isle Rd",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38117,
+        "Phone": "(901) 440-8091",
+        "Contact": "Lindsay Porter",
+        "MinAge": "3YR",
+        "MaxAge": "5YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:30 AM",
+        "Close": "5:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "10/1/2021",
+        "DateOpen": "10/1/2019"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8888255,
+          35.0943955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 53,
+        "County": "SHELBY",
+        "Agency": "Joyner Angels Day Care",
+        "Address": "6009 Abigail Bluff Cv, Bartlett TN 38135",
+        "Street": "6009 Abigail Bluff Cv",
+        "City": "Bartlett",
+        "State": "TN",
+        "Zip": 38135,
+        "Phone": "(901) 494-4810",
+        "Contact": "Arlene Joyner",
+        "MinAge": "2YR",
+        "MaxAge": "5YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:30 AM",
+        "Close": "5:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "7/1/2021",
+        "DateOpen": "3/23/2018"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8629148,
+          35.2617693
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 54,
+        "County": "SHELBY",
+        "Agency": "Joshua's Learning House FCCH",
+        "Address": "1540 S. Montgomery , Memphis TN 38106",
+        "Street": "1540 S. Montgomery",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38106,
+        "Phone": "(901) 410-8892",
+        "Contact": "Keva  Tate",
+        "MinAge": "8WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:45 AM",
+        "Close": "5:15 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "10/1/2021",
+        "DateOpen": "5/31/2012"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0193298,
+          35.1044614
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 55,
+        "County": "SHELBY",
+        "Agency": "One On One Home Day Care",
+        "Address": "4842 Childs Dr. , Memphis TN 38116",
+        "Street": "4842 Childs Dr.",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38116,
+        "Phone": "(901) 262-3352",
+        "Contact": "Lula  Tate",
+        "MinAge": "6MO",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "3/1/2021",
+        "DateOpen": "11/28/2012"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9990347,
+          35.0162487
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 56,
+        "County": "SHELBY",
+        "Agency": "Ms. Georgia's Kids Family Day Home",
+        "Address": "5237 Scottsdale Ave, Memphis TN 38118",
+        "Street": "5237 Scottsdale Ave",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38118,
+        "Phone": "(901) 321-5497",
+        "Contact": "Marilyn  Ewing",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "3/1/2021",
+        "DateOpen": "11/11/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8891177,
+          35.0579728
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 57,
+        "County": "SHELBY",
+        "Agency": "Sesame Street Learning Academy FDH",
+        "Address": "3824 Northcliffe, Memphis  TN 38128",
+        "Street": "3824 Northcliffe",
+        "City": "Memphis ",
+        "State": "TN",
+        "Zip": 38128,
+        "Phone": "(901) 650-8133",
+        "Contact": "Miranda Lewis",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "11:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "7/1/2021",
+        "DateOpen": "3/28/2017"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9360342,
+          35.2043758
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 58,
+        "County": "SHELBY",
+        "Agency": "N & P Loving Care",
+        "Address": "2401 Whitney Avenue, Memphis TN 38127",
+        "Street": "2401 Whitney Avenue",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38127,
+        "Phone": "(901) 283-8767",
+        "Contact": "Patricia Moore",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "11/1/2020",
+        "DateOpen": "8/1/2018"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.983768,
+          35.2078693
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 59,
+        "County": "SHELBY",
+        "Agency": "Just For Kids Family Day Home",
+        "Address": "3316 Egypt-Central Road, Memphis TN 38128",
+        "Street": "3316 Egypt-Central Road",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38128,
+        "Phone": "(901) 825-4802",
+        "Contact": "Angela Marion",
+        "MinAge": "6WK",
+        "MaxAge": "6YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:00 AM",
+        "Close": "5:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "7/1/2021",
+        "DateOpen": "2/3/2014"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9532529,
+          35.2476521
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 60,
+        "County": "SHELBY",
+        "Agency": "Julius Elton Turner's ECLI",
+        "Address": "3470 Northmoor, Memphis TN 38128",
+        "Street": "3470 Northmoor",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38128,
+        "Phone": "(901) 428-9721",
+        "Contact": "Tiffany  Shipp",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "2/1/2021",
+        "DateOpen": "10/20/2014"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9154491,
+          35.220291
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 61,
+        "County": "SHELBY",
+        "Agency": "Julius Elton Turner's ECLI #2",
+        "Address": "3508 Panbrook Cove, Memphis TN 38128",
+        "Street": "3508 Panbrook Cove",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38128,
+        "Phone": "(901) 921-0284",
+        "Contact": "Tiffany  Shipp",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "3/1/2021",
+        "DateOpen": "11/20/2017"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9214177,
+          35.2213897
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 62,
+        "County": "SHELBY",
+        "Agency": "Kourageous Kids Family Day Home",
+        "Address": "598 Sanga Circle East, Cordova TN 38018",
+        "Street": "598 Sanga Circle East",
+        "City": "Cordova",
+        "State": "TN",
+        "Zip": 38018,
+        "Phone": "(901) 405-5140",
+        "Contact": "Miquel  Tarrance",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:00 AM",
+        "Close": "4:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "3/1/2022",
+        "DateOpen": "11/1/2015"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.7679302,
+          35.1124951
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 63,
+        "County": "SHELBY",
+        "Agency": "Our Glass Learning Center FCCH",
+        "Address": "790 Ioka Avenue, Memphis TN 38126",
+        "Street": "790 Ioka Avenue",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38126,
+        "Phone": "(901) 281-7117",
+        "Contact": "Cierria Rogers",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:30 AM",
+        "Close": "5:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "2/1/2021",
+        "DateOpen": "10/1/2019"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0354059,
+          35.1272812
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 64,
+        "County": "SHELBY",
+        "Agency": "The Essentials Of Learning Academy FDH",
+        "Address": "8636 May Orchard Lane, Cordova TN 38018",
+        "Street": "8636 May Orchard Lane",
+        "City": "Cordova",
+        "State": "TN",
+        "Zip": 38018,
+        "Phone": "(901) 336-6397",
+        "Contact": "Janet Williams",
+        "MinAge": "6WK",
+        "MaxAge": "5YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:30 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "8/1/2021",
+        "DateOpen": "5/1/2020"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.7753689,
+          35.1326658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 65,
+        "County": "SHELBY",
+        "Agency": "Ms. Rhonda's Nest Daycare Home",
+        "Address": "6876 Kirby Mills Cove, Memphis TN 38115",
+        "Street": "6876 Kirby Mills Cove",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38115,
+        "Phone": "(901) 833-6520",
+        "Contact": "Rhonda Pigrum",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:00 AM",
+        "Close": "5:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "11/1/2021",
+        "DateOpen": "7/10/2019"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.834023,
+          35.0524906
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 66,
+        "County": "SHELBY",
+        "Agency": "Kids Joy For Learning FDH",
+        "Address": "8429 Frieden Trail, Memphis TN 38125",
+        "Street": "8429 Frieden Trail",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38125,
+        "Phone": "(901) 399-0892",
+        "Contact": "Shakeva Harris",
+        "MinAge": "18MO",
+        "MaxAge": "5YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:00 AM",
+        "Close": "5:15 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "2/1/2022",
+        "DateOpen": "10/2/2019"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.7819637,
+          35.0223793
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 67,
+        "County": "SHELBY",
+        "Agency": "A Perfect Start with Ms. Paula",
+        "Address": "6613 Beaver Lodge Drive, Memphis TN 38141",
+        "Street": "6613 Beaver Lodge Drive",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38141,
+        "Phone": "(901) 443-5566",
+        "Contact": "Paula Cunningham",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "11:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "6/1/2021",
+        "DateOpen": "2/1/2016"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8427659,
+          35.0266467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 68,
+        "County": "SHELBY",
+        "Agency": "Divine Angels Enrichment Center FCCH",
+        "Address": "1557 South White Station Road, Memphis TN 38117",
+        "Street": "1557 South White Station Road",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38117,
+        "Phone": "(901) 338-2672",
+        "Contact": "Yolanda Gibson",
+        "MinAge": "6WK",
+        "MaxAge": "5YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "10/1/2021",
+        "DateOpen": "6/21/2019"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8921864,
+          35.0893252
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 69,
+        "County": "SHELBY",
+        "Agency": "Smart Steps Learning Academy",
+        "Address": "3902 Windy Avenue, Memphis TN 38128",
+        "Street": "3902 Windy Avenue",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38128,
+        "Phone": "(901) 247-9739",
+        "Contact": "Joshlynn Couch",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "5:00 AM",
+        "Close": "11:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "12/1/2021",
+        "DateOpen": "8/16/2021"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9333704,
+          35.2391025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 70,
+        "County": "SHELBY",
+        "Agency": "Miss Muffins House of Love",
+        "Address": "2011 Cloverdale Drive, Memphis TN 38114",
+        "Street": "2011 Cloverdale Drive",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38114,
+        "Phone": "(901) 691-3986",
+        "Contact": "Andrea Jones",
+        "MinAge": "1YR",
+        "MaxAge": "5YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:30 AM",
+        "Close": "5:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "9/1/2021",
+        "DateOpen": "5/12/2021"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9956102,
+          35.1049787
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 71,
+        "County": "SHELBY",
+        "Agency": "Kim's Kids In Home Learning Station FDH",
+        "Address": "5462 MeadowBriar Trail, Memphis TN 38125",
+        "Street": "5462 MeadowBriar Trail",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38125,
+        "Phone": "(901) 859-0507",
+        "Contact": "Kimbrala Williams",
+        "MinAge": "6WK",
+        "MaxAge": "5YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:30 AM",
+        "Close": "11:59 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "12/1/2021",
+        "DateOpen": "8/28/2018"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8088441,
+          34.9990561
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 72,
+        "County": "SHELBY",
+        "Agency": "Baby Genius Family Child Care",
+        "Address": "2048 Alton Avenue, Memphis TN 38106",
+        "Street": "2048 Alton Avenue",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38106,
+        "Phone": "(901) 297-7748",
+        "Contact": "Tenni Hodges",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "12:00 AM",
+        "Close": "11:59 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "10/1/2021",
+        "DateOpen": "6/23/2016"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0420424,
+          35.0913004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 73,
+        "County": "SHELBY",
+        "Agency": "Pam's Tot Town Family Day Home ",
+        "Address": "5290 Millbranch Road , Memphis  TN 38116",
+        "Street": "5290 Millbranch Road",
+        "City": "Memphis ",
+        "State": "TN",
+        "Zip": 38116,
+        "Phone": "(901) 406-3627",
+        "Contact": "Pamela Jones-Davis ",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "6/1/2021",
+        "DateOpen": "2/4/2016"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0073044,
+          35.0039832
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 74,
+        "County": "SHELBY",
+        "Agency": "L & L Blossoming Flowers FDH",
+        "Address": "3490 Dupre Street, Memphis TN 38115",
+        "Street": "3490 Dupre Street",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38115,
+        "Phone": "(901) 488-0332",
+        "Contact": "Loretta Flowers",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "11:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "4/1/2021",
+        "DateOpen": "12/15/2015"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8739901,
+          35.0531407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 75,
+        "County": "SHELBY",
+        "Agency": "Beginnings and Beyond FDH",
+        "Address": "7576 Espie Cove, Memphis  TN 38125",
+        "Street": "7576 Espie Cove",
+        "City": "Memphis ",
+        "State": "TN",
+        "Zip": 38125,
+        "Phone": "(901) 413-2128",
+        "Contact": "Kim Lloyd",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:30 AM",
+        "Close": "5:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "10/1/2021",
+        "DateOpen": "10/5/2006"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8103634,
+          35.022018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 76,
+        "County": "SHELBY",
+        "Agency": "Young's Little Angels Home Care",
+        "Address": "4369 Tulane Road, Memphis TN 38109",
+        "Street": "4369 Tulane Road",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38109,
+        "Phone": "(901) 396-3125",
+        "Contact": "Ruthie Young",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:00 AM",
+        "Close": "5:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "11/1/2021",
+        "DateOpen": "9/17/2002"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0442123,
+          35.0294722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 77,
+        "County": "SHELBY",
+        "Agency": "Teaching and Learning Academy FDCH",
+        "Address": "1893 Ferber, MEMPHIS TN 38114",
+        "Street": "1893 Ferber",
+        "City": "MEMPHIS",
+        "State": "TN",
+        "Zip": 38114,
+        "Phone": "(901) 948-2397",
+        "Contact": "Marva Guy",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "2.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "9/1/2021",
+        "DateOpen": "8/11/2005"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9999818,
+          35.0948761
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 78,
+        "County": "SHELBY",
+        "Agency": "Marie's Wonderland Home Day Care",
+        "Address": "6229 Cranbury Park Drive, Memphis TN 38141",
+        "Street": "6229 Cranbury Park Drive",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38141,
+        "Phone": "(901) 542-0961",
+        "Contact": "Laura Smith",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "11:59 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "9/1/2021",
+        "DateOpen": "5/10/2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.855456,
+          35.0312662
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 79,
+        "County": "SHELBY",
+        "Agency": "Hosanna's Little Angels FDH",
+        "Address": "4697 Harvest Knoll Lane, MEMPHIS TN 38125",
+        "Street": "4697 Harvest Knoll Lane",
+        "City": "MEMPHIS",
+        "State": "TN",
+        "Zip": 38125,
+        "Phone": "(901) 730-1127",
+        "Contact": "Lynette Richardson",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:30 AM",
+        "Close": "5:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "6/1/2021",
+        "DateOpen": "2/1/2008"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8175561,
+          35.0200281
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 80,
+        "County": "SHELBY",
+        "Agency": "Lena's Little Ones",
+        "Address": "4159 Hampton Manor Lane, Memphis TN 38128",
+        "Street": "4159 Hampton Manor Lane",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38128,
+        "Phone": "(901) 270-9450",
+        "Contact": "LENA MUHAMMAD",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "10/1/2020",
+        "DateOpen": "3/22/2007"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9030709,
+          35.2392967
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 81,
+        "County": "SHELBY",
+        "Agency": "Little People Learning Academy",
+        "Address": "2750 Mahue Drive, Memphis TN 38127",
+        "Street": "2750 Mahue Drive",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38127,
+        "Phone": "(901) 691-3844",
+        "Contact": "Katron Crawford",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "12:00 AM",
+        "Close": "11:59 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "4/1/2022",
+        "DateOpen": "12/10/2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9719222,
+          35.2025001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 82,
+        "County": "SHELBY",
+        "Agency": "From Rattles to Books Home Daycare",
+        "Address": "2636 Baypointe Circle E., Memphis  TN 38128",
+        "Street": "2636 Baypointe Circle E.",
+        "City": "Memphis ",
+        "State": "TN",
+        "Zip": 38128,
+        "Phone": "(901) 859-6351",
+        "Contact": "Chiketah Ferguson",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "10:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "7/1/2019",
+        "DateOpen": "3/29/2019"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8977021,
+          35.1969213
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 83,
+        "County": "SHELBY",
+        "Agency": "Burress Family Child Care Home",
+        "Address": "1012 Ayers Street, Memphis  TN 38107",
+        "Street": "1012 Ayers Street",
+        "City": "Memphis ",
+        "State": "TN",
+        "Zip": 38107,
+        "Phone": "(901) 521-1867",
+        "Contact": "Shirley Burress",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:30 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "10/1/2021",
+        "DateOpen": "7/11/1990"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0265468,
+          35.1680148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 84,
+        "County": "SHELBY",
+        "Agency": "The Little Rocking Horse Childcare",
+        "Address": "1731 Georgian, MEMPHIS TN 38127",
+        "Street": "1731 Georgian",
+        "City": "MEMPHIS",
+        "State": "TN",
+        "Zip": 38127,
+        "Phone": "(901) 353-4611",
+        "Contact": "Cynthia Dortch",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "10:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "11/1/2019",
+        "DateOpen": "8/9/1995"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0058835,
+          35.2298927
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 85,
+        "County": "SHELBY",
+        "Agency": "Granny's House Too",
+        "Address": "2461 Dalebrook Cove, MEMPHIS TN 38127",
+        "Street": "2461 Dalebrook Cove",
+        "City": "MEMPHIS",
+        "State": "TN",
+        "Zip": 38127,
+        "Phone": "(901) 907-0138",
+        "Contact": "Doris Winfrey",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "8/1/2020",
+        "DateOpen": "8/1/1997"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9813991,
+          35.2059798
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 86,
+        "County": "SHELBY",
+        "Agency": "Precious Lamb Developmental FCCH",
+        "Address": "2940 E. Glengarry, Memphis TN 38128",
+        "Street": "2940 E. Glengarry",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38128,
+        "Phone": "(901) 358-0980",
+        "Contact": "Sharon  Johnson",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "11/1/2021",
+        "DateOpen": "10/21/1997"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9566795,
+          35.2057292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 87,
+        "County": "SHELBY",
+        "Agency": "Prestigious Learning Academy #1",
+        "Address": "399 Gaston #1, Memphis TN 38126",
+        "Street": "399 Gaston #1",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38126,
+        "Phone": "(901) 947-1483",
+        "Contact": "Shondra Hampton",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "12:00 AM",
+        "Close": "11:59 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "2/1/2022",
+        "DateOpen": "2/10/2016"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0487896,
+          35.1176064
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 88,
+        "County": "SHELBY",
+        "Agency": "Little Tykes Learning Academy",
+        "Address": "5817 Foxdale Road, Memphis TN 38115",
+        "Street": "5817 Foxdale Road",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38115,
+        "Phone": "(901) 246-0310",
+        "Contact": "Dorothy Avant",
+        "MinAge": "6WK",
+        "MaxAge": "3YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:30 AM",
+        "Close": "5:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "10/1/2021",
+        "DateOpen": "6/16/2020"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8694762,
+          35.0566845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 89,
+        "County": "SHELBY",
+        "Agency": "Beyond Care Learning Academy",
+        "Address": "4207 Mickey Drive, Memphis TN 38116",
+        "Street": "4207 Mickey Drive",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38116,
+        "Phone": "(901) 586-8258",
+        "Contact": "TaRhonda Bonds",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "1.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "11:59 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "7/1/2021",
+        "DateOpen": "3/14/2019"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0124239,
+          35.0338682
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 90,
+        "County": "SHELBY",
+        "Agency": "Toddlertime Day Care FDH",
+        "Address": "2978 New London Place, Memphis TN 38115",
+        "Street": "2978 New London Place",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38115,
+        "Phone": "(901) 432-6311",
+        "Contact": "Belinda Kirkham",
+        "MinAge": "6WK",
+        "MaxAge": "5YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:00 AM",
+        "Close": "5:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "3/1/2022",
+        "DateOpen": "11/9/2012"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8534405,
+          35.0673883
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 91,
+        "County": "SHELBY",
+        "Agency": "Lil' Einstein's Learning Academy FDH",
+        "Address": "1081 McClure, Memphis TN 38116",
+        "Street": "1081 McClure",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38116,
+        "Phone": "(901) 486-8556",
+        "Contact": "Ashley Foster",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "11:59 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "11/1/2021",
+        "DateOpen": "6/25/2012"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0278956,
+          35.014309
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 92,
+        "County": "SHELBY",
+        "Agency": "Lisa's Little Angels Family Day Home",
+        "Address": "2054 Belover Drive, Memphis TN 38127",
+        "Street": "2054 Belover Drive",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38127,
+        "Phone": "(901) 357-2560",
+        "Contact": "Leslie Cole",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "11:59 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "11/1/2021",
+        "DateOpen": "6/10/2003"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9952095,
+          35.2435411
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 93,
+        "County": "SHELBY",
+        "Agency": "Lisa's Little Angels Family Day Home #2",
+        "Address": "4302 Coventry Drive, Memphis TN 38127",
+        "Street": "4302 Coventry Drive",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38127,
+        "Phone": "(901) 500-5220",
+        "Contact": "Leslie Cole",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "11:59 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "8/1/2021",
+        "DateOpen": "8/1/2004"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9943715,
+          35.243069
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 94,
+        "County": "SHELBY",
+        "Agency": "Big Baby's Family Child Care Center",
+        "Address": "2003 Corning, Memphis TN 38127",
+        "Street": "2003 Corning",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38127,
+        "Phone": "(901) 353-1915",
+        "Contact": "Leslie  Cole",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "11:59 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "9/1/2021",
+        "DateOpen": "9/1/2007"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9969035,
+          35.2250209
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 95,
+        "County": "SHELBY",
+        "Agency": "God's Little Angels Family Day Home",
+        "Address": "1075 Philadelphia, Memphis TN 38104",
+        "Street": "1075 Philadelphia",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38104,
+        "Phone": "(901) 251-6825",
+        "Contact": "Kimberly Wadlington-Arne",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "5/1/2021",
+        "DateOpen": "4/8/2002"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9867198,
+          35.1161971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 96,
+        "County": "SHELBY",
+        "Agency": "Open Heart's Home Care",
+        "Address": "4238 Argonne St, Memphis TN 38127",
+        "Street": "4238 Argonne St",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38127,
+        "Phone": "(901) 650-3561",
+        "Contact": "Janice Burnett",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:00 AM",
+        "Close": "5:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "2/1/2022",
+        "DateOpen": "8/16/2001"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9968489,
+          35.2413095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 97,
+        "County": "SHELBY",
+        "Agency": "Laverne's FCCH",
+        "Address": "4302 Sheffield Avenue, Memphis TN 38118",
+        "Street": "4302 Sheffield Avenue",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38118,
+        "Phone": "(901) 590-9751",
+        "Contact": "Laverne Baker",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "5:30 AM",
+        "Close": "12:00 AM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "7/1/2022",
+        "DateOpen": "7/1/1996"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9200124,
+          35.0629432
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 98,
+        "County": "SHELBY",
+        "Agency": "Angels Being Prepared Inc.",
+        "Address": "2397 Wellons, Memphis TN 38127",
+        "Street": "2397 Wellons",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38127,
+        "Phone": "(901) 503-7663",
+        "Contact": "Bobbie  Johnson",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:30 AM",
+        "Close": "6:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "11/1/2021",
+        "DateOpen": "7/2/2014"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9839374,
+          35.2367629
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 99,
+        "County": "SHELBY",
+        "Agency": "On Demand Child Care",
+        "Address": "3182 Covington Pike, Memphis TN 38128",
+        "Street": "3182 Covington Pike",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38128,
+        "Phone": "(901) 623-6088",
+        "Contact": "Lekia Davis",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:30 AM",
+        "Close": "9:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "9/1/2021",
+        "DateOpen": "5/13/2019"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8941419,
+          35.2125569
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 100,
+        "County": "SHELBY",
+        "Agency": "Cozy Corner for Infants & Toddlers",
+        "Address": "4028 Battlefield Drive, Memphis TN 38128",
+        "Street": "4028 Battlefield Drive",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38128,
+        "Phone": "(901) 428-9668",
+        "Contact": "Cathy Holliday",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "5:00 AM",
+        "Close": "11:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "4/1/2022",
+        "DateOpen": "12/18/2017"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9291007,
+          35.2280264
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 101,
+        "County": "SHELBY",
+        "Agency": "Little Blessings FDH",
+        "Address": "8475 Meadow Vale Drive, Memphis TN 38125",
+        "Street": "8475 Meadow Vale Drive",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38125,
+        "Phone": "(901) 310-4515",
+        "Contact": "LaToya Johnson",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "5:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "9/1/2021",
+        "DateOpen": "5/13/2019"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.7821652,
+          35.0279948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 102,
+        "County": "SHELBY",
+        "Agency": "Magic Land Home Cntr  FDH",
+        "Address": "3210 Carrington Rd, Memphis TN 38111",
+        "Street": "3210 Carrington Rd",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38111,
+        "Phone": "(901) 550-6044",
+        "Contact": "Tamara Simmons",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "7/1/2021",
+        "DateOpen": "7/1/2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9555506,
+          35.1068191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 103,
+        "County": "SHELBY",
+        "Agency": "Dee's Sunshine Academy",
+        "Address": "4132 Worden Cove, Memphis TN 38125",
+        "Street": "4132 Worden Cove",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38125,
+        "Phone": "(901) 612-9393",
+        "Contact": "Deara Jones",
+        "MinAge": "6WK",
+        "MaxAge": "5YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "11:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "4/1/2022",
+        "DateOpen": "12/6/2019"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8215088,
+          35.0351794
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 104,
+        "County": "SHELBY",
+        "Agency": "Dina's Fun Place to Stay FCCH",
+        "Address": "1246 Purple Mt. Cove, Collierville TN 38017",
+        "Street": "1246 Purple Mt. Cove",
+        "City": "Collierville",
+        "State": "TN",
+        "Zip": 38017,
+        "Phone": "(901) 853-7879",
+        "Contact": "Geraldina Little",
+        "MinAge": "6WK",
+        "MaxAge": "4YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:00 AM",
+        "Close": "5:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "8/1/2021",
+        "DateOpen": "4/26/2011"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.6790865,
+          35.0110711
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 105,
+        "County": "SHELBY",
+        "Agency": "God's Creative Family Home",
+        "Address": "2245 Montego Dr., Cordova TN 38016",
+        "Street": "2245 Montego Dr.",
+        "City": "Cordova",
+        "State": "TN",
+        "Zip": 38016,
+        "Phone": "(901) 598-2167",
+        "Contact": "Essie     James",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "9/1/2019",
+        "DateOpen": "4/23/2007"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.7884108,
+          35.1867317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 106,
+        "County": "SHELBY",
+        "Agency": "Flying With The Stars FCCH",
+        "Address": "3564 Bishops Gate Drive, Memphis TN 38115",
+        "Street": "3564 Bishops Gate Drive",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38115,
+        "Phone": "(901) 314-6128",
+        "Contact": "Janika Foster",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:00 AM",
+        "Close": "5:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "5/1/2021",
+        "DateOpen": "1/6/2020"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8781106,
+          35.0514781
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 107,
+        "County": "SHELBY",
+        "Agency": "Kim's Kare Home Day Care",
+        "Address": "844 Tropicana Drive E, Cordova  TN 38018",
+        "Street": "844 Tropicana Drive E",
+        "City": "Cordova ",
+        "State": "TN",
+        "Zip": 38018,
+        "Phone": "(901) 831-8735",
+        "Contact": "Kimberly Polk",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:30 AM",
+        "Close": "5:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "6/1/2021",
+        "DateOpen": "2/1/2020"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.7722543,
+          35.1483866
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 108,
+        "County": "SHELBY",
+        "Agency": "Little Heaven FDH",
+        "Address": "4751 Ridge Walk Dr, Memphis TN 38125",
+        "Street": "4751 Ridge Walk Dr",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38125,
+        "Phone": "(901) 303-3243",
+        "Contact": "Lekeya Johnson ",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:30 AM",
+        "Close": "5:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "3/1/2022",
+        "DateOpen": "11/9/2021"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8040846,
+          35.018458
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 109,
+        "County": "SHELBY",
+        "Agency": "Anointed Christian Academy FDH",
+        "Address": "4511 Janice Ave, Memphis TN 38122",
+        "Street": "4511 Janice Ave",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38122,
+        "Phone": "(901) 517-9727",
+        "Contact": "Ashley  Swannigan",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:30 AM",
+        "Close": "5:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "3/1/2021",
+        "DateOpen": "11/25/2019"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9101551,
+          35.1592642
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 110,
+        "County": "SHELBY",
+        "Agency": "1 - 2 Buckle My Shoe",
+        "Address": "3397 Kings Arms, Memphis TN 38115",
+        "Street": "3397 Kings Arms",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38115,
+        "Phone": "(317) 531-5246",
+        "Contact": "Juliette  Jackson",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "5:00 AM",
+        "Close": "11:59 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "11/1/2021",
+        "DateOpen": "7/24/2018"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8775112,
+          35.0559164
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 111,
+        "County": "SHELBY",
+        "Agency": "Future Leaders Preschool FDH",
+        "Address": "292 Sullivan Drive, Memphis TN 38109",
+        "Street": "292 Sullivan Drive",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38109,
+        "Phone": "(901) 474-3474",
+        "Contact": "Vantrice Cohen",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:00 AM",
+        "Close": "5:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "7/1/2021",
+        "DateOpen": "3/1/2020"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0542246,
+          35.0360725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 112,
+        "County": "SHELBY",
+        "Agency": "Children of Grace Family Day Home",
+        "Address": "2874 Cordell Street, Memphis TN 38118",
+        "Street": "2874 Cordell Street",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38118,
+        "Phone": "(901) 435-6981",
+        "Contact": "Sheneka Rucker",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "3:30 PM",
+        "Close": "8:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "6/1/2021",
+        "DateOpen": "2/6/2019"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8895561,
+          35.0698006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 113,
+        "County": "SHELBY",
+        "Agency": "Little Lady Bugs FDH",
+        "Address": "3342 Manning Drive, Memphis TN 38128",
+        "Street": "3342 Manning Drive",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38128,
+        "Phone": "(901) 267-4790",
+        "Contact": "Whyhesia Wilks",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:30 AM",
+        "Close": "5:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "12/1/2021",
+        "DateOpen": "8/28/2017"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9522864,
+          35.2085265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 114,
+        "County": "SHELBY",
+        "Agency": "B & B Unique Childcare",
+        "Address": "660 Landing Party Lane, Collierville TN 38017",
+        "Street": "660 Landing Party Lane",
+        "City": "Collierville",
+        "State": "TN",
+        "Zip": 38017,
+        "Phone": "(901) 351-1577",
+        "Contact": "Tabbitha Gregory",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:00 AM",
+        "Close": "5:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "1/1/2022",
+        "DateOpen": "8/1/2017"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.6469518,
+          35.0533397
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 115,
+        "County": "SHELBY",
+        "Agency": "Scholars on the Rise",
+        "Address": "9554 Misty Knoll Drive, Cordova TN 38016",
+        "Street": "9554 Misty Knoll Drive",
+        "City": "Cordova",
+        "State": "TN",
+        "Zip": 38016,
+        "Phone": "(901) 297-3627",
+        "Contact": "Takesha Taylor",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "4/1/2022",
+        "DateOpen": "12/17/2021"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.7443402,
+          35.2019986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 116,
+        "County": "SHELBY",
+        "Agency": "Beyond Belief In Home Learning Room",
+        "Address": "3822 Voltaire Avenue, Memphis TN 38128",
+        "Street": "3822 Voltaire Avenue",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38128,
+        "Phone": "(901) 494-2582",
+        "Contact": "Yolanda Barnes",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:00 AM",
+        "Close": "5:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "4/1/2022",
+        "DateOpen": "12/4/2017"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9361072,
+          35.2399623
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 117,
+        "County": "SHELBY",
+        "Agency": "Growing Vines Child Care FDH ",
+        "Address": "1846 Dartford Drive, Cordova  TN 38016",
+        "Street": "1846 Dartford Drive",
+        "City": "Cordova ",
+        "State": "TN",
+        "Zip": 38016,
+        "Phone": "(901) 361-4866",
+        "Contact": "Danielle  Devlin",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "3/1/2022",
+        "DateOpen": "11/26/2018"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.7674904,
+          35.1757418
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 118,
+        "County": "SHELBY",
+        "Agency": "Nora's House",
+        "Address": "10357 Ivy Laurel Cove, Cordova TN 38018",
+        "Street": "10357 Ivy Laurel Cove",
+        "City": "Cordova",
+        "State": "TN",
+        "Zip": 38018,
+        "Phone": "(901) 930-6966",
+        "Contact": "Lanora Owens",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "5:30 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "4/8/2022",
+        "DateOpen": "4/8/2022"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.7175436,
+          35.1557905
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 119,
+        "County": "SHELBY",
+        "Agency": "Angelic Angels Academy FDH",
+        "Address": "2366 Vollintine Ave, Memphis TN 38108",
+        "Street": "2366 Vollintine Ave",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38108,
+        "Phone": "(901) 864-9101",
+        "Contact": "Anita Clayton",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "10/1/2021",
+        "DateOpen": "6/25/2018"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9785525,
+          35.1629469
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 120,
+        "County": "SHELBY",
+        "Agency": "Look Who Learning Home",
+        "Address": "776 Newell St., Memphis TN 38111",
+        "Street": "776 Newell St.",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38111,
+        "Phone": "(901) 364-0247",
+        "Contact": "Paula  Wilks",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "11:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "12/1/2021",
+        "DateOpen": "8/17/2018"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9598067,
+          35.1107739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 121,
+        "County": "SHELBY",
+        "Agency": "Little Learners Home Day Care",
+        "Address": "6806 Skylar Mill Ave, Cordova TN 38018",
+        "Street": "6806 Skylar Mill Ave",
+        "City": "Cordova",
+        "State": "TN",
+        "Zip": 38018,
+        "Phone": "(901) 687-0743",
+        "Contact": "Whitney  Adams",
+        "MinAge": "6WK",
+        "MaxAge": "5YR",
+        "StarRating": "2.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "5:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "12/1/2021",
+        "DateOpen": "8/6/2018"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8361083,
+          35.1539887
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 122,
+        "County": "SHELBY",
+        "Agency": "Small Wonders",
+        "Address": "4795 Hodge, Memphis TN 38109",
+        "Street": "4795 Hodge",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38109,
+        "Phone": "(901) 801-1561",
+        "Contact": "WANDA MATTOX-HICKS",
+        "MinAge": "2YR",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:30 AM",
+        "Close": "5:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "11/1/2021",
+        "DateOpen": "9/10/2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0498473,
+          35.0174864
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 123,
+        "County": "SHELBY",
+        "Agency": "Village Mindset Solutions",
+        "Address": "6605 Elmore Woods Cove, Memphis TN 38134",
+        "Street": "6605 Elmore Woods Cove",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38134,
+        "Phone": "(901) 440-7788",
+        "Contact": "Ashley Potts",
+        "MinAge": "1YR",
+        "MaxAge": "12YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "4:00 PM",
+        "Close": "11:59 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "8/1/2021",
+        "DateOpen": "4/15/2020"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8430585,
+          35.1920107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 124,
+        "County": "SHELBY",
+        "Agency": "One Faith Learning Optional Day Home",
+        "Address": "3368 Joslyn Street, Memphis TN 38128",
+        "Street": "3368 Joslyn Street",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38128,
+        "Phone": "(901) 246-4565",
+        "Contact": "RuKiya  Campbell",
+        "MinAge": "15MO",
+        "MaxAge": "12YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:00 AM",
+        "Close": "5:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "12/1/2019",
+        "DateOpen": "8/8/2019"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9019205,
+          35.2175978
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 125,
+        "County": "SHELBY",
+        "Agency": "Minnie's Nannies In-Home Childcare",
+        "Address": "1917 Capri Street, Memphis TN 38117",
+        "Street": "1917 Capri Street",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38117,
+        "Phone": "(901) 591-0518",
+        "Contact": "Alexandra MCGaha",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "2/1/2022",
+        "DateOpen": "10/5/2018"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9123513,
+          35.0794002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 126,
+        "County": "SHELBY",
+        "Agency": "Bobbie Jean's Babies",
+        "Address": "3687 Ford Road, Memphis TN 38109",
+        "Street": "3687 Ford Road",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38109,
+        "Phone": "(901) 218-4282",
+        "Contact": "Tia  Killebrew",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:00 AM",
+        "Close": "5:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "6/1/2021",
+        "DateOpen": "2/5/2020"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0827985,
+          35.0479729
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 127,
+        "County": "SHELBY",
+        "Agency": "Fun Time Learning House",
+        "Address": "4332 Kerwin Drive, Memphis TN 38128",
+        "Street": "4332 Kerwin Drive",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38128,
+        "Phone": "(901) 502-0733",
+        "Contact": "Brittany Ward",
+        "MinAge": "6MO",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "10/1/2021",
+        "DateOpen": "6/17/2019"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9342462,
+          35.2439955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 128,
+        "County": "SHELBY",
+        "Agency": "Unique Family Children's Home Care ",
+        "Address": "6583 Kirby Gate Cove, Memphis  TN 38119",
+        "Street": "6583 Kirby Gate Cove",
+        "City": "Memphis ",
+        "State": "TN",
+        "Zip": 38119,
+        "Phone": "(470) 343-4399",
+        "Contact": "Jennifer  Patterson ",
+        "MinAge": "6WK",
+        "MaxAge": "5YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:30 AM",
+        "Close": "5:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "9/1/2021",
+        "DateOpen": "5/18/2020"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8437169,
+          35.0750829
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 129,
+        "County": "SHELBY",
+        "Agency": "Jeaneen Tender Hearts Childcare Service,",
+        "Address": "6671 Weatherwood Cove, Memphis TN 38141",
+        "Street": "6671 Weatherwood Cove",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38141,
+        "Phone": "(901) 864-2673",
+        "Contact": "Jeaneen Smith",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:00 AM",
+        "Close": "5:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "2/1/2022",
+        "DateOpen": "10/16/2019"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8409004,
+          35.0005655
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 130,
+        "County": "SHELBY",
+        "Agency": "Learning Zone Family Daycare",
+        "Address": "4445 South Cedar Bark Cove, Memphis TN 38128",
+        "Street": "4445 South Cedar Bark Cove",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38128,
+        "Phone": "(901) 691-0554",
+        "Contact": "Brandi Richardson",
+        "MinAge": "19MO",
+        "MaxAge": "5YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "1/1/2022",
+        "DateOpen": "9/1/2019"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9108853,
+          35.2471563
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 131,
+        "County": "SHELBY",
+        "Agency": "Creative Collegiate Academy LLC",
+        "Address": "519 Bruins Trace, Cordova TN 38018",
+        "Street": "519 Bruins Trace",
+        "City": "Cordova",
+        "State": "TN",
+        "Zip": 38018,
+        "Phone": "(901) 831-0777",
+        "Contact": "Malorie Hullett",
+        "MinAge": "3YR",
+        "MaxAge": "5YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:30 AM",
+        "Close": "4:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "11/1/2021",
+        "DateOpen": "7/12/2019"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.7774208,
+          35.1398457
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 132,
+        "County": "SHELBY",
+        "Agency": "Tiny Tots Learning Center FDH ",
+        "Address": "4527 Villagreen St, Memphis TN 38118",
+        "Street": "4527 Villagreen St",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38118,
+        "Phone": "(901) 794-3263",
+        "Contact": "Krystal Bridgeforth",
+        "MinAge": "6WK",
+        "MaxAge": "8YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:30 AM",
+        "Close": "11:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "2/1/2022",
+        "DateOpen": "2/21/2007"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9125604,
+          35.0583056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 133,
+        "County": "SHELBY",
+        "Agency": "Jac-Kay's In Home Care",
+        "Address": "4121 Worden Cove, Memphis TN 38125",
+        "Street": "4121 Worden Cove",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38125,
+        "Phone": "(901) 751-2663",
+        "Contact": "Jacequelyn Tindall",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "9/1/2021",
+        "DateOpen": "4/1/2003"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8217833,
+          35.0357176
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 134,
+        "County": "SHELBY",
+        "Agency": "Angelene's Angels Family Day Home",
+        "Address": "3159 Boone Street, Memphis TN 38127",
+        "Street": "3159 Boone Street",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38127,
+        "Phone": "(901) 849-9253",
+        "Contact": "Angelene Williams",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "11/1/2021",
+        "DateOpen": "1/4/2021"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9879588,
+          35.2117767
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 135,
+        "County": "SHELBY",
+        "Agency": "Buttercups Academy LLC",
+        "Address": "7689 Parkmont Drive, Memphis  TN 38125",
+        "Street": "7689 Parkmont Drive",
+        "City": "Memphis ",
+        "State": "TN",
+        "Zip": 38125,
+        "Phone": "(901) 425-2505",
+        "Contact": "Belinda  O'Neal",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "5/1/2021",
+        "DateOpen": "1/18/2021"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8066841,
+          35.0133843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 136,
+        "County": "SHELBY",
+        "Agency": "Magical Memories Enrichment Center, INC.",
+        "Address": "4223 Rosewind Circle, Memphis TN 38141",
+        "Street": "4223 Rosewind Circle",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38141,
+        "Phone": "(901) 314-5499",
+        "Contact": "Brittany  Sneed",
+        "MinAge": "6MO",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "8/1/2021",
+        "DateOpen": "12/27/2019"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.856553,
+          35.032171
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 137,
+        "County": "SHELBY",
+        "Agency": "Glowing Hearts Family Childcare",
+        "Address": "3767 Kipling, Memphis TN 38128",
+        "Street": "3767 Kipling",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38128,
+        "Phone": "(901) 265-9301",
+        "Contact": "Monique Burrow",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "7/1/2021",
+        "DateOpen": "4/1/2020"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9379316,
+          35.2404354
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 138,
+        "County": "SHELBY",
+        "Agency": "Little Scholars Academy",
+        "Address": "3210 Cromwell Avenue, Memphis TN 38118",
+        "Street": "3210 Cromwell Avenue",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38118,
+        "Phone": "(901) 494-5142",
+        "Contact": "Stephanie Moody",
+        "MinAge": "1YR",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:00 AM",
+        "Close": "4:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "1/1/2022",
+        "DateOpen": "10/1/2020"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9565353,
+          35.0493698
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 139,
+        "County": "SHELBY",
+        "Agency": "The Little Village Learning Academy Corp",
+        "Address": "2185 Long St , Memphis  TN 38114",
+        "Street": "2185 Long St",
+        "City": "Memphis ",
+        "State": "TN",
+        "Zip": 38114,
+        "Phone": "(901) 500-5471",
+        "Contact": "Erica  Montgomery",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:30 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "2/1/2022",
+        "DateOpen": "10/1/2020"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9775175,
+          35.0855656
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 140,
+        "County": "SHELBY",
+        "Agency": "Education Station Childcare Home, LLC",
+        "Address": "2186 Hillshire Cove, Memphis TN 38133",
+        "Street": "2186 Hillshire Cove",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38133,
+        "Phone": "(901) 529-7804",
+        "Contact": "Emily Surgeon",
+        "MinAge": "3YR",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "3/1/2022",
+        "DateOpen": "11/16/2020"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8279128,
+          35.1850762
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 141,
+        "County": "SHELBY",
+        "Agency": "StarZ KidS Family Day Care Home",
+        "Address": "2525 Selman Avenue, Memphis TN 38112",
+        "Street": "2525 Selman Avenue",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38112,
+        "Phone": "(901) 846-3549",
+        "Contact": "Starkyria Harris",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "1/1/2022",
+        "DateOpen": "9/22/2021"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9744557,
+          35.1533016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 142,
+        "County": "SHELBY",
+        "Agency": "Nana's Future Family Day Home",
+        "Address": "5307 Adney Gap Cove, Memphis TN 38134",
+        "Street": "5307 Adney Gap Cove",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38134,
+        "Phone": "(901) 677-2901",
+        "Contact": "Adrianne  Jackson",
+        "MinAge": "18MO",
+        "MaxAge": "12YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "2/22/2021",
+        "DateOpen": "2/22/2021"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8865238,
+          35.181838
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 143,
+        "County": "SHELBY",
+        "Agency": "Boss Babies Home Daycare",
+        "Address": "2984 New London, Memphis TN 38115",
+        "Street": "2984 New London",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38115,
+        "Phone": "(901) 283-8178",
+        "Contact": "Devette Logan",
+        "MinAge": "8WK",
+        "MaxAge": "5YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:00 AM",
+        "Close": "5:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "2/1/2022",
+        "DateOpen": "10/18/2021"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8534815,
+          35.0671822
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 144,
+        "County": "SHELBY",
+        "Agency": "Tiny Treasures Learning Home Care",
+        "Address": "3507 Carrington Road, Memphis TN 38111",
+        "Street": "3507 Carrington Road",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38111,
+        "Phone": "(901) 871-8091",
+        "Contact": "",
+        "MinAge": "12MO",
+        "MaxAge": "12YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:30 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "5/1/2022",
+        "DateOpen": "1/21/2022"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9458484,
+          35.1064713
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 145,
+        "County": "SHELBY",
+        "Agency": "Elite Scholars",
+        "Address": "4677 Amanda Oaks Circle West, Memphis TN 38141",
+        "Street": "4677 Amanda Oaks Circle West",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38141,
+        "Phone": "(901) 538-4590",
+        "Contact": "MIA OLIVER",
+        "MinAge": "2YR",
+        "MaxAge": "5YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:30 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "10/15/2021",
+        "DateOpen": "10/15/2021"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8528126,
+          35.0208056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 146,
+        "County": "SHELBY",
+        "Agency": "Kiddie Corner, LLC",
+        "Address": "3786 Voltaire Avenue, Memphis TN 38128",
+        "Street": "3786 Voltaire Avenue",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38128,
+        "Phone": "(901) 512-4559",
+        "Contact": "Vanessia  Woodland",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "2/1/2021",
+        "DateOpen": "2/1/2021"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.937276,
+          35.240035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 147,
+        "County": "SHELBY",
+        "Agency": "Virtual Scholars Learning Academy",
+        "Address": "3828 Innsbrook Drive, Memphis TN 38115",
+        "Street": "3828 Innsbrook Drive",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38115,
+        "Phone": "(901) 878-0351",
+        "Contact": "Marquita Taylor",
+        "MinAge": "6MO",
+        "MaxAge": "12YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:30 AM",
+        "Close": "4:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "12/1/2021",
+        "DateOpen": "8/27/2021"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8331083,
+          35.0442302
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 148,
+        "County": "SHELBY",
+        "Agency": "Laila's Enrichment Center",
+        "Address": "887 Juliet Ave, Memphis TN 38127",
+        "Street": "887 Juliet Ave",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38127,
+        "Phone": "(901) 921-6374",
+        "Contact": "Lolita Brown",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "3/4/2022",
+        "DateOpen": "3/4/2022"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.034312,
+          35.2140049
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 149,
+        "County": "SHELBY",
+        "Agency": "Building Foundations Learning Academy",
+        "Address": "1032 Hale Road, Memphis TN 38116",
+        "Street": "1032 Hale Road",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38116,
+        "Phone": "(901) 238-4944",
+        "Contact": "Toni Horton",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "7/5/2022",
+        "DateOpen": "1/1/0001"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.029536,
+          35.0272608
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 150,
+        "County": "SHELBY",
+        "Agency": "Gooden Academy Preschool",
+        "Address": "4951 Sagewood Drive, Memphis TN 38116",
+        "Street": "4951 Sagewood Drive",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38116,
+        "Phone": "(901) 206-7124",
+        "Contact": "Akilah Gooden",
+        "MinAge": "2YR",
+        "MaxAge": "5YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:00 AM",
+        "Close": "4:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "4/4/2022",
+        "DateOpen": "4/4/2022"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.015904,
+          35.0134074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 151,
+        "County": "SHELBY",
+        "Agency": "Night Night Nanny Academy",
+        "Address": "683 Woodlawn St, Memphis TN 38107",
+        "Street": "683 Woodlawn St",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38107,
+        "Phone": "(901) 626-3762",
+        "Contact": "Anjail Wilks",
+        "MinAge": "6WK",
+        "MaxAge": "5YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "5:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "2/16/2022",
+        "DateOpen": "2/16/2022"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0346402,
+          35.1595931
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 152,
+        "County": "SHELBY",
+        "Agency": "Think Big Learning Childcare",
+        "Address": "7753 Windy Willow Cove, Memphis TN 38125",
+        "Street": "7753 Windy Willow Cove",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38125,
+        "Phone": "(901) 410-0258",
+        "Contact": "Shronda Burton",
+        "MinAge": "2YR",
+        "MaxAge": "12YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:00 AM",
+        "Close": "5:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "3/3/2022",
+        "DateOpen": "3/3/2022"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8046521,
+          35.0167592
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 153,
+        "County": "SHELBY",
+        "Agency": "Tender Care FDH",
+        "Address": "6284 Hawthorne Road, Bartlett TN 38134",
+        "Street": "6284 Hawthorne Road",
+        "City": "Bartlett",
+        "State": "TN",
+        "Zip": 38134,
+        "Phone": "(901) 317-0588",
+        "Contact": "Sedrica  Thompson",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "5:30 AM",
+        "Close": "7:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "10/22/2021",
+        "DateOpen": "10/22/2021"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8537009,
+          35.1955452
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 154,
+        "County": "SHELBY",
+        "Agency": "Scenic Hills Child Care",
+        "Address": "3036 Scotland, Memphis TN 38128",
+        "Street": "3036 Scotland",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38128,
+        "Phone": "(901) 503-2787",
+        "Contact": "Sharita Noble",
+        "MinAge": "6MO",
+        "MaxAge": "12YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:30 AM",
+        "Close": "6:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "3/1/2022",
+        "DateOpen": "11/5/2021"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9582556,
+          35.2084299
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 155,
+        "County": "SHELBY",
+        "Agency": "Sherri's Happy Haven",
+        "Address": "1488 Hamilton Street, MEMPHIS TN 38114",
+        "Street": "1488 Hamilton Street",
+        "City": "MEMPHIS",
+        "State": "TN",
+        "Zip": 38114,
+        "Phone": "(901) 691-1392",
+        "Contact": "Scheherzade McNeal",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "7:30 AM",
+        "Close": "5:30 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "9/1/2021",
+        "DateOpen": "11/2/2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9775722,
+          35.1046328
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 156,
+        "County": "SHELBY",
+        "Agency": "Ms. Alma's Family Child Care Home",
+        "Address": "2145 Alameda , Memphis TN 38108",
+        "Street": "2145 Alameda",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38108,
+        "Phone": "(901) 278-2661",
+        "Contact": "Alma Holmes",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:30 AM",
+        "Close": "6:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "7/1/2021",
+        "DateOpen": "7/1/2010"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9673469,
+          35.1763676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 157,
+        "County": "SHELBY",
+        "Agency": "Futuristic  Learning Center",
+        "Address": "1353 Gill Avenue, Memphis TN 38106",
+        "Street": "1353 Gill Avenue",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38106,
+        "Phone": "(901) 570-3019",
+        "Contact": "Pamela Lewis",
+        "MinAge": "9MO",
+        "MaxAge": "12YR",
+        "StarRating": "3.0",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:45 AM",
+        "Close": "5:00 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "11/1/2021",
+        "DateOpen": "7/20/2012"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0173982,
+          35.1073848
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Index": 158,
+        "County": "SHELBY",
+        "Agency": "Loving All Children FDH",
+        "Address": "2400 Wellons Street, Memphis TN 38127",
+        "Street": "2400 Wellons Street",
+        "City": "Memphis",
+        "State": "TN",
+        "Zip": 38127,
+        "Phone": "(901) 864-2588",
+        "Contact": "Lachana Bobo-Walker ",
+        "MinAge": "6WK",
+        "MaxAge": "12YR",
+        "StarRating": "",
+        "Provider": "Family",
+        "Capacity": "7.0",
+        "Open": "6:00 AM",
+        "Close": "11:59 PM",
+        "RegAgency": "DHS Licensing",
+        "RegStatus": "Licensed",
+        "LicAppDate": "1/1/2021",
+        "DateOpen": "9/3/2020"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9839138,
+          35.2372313
+        ]
+      }
+    }
+  ]
+}

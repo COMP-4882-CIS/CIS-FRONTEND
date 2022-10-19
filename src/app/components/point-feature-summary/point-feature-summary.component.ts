@@ -2,7 +2,8 @@ import {Component, Input} from '@angular/core';
 import {
   CommunityCenterFeature,
   LibraryFeature,
-  ChildCareFeature,
+  CCCFeature,
+  CCFFeature,
   PointFeature,
   SchoolFeature
 } from "../../backend/types/geo/features/point";
@@ -21,7 +22,7 @@ export class PointFeatureSummaryComponent {
   typeTitle!: string;
 
   get hasTelephoneNumber(): boolean {
-    return (this.pointFeature instanceof LibraryFeature || this.pointFeature instanceof CommunityCenterFeature || this.pointFeature instanceof ChildCareFeature) &&
+    return (this.pointFeature instanceof LibraryFeature || this.pointFeature instanceof CommunityCenterFeature || this.pointFeature instanceof CCCFeature) &&
       !!(this.pointFeature as LibraryFeature).phoneNumber;
   }
 
@@ -31,29 +32,31 @@ export class PointFeatureSummaryComponent {
   }
 
   get hasMinAge(): boolean {
-    return this.pointFeature instanceof ChildCareFeature &&
-      !!(this.pointFeature as ChildCareFeature).minAge;
+    return this.pointFeature instanceof CCCFeature || this.pointFeature instanceof CCFFeature &&
+      !!(this.pointFeature as CCCFeature).minAge;
   }
 
   get hasMaxAge(): boolean {
-    return this.pointFeature instanceof ChildCareFeature &&
-      !!(this.pointFeature as ChildCareFeature).maxAge;
+    return this.pointFeature instanceof CCCFeature || this.pointFeature instanceof CCFFeature &&
+      !!(this.pointFeature as CCCFeature).maxAge;
   }
 
   get hasCapacity(): boolean {
-    return this.pointFeature instanceof ChildCareFeature &&
-      !!(this.pointFeature as ChildCareFeature).capacity;
+    return this.pointFeature instanceof CCCFeature || this.pointFeature instanceof CCFFeature &&
+      !!(this.pointFeature as CCCFeature).capacity;
   }
 
   get hasRegStatus(): boolean {
-    return this.pointFeature instanceof ChildCareFeature &&
-      !!(this.pointFeature as ChildCareFeature).regStatus;
+    return this.pointFeature instanceof CCCFeature || this.pointFeature instanceof CCFFeature &&
+      !!(this.pointFeature as CCCFeature).regStatus;
   }
 
   get hasRegAgency(): boolean {
-    return this.pointFeature instanceof ChildCareFeature &&
-      !!(this.pointFeature as ChildCareFeature).regAgency;
+    return this.pointFeature instanceof CCCFeature || this.pointFeature instanceof CCFFeature &&
+      !!(this.pointFeature as CCCFeature).regAgency;
   }
+
+  
 
   getValue(key: string): any {
     return (this.pointFeature as {[key: string]: any})[key];

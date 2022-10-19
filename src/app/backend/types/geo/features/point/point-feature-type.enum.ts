@@ -3,5 +3,6 @@ export enum PointFeatureType {
   COMMUNITY_CENTER = 'community_center',
   PARK = 'park',
   SCHOOL = 'school',
-  CHILDCARE = 'childcare'
+  CCF = 'cc_family',
+  CCC = 'cc_center'
 }

@@ -37,7 +37,8 @@ export class BreakdownSummaryComponent {
   totalParks: number = 0;
   totalLibraries: number = 0;
   totalCommunityCenters: number = 0;
-  totalChildCare: number = 0;
+  totalCCC: number = 0;
+  totalCCF: number = 0;
 
   ageUnder5: number = 0;
   age5To9: number = 0;
@@ -94,7 +95,8 @@ export class BreakdownSummaryComponent {
       this.totalParks = landmarksSummary.totalParks;
       this.totalLibraries = landmarksSummary.totalLibraries;
       this.totalCommunityCenters = landmarksSummary.totalCommunityCenters;
-      this.totalChildCare = landmarksSummary.totalChildCare;
+      this.totalCCC = landmarksSummary.totalCCC;
+      this.totalCCF = landmarksSummary.totalCCF;
     } else {
       this.showLandmarksSummary = false;
     }

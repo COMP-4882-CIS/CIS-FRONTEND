@@ -66,6 +66,10 @@
               <mat-tab label="Servicing Population">
                 <ng-template [ngTemplateOutlet]="regularPointFeature"></ng-template>
               </mat-tab>
+
+              <mat-tab label="test(SCHOOL INFO)test">
+                <ng-template [ngTemplateOutlet]="TestFeature"></ng-template>
+              </mat-tab>
             </mat-tab-group>
 
           </ng-container>
@@ -76,6 +80,11 @@
             <app-breakdown-summary title="Servicing Population"
                                    [populationStats]="getStat(currentData)"></app-breakdown-summary>
           </ng-template>
+          
+          <ng-template #TestFeature>
+            <p> test </p>
+          </ng-template>
+
         </ng-container>
       </div>
 
