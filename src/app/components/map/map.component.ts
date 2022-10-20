@@ -354,14 +354,12 @@ export class MapComponent implements AfterViewInit {
       }
 
       var baseTree = {
-        label: 'BaseLayers',
-        noShow: true,
+        label: 'Resources',
+        noShow: false,
         children: [
             {
                 label: 'Schools',
                 layer: schools,
-                children: [
-                ]
             },
             {
                 label: 'Child Care',
@@ -387,20 +385,14 @@ export class MapComponent implements AfterViewInit {
             {
               label: 'Parks',
               layer: parks,
-              children: [
-              ]
           },
           {
             label: 'Community Centers',
             layer: centers,
-            children: [
-            ]
         },
         {
           label: 'Libraries',
           layer: libraries,
-          children: [
-          ]
       },
         ]
     };
@@ -417,8 +409,6 @@ export class MapComponent implements AfterViewInit {
 
       var ctl = L.control.layers.tree(secondTree, baseTree, {
         namedToggle: true,
-        collapseAll: 'Collapse all',
-        expandAll: 'Expand all',
         collapsed: false,});
 
       ctl.addTo(map).collapseTree().expandSelected().collapseTree(true);
