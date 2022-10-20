@@ -45,6 +45,7 @@ export class MapComponent implements AfterViewInit {
   private schoolsGeoJSON?: GeoJSON;
   private CCFGeoJSON?: GeoJSON;
   private CCCGeoJSON?: GeoJSON;
+  private CrimesGeoJSON?: GeoJSON;
 
   private popupOpen = false;
   private map?: L.Map;
@@ -121,6 +122,7 @@ export class MapComponent implements AfterViewInit {
     this.schoolsGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.SCHOOL, this.map);
     this.CCFGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.CCF, this.map);
     this.CCCGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.CCC, this.map);
+    this.CrimesGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.CRIMES, this.map);
 
     this.fetchMapData(this.map);
     this.attachEvents(this.map);
@@ -158,6 +160,7 @@ export class MapComponent implements AfterViewInit {
     const schools: GeoJSON = this.schoolsGeoJSON!;
     const ccf: GeoJSON = this.CCFGeoJSON!;
     const ccc: GeoJSON = this.CCCGeoJSON!;
+    const crimes: GeoJSON = this.CCCGeoJSON!;
 
     map.on('popupopen', (e: PopupEvent) => {
       const feature = (e.popup as unknown as { _source: any })._source.feature as Feature;
@@ -189,6 +192,7 @@ export class MapComponent implements AfterViewInit {
     schools.on('click', (event) => this.handleFeatureClick(event));
     ccc.on('click', (event) => this.handleFeatureClick(event));
     ccf.on('click', (event) => this.handleFeatureClick(event));
+    crimes.on('click', (event) => this.handleFeatureClick(event));
   }
 
   /**
@@ -208,6 +212,7 @@ export class MapComponent implements AfterViewInit {
       const schools = this.schoolsGeoJSON as GeoJSON;
       const ccf = this.CCFGeoJSON as GeoJSON;
       const ccc = this.CCCGeoJSON as GeoJSON;
+      const crimes = this.CrimesGeoJSON as GeoJSON;
 
       this.geoTractService.getCensusTractFeatures().pipe(
         tap(f => tracts.addData(f)),
@@ -226,7 +231,9 @@ export class MapComponent implements AfterViewInit {
         switchMap(() => this.geoTractService.getCCFFeatures()),
         tap(f => ccf.addData(f)),
         switchMap(() => this.geoTractService.getCCCFeatures()),
-        tap(f => ccc.addData(f))
+        tap(f => ccc.addData(f)),
+        switchMap(() => this.geoTractService.getCrimesFeatures()),
+        tap(f => crimes.addData(f)),
       ).subscribe(() => {
         if (!!this.map) {
           const outerBounds = zipCodes.getBounds().pad(0.5);
@@ -256,6 +263,7 @@ export class MapComponent implements AfterViewInit {
     const schools = this.schoolsGeoJSON as GeoJSON;
     const ccf = this.CCFGeoJSON as GeoJSON;
     const ccc = this.CCCGeoJSON as GeoJSON;
+    const crimes = this.CrimesGeoJSON as GeoJSON;
 
     const tiles = L.tileLayer(environment.map.tiles, {
       maxZoom: 18,
@@ -271,6 +279,7 @@ export class MapComponent implements AfterViewInit {
       "ChildCare FAMILY": ccf,
       "ChildCare CENTER": ccc,
       "Districts": districts,
+      "Crimes": crimes,
     }
 
     tiles.addTo(map);
@@ -285,7 +294,7 @@ export class MapComponent implements AfterViewInit {
     schools.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.SCHOOL, layer));
     ccc.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.CCC, layer));
     ccf.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.CCF, layer));
-
+    crimes.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.CRIMES, layer));
     districts.removeFrom(map);
 
     this.fetchMapPopulationData(map).subscribe((maxStats) => {
@@ -312,6 +321,12 @@ export class MapComponent implements AfterViewInit {
                     {label: 'Child-Care Centers', layer: ccc},
                 ]
             },
+            {
+              label: 'Crimes',
+              layer: crimes,
+              children: [
+              ]
+          },
             {
               label: 'Parks',
               layer: parks,

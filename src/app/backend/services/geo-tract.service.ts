@@ -44,4 +44,8 @@ export class GeoTractService {
   getCCCFeatures() {
     return this.http.get<GeoJSONObject>('assets/data/cs_center.geojson');
   }
+
+  getCrimesFeatures() {
+    return this.http.get<GeoJSONObject>('assets/data/firstcrimedata.geojson');
+  }
 }

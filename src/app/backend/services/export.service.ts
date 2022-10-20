@@ -33,7 +33,9 @@ export class ExportService {
       libraryCount: landmarkSummary.totalLibraries,
       CCCCount: landmarkSummary.totalCCC,
       CCFCount: landmarkSummary.totalCCF,
+      CrimesCount: landmarkSummary.totalCRIMES,
       communityCenterCount: landmarkSummary.totalCommunityCenters
+
     }
 
     const url = Burly(environment.apiURL)
@@ -59,6 +61,7 @@ export class ExportService {
       libraryCount: landmarkSummary.totalLibraries,
       CCCCount: landmarkSummary.totalCCC,
       CCFCount: landmarkSummary.totalCCF,
+      CrimesCount: landmarkSummary.totalCRIMES,
       communityCenterCount: landmarkSummary.totalCommunityCenters
     }
 

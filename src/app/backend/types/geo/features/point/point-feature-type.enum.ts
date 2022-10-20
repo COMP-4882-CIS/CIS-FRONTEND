@@ -4,5 +4,6 @@ export enum PointFeatureType {
   PARK = 'park',
   SCHOOL = 'school',
   CCF = 'cc_family',
-  CCC = 'cc_center'
+  CCC = 'cc_center',
+  CRIMES = 'crimes'
 }

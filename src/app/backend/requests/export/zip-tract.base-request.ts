@@ -12,4 +12,5 @@ export interface ZipTractBaseRequest {
   communityCenterCount: number;
   CCCCount: number;
   CCFCount: number;
+  CrimesCount: number;
 }
