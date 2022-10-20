@@ -33,7 +33,12 @@ export class ExportService {
       libraryCount: landmarkSummary.totalLibraries,
       CCCCount: landmarkSummary.totalCCC,
       CCFCount: landmarkSummary.totalCCF,
-      CrimesCount: landmarkSummary.totalCRIMES,
+      CACount: landmarkSummary.totalCA,
+      CBRCount: landmarkSummary.totalCBR,
+      CDCount: landmarkSummary.totalCD,
+      CTCount: landmarkSummary.totalCT,
+      COCount: landmarkSummary.totalCO,
+      CWCount: landmarkSummary.totalCW,
       communityCenterCount: landmarkSummary.totalCommunityCenters
 
     }
@@ -61,7 +66,12 @@ export class ExportService {
       libraryCount: landmarkSummary.totalLibraries,
       CCCCount: landmarkSummary.totalCCC,
       CCFCount: landmarkSummary.totalCCF,
-      CrimesCount: landmarkSummary.totalCRIMES,
+      CACount: landmarkSummary.totalCA,
+      CBRCount: landmarkSummary.totalCBR,
+      CDCount: landmarkSummary.totalCD,
+      CTCount: landmarkSummary.totalCT,
+      COCount: landmarkSummary.totalCO,
+      CWCount: landmarkSummary.totalCW,
       communityCenterCount: landmarkSummary.totalCommunityCenters
     }
 

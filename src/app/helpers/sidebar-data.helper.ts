@@ -71,63 +71,124 @@ export class SidebarDataHelper {
     let totalParks: number = 0;
     let totalCommunityCenters: number = 0;
     let totalLibraries: number = 0;
-    let totalChildCare: number = 0;
-    let totalCRIMES: number = 0;
+    let totalCCC: number = 0;
+    let totalCCF: number = 0;
+    let totalCA: number = 0;
+    let totalCBR: number = 0;
+    let totalCD: number = 0;
+    let totalCT: number = 0;
+    let totalCO: number = 0;
+    let totalCW: number = 0;
     let parks: Landmark[] = [];
     let communityCenters: Landmark[] = [];
     let libraries: Landmark[] = [];
-    let childCare: Landmark[] = [];
-    let crimes: Landmark[] = [];
+    let CCC: Landmark[] = [];
+    let CCF: Landmark[] = [];
+    let CA: Landmark[] = [];
+    let CBR: Landmark[] = [];
+    let CD: Landmark[] = [];
+    let CT: Landmark[] = [];
+    let CO: Landmark[] = [];
+    let CW: Landmark[] = [];
 
     if (!!destination && !!addition) {
       totalParks = destination.totalParks + addition.totalParks;
       totalCommunityCenters = destination.totalCommunityCenters + addition.totalCommunityCenters;
       totalLibraries = destination.totalLibraries + destination.totalLibraries;
-      totalChildCare = destination.totalChildCare + destination.totalChildCare;
-      totalCRIMES = destination.totalCRIMES + destination.totalCRIMES;
+      totalCCC = destination.totalCCC + destination.totalCCC;
+      totalCCF = destination.totalCCF + destination.totalCCF;
+      totalCA = destination.totalCA + destination.totalCA;
+      totalCBR = destination.totalCBR + destination.totalCBR;
+      totalCD = destination.totalCD + destination.totalCD;
+      totalCT = destination.totalCT+ destination.totalCT;
+      totalCO = destination.totalCO+ destination.totalCO;
+      totalCW = destination.totalCW + destination.totalCW;
+
 
       parks = [...destination.parks, ...addition.parks];
       communityCenters = [...destination.communityCenters, ...addition.communityCenters];
       libraries = [...destination.libraries, ...addition.libraries];
-      childCare = [...destination.childCare, ...addition.childCare];
-      crimes = [...destination.crimes, ...addition.crimes];
+      CCC = [...destination.CCC, ...addition.CCC];
+      CCF = [...destination.CCF, ...addition.CCF];
+      CA = [...destination.CA, ...addition.CA];
+      CBR = [...destination.CBR, ...addition.CBR];
+      CD = [...destination.CD, ...addition.CD];
+      CT = [...destination.CT, ...addition.CT];
+      CO = [...destination.CO, ...addition.CO];
+      CW = [...destination.CW, ...addition.CW];
     } else if (!!destination) {
       totalParks = destination.totalParks;
-      totalChildCare = destination.totalChildCare;
+      totalCCC = destination.totalCCC;
+      totalCCF = destination.totalCCF;
       totalCommunityCenters = destination.totalCommunityCenters;
       totalLibraries = destination.totalLibraries;
-      totalCRIMES = destination.totalCRIMES;
+      totalCA = destination.totalCA;
+      totalCBR = destination.totalCBR;
+      totalCD = destination.totalCD;
+      totalCT = destination.totalCT;
+      totalCO = destination.totalCO;
+      totalCW = destination.totalCW;
 
       parks = destination.parks;
       communityCenters = destination.communityCenters;
       libraries = destination.libraries;
-      childCare = destination.childCare;
-      crimes = destination.crimes;
+      CCC = destination.CCC;
+      CCF = destination.CCF;
+      CA = destination.CA;
+      CBR = destination.CBR;
+      CD = destination.CD;
+      CT = destination.CT;
+      CO = destination.CO;
+      CW = destination.CW;
     } else if (!!addition) {
       totalParks = addition.totalParks;
       totalCommunityCenters = addition.totalCommunityCenters;
       totalLibraries = addition.totalLibraries;
-      totalChildCare = addition.totalChildCare;
-      totalCRIMES = addition.totalCRIMES;
+      totalCCC = addition.totalCCC;
+      totalCCF = addition.totalCCF;
+      totalCA = addition.totalCA;
+      totalCBR = addition.totalCBR;
+      totalCD = addition.totalCD;
+      totalCT = addition.totalCT;
+      totalCO = addition.totalCO;
+      totalCW = addition.totalCW;
 
       parks = addition.parks;
-      childCare = addition.childCare;
+      CCC = addition.CCC;
+      CCF = addition.CCF;
       communityCenters = addition.communityCenters;
       libraries = addition.libraries;
-      crimes = addition.crimes;
+      CA = addition.CA;
+      CBR = addition.CBR;
+      CD = addition.CD;
+      CT = addition.CT;
+      CO = addition.CO;
+      CW = addition.CW;
     }
 
     return {
       totalParks,
       totalCommunityCenters,
       totalLibraries,
-      totalChildCare,
-      totalCRIMES,
+      totalCCC,
+      totalCCF,
+      totalCA,
+      totalCBR,
+      totalCD,
+      totalCT,
+      totalCO,
+      totalCW,
       parks,
       communityCenters,
       libraries,
-      childCare,
-      crimes
+      CCC,
+      CCF,
+      CA,
+      CBR,
+      CD,
+      CT,
+      CO,
+      CW 
     }
   }
 }

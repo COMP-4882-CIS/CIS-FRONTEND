@@ -5,5 +5,10 @@ export enum PointFeatureType {
   SCHOOL = 'school',
   CCF = 'cc_family',
   CCC = 'cc_center',
-  CRIMES = 'crimes'
+  CA = 'assault',
+  CBR = 'burg',
+  CD = 'drug',
+  CT = 'theft',
+  CO = 'other',
+  CW = 'weapon',
 }

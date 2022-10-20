@@ -45,7 +45,27 @@ export class GeoTractService {
     return this.http.get<GeoJSONObject>('assets/data/cs_center.geojson');
   }
 
-  getCrimesFeatures() {
-    return this.http.get<GeoJSONObject>('assets/data/firstcrimedata.geojson');
+  getCAFeatures() {
+    return this.http.get<GeoJSONObject>('assets/data/cr_assault.geojson');
+  }
+
+  getCBRFeatures() {
+    return this.http.get<GeoJSONObject>('assets/data/cr_burgrob.geojson');
+  }
+
+  getCDFeatures() {
+    return this.http.get<GeoJSONObject>('assets/data/cr_drug.geojson');
+  }
+
+  getCTFeatures() {
+    return this.http.get<GeoJSONObject>('assets/data/cr_theft.geojson');
+  }
+
+  getCOFeatures() {
+    return this.http.get<GeoJSONObject>('assets/data/cr_trafficother.geojson');
+  }
+
+  getCWFeatures() {
+    return this.http.get<GeoJSONObject>('assets/data/cr_weapon.geojson');
   }
 }
