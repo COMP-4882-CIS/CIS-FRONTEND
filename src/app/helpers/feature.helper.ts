@@ -7,7 +7,9 @@ import {
   ParkFeature,
   PointFeature,
   SchoolFeature,
-  ChildCareFeature
+  CCCFeature,
+  CCFFeature,
+  CrimesFeature,
 } from "../backend/types/geo/features/point";
 import {DistrictFeature, LayerFeature, TractFeature, ZipcodeFeature} from "../backend/types/geo/features/layer";
 import {LayerFeatureType} from "../backend/types/geo/features/layer/layer-feature-type.enum";
@@ -49,8 +51,16 @@ export class FeatureHelper {
       iconUrl: 'assets/icons/community_center.png',
       iconSize: [31, 42],
     }),
-    childcare: L.icon({
+    CCC: L.icon({
       iconUrl: 'assets/icons/scorpion.png',
+      iconSize: [31, 42],
+    }),
+    CCF: L.icon({
+      iconUrl: 'assets/icons/scorpion.png',
+      iconSize: [31, 42],
+    }),
+    crimes: L.icon({
+      iconUrl: 'assets/icons/transparent-fingerprint-icon.png',
       iconSize: [31, 42],
     }),
     school: L.icon({
@@ -79,8 +89,14 @@ export class FeatureHelper {
       case PointFeatureType.COMMUNITY_CENTER:
         icon = this.icons.center;
         break;
-      case PointFeatureType.CHILDCARE:
-        icon = this.icons.childcare;
+      case PointFeatureType.CCC:
+        icon = this.icons.CCC;
+        break;
+      case PointFeatureType.CCF:
+        icon = this.icons.CCF;
+        break;
+      case PointFeatureType.CRIMES:
+        icon = this.icons.crimes;
         break;
       case PointFeatureType.SCHOOL:
         icon = this.icons.school;
@@ -106,8 +122,12 @@ export class FeatureHelper {
         return new ParkFeature(data);
       case PointFeatureType.SCHOOL:
         return new SchoolFeature(data);
-      case PointFeatureType.CHILDCARE:
-        return new ChildCareFeature(data);
+      case PointFeatureType.CCF:
+        return new CCFFeature(data);
+      case PointFeatureType.CCC:
+        return new CCCFeature(data);
+      case PointFeatureType.CRIMES:
+        return new CrimesFeature(data);
     }
   }
 

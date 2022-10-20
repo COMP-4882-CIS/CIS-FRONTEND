@@ -9,6 +9,10 @@
   height: 100%;
 }
 
+.title {
+  color: gray;
+}
+
 .loading-shade {
   z-index: 9999;
   position: absolute;
@@ -33,7 +37,87 @@
 }
 
 ::ng-deep {
+
+  .leaflet-control-layers-toggle {
+    background-image: url(https://i.stack.imgur.com/3keSg.png) !important;
+    background-color: #2da0e2;
+    background-size: 20px 20px;
+  }
+  
+  .leaflet-touch .leaflet-control-layers-toggle {
+    background-image: url(https://i.stack.imgur.com/3keSg.png) !important;
+    background-color: #2da0e2;
+ }
+
+ .leaflet-control-layers-expanded {
+  color: black;
+	background-color: #EEF4EB;
+}
+.leaflet-control-layers-toggle.leaflet-layerstree-named-toggle {
+  margin: 2px 5px;
+  width: auto;
+  height: auto;
+  background-image: none;
+}
+
+.leaflet-layerstree-node {
+}
+
+.leaflet-layerstree-header input{
+  margin-left: 10px;
+}
+
+
+.leaflet-layerstree-header {
+}
+
+.leaflet-layerstree-header-pointer {
+  cursor: pointer;
+}
+
+.leaflet-layerstree-header label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.leaflet-layerstree-header-label {
+}
+
+.leaflet-layerstree-header-name {
+}
+
+.leaflet-layerstree-header-space {
+}
+
+.leaflet-layerstree-children {
+  padding-left: 24px;
+}
+
+.leaflet-layerstree-children-nopad {
+  padding-left: 10px;
+}
+
+.leaflet-layerstree-closed {
+}
+
+.leaflet-layerstree-opened {
+}
+
+.leaflet-layerstree-hide {
+  display: none;
+}
+
+.leaflet-layerstree-nevershow {
+  display: none;
+}
+
+.leaflet-layerstree-expand-collapse {
+  cursor: pointer;
+}
+
+
   .map-geo-label {
+
     transition: opacity 200ms ease-in-out!important;
 
     &.show {

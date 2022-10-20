@@ -15,6 +15,7 @@ import 'src/assets/leaflet/SmoothWheelZoom.js';
 import {environment} from "../../../environments/environment";
 import {ActivatedRoute, Router} from "@angular/router";
 import {animate, style, transition, trigger} from "@angular/animations";
+import 'leaflet.control.layers.tree';
 
 @Component({
   selector: 'app-map',
@@ -42,7 +43,9 @@ export class MapComponent implements AfterViewInit {
   private librariesGeoJSON?: GeoJSON;
   private centersGeoJSON?: GeoJSON;
   private schoolsGeoJSON?: GeoJSON;
-  private childcaresGeoJSON?: GeoJSON;
+  private CCFGeoJSON?: GeoJSON;
+  private CCCGeoJSON?: GeoJSON;
+  private CrimesGeoJSON?: GeoJSON;
 
   private popupOpen = false;
   private map?: L.Map;
@@ -117,7 +120,9 @@ export class MapComponent implements AfterViewInit {
     this.librariesGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.LIBRARY, this.map);
     this.centersGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.COMMUNITY_CENTER, this.map);
     this.schoolsGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.SCHOOL, this.map);
-    this.childcaresGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.CHILDCARE, this.map);
+    this.CCFGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.CCF, this.map);
+    this.CCCGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.CCC, this.map);
+    this.CrimesGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.CRIMES, this.map);
 
     this.fetchMapData(this.map);
     this.attachEvents(this.map);
@@ -153,7 +158,9 @@ export class MapComponent implements AfterViewInit {
     const libraries: GeoJSON = this.librariesGeoJSON!;
     const centers: GeoJSON = this.centersGeoJSON!;
     const schools: GeoJSON = this.schoolsGeoJSON!;
-    const childcares: GeoJSON = this.childcaresGeoJSON!;
+    const ccf: GeoJSON = this.CCFGeoJSON!;
+    const ccc: GeoJSON = this.CCCGeoJSON!;
+    const crimes: GeoJSON = this.CCCGeoJSON!;
 
     map.on('popupopen', (e: PopupEvent) => {
       const feature = (e.popup as unknown as { _source: any })._source.feature as Feature;
@@ -183,7 +190,9 @@ export class MapComponent implements AfterViewInit {
     centers.on('click', (event) => this.handleFeatureClick(event));
     libraries.on('click', (event) => this.handleFeatureClick(event));
     schools.on('click', (event) => this.handleFeatureClick(event));
-    childcares.on('click', (event) => this.handleFeatureClick(event));
+    ccc.on('click', (event) => this.handleFeatureClick(event));
+    ccf.on('click', (event) => this.handleFeatureClick(event));
+    crimes.on('click', (event) => this.handleFeatureClick(event));
   }
 
   /**
@@ -201,7 +210,9 @@ export class MapComponent implements AfterViewInit {
       const libraries = this.librariesGeoJSON as GeoJSON;
       const centers = this.centersGeoJSON as GeoJSON;
       const schools = this.schoolsGeoJSON as GeoJSON;
-      const childcares = this.childcaresGeoJSON as GeoJSON;
+      const ccf = this.CCFGeoJSON as GeoJSON;
+      const ccc = this.CCCGeoJSON as GeoJSON;
+      const crimes = this.CrimesGeoJSON as GeoJSON;
 
       this.geoTractService.getCensusTractFeatures().pipe(
         tap(f => tracts.addData(f)),
@@ -217,8 +228,12 @@ export class MapComponent implements AfterViewInit {
         tap(f => centers.addData(f)),
         switchMap(() => this.geoTractService.getSchoolsFeatures()),
         tap(f => schools.addData(f)),
-        switchMap(() => this.geoTractService.getChildCareFeatures()),
-        tap(f => childcares.addData(f))
+        switchMap(() => this.geoTractService.getCCFFeatures()),
+        tap(f => ccf.addData(f)),
+        switchMap(() => this.geoTractService.getCCCFeatures()),
+        tap(f => ccc.addData(f)),
+        switchMap(() => this.geoTractService.getCrimesFeatures()),
+        tap(f => crimes.addData(f)),
       ).subscribe(() => {
         if (!!this.map) {
           const outerBounds = zipCodes.getBounds().pad(0.5);
@@ -246,7 +261,9 @@ export class MapComponent implements AfterViewInit {
     const libraries = this.librariesGeoJSON as GeoJSON;
     const centers = this.centersGeoJSON as GeoJSON;
     const schools = this.schoolsGeoJSON as GeoJSON;
-    const childcares = this.childcaresGeoJSON as GeoJSON;
+    const ccf = this.CCFGeoJSON as GeoJSON;
+    const ccc = this.CCCGeoJSON as GeoJSON;
+    const crimes = this.CrimesGeoJSON as GeoJSON;
 
     const tiles = L.tileLayer(environment.map.tiles, {
       maxZoom: 18,
@@ -259,8 +276,10 @@ export class MapComponent implements AfterViewInit {
       "Community Centers": centers,
       "Parks": parks,
       "Schools": schools,
-      "ChildCare": childcares,
+      "ChildCare FAMILY": ccf,
+      "ChildCare CENTER": ccc,
       "Districts": districts,
+      "Crimes": crimes,
     }
 
     tiles.addTo(map);
@@ -273,8 +292,9 @@ export class MapComponent implements AfterViewInit {
     libraries.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.LIBRARY, layer));
     centers.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.COMMUNITY_CENTER, layer));
     schools.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.SCHOOL, layer));
-    childcares.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.CHILDCARE, layer));
-
+    ccc.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.CCC, layer));
+    ccf.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.CCF, layer));
+    crimes.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.CRIMES, layer));
     districts.removeFrom(map);
 
     this.fetchMapPopulationData(map).subscribe((maxStats) => {
@@ -283,7 +303,69 @@ export class MapComponent implements AfterViewInit {
         'Tracts': tracts
       }
 
-      L.control.layers(baseLayers, overlayLayers, {collapsed: false}).addTo(map);
+      var baseTree = {
+        label: 'BaseLayers',
+        noShow: true,
+        children: [
+            {
+                label: 'Schools',
+                layer: schools,
+                children: [
+                ]
+            },
+            {
+                label: 'Child Care',
+                selectAllCheckbox: true,
+                children: [
+                    {label: 'Child-Care Homes', layer: ccf},
+                    {label: 'Child-Care Centers', layer: ccc},
+                ]
+            },
+            {
+              label: 'Crimes',
+              layer: crimes,
+              children: [
+              ]
+          },
+            {
+              label: 'Parks',
+              layer: parks,
+              children: [
+              ]
+          },
+          {
+            label: 'Community Centers',
+            layer: centers,
+            children: [
+            ]
+        },
+        {
+          label: 'Libraries',
+          layer: libraries,
+          children: [
+          ]
+      },
+        ]
+    };
+
+    var secondTree = {
+        label: 'View By',
+        children: [
+          { label: 'Zip Codes', layer: zipCodes },
+          { label: 'Tracts', layer: tracts },
+          { label: 'Districts', layer: districts },
+        ]
+    }
+
+
+      var ctl = L.control.layers.tree(secondTree, baseTree, {
+        namedToggle: true,
+        collapseAll: 'Collapse all',
+        expandAll: 'Expand all',
+        collapsed: false,});
+
+      ctl.addTo(map).collapseTree().expandSelected().collapseTree(true);
+
 
       LayerHelper.stylizePopulationLayer(zipCodes, maxStats);
       LayerHelper.stylizePopulationLayer(tracts, maxStats);

@@ -1,7 +1,7 @@
 import {PointFeature} from "../point-feature.type";
 import {PointFeatureType} from "../point-feature-type.enum";
 
-export class ChildCareFeature implements PointFeature {
+export class CCCFeature implements PointFeature {
   displayName: string;
   zipCode: string;
   streetAddress: string;
@@ -11,7 +11,7 @@ export class ChildCareFeature implements PointFeature {
   capacity: string;
   regAgency: string;
   regStatus: string;
-  type: PointFeatureType = PointFeatureType.CHILDCARE;
+  type: PointFeatureType = PointFeatureType.CCC;
 
   /**
    * @param rawJSON

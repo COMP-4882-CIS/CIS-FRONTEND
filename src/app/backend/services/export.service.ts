@@ -31,8 +31,11 @@ export class ExportService {
       populationInPoverty12To17: stat.populationInPoverty12To17,
       parkCount: landmarkSummary.totalParks,
       libraryCount: landmarkSummary.totalLibraries,
-      childCareCount: landmarkSummary.totalChildCare,
+      CCCCount: landmarkSummary.totalCCC,
+      CCFCount: landmarkSummary.totalCCF,
+      CrimesCount: landmarkSummary.totalCRIMES,
       communityCenterCount: landmarkSummary.totalCommunityCenters
+
     }
 
     const url = Burly(environment.apiURL)
@@ -56,7 +59,9 @@ export class ExportService {
       populationInPoverty12To17: stat.populationInPoverty12To17,
       parkCount: landmarkSummary.totalParks,
       libraryCount: landmarkSummary.totalLibraries,
-      childCareCount: landmarkSummary.totalChildCare,
+      CCCCount: landmarkSummary.totalCCC,
+      CCFCount: landmarkSummary.totalCCF,
+      CrimesCount: landmarkSummary.totalCRIMES,
       communityCenterCount: landmarkSummary.totalCommunityCenters
     }
 

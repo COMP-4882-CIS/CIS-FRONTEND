@@ -37,7 +37,15 @@ export class GeoTractService {
     return this.http.get<GeoJSONObject>('assets/data/schools.geojson');
   }
 
-  getChildCareFeatures() {
-    return this.http.get<GeoJSONObject>('assets/data/childcare.geojson');
+  getCCFFeatures() {
+    return this.http.get<GeoJSONObject>('assets/data/cs_family.geojson');
+  }
+
+  getCCCFeatures() {
+    return this.http.get<GeoJSONObject>('assets/data/cs_center.geojson');
+  }
+
+  getCrimesFeatures() {
+    return this.http.get<GeoJSONObject>('assets/data/firstcrimedata.geojson');
   }
 }

@@ -72,41 +72,49 @@ export class SidebarDataHelper {
     let totalCommunityCenters: number = 0;
     let totalLibraries: number = 0;
     let totalChildCare: number = 0;
+    let totalCRIMES: number = 0;
     let parks: Landmark[] = [];
     let communityCenters: Landmark[] = [];
     let libraries: Landmark[] = [];
     let childCare: Landmark[] = [];
+    let crimes: Landmark[] = [];
 
     if (!!destination && !!addition) {
       totalParks = destination.totalParks + addition.totalParks;
       totalCommunityCenters = destination.totalCommunityCenters + addition.totalCommunityCenters;
       totalLibraries = destination.totalLibraries + destination.totalLibraries;
       totalChildCare = destination.totalChildCare + destination.totalChildCare;
+      totalCRIMES = destination.totalCRIMES + destination.totalCRIMES;
 
       parks = [...destination.parks, ...addition.parks];
       communityCenters = [...destination.communityCenters, ...addition.communityCenters];
       libraries = [...destination.libraries, ...addition.libraries];
       childCare = [...destination.childCare, ...addition.childCare];
+      crimes = [...destination.crimes, ...addition.crimes];
     } else if (!!destination) {
       totalParks = destination.totalParks;
       totalChildCare = destination.totalChildCare;
       totalCommunityCenters = destination.totalCommunityCenters;
       totalLibraries = destination.totalLibraries;
+      totalCRIMES = destination.totalCRIMES;
 
       parks = destination.parks;
       communityCenters = destination.communityCenters;
       libraries = destination.libraries;
       childCare = destination.childCare;
+      crimes = destination.crimes;
     } else if (!!addition) {
       totalParks = addition.totalParks;
       totalCommunityCenters = addition.totalCommunityCenters;
       totalLibraries = addition.totalLibraries;
       totalChildCare = addition.totalChildCare;
+      totalCRIMES = addition.totalCRIMES;
 
       parks = addition.parks;
       childCare = addition.childCare;
       communityCenters = addition.communityCenters;
       libraries = addition.libraries;
+      crimes = addition.crimes;
     }
 
     return {
@@ -114,10 +122,12 @@ export class SidebarDataHelper {
       totalCommunityCenters,
       totalLibraries,
       totalChildCare,
+      totalCRIMES,
       parks,
       communityCenters,
       libraries,
-      childCare
+      childCare,
+      crimes
     }
   }
 }
