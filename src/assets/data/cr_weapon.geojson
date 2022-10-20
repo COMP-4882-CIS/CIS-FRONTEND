@@ -1,0 +1,545 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.907,35.116 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Felony",
+    "ID":"2210003669ME [36:943]",
+    "Offense Date":"October 08, 2022 16H:39M:00S",
+    "Block Address":"S Perkins Rd//Poplar Ave",
+    "Crime Type":"Weapon Law Violations/Felony",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.886,35.044 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Felony",
+    "ID":"2210008110ME [09:330]",
+    "Offense Date":"October 17, 2022 20H:01M:00S",
+    "Block Address":"S Mendenhall Rd//Flowering Peach Dr",
+    "Crime Type":"Weapon Law Violations/Felony",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.903,35.059 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Felony",
+    "ID":"2210006712ME [57:630]",
+    "Offense Date":"October 14, 2022 17H:00M:00S",
+    "Block Address":"4800 Scottdale Dr",
+    "Crime Type":"Weapon Law Violations/Felony",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.814,35.052 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Felony",
+    "ID":"2210020062ME [37:290]",
+    "Offense Date":"October 07, 2022 22H:00M:00S",
+    "Block Address":"3500 S Germantown Rd",
+    "Crime Type":"Weapon Law Violations/Felony",
+    "zipcode":38119
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.936,35.201 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Felony",
+    "ID":"2209015608ME [13:573]",
+    "Offense Date":"September 30, 2022 23H:42M:00S",
+    "Block Address":"3900 Advantage Way Dr",
+    "Crime Type":"Weapon Law Violations/Felony",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.888,35.116 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Felony",
+    "ID":"2210001742ME [40:150]",
+    "Offense Date":"October 04, 2022 17H:34M:00S",
+    "Block Address":"S White Station Rd//Lexington Rd",
+    "Crime Type":"Weapon Law Violations/Felony",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.050,35.158 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Felony",
+    "ID":"2210005820ME [11:380]",
+    "Offense Date":"October 12, 2022 21H:40M:00S",
+    "Block Address":"100 A W Willis Ave",
+    "Crime Type":"Weapon Law Violations/Felony",
+    "zipcode":38105
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.032,35.086 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Felony",
+    "ID":"2209014394ME [14:263]",
+    "Offense Date":"September 28, 2022 15H:41M:00S",
+    "Block Address":"E Mallory Ave//Pine Hill Pl",
+    "Crime Type":"Weapon Law Violations/Felony",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.018,35.034 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Felony",
+    "ID":"2209010301ME [11:260]",
+    "Offense Date":"September 20, 2022 23H:00M:00S",
+    "Block Address":"1400 Southwind Dr",
+    "Crime Type":"Weapon Law Violations/Felony",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.960,35.110 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Felony",
+    "ID":"2209011996ME [23:643]",
+    "Offense Date":"September 23, 2022 22H:30M:00S",
+    "Block Address":"3100 Douglass Ave",
+    "Crime Type":"Weapon Law Violations/Felony",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.912,35.053 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Felony",
+    "ID":"2210007643ME [09:710]",
+    "Offense Date":"October 16, 2022 20H:40M:00S",
+    "Block Address":"3600 Willow Creek Ct",
+    "Crime Type":"Weapon Law Violations/Felony",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.024,35.168 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Felony",
+    "ID":"2210000165ME [08:480]",
+    "Offense Date":"October 01, 2022 13H:15M:00S",
+    "Block Address":"Chelsea Ave//Decatur St",
+    "Crime Type":"Weapon Law Violations/Felony",
+    "zipcode":38107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.927,35.162 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Felony",
+    "ID":"2209015090ME [12:570]",
+    "Offense Date":"September 30, 2022 02H:43M:00S",
+    "Block Address":"Macon Rd//N Graham St",
+    "Crime Type":"Weapon Law Violations/Felony",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.948,35.151 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Felony",
+    "ID":"2210004217ME [12:290]",
+    "Offense Date":"October 10, 2022 00H:45M:00S",
+    "Block Address":"National St//Faxon Ave",
+    "Crime Type":"Weapon Law Violations/Felony",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.028,35.083 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Felony",
+    "ID":"2209013712ME [09:540]",
+    "Offense Date":"September 27, 2022 11H:40M:00S",
+    "Block Address":"Norris Rd//I240 S Rd",
+    "Crime Type":"Weapon Law Violations/Felony",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.915,35.089 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Felony",
+    "ID":"2209009595ME [43:363]",
+    "Offense Date":"September 19, 2022 16H:00M:00S",
+    "Block Address":"4500 Boyce Ave",
+    "Crime Type":"Weapon Law Violations/Felony",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.977,35.094 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Felony",
+    "ID":"2210008029ME [19:283]",
+    "Offense Date":"October 17, 2022 16H:40M:00S",
+    "Block Address":"2600 Burns Ave",
+    "Crime Type":"Weapon Law Violations/Felony",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.058,35.103 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Felony",
+    "ID":"2209011843ME [36:477]",
+    "Offense Date":"September 23, 2022 16H:10M:00S",
+    "Block Address":"1700 Michigan St",
+    "Crime Type":"Weapon Law Violations/Felony",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.933,35.167 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Felony",
+    "ID":"2210004245ME [45:540]",
+    "Offense Date":"October 10, 2022 01H:18M:00S",
+    "Block Address":"1400 Salem St",
+    "Crime Type":"Weapon Law Violations/Felony",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.995,35.099 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Felony",
+    "ID":"2210001785ME [14:697]",
+    "Offense Date":"October 04, 2022 18H:44M:00S",
+    "Block Address":"Castalia St//Boyle Ave",
+    "Crime Type":"Weapon Law Violations/Felony",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.884,35.079 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Felony",
+    "ID":"2209012358ME [10:593]",
+    "Offense Date":"September 24, 2022 18H:15M:00S",
+    "Block Address":"Rosewind Cir//Hickory Hill Rd",
+    "Crime Type":"Weapon Law Violations/Felony",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.034,35.207 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Felony",
+    "ID":"2210002791ME [10:400]",
+    "Offense Date":"October 06, 2022 15H:55M:00S",
+    "Block Address":"Thomas St//Nortgate St",
+    "Crime Type":"Weapon Law Violations/Felony",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.962,35.086 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Felony",
+    "ID":"2210003147ME [09:840]",
+    "Offense Date":"October 07, 2022 10H:08M:00S",
+    "Block Address":"Lamar Ave//Semmes St",
+    "Crime Type":"Weapon Law Violations/Felony",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.923,35.080 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Felony",
+    "ID":"2210005280ME [12:567]",
+    "Offense Date":"October 11, 2022 21H:10M:00S",
+    "Block Address":"1900 Watson Rd",
+    "Crime Type":"Weapon Law Violations/Felony",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.973,35.178 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Felony",
+    "ID":"2210006440ME [25:307]",
+    "Offense Date":"October 14, 2022 04H:15M:00S",
+    "Block Address":"2600 Peres Ave",
+    "Crime Type":"Weapon Law Violations/Felony",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.031,35.107 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Felony",
+    "ID":"2210001823ME [17:877]",
+    "Offense Date":"October 04, 2022 20H:00M:00S",
+    "Block Address":"Kerr Ave//Gaither St",
+    "Crime Type":"Weapon Law Violations/Felony",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.937,35.052 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Felony",
+    "ID":"2209010208ME [08:190]",
+    "Offense Date":"September 20, 2022 18H:50M:00S",
+    "Block Address":"Old Getwell Rd//Winchester Rd",
+    "Crime Type":"Weapon Law Violations/Felony",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.031,35.133 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Misdemeanor",
+    "ID":"2209013382ME [13:253]",
+    "Offense Date":"September 26, 2022 18H:05M:00S",
+    "Block Address":"Peabody Ave//East St",
+    "Crime Type":"Weapon Law Violations/Misdemeanor",
+    "zipcode":38126
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.028,35.110 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Misdemeanor",
+    "ID":"2210002846ME [14:647]",
+    "Offense Date":"October 06, 2022 17H:45M:00S",
+    "Block Address":"S Parkway E//Cummings St",
+    "Crime Type":"Weapon Law Violations/Misdemeanor",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.043,35.131 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Misdemeanor",
+    "ID":"2209009843ME [10:003]",
+    "Offense Date":"September 20, 2022 02H:45M:00S",
+    "Block Address":"500 Cleaborn St",
+    "Crime Type":"Weapon Law Violations/Misdemeanor",
+    "zipcode":38126
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.983,35.108 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Misdemeanor",
+    "ID":"2209013507ME [11:060]",
+    "Offense Date":"September 27, 2022 01H:02M:00S",
+    "Block Address":"Park Ave//Ethel St",
+    "Crime Type":"Weapon Law Violations/Misdemeanor",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.975,35.175 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Misdemeanor",
+    "ID":"2210004698ME [11:087]",
+    "Offense Date":"October 10, 2022 19H:49M:00S",
+    "Block Address":"N Hollywood St//Chelsea Ave",
+    "Crime Type":"Weapon Law Violations/Misdemeanor",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.886,35.069 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Misdemeanor",
+    "ID":"2209011308ME [10:003]",
+    "Offense Date":"September 22, 2022 16H:10M:00S",
+    "Block Address":"S Mendenhall Rd//Cottonwood Rd",
+    "Crime Type":"Weapon Law Violations/Misdemeanor",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.901,35.201 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Misdemeanor",
+    "ID":"2210001976ME [13:937]",
+    "Offense Date":"October 05, 2022 06H:09M:00S",
+    "Block Address":"2900 Summit Arbors Cir",
+    "Crime Type":"Weapon Law Violations/Misdemeanor",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.976,35.166 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Misdemeanor",
+    "ID":"2209010969ME [10:833]",
+    "Offense Date":"September 22, 2022 01H:34M:00S",
+    "Block Address":"N Hollywood//Staten Ave",
+    "Crime Type":"Weapon Law Violations/Misdemeanor",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.933,35.161 ]
+    },
+    "properties": {
+    "Category":"Weapon Law Violations/Misdemeanor",
+    "ID":"2209012909ME [13:840]",
+    "Offense Date":"September 26, 2022 01H:42M:00S",
+    "Block Address":"1100 Salem St",
+    "Crime Type":"Weapon Law Violations/Misdemeanor",
+    "zipcode":38122
+    }
+  }
+]
+}

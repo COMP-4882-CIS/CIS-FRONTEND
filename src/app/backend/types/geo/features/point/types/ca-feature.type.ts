@@ -1,11 +1,11 @@
 import {PointFeature} from "../point-feature.type";
 import {PointFeatureType} from "../point-feature-type.enum";
 
-export class CrimesFeature implements PointFeature {
+export class CAFeature implements PointFeature {
   displayName: string;
   zipCode: string;
   streetAddress: string;
-  type: PointFeatureType = PointFeatureType.CRIMES;
+  type: PointFeatureType = PointFeatureType.CA;
 
   /**
    * @param rawJSON

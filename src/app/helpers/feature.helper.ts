@@ -9,7 +9,12 @@ import {
   SchoolFeature,
   CCCFeature,
   CCFFeature,
-  CrimesFeature,
+  CAFeature,
+  CBRFeature,
+  CDFeature,
+  CTFeature,
+  COFeature,
+  CWFeature,
 } from "../backend/types/geo/features/point";
 import {DistrictFeature, LayerFeature, TractFeature, ZipcodeFeature} from "../backend/types/geo/features/layer";
 import {LayerFeatureType} from "../backend/types/geo/features/layer/layer-feature-type.enum";
@@ -52,14 +57,34 @@ export class FeatureHelper {
       iconSize: [31, 42],
     }),
     CCC: L.icon({
-      iconUrl: 'assets/icons/scorpion.png',
+      iconUrl: 'assets/icons/cc-heart.png',
       iconSize: [31, 42],
     }),
     CCF: L.icon({
-      iconUrl: 'assets/icons/scorpion.png',
+      iconUrl: 'assets/icons/cc-heart.png',
       iconSize: [31, 42],
     }),
-    crimes: L.icon({
+    CA: L.icon({
+      iconUrl: 'assets/icons/transparent-fingerprint-icon.png',
+      iconSize: [31, 42],
+    }),
+    CBR: L.icon({
+      iconUrl: 'assets/icons/transparent-fingerprint-icon.png',
+      iconSize: [31, 42],
+    }),
+    CD: L.icon({
+      iconUrl: 'assets/icons/transparent-fingerprint-icon.png',
+      iconSize: [31, 42],
+    }),
+    CT: L.icon({
+      iconUrl: 'assets/icons/transparent-fingerprint-icon.png',
+      iconSize: [31, 42],
+    }),
+    CO: L.icon({
+      iconUrl: 'assets/icons/transparent-fingerprint-icon.png',
+      iconSize: [31, 42],
+    }),
+    CW: L.icon({
       iconUrl: 'assets/icons/transparent-fingerprint-icon.png',
       iconSize: [31, 42],
     }),
@@ -95,8 +120,23 @@ export class FeatureHelper {
       case PointFeatureType.CCF:
         icon = this.icons.CCF;
         break;
-      case PointFeatureType.CRIMES:
-        icon = this.icons.crimes;
+      case PointFeatureType.CA:
+        icon = this.icons.CA;
+        break;
+      case PointFeatureType.CBR:
+        icon = this.icons.CBR;
+        break;
+      case PointFeatureType.CD:
+        icon = this.icons.CD;
+        break;
+      case PointFeatureType.CT:
+        icon = this.icons.CT;
+        break;
+      case PointFeatureType.CO:
+        icon = this.icons.CO;
+        break;
+      case PointFeatureType.CW:
+        icon = this.icons.CW;
         break;
       case PointFeatureType.SCHOOL:
         icon = this.icons.school;
@@ -126,8 +166,20 @@ export class FeatureHelper {
         return new CCFFeature(data);
       case PointFeatureType.CCC:
         return new CCCFeature(data);
-      case PointFeatureType.CRIMES:
-        return new CrimesFeature(data);
+      case PointFeatureType.CA:
+        return new CAFeature(data);
+      case PointFeatureType.CBR:
+        return new CBRFeature(data);
+      case PointFeatureType.CD:
+        return new CDFeature(data);
+      case PointFeatureType.CT:
+        return new CTFeature(data);
+      case PointFeatureType.CO:
+        return new COFeature(data);
+      case PointFeatureType.CW:
+        return new CWFeature(data);
+
+        
     }
   }
 
