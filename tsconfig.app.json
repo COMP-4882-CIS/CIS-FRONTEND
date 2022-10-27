@@ -10,6 +10,13 @@
     "src/polyfills.ts"
   ],
   "include": [
-    "src/**/*.d.ts"
+    "src/**/*.d.ts",
+    "src/index.d.ts",
+    "node_modules/@types/leaflet-search/index.d.ts"
+  ],
+  "typeRoots": [
+    "./node_modules/@types",
+    "./@types/leaflet-search/index.d.ts",
+    "src/index.d.ts"
   ]
 }

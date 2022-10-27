@@ -1,3 +1,6 @@
+<link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
 <div class="map-container">
   <div class="loading-shade" *ngIf="isLoading" @fadeOut>
     <mat-spinner diameter="45" class="map-spinner"></mat-spinner>
@@ -5,5 +8,7 @@
   </div>
   <div id="map"></div>
 </div>
+
+<div ng-include="index.d.ts"></div>
 
 
