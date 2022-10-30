@@ -2,6 +2,7 @@ import {Component, Input} from '@angular/core';
 import {SchoolSummaryResponse} from "../../backend/responses/landmark/school-summary.response";
 import {PointFeature, SchoolFeature} from "../../backend/types/geo/features/point";
 import {ExportService} from "../../backend/services/export.service";
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @Component({
   selector: 'app-school-feature-summary',
@@ -67,5 +68,10 @@ export class SchoolFeatureSummaryComponent {
 
   private static stripGrade(grade: string): string {
     return grade.replace(' Grade', '');
+  }
+
+  get hasgrad_cohort(): boolean {
+    return this.schoolSummary instanceof SchoolFeature || this.schoolSummary instanceof SchoolFeature &&
+      !!(this.schoolSummary as SchoolFeature).grad_cohort;
   }
 }

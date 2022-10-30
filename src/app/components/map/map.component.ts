@@ -12,10 +12,19 @@ import {GeoDataRequest} from "../../backend/requests/geo";
 import {GeoEvent, GeoLayer} from "../../backend/types/geo";
 import {PointFeature} from "../../backend/types/geo/features/point";
 import 'src/assets/leaflet/SmoothWheelZoom.js';
+import 'leaflet/dist/leaflet.css';
 import {environment} from "../../../environments/environment";
 import {ActivatedRoute, Router} from "@angular/router";
 import {animate, style, transition, trigger} from "@angular/animations";
 import 'leaflet.control.layers.tree';
+import 'leaflet-search';
+import 'leaflet-control-geocoder';
+import 'leaflet-search/src/leaflet-search.js';
+import 'leaflet-search/src/leaflet-search.css';
+import {Geocoder, geocoders} from 'leaflet-control-geocoder';
+import {Search} from 'leaflet-search';
+import 'leaflet-ruler';
+
 
 @Component({
   selector: 'app-map',
@@ -311,22 +320,6 @@ export class MapComponent implements AfterViewInit {
       attribution: environment.map.attribution
     });
 
-    const overlayLayers = {
-      "Libraries": libraries,
-      "Community Centers": centers,
-      "Parks": parks,
-      "Schools": schools,
-      "ChildCare FAMILY": ccf,
-      "ChildCare CENTER": ccc,
-      "Districts": districts,
-      "Assault": ca,
-      "Burglary/Robbery": cbr,
-      "Drug Violation": cd,
-      "Theft": ct,
-      "Traffic/Other": co,
-      "Weapon Violation": cw,
-    }
-
     tiles.addTo(map);
 
     tracts.eachLayer(layer => FeatureHelper.mapLayerData(LayerFeatureType.TRACT, layer));
@@ -348,11 +341,9 @@ export class MapComponent implements AfterViewInit {
     districts.removeFrom(map);
 
     this.fetchMapPopulationData(map).subscribe((maxStats) => {
-      const baseLayers = {
-        'ZIP Codes': zipCodes,
-        'Tracts': tracts
-      }
 
+
+      // how the checkboxes are made
       var baseTree = {
         label: 'Resources',
         noShow: false,
@@ -393,27 +384,86 @@ export class MapComponent implements AfterViewInit {
         {
           label: 'Libraries',
           layer: libraries,
-      },
+        },
         ]
-    };
+      };
 
-    var secondTree = {
-        label: 'View By',
-        children: [
-          { label: 'Zip Codes', layer: zipCodes },
-          { label: 'Tracts', layer: tracts },
-          { label: 'Districts', layer: districts },
-        ]
-    }
+      // tree for View By
+      var secondTree = {
+          label: 'View By',
+          children: [
+            { label: 'Zip Codes', layer: zipCodes },
+            { label: 'Tracts', layer: tracts },
+            { label: 'Districts', layer: districts },
+          ]
+      }
 
 
+      /*
+      // creating bounds for search
+      var corner1 = L.latLng(35.246416, -90.082607),
+      corner2 = L.latLng(34.977927, -89.565905),
+      bounds = L.latLngBounds(corner1, corner2)
+      */
+      /*
+      // geocoder, used to search addresses
+      new Geocoder({
+        geocoder: new geocoders.Nominatim({
+          geocodingQueryParams: {
+            "viewbox" : bounds.toBBoxString(),
+            'bounded':1
+          }
+        }),
+        position: 'topleft',
+        defaultMarkGeocode: false,
+      }).on('markgeocode', function(e :any){
+          var bbox = e.geocode.bbox;
+          var poly = L.polygon([
+            bbox.getSouthEast(),
+            bbox.getNorthEast(),
+            bbox.getNorthWest(),
+            bbox.getSouthWest(),
+          ]).addTo(map);
+          map.fitBounds(poly.getBounds());
+      })
+      .addTo(map);
+
+      */
+
+      var poiLayers = L.layerGroup([
+        libraries,
+        centers,
+        parks,
+        schools,
+        ccf,
+        ccc,
+      ])
+
+      // used to create search for geojson data files, searching by name
+      const searchControl = new L.Control.Search({
+        layer: poiLayers,
+        propertyName: 'displayName',
+        marker: false,
+        autoType: false,
+        zoom: 16
+      });
+      (searchControl as any).on('search:locationfound', function (e :any) {
+          if (e.layer._popup) e.layer.openPopup();
+        })
+        .on('search:collapsed', function (e :any) {
+          poiLayers.eachLayer(function (layer) {
+
+          });
+        });
+      map.addControl(searchControl);
+      
+
+      // adding the checkboxes
       var ctl = L.control.layers.tree(secondTree, baseTree, {
         namedToggle: true,
         collapsed: false,});
-
       ctl.addTo(map).collapseTree().expandSelected().collapseTree(true);
-
-
+      
       LayerHelper.stylizePopulationLayer(zipCodes, maxStats);
       LayerHelper.stylizePopulationLayer(tracts, maxStats);
       LayerHelper.stylizeDistrictLayer(districts);

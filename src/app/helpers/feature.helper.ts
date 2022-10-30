@@ -57,35 +57,35 @@ export class FeatureHelper {
       iconSize: [31, 42],
     }),
     CCC: L.icon({
-      iconUrl: 'assets/icons/cc-heart.png',
+      iconUrl: 'assets/icons/childcare.svg',
       iconSize: [31, 42],
     }),
     CCF: L.icon({
-      iconUrl: 'assets/icons/cc-heart.png',
+      iconUrl: 'assets/icons/childcare.svg',
       iconSize: [31, 42],
     }),
     CA: L.icon({
-      iconUrl: 'assets/icons/transparent-fingerprint-icon.png',
+      iconUrl: 'assets/icons/crime.png',
       iconSize: [31, 42],
     }),
     CBR: L.icon({
-      iconUrl: 'assets/icons/transparent-fingerprint-icon.png',
+      iconUrl: 'assets/icons/crime.png',
       iconSize: [31, 42],
     }),
     CD: L.icon({
-      iconUrl: 'assets/icons/transparent-fingerprint-icon.png',
+      iconUrl: 'assets/icons/crime.png',
       iconSize: [31, 42],
     }),
     CT: L.icon({
-      iconUrl: 'assets/icons/transparent-fingerprint-icon.png',
+      iconUrl: 'assets/icons/crime.png',
       iconSize: [31, 42],
     }),
     CO: L.icon({
-      iconUrl: 'assets/icons/transparent-fingerprint-icon.png',
+      iconUrl: 'assets/icons/crime.png',
       iconSize: [31, 42],
     }),
     CW: L.icon({
-      iconUrl: 'assets/icons/transparent-fingerprint-icon.png',
+      iconUrl: 'assets/icons/crime.png',
       iconSize: [31, 42],
     }),
     school: L.icon({

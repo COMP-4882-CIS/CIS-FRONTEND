@@ -10,4 +10,21 @@ export interface SchoolSummaryResponse {
   districtName: string;
   schoolID: number;
   schoolName: string;
+  grad_cohort: number;
+  grad_count: string;
+  grad_rate : string;
+  english_avg:string;
+  math_avg:string;
+  reading_avg:string;
+  science_avg:string;
+  act_composite_avg:string;
+  percent_dropout:string;
+  success_rate:string;
+  tvaas_index:string;
+  percent_met_growth_standard:string;
+  percent_cte:string;
+  percent_ca:string;
+  act_grad:string;
+  percent_longterm_ell:string;
+  percent_retained:string;
 }
