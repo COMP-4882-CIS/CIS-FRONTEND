@@ -23,7 +23,7 @@ import 'leaflet-search/src/leaflet-search.js';
 import 'leaflet-search/src/leaflet-search.css';
 import {Geocoder, geocoders} from 'leaflet-control-geocoder';
 import {Search} from 'leaflet-search';
-import { markAsUntransferable } from 'worker_threads';
+import 'leaflet-ruler';
 
 
 @Component({
@@ -399,12 +399,13 @@ export class MapComponent implements AfterViewInit {
       }
 
 
+      /*
       // creating bounds for search
       var corner1 = L.latLng(35.246416, -90.082607),
       corner2 = L.latLng(34.977927, -89.565905),
       bounds = L.latLngBounds(corner1, corner2)
-
-
+      */
+      /*
       // geocoder, used to search addresses
       new Geocoder({
         geocoder: new geocoders.Nominatim({
@@ -427,6 +428,8 @@ export class MapComponent implements AfterViewInit {
       })
       .addTo(map);
 
+      */
+
       var poiLayers = L.layerGroup([
         libraries,
         centers,
@@ -434,8 +437,6 @@ export class MapComponent implements AfterViewInit {
         schools,
         ccf,
         ccc,
-        zipCodes,
-        tracts
       ])
 
       // used to create search for geojson data files, searching by name
@@ -462,7 +463,6 @@ export class MapComponent implements AfterViewInit {
         namedToggle: true,
         collapsed: false,});
       ctl.addTo(map).collapseTree().expandSelected().collapseTree(true);
-
       
       LayerHelper.stylizePopulationLayer(zipCodes, maxStats);
       LayerHelper.stylizePopulationLayer(tracts, maxStats);

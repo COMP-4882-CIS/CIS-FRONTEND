@@ -11,4 +11,5 @@ export enum PointFeatureType {
   CT = 'theft',
   CO = 'other',
   CW = 'weapon',
+
 }

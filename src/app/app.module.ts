@@ -24,6 +24,7 @@ import {MatGridListModule} from "@angular/material/grid-list";
 import {MatTableModule} from "@angular/material/table";
 import {MatTooltipModule} from "@angular/material/tooltip";
 import {MatMenuModule} from "@angular/material/menu";
+import {MatExpansionModule} from '@angular/material/expansion';
 import {HomeComponent, PovertyLevelComponent, WorksCitedComponent} from "./pages";
 import {
   BreakdownChartComponent,
@@ -60,6 +61,7 @@ import {
     MatButtonModule,
     MatCardModule,
     MatFormFieldModule,
+    MatExpansionModule,
     MatInputModule,
     MatListModule,
     MatIconModule,

@@ -56,6 +56,7 @@ export class PointFeatureSummaryComponent {
       !!(this.pointFeature as CCCFeature).regAgency;
   }
 
+
   
 
   getValue(key: string): any {
