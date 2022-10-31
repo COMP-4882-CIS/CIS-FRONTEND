@@ -76,6 +76,13 @@ export class MapBoxComponent {
       case PointFeatureType.COMMUNITY_CENTER:
       case PointFeatureType.CCC:
       case PointFeatureType.CCF:
+      case PointFeatureType.CA:
+      case PointFeatureType.CBR:
+      case PointFeatureType.CD:
+      case PointFeatureType.CT:
+      case PointFeatureType.CO:
+      case PointFeatureType.CW:
+        
       default:
         const data: PointFeature = event.data as PointFeature;
 

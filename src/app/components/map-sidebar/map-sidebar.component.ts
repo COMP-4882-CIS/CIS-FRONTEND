@@ -119,6 +119,30 @@ export class MapSidebarComponent {
     return data.pointFeatureData!.type === PointFeatureType.SCHOOL;
   }
 
+  isCA(data: MapSidebarData) {
+    return data.pointFeatureData!.type === PointFeatureType.CA ;
+  }
+
+  isCBR(data: MapSidebarData) {
+    return data.pointFeatureData!.type === PointFeatureType.CBR ;
+  }
+
+  isCD(data: MapSidebarData) {
+    return data.pointFeatureData!.type === PointFeatureType.CD ;
+  }
+
+  isCO(data: MapSidebarData) {
+    return data.pointFeatureData!.type === PointFeatureType.CO ;
+  }
+
+  isCT(data: MapSidebarData) {
+    return data.pointFeatureData!.type === PointFeatureType.CT ;
+  }
+
+  isCW(data: MapSidebarData) {
+    return data.pointFeatureData!.type === PointFeatureType.CW ;
+  }
+
   showGenderChart(data: MapSidebarData) {
     if (!!data.genderChartData) {
       return data.stat.totalPopulation > 0
