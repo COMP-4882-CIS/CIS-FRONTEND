@@ -5,6 +5,7 @@ export class CBRFeature implements PointFeature {
   displayName: string;
   zipCode: string;
   streetAddress: string;
+  date: string;
   type: PointFeatureType = PointFeatureType.CBR;
 
   /**
@@ -14,6 +15,7 @@ export class CBRFeature implements PointFeature {
     this.displayName = rawJSON['Category'];
     this.streetAddress = rawJSON['Block Address'];
     this.zipCode = rawJSON['zipcode'];
+    this.date = rawJSON['Offense Date'];
   }
 
 }

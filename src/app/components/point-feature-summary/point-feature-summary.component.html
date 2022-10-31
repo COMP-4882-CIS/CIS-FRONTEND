@@ -24,6 +24,16 @@
     </mat-list-item>
   </ng-container>
 
+  <ng-container *ngIf="hasDate">
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <div class="list-item-inner">
+        <span class="title">Offense Date</span>
+        <span class="value">{{getValue('date')}}</span>
+      </div>
+    </mat-list-item>
+  </ng-container>
+
   <ng-container *ngIf="hasMinAge">
     <mat-divider></mat-divider>
     <mat-list-item>

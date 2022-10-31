@@ -5,7 +5,13 @@ import {
   CCCFeature,
   CCFFeature,
   PointFeature,
-  SchoolFeature
+  SchoolFeature,
+  CAFeature,
+  CBRFeature,
+  CDFeature,
+  COFeature,
+  CTFeature,
+  CWFeature
 } from "../../backend/types/geo/features/point";
 
 @Component({
@@ -56,6 +62,12 @@ export class PointFeatureSummaryComponent {
       !!(this.pointFeature as CCCFeature).regAgency;
   }
 
+  get hasDate(): boolean {
+    return this.pointFeature instanceof CAFeature || this.pointFeature instanceof CBRFeature || 
+    this.pointFeature instanceof CDFeature || this.pointFeature instanceof COFeature || 
+    this.pointFeature instanceof CTFeature || this.pointFeature instanceof CWFeature && 
+    !!(this.pointFeature as CAFeature).date;
+  }
 
   
 
