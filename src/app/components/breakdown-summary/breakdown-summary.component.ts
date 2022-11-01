@@ -19,6 +19,7 @@ export class BreakdownSummaryComponent {
     }
   }
 
+
   @Input()
   set landmarksSummary(newValue: LandmarkSummaryResponse | undefined) {
     if (!!newValue) {
@@ -45,6 +46,13 @@ export class BreakdownSummaryComponent {
   age10To14: number = 0;
   age15To19: number = 0;
   totalPopulation: number = 0;
+  
+  totalCA: number = 0;
+  totalCBR: number = 0;
+  totalCD: number = 0;
+  totalCT: number = 0;
+  totalCO: number = 0;
+  totalCW: number = 0;
 
   showLandmarksSummary = false;
 
@@ -71,7 +79,6 @@ export class BreakdownSummaryComponent {
     if(!!this._populationStats && this._landmarksSummary){
       this.exportService.exportZIPData(this._populationStats as ZipCodeBreakdownStat, this._landmarksSummary);
     }
-    
   }
 
   private processStats() {
@@ -97,6 +104,12 @@ export class BreakdownSummaryComponent {
       this.totalCommunityCenters = landmarksSummary.totalCommunityCenters;
       this.totalCCC = landmarksSummary.totalCCC;
       this.totalCCF = landmarksSummary.totalCCF;
+      this.totalCA = landmarksSummary.totalCA;
+      this.totalCBR = landmarksSummary.totalCBR;
+      this.totalCD = landmarksSummary.totalCD;
+      this.totalCT = landmarksSummary.totalCT;
+      this.totalCO = landmarksSummary.totalCO;
+      this.totalCW = landmarksSummary.totalCW;
     } else {
       this.showLandmarksSummary = false;
     }

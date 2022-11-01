@@ -31,7 +31,8 @@ import {
   BreakdownSummaryComponent, FetchErrorComponent,
   MapBoxComponent,
   MapComponent, MapSidebarComponent, PointFeatureSummaryComponent,
-  PovertyBreakdownSummaryComponent, SchoolFeatureSummaryComponent,
+  PovertyBreakdownSummaryComponent, 
+  CrimeBreakdownSummaryComponent, SchoolFeatureSummaryComponent,
   PovertyChartComponent
 } from "./components";
 
@@ -46,6 +47,7 @@ import {
     PointFeatureSummaryComponent,
     BreakdownSummaryComponent,
     PovertyBreakdownSummaryComponent,
+    CrimeBreakdownSummaryComponent,
     SchoolFeatureSummaryComponent,
     FetchErrorComponent,
     WorksCitedComponent,
