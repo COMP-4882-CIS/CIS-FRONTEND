@@ -65,27 +65,27 @@ export class FeatureHelper {
       iconSize: [31, 42],
     }),
     CA: L.icon({
-      iconUrl: 'assets/icons/crime.png',
+      iconUrl: 'assets/icons/assault.svg',
       iconSize: [31, 42],
     }),
     CBR: L.icon({
-      iconUrl: 'assets/icons/crime.png',
+      iconUrl: 'assets/icons/burg.svg',
       iconSize: [31, 42],
     }),
     CD: L.icon({
-      iconUrl: 'assets/icons/crime.png',
+      iconUrl: 'assets/icons/drugs.svg',
       iconSize: [31, 42],
     }),
     CT: L.icon({
-      iconUrl: 'assets/icons/crime.png',
+      iconUrl: 'assets/icons/theft.svg',
       iconSize: [31, 42],
     }),
     CO: L.icon({
-      iconUrl: 'assets/icons/crime.png',
+      iconUrl: 'assets/icons/other.svg',
       iconSize: [31, 42],
     }),
     CW: L.icon({
-      iconUrl: 'assets/icons/crime.png',
+      iconUrl: 'assets/icons/weapon.svg',
       iconSize: [31, 42],
     }),
     school: L.icon({

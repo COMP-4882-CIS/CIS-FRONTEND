@@ -31,6 +31,10 @@
                 </div>
               </div>
             </mat-tab>
+            <mat-tab label="Crime">
+            <app-crime-breakdown-summary title="Crime"
+              [landmarksSummary]="currentData.landmarks"></app-crime-breakdown-summary>
+            </mat-tab>
           </mat-tab-group>
         </ng-container>
       </div>
