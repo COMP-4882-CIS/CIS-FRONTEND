@@ -24,6 +24,8 @@ import 'leaflet-search/src/leaflet-search.css';
 import {Geocoder, geocoders} from 'leaflet-control-geocoder';
 import {Search} from 'leaflet-search';
 import 'leaflet-ruler';
+import 'leaflet.markercluster';
+//import "leaflet.featuregroup.subgroup";
 
 
 @Component({
@@ -340,6 +342,41 @@ export class MapComponent implements AfterViewInit {
     cw.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.CW, layer));
     districts.removeFrom(map);
 
+
+    const camarkers = L.markerClusterGroup();
+    camarkers.addLayer(ca);
+    //camarkers.addTo(map);
+    const cbrmarkers = L.markerClusterGroup();
+    cbrmarkers.addLayer(cbr);
+    //cbrmarkers.addTo(map);
+    const cdmarkers = L.markerClusterGroup();
+    cdmarkers.addLayer(cd);
+    //cdmarkers.addTo(map);
+    const ctmarkers = L.markerClusterGroup();
+    ctmarkers.addLayer(ct);
+    //ctmarkers.addTo(map);
+    const comarkers = L.markerClusterGroup();
+    comarkers.addLayer(co);
+    //comarkers.addTo(map);
+    const cwmarkers = L.markerClusterGroup();
+    cwmarkers.addLayer(cw);
+    //cwmarkers.addTo(map);
+
+    const crimemarkers = L.markerClusterGroup();
+    crimemarkers.addLayers([camarkers,cbrmarkers,cdmarkers,ctmarkers,comarkers,cwmarkers]);
+    crimemarkers.addTo(map);
+    // const markers = L.markerClusterGroup();
+    // markers.addLayers([ca,cbr,cd,ct,co,cw]);
+    // markers.addTo(map);
+
+    //Removing uncluster icons from map
+    ca.removeFrom(map);
+    cbr.removeFrom(map);
+    cd.removeFrom(map);
+    ct.removeFrom(map);
+    co.removeFrom(map);
+    cw.removeFrom(map);
+
     this.fetchMapPopulationData(map).subscribe((maxStats) => {
 
 
@@ -360,18 +397,23 @@ export class MapComponent implements AfterViewInit {
                     {label: 'Child-Care Centers', layer: ccc},
                 ]
             },
-            {
-              label: 'Crime',
-              selectAllCheckbox: true,
-              children: [
-                  {label: 'Assaults', layer: ca},
-                  {label: 'Burglary/Robbery', layer: cbr},
-                  {label: 'Drug Violations', layer: cd},
-                  {label: 'Thefts', layer: ct},
-                  {label: 'Traffic/Other', layer: co},
-                  {label: 'Weapon Violations', layer: cw},
+            // {
+            //   label: 'Crime',
+            //   selectAllCheckbox: true,
+            //   children: [
+            //       {label: 'Assaults', layer: camarkers},
+            //       {label: 'Burglary/Robbery', layer: cbrmarkers},
+            //       {label: 'Drug Violations', layer: cdmarkers},
+            //       {label: 'Thefts', layer: ctmarkers},
+            //       {label: 'Traffic/Other', layer: comarkers},
+            //       {label: 'Weapon Violations', layer: cwmarkers},
                   
-              ]
+            //   ]
+            // },
+            {
+              label: 'Crimes',
+              layer: crimemarkers,
+
             },
             {
               label: 'Parks',
@@ -457,6 +499,12 @@ export class MapComponent implements AfterViewInit {
         });
       map.addControl(searchControl);
       
+
+
+      // used to create marker clusters
+      // const markers = L.markerClusterGroup();
+      // markers.addLayers([ca,cbr,cd,ct,co,cw]);
+      // markers.addTo(map);
 
       // adding the checkboxes
       var ctl = L.control.layers.tree(secondTree, baseTree, {
