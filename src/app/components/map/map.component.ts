@@ -25,7 +25,6 @@ import {Geocoder, geocoders} from 'leaflet-control-geocoder';
 import {Search} from 'leaflet-search';
 import 'leaflet-ruler';
 import 'leaflet.markercluster';
-//import "leaflet.featuregroup.subgroup";
 
 
 @Component({
@@ -342,34 +341,25 @@ export class MapComponent implements AfterViewInit {
     cw.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.CW, layer));
     districts.removeFrom(map);
 
-
+    //Create clusters by category
     const camarkers = L.markerClusterGroup();
     camarkers.addLayer(ca);
-    //camarkers.addTo(map);
     const cbrmarkers = L.markerClusterGroup();
     cbrmarkers.addLayer(cbr);
-    //cbrmarkers.addTo(map);
     const cdmarkers = L.markerClusterGroup();
     cdmarkers.addLayer(cd);
-    //cdmarkers.addTo(map);
     const ctmarkers = L.markerClusterGroup();
     ctmarkers.addLayer(ct);
-    //ctmarkers.addTo(map);
     const comarkers = L.markerClusterGroup();
     comarkers.addLayer(co);
-    //comarkers.addTo(map);
     const cwmarkers = L.markerClusterGroup();
     cwmarkers.addLayer(cw);
-    //cwmarkers.addTo(map);
 
+    //Group categories together for clustering on map
     const crimemarkers = L.markerClusterGroup();
     crimemarkers.addLayers([camarkers,cbrmarkers,cdmarkers,ctmarkers,comarkers,cwmarkers]);
-    crimemarkers.addTo(map);
-    // const markers = L.markerClusterGroup();
-    // markers.addLayers([ca,cbr,cd,ct,co,cw]);
-    // markers.addTo(map);
-
-    //Removing uncluster icons from map
+    
+    //Removing unclustered icons from map
     ca.removeFrom(map);
     cbr.removeFrom(map);
     cd.removeFrom(map);
@@ -397,6 +387,7 @@ export class MapComponent implements AfterViewInit {
                     {label: 'Child-Care Centers', layer: ccc},
                 ]
             },
+            //If we decide to allowing filtering by category
             // {
             //   label: 'Crime',
             //   selectAllCheckbox: true,
@@ -410,7 +401,7 @@ export class MapComponent implements AfterViewInit {
                   
             //   ]
             // },
-            {
+           {
               label: 'Crimes',
               layer: crimemarkers,
 
