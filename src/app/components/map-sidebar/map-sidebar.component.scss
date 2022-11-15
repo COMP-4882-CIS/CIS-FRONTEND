@@ -8,17 +8,13 @@
   }
 }
 
-.title {
-  span {
-    color: gray;;
-  }
+.list-item-inner .title{
+  display:flex;
+  float: left !important;
 }
-
-.value{
+.list-item-inner .value{
+  display:flex;
   float: right !important;
-  span{
-    float: right !important;
-  }
 }
 
 :host {
