@@ -3,6 +3,8 @@ import {BreakdownStat, TractBreakdownStat, ZipCodeBreakdownStat} from "../../bac
 import {DistrictFeature} from "../../backend/types/geo/features/layer";
 import {LandmarkSummaryResponse} from "../../backend/responses/landmark/landmark-summary.response";
 import {ExportService} from "../../backend/services/export.service";
+import {LayerFeature, TractFeature, ZipcodeFeature} from "../../backend/types/geo/features/layer";
+import {LayerFeatureType} from "../../backend/types/geo/features/layer/layer-feature-type.enum";
 
 @Component({
   selector: 'app-breakdown-summary',
@@ -10,6 +12,10 @@ import {ExportService} from "../../backend/services/export.service";
   styleUrls: ['./breakdown-summary.component.scss']
 })
 export class BreakdownSummaryComponent {
+
+
+  @Input()
+  layerFeature!: LayerFeature;
 
   @Input()
   set populationStats(newValue: BreakdownStat | null) {
@@ -34,6 +40,18 @@ export class BreakdownSummaryComponent {
   @Input()
   district?: DistrictFeature;
 
+  @Input()
+  zipcode?: ZipcodeFeature;
+
+  get hasID(): boolean {
+    return (this.layerFeature instanceof ZipcodeFeature || this.layerFeature instanceof ZipcodeFeature) &&
+      !!(this.layerFeature as ZipcodeFeature).id;
+  }
+
+  getValue(key: string): any {
+    return (this.layerFeature as {[key: string]: any})[key];
+  }
+
 
   totalParks: number = 0;
   totalLibraries: number = 0;
@@ -46,6 +64,7 @@ export class BreakdownSummaryComponent {
   age10To14: number = 0;
   age15To19: number = 0;
   totalPopulation: number = 0;
+  id = this.zipcode?.id as string;
   
   totalCA: number = 0;
   totalCBR: number = 0;
