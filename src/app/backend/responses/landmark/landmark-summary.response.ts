@@ -1,6 +1,7 @@
 import {Landmark} from "../../types/landmark/landmark.type";
 
 export interface LandmarkSummaryResponse {
+  id: number;
   totalParks: number;
   totalCommunityCenters: number;
   totalLibraries: number;
