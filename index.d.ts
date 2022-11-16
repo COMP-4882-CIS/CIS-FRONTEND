@@ -48,6 +48,10 @@ declare namespace L {
             text?: string;
         }
 
+        export interface _handleSubmit{
+            e?: any;
+        }
+
         namespace Search {
             export interface SearchMarkerConstructorOptions {
                 icon?: Icon;

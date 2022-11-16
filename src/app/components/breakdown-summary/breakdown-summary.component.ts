@@ -11,6 +11,7 @@ import {ExportService} from "../../backend/services/export.service";
 })
 export class BreakdownSummaryComponent {
 
+
   @Input()
   set populationStats(newValue: BreakdownStat | null) {
     if (!!newValue) {
@@ -40,13 +41,14 @@ export class BreakdownSummaryComponent {
   totalCommunityCenters: number = 0;
   totalCCC: number = 0;
   totalCCF: number = 0;
+  totalCcare = this.totalCCC + this.totalCCF;
 
   ageUnder5: number = 0;
   age5To9: number = 0;
   age10To14: number = 0;
   age15To19: number = 0;
   totalPopulation: number = 0;
-  
+
   totalCA: number = 0;
   totalCBR: number = 0;
   totalCD: number = 0;
@@ -61,6 +63,7 @@ export class BreakdownSummaryComponent {
 
   constructor(private exportService: ExportService) {
   }
+  
 
   exportData(){
     if((this._populationStats as TractBreakdownStat).censusTract){
@@ -69,6 +72,7 @@ export class BreakdownSummaryComponent {
       this.exportZIPBreakdown();
     }
   }
+
 
   exportTractBreakdown() {
     this.exportService.exportTractData(this._populationStats as TractBreakdownStat, this._landmarksSummary as LandmarkSummaryResponse, this.district?.id as string);

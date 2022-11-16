@@ -1,0 +1,689 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38002,
+        "address": "Arlington",
+        "zipcode": 38002,
+        "CovidCC": 38002
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.70926,
+          35.28854
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38016,
+        "address": "Cordova",
+        "zipcode": 38016,
+        "CovidCC": 38016
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.76046,
+          35.17956
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38017,
+        "address": "Collierville",
+        "zipcode": 38017,
+        "CovidCC": 38017
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.65347,
+          35.06722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38018,
+        "address": "Cordova",
+        "zipcode": 38018,
+        "CovidCC": 38018
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.76647,
+          35.13781
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38029,
+        "address": "Ellendale",
+        "zipcode": 38029,
+        "CovidCC": 38029
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.82351,
+          35.24205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38053,
+        "address": "Millington",
+        "zipcode": 38053,
+        "CovidCC": 38053
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.95,
+          35.33583
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38054,
+        "address": "Millington",
+        "zipcode": 38054,
+        "CovidCC": 38054
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8744,
+          35.3358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38103,
+        "address": "Memphis",
+        "zipcode": 38103,
+        "CovidCC": 38103
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.05518,
+          35.15308
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38104,
+        "address": "Memphis",
+        "zipcode": 38104,
+        "CovidCC": 38104
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.00435,
+          35.13253
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38105,
+        "address": "Memphis",
+        "zipcode": 38105,
+        "CovidCC": 38105
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.03541,
+          35.1512
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38106,
+        "address": "Memphis",
+        "zipcode": 38106,
+        "CovidCC": 38106
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0375,
+          35.10067
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38107,
+        "address": "Memphis",
+        "zipcode": 38107,
+        "CovidCC": 38107
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.02397,
+          35.17054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38108,
+        "address": "Memphis",
+        "zipcode": 38108,
+        "CovidCC": 38108
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.96382,
+          35.1763
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38109,
+        "address": "Memphis",
+        "zipcode": 38109,
+        "CovidCC": 38109
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.13533,
+          35.0341
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38111,
+        "address": "Memphis",
+        "zipcode": 38111,
+        "CovidCC": 38111
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.94429,
+          35.11014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38112,
+        "address": "Memphis",
+        "zipcode": 38112,
+        "CovidCC": 38112
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.97661,
+          35.14791
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38113,
+        "address": "Memphis",
+        "zipcode": 38113,
+        "CovidCC": 38113
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.13285,
+          35.10198
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38114,
+        "address": "Memphis",
+        "zipcode": 38114,
+        "CovidCC": 38114
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.98596,
+          35.09648
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38115,
+        "address": "Memphis",
+        "zipcode": 38115,
+        "CovidCC": 38115
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.86362,
+          35.05499
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38116,
+        "address": "Memphis",
+        "zipcode": 38116,
+        "CovidCC": 38116
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.01001,
+          35.03213
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38117,
+        "address": "Memphis",
+        "zipcode": 38117,
+        "CovidCC": 38117
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.90551,
+          35.11504
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38118,
+        "address": "Memphis",
+        "zipcode": 38118,
+        "CovidCC": 38118
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.93021,
+          35.03655
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38119,
+        "address": "Memphis",
+        "zipcode": 38119,
+        "CovidCC": 38119
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.84593,
+          35.07986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38120,
+        "address": "Memphis",
+        "zipcode": 38120,
+        "CovidCC": 38120
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.85237,
+          35.12344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38122,
+        "address": "Memphis",
+        "zipcode": 38122,
+        "CovidCC": 38122
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.92247,
+          35.1571
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38125,
+        "address": "Memphis",
+        "zipcode": 38125,
+        "CovidCC": 38125
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.78936,
+          35.02537
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38126,
+        "address": "Memphis",
+        "zipcode": 38126,
+        "CovidCC": 38126
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.04378,
+          35.12695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38127,
+        "address": "Memphis",
+        "zipcode": 38127,
+        "CovidCC": 38127
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.01753,
+          35.23795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38128,
+        "address": "Memphis",
+        "zipcode": 38128,
+        "CovidCC": 38128
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.92612,
+          35.22623
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38131,
+        "address": "Memphis",
+        "zipcode": 38131,
+        "CovidCC": 38131
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.99266,
+          35.06603
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38132,
+        "address": "Memphis",
+        "zipcode": 38132,
+        "CovidCC": 38132
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.00033,
+          35.07069
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38133,
+        "address": "Memphis",
+        "zipcode": 38133,
+        "CovidCC": 38133
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.79474,
+          35.21292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38134,
+        "address": "Memphis",
+        "zipcode": 38134,
+        "CovidCC": 38134
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.85992,
+          35.17674
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38135,
+        "address": "Memphis",
+        "zipcode": 38135,
+        "CovidCC": 38135
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8497,
+          35.23876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38138,
+        "address": "Germantown",
+        "zipcode": 38138,
+        "CovidCC": 38138
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.7993,
+          35.08477
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38139,
+        "address": "Germantown",
+        "zipcode": 38139,
+        "CovidCC": 38139
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.75581,
+          35.08615
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38141,
+        "address": "Memphis",
+        "zipcode": 38141,
+        "CovidCC": 38141
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.85472,
+          35.01599
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "altitude": "",
+        "geometry": "Point",
+        "name": 38152,
+        "address": "Memphis",
+        "zipcode": 38152,
+        "CovidCC": 38152
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.93743,
+          35.11843
+        ]
+      }
+    }
+  ]
+}

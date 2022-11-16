@@ -47,6 +47,9 @@ declare namespace L {
         export interface searchText{
             text?: string;
         }
+        export interface _handleSubmit{
+            e?: any;
+        }
 
         namespace Search {
             export interface SearchMarkerConstructorOptions {

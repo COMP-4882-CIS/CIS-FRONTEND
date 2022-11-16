@@ -12,3 +12,6 @@ export * from './cd-feature.type';
 export * from './ct-feature.type';
 export * from './co-feature.type';
 export * from './cw-feature.type';
+export * from './Health-feature.type';
+export * from './search-feature.type';
+export * from './sick-feature.type';

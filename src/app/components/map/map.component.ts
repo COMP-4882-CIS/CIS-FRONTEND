@@ -61,6 +61,8 @@ export class MapComponent implements AfterViewInit {
   private CTGeoJSON?: GeoJSON;
   private COGeoJSON?: GeoJSON;
   private CWGeoJSON?: GeoJSON;
+  private HCGeoJSON?: GeoJSON;
+  private SEARCHGeoJSON?: GeoJSON;
 
   private popupOpen = false;
   private map?: L.Map;
@@ -143,6 +145,8 @@ export class MapComponent implements AfterViewInit {
     this.CTGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.CT, this.map);
     this.COGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.CO, this.map);
     this.CWGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.CW, this.map);
+    this.HCGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.HC, this.map);
+    this.SEARCHGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.SEARCH, this.map);
 
     this.fetchMapData(this.map);
     this.attachEvents(this.map);
@@ -186,6 +190,9 @@ export class MapComponent implements AfterViewInit {
     const ct: GeoJSON = this.CTGeoJSON!;
     const co: GeoJSON = this.COGeoJSON!;
     const cw: GeoJSON = this.CWGeoJSON!;
+    const hc: GeoJSON = this.HCGeoJSON!;
+    const search: GeoJSON = this.SEARCHGeoJSON!;
+
 
     map.on('popupopen', (e: PopupEvent) => {
       const feature = (e.popup as unknown as { _source: any })._source.feature as Feature;
@@ -223,6 +230,8 @@ export class MapComponent implements AfterViewInit {
     ct.on('click', (event) => this.handleFeatureClick(event));
     co.on('click', (event) => this.handleFeatureClick(event));
     cw.on('click', (event) => this.handleFeatureClick(event));
+    hc.on('click', (event) => this.handleFeatureClick(event));
+    search.on('click', (event) => this.handleFeatureClick(event));
   }
 
   /**
@@ -248,6 +257,8 @@ export class MapComponent implements AfterViewInit {
       const ct = this.CTGeoJSON as GeoJSON;
       const co = this.COGeoJSON as GeoJSON;
       const cw = this.CWGeoJSON as GeoJSON;
+      const hc = this.HCGeoJSON as GeoJSON;
+      const search = this.SEARCHGeoJSON as GeoJSON;
 
       this.geoTractService.getCensusTractFeatures().pipe(
         tap(f => tracts.addData(f)),
@@ -279,6 +290,11 @@ export class MapComponent implements AfterViewInit {
         tap(f => co.addData(f)),
         switchMap(() => this.geoTractService.getCWFeatures()),
         tap(f => cw.addData(f)),
+        switchMap(() => this.geoTractService.getHealthFeatures()),
+        tap(f => hc.addData(f)),
+        switchMap(() => this.geoTractService.getSearchFeatures()),
+        tap(f => search.addData(f)),
+
       ).subscribe(() => {
         if (!!this.map) {
           const outerBounds = zipCodes.getBounds().pad(0.5);
@@ -314,6 +330,8 @@ export class MapComponent implements AfterViewInit {
     const ct = this.CTGeoJSON as GeoJSON;
     const co = this.COGeoJSON as GeoJSON;
     const cw = this.CWGeoJSON as GeoJSON;
+    const hc = this.HCGeoJSON as GeoJSON;
+    const search = this.SEARCHGeoJSON as GeoJSON;
 
     const tiles = L.tileLayer(environment.map.tiles, {
       maxZoom: 18,
@@ -339,6 +357,10 @@ export class MapComponent implements AfterViewInit {
     ct.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.CT, layer));
     co.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.CO, layer));
     cw.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.CW, layer));
+    hc.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.HC, layer));
+    search.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.SEARCH, layer));
+    
+
     districts.removeFrom(map);
 
     //Create clusters by category (for filtering by categoory)
@@ -418,6 +440,10 @@ export class MapComponent implements AfterViewInit {
           label: 'Libraries',
           layer: libraries,
         },
+        {
+          label: 'Hospitals',
+          layer: hc,
+        },
         ]
       };
 
@@ -470,6 +496,8 @@ export class MapComponent implements AfterViewInit {
         schools,
         ccf,
         ccc,
+        hc,
+        search,
       ])
 
       // used to create search for geojson data files, searching by name
@@ -481,13 +509,9 @@ export class MapComponent implements AfterViewInit {
         zoom: 16
       });
       (searchControl as any).on('search:locationfound', function (e :any) {
-          if (e.layer._popup) e.layer.openPopup();
-        })
-        .on('search:collapsed', function (e :any) {
-          poiLayers.eachLayer(function (layer) {
-
-          });
+          if (e.layer._popup) e.layer.openPopup().openOn(map);
         });
+
       map.addControl(searchControl);
       
 

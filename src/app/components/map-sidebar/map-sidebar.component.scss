@@ -8,10 +8,13 @@
   }
 }
 
-.title {
-  span {
-    color: gray;;
-  }
+.list-item-inner .title{
+  display:flex;
+  float: left !important;
+}
+.list-item-inner .value{
+  display:flex;
+  float: right !important;
 }
 
 :host {
@@ -39,6 +42,12 @@
   display: flex;
   flex-direction: column;
 }
+
+::ng-deep.mat-tab-label, ::ng-deep.mat-tab-label-active{
+  min-width: 0!important;
+  padding: 3px!important;
+  margin: 3px!important;
+ }
 
 .map-sidebar ::ng-deep {
   .mat-tab-body-wrapper, .mat-tab-label {
