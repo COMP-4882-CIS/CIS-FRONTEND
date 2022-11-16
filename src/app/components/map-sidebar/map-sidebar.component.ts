@@ -143,6 +143,14 @@ export class MapSidebarComponent {
     return data.pointFeatureData!.type === PointFeatureType.CW ;
   }
 
+  isCCC(data: MapSidebarData) {
+    return data.pointFeatureData!.type === PointFeatureType.CCC ;
+  }
+
+  isCCF(data: MapSidebarData) {
+    return data.pointFeatureData!.type === PointFeatureType.CCF ;
+  }
+
   showGenderChart(data: MapSidebarData) {
     if (!!data.genderChartData) {
       return data.stat.totalPopulation > 0

@@ -341,23 +341,23 @@ export class MapComponent implements AfterViewInit {
     cw.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.CW, layer));
     districts.removeFrom(map);
 
-    //Create clusters by category
-    const camarkers = L.markerClusterGroup();
-    camarkers.addLayer(ca);
-    const cbrmarkers = L.markerClusterGroup();
-    cbrmarkers.addLayer(cbr);
-    const cdmarkers = L.markerClusterGroup();
-    cdmarkers.addLayer(cd);
-    const ctmarkers = L.markerClusterGroup();
-    ctmarkers.addLayer(ct);
-    const comarkers = L.markerClusterGroup();
-    comarkers.addLayer(co);
-    const cwmarkers = L.markerClusterGroup();
-    cwmarkers.addLayer(cw);
+    //Create clusters by category (for filtering by categoory)
+    // const camarkers = L.markerClusterGroup();
+    // camarkers.addLayer(ca);
+    // const cbrmarkers = L.markerClusterGroup();
+    // cbrmarkers.addLayer(cbr);
+    // const cdmarkers = L.markerClusterGroup();
+    // cdmarkers.addLayer(cd);
+    // const ctmarkers = L.markerClusterGroup();
+    // ctmarkers.addLayer(ct);
+    // const comarkers = L.markerClusterGroup();
+    // comarkers.addLayer(co);
+    // const cwmarkers = L.markerClusterGroup();
+    // cwmarkers.addLayer(cw);
 
     //Group categories together for clustering on map
     const crimemarkers = L.markerClusterGroup();
-    crimemarkers.addLayers([camarkers,cbrmarkers,cdmarkers,ctmarkers,comarkers,cwmarkers]);
+    crimemarkers.addLayers([ca,cbr,cd,ct,co,cw]);
     
     //Removing unclustered icons from map
     ca.removeFrom(map);
@@ -387,7 +387,7 @@ export class MapComponent implements AfterViewInit {
                     {label: 'Child-Care Centers', layer: ccc},
                 ]
             },
-            //If we decide to allowing filtering by category
+            //If we decide to allow filtering by category
             // {
             //   label: 'Crime',
             //   selectAllCheckbox: true,
@@ -398,12 +398,12 @@ export class MapComponent implements AfterViewInit {
             //       {label: 'Thefts', layer: ctmarkers},
             //       {label: 'Traffic/Other', layer: comarkers},
             //       {label: 'Weapon Violations', layer: cwmarkers},
-                  
+              
             //   ]
             // },
            {
               label: 'Crimes',
-              layer: crimemarkers,
+              layer: crimemarkers.bindTooltip('Crime'),
 
             },
             {

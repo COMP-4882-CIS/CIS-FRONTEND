@@ -76,11 +76,13 @@
           </ng-container>
           <ng-template #regularPointFeature>
             <app-breakdown-chart *ngIf="!isCA(currentData) && !isCBR(currentData)  && !isCD(currentData) 
-             && !isCT(currentData) && !isCO(currentData) && !isCW(currentData)" [chartData]="currentData.overallChartData"></app-breakdown-chart>
+             && !isCT(currentData) && !isCO(currentData) && !isCW(currentData) && !isCCC(currentData)
+             && !isCCF(currentData)" [chartData]="currentData.overallChartData"></app-breakdown-chart>
             <app-point-feature-summary *ngIf="!isSchool(currentData)" [pointFeature]="getPointFeatureData(currentData)"
                                        [typeTitle]="getTitle(currentData)"></app-point-feature-summary>
             <app-breakdown-summary title="Servicing Population" *ngIf="!isCA(currentData) && !isCBR(currentData)  && !isCD(currentData) 
-            && !isCT(currentData) && !isCO(currentData) && !isCW(currentData)" 
+            && !isCT(currentData) && !isCO(currentData) && !isCW(currentData) && !isCCC(currentData)
+            && !isCCF(currentData)" 
                                    [populationStats]="getStat(currentData)"></app-breakdown-summary>
           </ng-template>
           

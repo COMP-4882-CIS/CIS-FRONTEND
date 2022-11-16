@@ -37,6 +37,70 @@
 
 ::ng-deep {
 
+	.marker-cluster-small {
+		background-color: whitesmoke !important;
+		}
+	.marker-cluster-small div {
+		background-color: rgba(250, 0, 0, 0.722) !important;
+		}
+	
+	.marker-cluster-medium {
+		background-color: whitesmoke !important;
+		}
+	.marker-cluster-medium div {
+		background-color: rgba(250, 0, 0, 0.722) !important;
+		}
+	
+	.marker-cluster-large {
+		background-color: whitesmoke !important;
+		}
+	.marker-cluster-large div {
+		background-color: rgba(250, 0, 0, 0.722) !important;
+		}
+	
+		/* IE 6-8 fallback colors */
+	.leaflet-oldie .marker-cluster-small {
+		background-color: whitesmoke !important;
+		}
+	.leaflet-oldie .marker-cluster-small div {
+		background-color: rgba(250, 0, 0, 0.722) !important;
+		}
+	
+	.leaflet-oldie .marker-cluster-medium {
+		background-color: whitesmoke !important;
+		}
+	.leaflet-oldie .marker-cluster-medium div {
+		background-color: rgba(250, 0, 0, 0.722) !important;
+		}
+	
+	.leaflet-oldie .marker-cluster-large {
+		background-color: whitesmoke !important;
+		}
+	.leaflet-oldie .marker-cluster-large div {
+		background-color: rgba(250, 0, 0, 0.722) !important;
+	}
+	
+	.marker-cluster {
+		background-clip: padding-box;
+		border-radius: 20px;
+		border-width: 20px !important;
+		}
+	.marker-cluster div {
+		width: 35px;
+		height: 35px;
+		margin-left: 5px;
+		margin-top: 5px;
+	
+		text-align: center;
+		border-radius: 15px;
+		font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
+		font-weight: 600 !important;
+		color: whitesmoke !important;
+		}
+	.marker-cluster span {
+		line-height: 30px;
+		}
+
 	.leaflet-container .leaflet-control-search {
 		position:relative;
 		float:left;
