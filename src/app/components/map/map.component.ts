@@ -423,11 +423,6 @@ export class MapComponent implements AfterViewInit {
               
             //   ]
             // },
-           {
-              label: 'Crimes',
-              layer: crimemarkers.bindTooltip('Crime'),
-
-            },
             {
               label: 'Parks',
               layer: parks,
@@ -443,6 +438,11 @@ export class MapComponent implements AfterViewInit {
         {
           label: 'Hospitals',
           layer: hc,
+        },
+        {
+          label: 'Crimes',
+          layer: crimemarkers.bindTooltip('Crime'),
+
         },
         ]
       };
