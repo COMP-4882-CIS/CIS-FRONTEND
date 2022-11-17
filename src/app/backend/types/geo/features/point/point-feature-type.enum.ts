@@ -11,5 +11,8 @@ export enum PointFeatureType {
   CT = 'theft',
   CO = 'other',
   CW = 'weapon',
+  HC = 'health',
+  SEARCH = 'search',
+  SICK = 'sick',
 
 }

@@ -13,6 +13,18 @@ export class GeoTractService {
     return this.http.get<GeoJSONObject>('assets/data/census-tracts.geojson');
   }
 
+  getSickFeatures() {
+    return this.http.get<GeoJSONObject>('assets/data/fire.geojson');
+  }
+
+  getSearchFeatures() {
+    return this.http.get<GeoJSONObject>('assets/data/search.geojson');
+  }
+
+  getHealthFeatures() {
+    return this.http.get<GeoJSONObject>('assets/data/Hospitals.geojson');
+  }
+
   getZipCodeFeatures() {
     return this.http.get<GeoJSONObject>('assets/data/zipcodes.geojson');
   }

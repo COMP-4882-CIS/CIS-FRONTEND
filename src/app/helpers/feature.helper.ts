@@ -15,6 +15,9 @@ import {
   CTFeature,
   COFeature,
   CWFeature,
+  HealthFeature,
+  SearchFeature,
+  SickFeature,
 } from "../backend/types/geo/features/point";
 import {DistrictFeature, LayerFeature, TractFeature, ZipcodeFeature} from "../backend/types/geo/features/layer";
 import {LayerFeatureType} from "../backend/types/geo/features/layer/layer-feature-type.enum";
@@ -91,7 +94,19 @@ export class FeatureHelper {
     school: L.icon({
       iconUrl: 'assets/icons/school.png',
       iconSize: [31, 42],
-    })
+    }),
+    HC: L.icon({
+      iconUrl: 'assets/icons/search.png',
+      iconSize: [31, 42],
+    }),
+    SEARCH: L.icon({
+      iconUrl: 'assets/icons/searchL.png',
+      iconSize: [0, 0],
+    }),
+    SICK: L.icon({
+      iconUrl: 'assets/icons/search.png',
+      iconSize: [31, 42],
+    }),
   }
 
   static createGeoJSON(type: PointFeatureType, map: L.Map, animate: boolean = true): L.GeoJSON {
@@ -141,6 +156,15 @@ export class FeatureHelper {
       case PointFeatureType.SCHOOL:
         icon = this.icons.school;
         break;
+      case PointFeatureType.HC:
+        icon = this.icons.HC;
+        break;
+      case PointFeatureType.SEARCH:
+        icon = this.icons.SEARCH;
+        break;
+      case PointFeatureType.SICK:
+        icon = this.icons.SICK;
+        break;
     }
 
     const marker = L.marker(coordinates, {icon, riseOnHover: true, riseOffset: 10});
@@ -178,8 +202,12 @@ export class FeatureHelper {
         return new COFeature(data);
       case PointFeatureType.CW:
         return new CWFeature(data);
-
-        
+      case PointFeatureType.HC:
+        return new HealthFeature(data);
+      case PointFeatureType.SEARCH:
+        return new SearchFeature(data);
+      case PointFeatureType.SICK:
+        return new SickFeature(data);
     }
   }
 

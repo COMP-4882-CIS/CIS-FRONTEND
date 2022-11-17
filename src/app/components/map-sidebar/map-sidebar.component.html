@@ -9,7 +9,7 @@
           <h1 class="title">{{getTitle(currentData)}} - <span>{{getSubtitle(currentData)}}</span></h1>
         </mat-toolbar>
         <ng-container *ngIf="!didError; else errorFetchingStats">
-          <mat-tab-group dynamicHeight mat-align-tabs="center">
+          <mat-tab-group dynamicHeight mat-align-tabs="center" [selectedIndex]="selectedTab">
             <mat-tab label="Population">
               <div class="inner-sidebar">
                 <div class="stats">
@@ -21,6 +21,7 @@
                 </div>
               </div>
             </mat-tab>
+
             <mat-tab label="Poverty">
               <div class="inner-sidebar">
                 <div class="stats">
@@ -31,10 +32,60 @@
                 </div>
               </div>
             </mat-tab>
+
             <mat-tab label="Crime">
             <app-crime-breakdown-summary title="Crime"
               [landmarksSummary]="currentData.landmarks"></app-crime-breakdown-summary>
             </mat-tab>
+
+            <mat-tab label="Health">
+              <mat-list>
+              <h3 matSubheader>Covid-19 Information - Under 18</h3>
+                <mat-list-item>
+                  <div class="list-item-inner">
+                    <span class="title" style="color:gray;">Cumulative Case Count </span>
+                    <span style="color:white;">____________________</span>
+                    <span class="value">{{get38002CC(currentData)}}</span>
+                  </div>
+                </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item>
+                  <div class="list-item-inner">
+                    <span class="title" style="color:gray;">Cumulative Case Rate Per 100 Persons </span>
+                    <span style="color:white;">_____</span>
+                    <span class="value" style="text-align:right;">{{get38002CCP(currentData)}}</span>
+                  </div>
+                </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item>
+                  <div class="list-item-inner">
+                    <span class="title" style="color:gray;">Vaccination Count </span>
+                    <span style="color:white;">_________________________</span>
+                    <span class="value">{{get38002CV(currentData)}}</span>
+                  </div>
+                </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item>
+                  <div class="list-item-inner">
+                    <span class="title" style="text-align:center;color:gray;">Vaccination Percentage </span>
+                    <span style="color:white;">____________________</span>
+                    <span class="value">{{get38002CVP(currentData)}}</span>
+                  </div>
+                </mat-list-item>
+              </mat-list>
+              <mat-list>
+                <h3 matSubheader>Blood Lead Level Information - 5 and Under</h3>
+                <mat-list-item>
+                  <div class="list-item-inner">
+                    <span class="title" style="text-align:center;color:gray;"
+                    matTooltip="Average of Elevated Blood Lead Levels in Youth Age 5 and Under (2015-2022)">Average Elevated Blood Lead Level </span>
+                    <span style="color:white;">________</span>
+                    <span class="value">{{getAvgPb(currentData)}}</span>
+                  </div>
+                </mat-list-item>
+              </mat-list>
+            </mat-tab>
+
           </mat-tab-group>
         </ng-container>
       </div>
@@ -76,11 +127,13 @@
           </ng-container>
           <ng-template #regularPointFeature>
             <app-breakdown-chart *ngIf="!isCA(currentData) && !isCBR(currentData)  && !isCD(currentData) 
-             && !isCT(currentData) && !isCO(currentData) && !isCW(currentData)" [chartData]="currentData.overallChartData"></app-breakdown-chart>
+             && !isCT(currentData) && !isCO(currentData) && !isCW(currentData) && !isCCC(currentData)
+             && !isCCF(currentData)" [chartData]="currentData.overallChartData"></app-breakdown-chart>
             <app-point-feature-summary *ngIf="!isSchool(currentData)" [pointFeature]="getPointFeatureData(currentData)"
                                        [typeTitle]="getTitle(currentData)"></app-point-feature-summary>
             <app-breakdown-summary title="Servicing Population" *ngIf="!isCA(currentData) && !isCBR(currentData)  && !isCD(currentData) 
-            && !isCT(currentData) && !isCO(currentData) && !isCW(currentData)" 
+            && !isCT(currentData) && !isCO(currentData) && !isCW(currentData) && !isCCC(currentData)
+            && !isCCF(currentData)" 
                                    [populationStats]="getStat(currentData)"></app-breakdown-summary>
           </ng-template>
           

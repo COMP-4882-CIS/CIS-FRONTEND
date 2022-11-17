@@ -24,6 +24,7 @@ import 'leaflet-search/src/leaflet-search.css';
 import {Geocoder, geocoders} from 'leaflet-control-geocoder';
 import {Search} from 'leaflet-search';
 import 'leaflet-ruler';
+import 'leaflet.markercluster';
 
 
 @Component({
@@ -60,6 +61,8 @@ export class MapComponent implements AfterViewInit {
   private CTGeoJSON?: GeoJSON;
   private COGeoJSON?: GeoJSON;
   private CWGeoJSON?: GeoJSON;
+  // private HCGeoJSON?: GeoJSON;
+  private SEARCHGeoJSON?: GeoJSON;
 
   private popupOpen = false;
   private map?: L.Map;
@@ -142,6 +145,8 @@ export class MapComponent implements AfterViewInit {
     this.CTGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.CT, this.map);
     this.COGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.CO, this.map);
     this.CWGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.CW, this.map);
+    // this.HCGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.HC, this.map);
+    this.SEARCHGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.SEARCH, this.map);
 
     this.fetchMapData(this.map);
     this.attachEvents(this.map);
@@ -185,6 +190,9 @@ export class MapComponent implements AfterViewInit {
     const ct: GeoJSON = this.CTGeoJSON!;
     const co: GeoJSON = this.COGeoJSON!;
     const cw: GeoJSON = this.CWGeoJSON!;
+    // const hc: GeoJSON = this.HCGeoJSON!;
+    const search: GeoJSON = this.SEARCHGeoJSON!;
+
 
     map.on('popupopen', (e: PopupEvent) => {
       const feature = (e.popup as unknown as { _source: any })._source.feature as Feature;
@@ -222,6 +230,8 @@ export class MapComponent implements AfterViewInit {
     ct.on('click', (event) => this.handleFeatureClick(event));
     co.on('click', (event) => this.handleFeatureClick(event));
     cw.on('click', (event) => this.handleFeatureClick(event));
+    // hc.on('click', (event) => this.handleFeatureClick(event));
+    search.on('click', (event) => this.handleFeatureClick(event));
   }
 
   /**
@@ -247,6 +257,8 @@ export class MapComponent implements AfterViewInit {
       const ct = this.CTGeoJSON as GeoJSON;
       const co = this.COGeoJSON as GeoJSON;
       const cw = this.CWGeoJSON as GeoJSON;
+      // const hc = this.HCGeoJSON as GeoJSON;
+      const search = this.SEARCHGeoJSON as GeoJSON;
 
       this.geoTractService.getCensusTractFeatures().pipe(
         tap(f => tracts.addData(f)),
@@ -278,6 +290,11 @@ export class MapComponent implements AfterViewInit {
         tap(f => co.addData(f)),
         switchMap(() => this.geoTractService.getCWFeatures()),
         tap(f => cw.addData(f)),
+        // switchMap(() => this.geoTractService.getHealthFeatures()),
+        // tap(f => hc.addData(f)),
+        switchMap(() => this.geoTractService.getSearchFeatures()),
+        tap(f => search.addData(f)),
+
       ).subscribe(() => {
         if (!!this.map) {
           const outerBounds = zipCodes.getBounds().pad(0.5);
@@ -313,6 +330,8 @@ export class MapComponent implements AfterViewInit {
     const ct = this.CTGeoJSON as GeoJSON;
     const co = this.COGeoJSON as GeoJSON;
     const cw = this.CWGeoJSON as GeoJSON;
+    // const hc = this.HCGeoJSON as GeoJSON;
+    const search = this.SEARCHGeoJSON as GeoJSON;
 
     const tiles = L.tileLayer(environment.map.tiles, {
       maxZoom: 18,
@@ -338,7 +357,38 @@ export class MapComponent implements AfterViewInit {
     ct.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.CT, layer));
     co.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.CO, layer));
     cw.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.CW, layer));
+    // hc.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.HC, layer));
+    search.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.SEARCH, layer));
+    
+
     districts.removeFrom(map);
+
+    //Create clusters by category (for filtering by categoory)
+    // const camarkers = L.markerClusterGroup();
+    // camarkers.addLayer(ca);
+    // const cbrmarkers = L.markerClusterGroup();
+    // cbrmarkers.addLayer(cbr);
+    // const cdmarkers = L.markerClusterGroup();
+    // cdmarkers.addLayer(cd);
+    // const ctmarkers = L.markerClusterGroup();
+    // ctmarkers.addLayer(ct);
+    // const comarkers = L.markerClusterGroup();
+    // comarkers.addLayer(co);
+    // const cwmarkers = L.markerClusterGroup();
+    // cwmarkers.addLayer(cw);
+
+    //Group categories together for clustering on map
+    const crimemarkers = L.markerClusterGroup();
+    crimemarkers.addLayers([ca,cbr,cd,ct,co,cw]);
+    
+    //Removing unclustered icons from map
+    ca.removeFrom(map);
+    cbr.removeFrom(map);
+    cd.removeFrom(map);
+    ct.removeFrom(map);
+    co.removeFrom(map);
+    cw.removeFrom(map);
+
 
     this.fetchMapPopulationData(map).subscribe((maxStats) => {
 
@@ -360,19 +410,20 @@ export class MapComponent implements AfterViewInit {
                     {label: 'Child-Care Centers', layer: ccc},
                 ]
             },
-            {
-              label: 'Crime',
-              selectAllCheckbox: true,
-              children: [
-                  {label: 'Assaults', layer: ca},
-                  {label: 'Burglary/Robbery', layer: cbr},
-                  {label: 'Drug Violations', layer: cd},
-                  {label: 'Thefts', layer: ct},
-                  {label: 'Traffic/Other', layer: co},
-                  {label: 'Weapon Violations', layer: cw},
-                  
-              ]
-            },
+            //If we decide to allow filtering by category
+            // {
+            //   label: 'Crime',
+            //   selectAllCheckbox: true,
+            //   children: [
+            //       {label: 'Assaults', layer: camarkers},
+            //       {label: 'Burglary/Robbery', layer: cbrmarkers},
+            //       {label: 'Drug Violations', layer: cdmarkers},
+            //       {label: 'Thefts', layer: ctmarkers},
+            //       {label: 'Traffic/Other', layer: comarkers},
+            //       {label: 'Weapon Violations', layer: cwmarkers},
+              
+            //   ]
+            // },
             {
               label: 'Parks',
               layer: parks,
@@ -384,6 +435,16 @@ export class MapComponent implements AfterViewInit {
         {
           label: 'Libraries',
           layer: libraries,
+        },
+        // If you want hospitals added uncomment all code for 'hc'
+        // {
+        //   label: 'Hospitals',
+        //   layer: hc,
+        // },
+        {
+          label: 'Crimes',
+          layer: crimemarkers,
+
         },
         ]
       };
@@ -437,6 +498,8 @@ export class MapComponent implements AfterViewInit {
         schools,
         ccf,
         ccc,
+        // hc,
+        search,
       ])
 
       // used to create search for geojson data files, searching by name
@@ -448,15 +511,17 @@ export class MapComponent implements AfterViewInit {
         zoom: 16
       });
       (searchControl as any).on('search:locationfound', function (e :any) {
-          if (e.layer._popup) e.layer.openPopup();
-        })
-        .on('search:collapsed', function (e :any) {
-          poiLayers.eachLayer(function (layer) {
-
-          });
+          if (e.layer._popup) e.layer.openPopup().openOn(map);
         });
+
       map.addControl(searchControl);
       
+
+
+      // used to create marker clusters
+      // const markers = L.markerClusterGroup();
+      // markers.addLayers([ca,cbr,cd,ct,co,cw]);
+      // markers.addTo(map);
 
       // adding the checkboxes
       var ctl = L.control.layers.tree(secondTree, baseTree, {

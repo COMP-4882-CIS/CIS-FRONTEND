@@ -18,12 +18,15 @@ export class ZipcodeFeature implements LayerFeature, BreakdownStat {
   totalPopulation: number = 0;
   district?: DistrictFeature;
 
-  constructor(rawData: { [key: string]: any }) {
-    this.id = rawData['name'];
+   /**
+   * @param rawJSON
+   */
 
-    delete rawData['name'];
+  constructor(rawJSON: { [key: string]: string }) {
+    this.id = rawJSON['name'];
 
-    this.properties = rawData;
+
+    this.properties = rawJSON;
   }
 
   update(stat: BreakdownStat) {
