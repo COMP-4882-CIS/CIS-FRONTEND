@@ -83,7 +83,6 @@
 	.marker-cluster {
 		background-clip: padding-box;
 		border-radius: 20px;
-		border-width: 20px !important;
 		}
 	.marker-cluster div {
 		width: 35px;
@@ -142,6 +141,7 @@
 		right:28px;
 		margin:6px 0;
 		background: url('x.svg');
+		background-size: 42px !important;
 		text-decoration:none;
 		filter: alpha(opacity=80);
 		opacity: 0.8;		
@@ -170,7 +170,7 @@
 		border-radius:4px;
 	}
 	.leaflet-control-search .search-button:hover {
-		background: url('search.svg') no-repeat -1px -1px #fafafa;
+		background: url('search.svg') no-repeat -0.5px -0.5px #fafafa;
 	}
 	.leaflet-control-search .search-tooltip {
 		position:absolute;

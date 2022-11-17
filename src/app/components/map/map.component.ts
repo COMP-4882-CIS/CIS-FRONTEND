@@ -61,7 +61,7 @@ export class MapComponent implements AfterViewInit {
   private CTGeoJSON?: GeoJSON;
   private COGeoJSON?: GeoJSON;
   private CWGeoJSON?: GeoJSON;
-  private HCGeoJSON?: GeoJSON;
+  // private HCGeoJSON?: GeoJSON;
   private SEARCHGeoJSON?: GeoJSON;
 
   private popupOpen = false;
@@ -145,7 +145,7 @@ export class MapComponent implements AfterViewInit {
     this.CTGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.CT, this.map);
     this.COGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.CO, this.map);
     this.CWGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.CW, this.map);
-    this.HCGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.HC, this.map);
+    // this.HCGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.HC, this.map);
     this.SEARCHGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.SEARCH, this.map);
 
     this.fetchMapData(this.map);
@@ -190,7 +190,7 @@ export class MapComponent implements AfterViewInit {
     const ct: GeoJSON = this.CTGeoJSON!;
     const co: GeoJSON = this.COGeoJSON!;
     const cw: GeoJSON = this.CWGeoJSON!;
-    const hc: GeoJSON = this.HCGeoJSON!;
+    // const hc: GeoJSON = this.HCGeoJSON!;
     const search: GeoJSON = this.SEARCHGeoJSON!;
 
 
@@ -230,7 +230,7 @@ export class MapComponent implements AfterViewInit {
     ct.on('click', (event) => this.handleFeatureClick(event));
     co.on('click', (event) => this.handleFeatureClick(event));
     cw.on('click', (event) => this.handleFeatureClick(event));
-    hc.on('click', (event) => this.handleFeatureClick(event));
+    // hc.on('click', (event) => this.handleFeatureClick(event));
     search.on('click', (event) => this.handleFeatureClick(event));
   }
 
@@ -257,7 +257,7 @@ export class MapComponent implements AfterViewInit {
       const ct = this.CTGeoJSON as GeoJSON;
       const co = this.COGeoJSON as GeoJSON;
       const cw = this.CWGeoJSON as GeoJSON;
-      const hc = this.HCGeoJSON as GeoJSON;
+      // const hc = this.HCGeoJSON as GeoJSON;
       const search = this.SEARCHGeoJSON as GeoJSON;
 
       this.geoTractService.getCensusTractFeatures().pipe(
@@ -290,8 +290,8 @@ export class MapComponent implements AfterViewInit {
         tap(f => co.addData(f)),
         switchMap(() => this.geoTractService.getCWFeatures()),
         tap(f => cw.addData(f)),
-        switchMap(() => this.geoTractService.getHealthFeatures()),
-        tap(f => hc.addData(f)),
+        // switchMap(() => this.geoTractService.getHealthFeatures()),
+        // tap(f => hc.addData(f)),
         switchMap(() => this.geoTractService.getSearchFeatures()),
         tap(f => search.addData(f)),
 
@@ -330,7 +330,7 @@ export class MapComponent implements AfterViewInit {
     const ct = this.CTGeoJSON as GeoJSON;
     const co = this.COGeoJSON as GeoJSON;
     const cw = this.CWGeoJSON as GeoJSON;
-    const hc = this.HCGeoJSON as GeoJSON;
+    // const hc = this.HCGeoJSON as GeoJSON;
     const search = this.SEARCHGeoJSON as GeoJSON;
 
     const tiles = L.tileLayer(environment.map.tiles, {
@@ -357,7 +357,7 @@ export class MapComponent implements AfterViewInit {
     ct.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.CT, layer));
     co.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.CO, layer));
     cw.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.CW, layer));
-    hc.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.HC, layer));
+    // hc.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.HC, layer));
     search.eachLayer(layer => FeatureHelper.mapFeatureLayerData(PointFeatureType.SEARCH, layer));
     
 
@@ -388,6 +388,7 @@ export class MapComponent implements AfterViewInit {
     ct.removeFrom(map);
     co.removeFrom(map);
     cw.removeFrom(map);
+
 
     this.fetchMapPopulationData(map).subscribe((maxStats) => {
 
@@ -435,13 +436,14 @@ export class MapComponent implements AfterViewInit {
           label: 'Libraries',
           layer: libraries,
         },
-        {
-          label: 'Hospitals',
-          layer: hc,
-        },
+        // If you want hospitals added uncomment all code for 'hc'
+        // {
+        //   label: 'Hospitals',
+        //   layer: hc,
+        // },
         {
           label: 'Crimes',
-          layer: crimemarkers.bindTooltip('Crime'),
+          layer: crimemarkers,
 
         },
         ]
@@ -496,7 +498,7 @@ export class MapComponent implements AfterViewInit {
         schools,
         ccf,
         ccc,
-        hc,
+        // hc,
         search,
       ])
 

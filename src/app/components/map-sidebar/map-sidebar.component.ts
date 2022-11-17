@@ -399,6 +399,110 @@ export class MapSidebarComponent {
       return this.string1;
     }
   }
+  getAvgPb(data: MapSidebarData): string | undefined{
+    if(data.layerFeatureData!.id == '38002'){
+      return 'NA';
+    }
+    else if (data.layerFeatureData!.id == '38053'){
+      return '~10.1';
+    }
+    else if (data.layerFeatureData!.id == '38016'){
+      return '~8.9';
+    }
+    else if (data.layerFeatureData!.id == '38017'){
+      return '~9.0';
+    }
+    else if (data.layerFeatureData!.id == '38018'){
+      return '~8.7';
+    }
+    else if (data.layerFeatureData!.id == '38028'){
+      return '~12.7';
+    }
+    else if (data.layerFeatureData!.id == '38103'){
+      return '~8.7';
+    }
+    else if (data.layerFeatureData!.id == '38104'){
+      return '~11.1';
+    }
+    else if (data.layerFeatureData!.id == '38105'){
+      return '~9.0';
+    }
+    else if (data.layerFeatureData!.id == '38106'){
+      return '~8.4';
+    }
+    else if (data.layerFeatureData!.id == '38126'){
+      return '~8.2';
+    }
+    else if (data.layerFeatureData!.id == '38107'){
+      return '~6.6';
+    }
+    else if (data.layerFeatureData!.id == '38108'){
+      return '~8.3';
+    }
+    else if (data.layerFeatureData!.id == '38109'){
+      return '~9.4';
+    }
+    else if (data.layerFeatureData!.id == '38111'){
+      return '~8.0';
+    }
+    else if (data.layerFeatureData!.id == '38112'){
+      return '~8.3';
+    }
+    else if (data.layerFeatureData!.id == '38122'){
+      return '~8.9';
+    }
+    else if (data.layerFeatureData!.id == '38114'){
+      return '~8.7';
+    }
+    else if (data.layerFeatureData!.id == '38115'){
+      return '~8.5';
+    }
+    else if (data.layerFeatureData!.id == '38116'){
+      return '~10.6';
+    }
+    else if (data.layerFeatureData!.id == '38117'){
+      return '~8.6';
+    }
+    else if (data.layerFeatureData!.id == '38118'){
+      return '~7.3';
+    }
+    else if (data.layerFeatureData!.id == '38119'){
+      return '~8.4';
+    }
+    else if (data.layerFeatureData!.id == '38120'){
+      return '~5.0';
+    }
+    else if (data.layerFeatureData!.id == '38125'){
+      return '~6.7';
+    }
+    else if (data.layerFeatureData!.id == '38127'){
+      return '~7.8';
+    }
+    else if (data.layerFeatureData!.id == '38128'){
+      return '~9.6';
+    }
+    else if (data.layerFeatureData!.id == '38133'){
+      return '~7.8';
+    }
+    else if (data.layerFeatureData!.id == '38134'){
+      return '~6.8';
+    }
+    else if (data.layerFeatureData!.id == '38135'){
+      return '~5.7';
+    }
+    else if (data.layerFeatureData!.id == '38138'){
+      return '~8.7';
+    }
+    else if (data.layerFeatureData!.id == '38139'){
+      return '~11.0';
+    }
+    else if (data.layerFeatureData!.id == '38141'){
+      return '~20.0';
+    }
+    else{
+      return this.string1;
+    }
+  }
   //end of health code
 
   getDistrict(data: MapSidebarData): DistrictFeature | undefined {

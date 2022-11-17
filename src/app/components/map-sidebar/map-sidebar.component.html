@@ -40,7 +40,7 @@
 
             <mat-tab label="Health">
               <mat-list>
-              <h3 matSubheader>Covid-19 Data - Under 18</h3>
+              <h3 matSubheader>Covid-19 Information - Under 18</h3>
                 <mat-list-item>
                   <div class="list-item-inner">
                     <span class="title" style="color:gray;">Cumulative Case Count </span>
@@ -74,11 +74,13 @@
                 </mat-list-item>
               </mat-list>
               <mat-list>
-                <h3 matSubheader>Lead Data</h3>
+                <h3 matSubheader>Blood Lead Level Information - 5 and Under</h3>
                 <mat-list-item>
                   <div class="list-item-inner">
-                    <span class="title">Lead - </span>
-                    <span class="value">TEMP</span>
+                    <span class="title" style="text-align:center;color:gray;"
+                    matTooltip="Average of Elevated Blood Lead Levels in Youth Age 5 and Under (2015-2022)">Average Elevated Blood Lead Level </span>
+                    <span style="color:white;">________</span>
+                    <span class="value">{{getAvgPb(currentData)}}</span>
                   </div>
                 </mat-list-item>
               </mat-list>
