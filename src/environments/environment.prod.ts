@@ -5,7 +5,7 @@ export const environment = {
   apiURL: 'https://cis-901.herokuapp.com/',
   appTitle: 'Child Impact Resources',
   appVersion: packageInfo.version,
-  helpURL: "https://www.youtube.com/watch?v=J27z3uswwjA",
+  helpURL: "https://www.youtube.com/watch?v=kVGI9bi1oKE",
   map: {
     // Another option is https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png
     tiles: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
