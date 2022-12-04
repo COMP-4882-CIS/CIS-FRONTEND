@@ -1,0 +1,5390 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.051,35.17 ]
+    },
+    "properties": {
+    "Category":"Arson",
+    "ID":"2209014067ME [20:197]",
+    "Offense Date":"September 28, 2022 00H:00M:00S",
+    "Block Address":"1100 Island Pl",
+    "Crime Type":"Arson",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.11,35.01 ]
+    },
+    "properties": {
+    "Category":"Arson",
+    "ID":"2209009809ME [37:080]",
+    "Offense Date":"September 20, 2022 01H:39M:00S",
+    "Block Address":"5100 Urbanna Rd",
+    "Crime Type":"Arson",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.011,35.224 ]
+    },
+    "properties": {
+    "Category":"Arson",
+    "ID":"2210006803ME [09:130]",
+    "Offense Date":"October 14, 2022 19H:46M:00S",
+    "Block Address":"3700 Winston Dr",
+    "Crime Type":"Arson",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.973,35.114 ]
+    },
+    "properties": {
+    "Category":"Arson",
+    "ID":"2209010971ME [36:140]",
+    "Offense Date":"September 22, 2022 01H:30M:00S",
+    "Block Address":"2700 Spottswood Ave",
+    "Crime Type":"Arson",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.789,35.133 ]
+    },
+    "properties": {
+    "Category":"Arson",
+    "ID":"2210006575ME [11:583]",
+    "Offense Date":"October 14, 2022 10H:00M:00S",
+    "Block Address":"300 Glen Park Dr",
+    "Crime Type":"Arson",
+    "zipcode":38018
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.931,35.088 ]
+    },
+    "properties": {
+    "Category":"Disorderly Conduct",
+    "ID":"2210006827ME [22:110]",
+    "Offense Date":"October 14, 2022 21H:50M:00S",
+    "Block Address":"1600 Getwell Rd",
+    "Crime Type":"Disorderly Conduct",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.034,35.213 ]
+    },
+    "properties": {
+    "Category":"Disorderly Conduct",
+    "ID":"2210002400ME [35:373]",
+    "Offense Date":"October 05, 2022 21H:19M:00S",
+    "Block Address":"3300 Thomas St",
+    "Crime Type":"Disorderly Conduct",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.909,35.074 ]
+    },
+    "properties": {
+    "Category":"Drunkenness",
+    "ID":"2209012074ME [11:250]",
+    "Offense Date":"September 24, 2022 02H:00M:00S",
+    "Block Address":"4700 American Way",
+    "Crime Type":"Drunkenness",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.026,35.055 ]
+    },
+    "properties": {
+    "Category":"Embezzlement",
+    "ID":"2210007861ME [09:773]",
+    "Offense Date":"October 12, 2022 11H:30M:00S",
+    "Block Address":"3500 Elvis Presley Blvd",
+    "Crime Type":"Embezzlement",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.795,35.155 ]
+    },
+    "properties": {
+    "Category":"Embezzlement",
+    "ID":"2210004357ME [10:423]",
+    "Offense Date":"October 10, 2022 08H:40M:00S",
+    "Block Address":"8100 Macon Rd",
+    "Crime Type":"Embezzlement",
+    "zipcode":38018
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.903,35.113 ]
+    },
+    "properties": {
+    "Category":"Embezzlement",
+    "ID":"2209010610ME [12:370]",
+    "Offense Date":"September 21, 2022 11H:31M:00S",
+    "Block Address":"700 Colonial Rd",
+    "Crime Type":"Embezzlement",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.976,35.175 ]
+    },
+    "properties": {
+    "Category":"Embezzlement",
+    "ID":"2210000102ME [19:023]",
+    "Offense Date":"September 27, 2022 18H:20M:00S",
+    "Block Address":"1500 Hollywood St",
+    "Crime Type":"Embezzlement",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.025,35.03 ]
+    },
+    "properties": {
+    "Category":"False Pretenses/Swindle/Confidence Game",
+    "ID":"2210006544ME [14:880]",
+    "Offense Date":"October 14, 2022 10H:30M:00S",
+    "Block Address":"4400 Elvis Presley Blvd",
+    "Crime Type":"False Pretenses/Swindle/Confidence Game",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.992,35.119 ]
+    },
+    "properties": {
+    "Category":"False Pretenses/Swindle/Confidence Game",
+    "ID":"2210004184ME [39:393]",
+    "Offense Date":"October 09, 2022 21H:00M:00S",
+    "Block Address":"2200 Young Ave",
+    "Crime Type":"False Pretenses/Swindle/Confidence Game",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.834,35.18 ]
+    },
+    "properties": {
+    "Category":"False Pretenses/Swindle/Confidence Game",
+    "ID":"2209014002ME [16:963]",
+    "Offense Date":"September 27, 2022 11H:00M:00S",
+    "Block Address":"8100 Port Douglas Dr",
+    "Crime Type":"False Pretenses/Swindle/Confidence Game",
+    "zipcode":38133
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.884,35.078 ]
+    },
+    "properties": {
+    "Category":"False Pretenses/Swindle/Confidence Game",
+    "ID":"2209010721ME [12:780]",
+    "Offense Date":"September 20, 2022 15H:03M:00S",
+    "Block Address":"2700 Mount Moriah Rd",
+    "Crime Type":"False Pretenses/Swindle/Confidence Game",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.905,35.075 ]
+    },
+    "properties": {
+    "Category":"False Pretenses/Swindle/Confidence Game",
+    "ID":"2210008456ME [09:603]",
+    "Offense Date":"October 18, 2022 11H:00M:00S",
+    "Block Address":"2700 Perkins Rd",
+    "Crime Type":"False Pretenses/Swindle/Confidence Game",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.855,35.046 ]
+    },
+    "properties": {
+    "Category":"False Pretenses/Swindle/Confidence Game",
+    "ID":"2209013055ME [22:287]",
+    "Offense Date":"September 26, 2022 00H:00M:00S",
+    "Block Address":"8500 Timber Creek",
+    "Crime Type":"False Pretenses/Swindle/Confidence Game",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.855,35.046 ]
+    },
+    "properties": {
+    "Category":"Identity Theft",
+    "ID":"2209013055ME [22:603]",
+    "Offense Date":"September 26, 2022 00H:00M:00S",
+    "Block Address":"8500 Timber Creek",
+    "Crime Type":"Identity Theft",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.948,35.075 ]
+    },
+    "properties": {
+    "Category":"Identity Theft",
+    "ID":"2210000407ME [13:160]",
+    "Offense Date":"October 02, 2022 04H:00M:00S",
+    "Block Address":"3500 Lamar Ave",
+    "Crime Type":"Identity Theft",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.727,35.191 ]
+    },
+    "properties": {
+    "Category":"Identity Theft",
+    "ID":"2209014324ME [12:100]",
+    "Offense Date":"September 28, 2022 03H:00M:00S",
+    "Block Address":"2400 Fallingwater Ln",
+    "Crime Type":"Identity Theft",
+    "zipcode":38016
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.004,35.049 ]
+    },
+    "properties": {
+    "Category":"Identity Theft",
+    "ID":"2210006457ME [37:607]",
+    "Offense Date":"October 14, 2022 00H:00M:00S",
+    "Block Address":"1900 Wessex Dr",
+    "Crime Type":"Identity Theft",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.002,35.164 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2209009957ME [41:290]",
+    "Offense Date":"September 19, 2022 15H:45M:00S",
+    "Block Address":"1700 Vollintine St",
+    "Crime Type":"Intimidation",
+    "zipcode":38107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.037,35.035 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2209011939ME [13:357]",
+    "Offense Date":"September 23, 2022 15H:00M:00S",
+    "Block Address":"700 Western Park Dr",
+    "Crime Type":"Intimidation",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.849,35.066 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2210006568ME [07:933]",
+    "Offense Date":"October 14, 2022 11H:10M:00S",
+    "Block Address":"3200 Amber Leaf Ln",
+    "Crime Type":"Intimidation",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.79,35.134 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2210004412ME [19:040]",
+    "Offense Date":"October 10, 2022 09H:40M:00S",
+    "Block Address":"8300 George Brett Dr",
+    "Crime Type":"Intimidation",
+    "zipcode":38018
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.001,35.161 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2209011291ME [11:290]",
+    "Offense Date":"September 22, 2022 14H:40M:00S",
+    "Block Address":"1700 Jackson Ave",
+    "Crime Type":"Intimidation",
+    "zipcode":38107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.984,35.173 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2209013735ME [30:670]",
+    "Offense Date":"September 27, 2022 12H:00M:00S",
+    "Block Address":"1400 Springdale St",
+    "Crime Type":"Intimidation",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.004,35.107 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2210004513ME [26:710]",
+    "Offense Date":"October 07, 2022 10H:00M:00S",
+    "Block Address":"1500 Oaklawn St",
+    "Crime Type":"Intimidation",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.832,35.021 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2209011980ME [15:447]",
+    "Offense Date":"September 23, 2022 20H:18M:00S",
+    "Block Address":"4700 Riverdale Rd",
+    "Crime Type":"Intimidation",
+    "zipcode":38141
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.053,35.149 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2209013061ME [15:080]",
+    "Offense Date":"September 22, 2022 18H:09M:00S",
+    "Block Address":"800 Vaughn Rd",
+    "Crime Type":"Intimidation",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.024,35.026 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2210000249ME [14:947]",
+    "Offense Date":"October 01, 2022 02H:30M:00S",
+    "Block Address":"4500 Elvis Presley Blvd",
+    "Crime Type":"Intimidation",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.972,35.179 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2210000702ME [10:673]",
+    "Offense Date":"October 02, 2022 18H:43M:00S",
+    "Block Address":"2600 Goodwill Ln",
+    "Crime Type":"Intimidation",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.004,35.204 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2210000214ME [12:253]",
+    "Offense Date":"October 01, 2022 15H:30M:00S",
+    "Block Address":"2900 Falling Stream Dr",
+    "Crime Type":"Intimidation",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.932,35.005 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2209010270ME [11:230]",
+    "Offense Date":"September 20, 2022 18H:00M:00S",
+    "Block Address":"4000 Holmes Rd",
+    "Crime Type":"Intimidation",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.901,35.151 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2209014488ME [12:287]",
+    "Offense Date":"September 28, 2022 16H:00M:00S",
+    "Block Address":"4900 Bowen Ave",
+    "Crime Type":"Intimidation",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.911,35.158 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2210001220ME [24:573]",
+    "Offense Date":"October 03, 2022 17H:15M:00S",
+    "Block Address":"1000 Berclair Rd",
+    "Crime Type":"Intimidation",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.048,35.025 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2209013854ME [09:590]",
+    "Offense Date":"September 26, 2022 12H:00M:00S",
+    "Block Address":"600 Whiteville Ave",
+    "Crime Type":"Intimidation",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.038,35.083 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2209015013ME [14:427]",
+    "Offense Date":"September 29, 2022 18H:45M:00S",
+    "Block Address":"2400 Lauderdale St",
+    "Crime Type":"Intimidation",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.051,35.11 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2209010526ME [26:103]",
+    "Offense Date":"September 21, 2022 08H:00M:00S",
+    "Block Address":"400 E Olive Ave",
+    "Crime Type":"Intimidation",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.962,35.089 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2209012750ME [12:600]",
+    "Offense Date":"September 25, 2022 16H:25M:00S",
+    "Block Address":"1600 Semmes St",
+    "Crime Type":"Intimidation",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.039,35.146 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2209013686ME [19:657]",
+    "Offense Date":"September 27, 2022 10H:45M:00S",
+    "Block Address":"600 Washington Ave",
+    "Crime Type":"Intimidation",
+    "zipcode":38163
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.973,35.229 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2209013164ME [46:883]",
+    "Offense Date":"September 26, 2022 10H:03M:00S",
+    "Block Address":"3800 Ladue St",
+    "Crime Type":"Intimidation",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.859,35.13 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2210005521ME [10:470]",
+    "Offense Date":"October 12, 2022 08H:50M:00S",
+    "Block Address":"6100 Walnut Grove Rd",
+    "Crime Type":"Intimidation",
+    "zipcode":38120
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.836,35.179 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2210004496ME [10:563]",
+    "Offense Date":"October 10, 2022 12H:00M:00S",
+    "Block Address":"2000 Whitten Rd",
+    "Crime Type":"Intimidation",
+    "zipcode":38133
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.85,35.168 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2209013401ME [10:873]",
+    "Offense Date":"September 26, 2022 16H:50M:00S",
+    "Block Address":"1600 Light Wood Cv",
+    "Crime Type":"Intimidation",
+    "zipcode":38134
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.972,35.179 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2210000555ME [09:557]",
+    "Offense Date":"October 01, 2022 21H:00M:00S",
+    "Block Address":"2600 Goodwill Ln",
+    "Crime Type":"Intimidation",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.036,35.032 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2209011295ME [09:140]",
+    "Offense Date":"September 22, 2022 15H:20M:00S",
+    "Block Address":"900 Brownlee Rd",
+    "Crime Type":"Intimidation",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.047,35.142 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2210002007ME [33:590]",
+    "Offense Date":"October 03, 2022 00H:43M:00S",
+    "Block Address":"400 Union Ave",
+    "Crime Type":"Intimidation",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.994,35.006 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2209012846ME [40:600]",
+    "Offense Date":"September 25, 2022 20H:30M:00S",
+    "Block Address":"2100 Seven Oaks Dr",
+    "Crime Type":"Intimidation",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.001,35.196 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2209009535ME [11:093]",
+    "Offense Date":"September 19, 2022 13H:00M:00S",
+    "Block Address":"1900 Dupont Ave",
+    "Crime Type":"Intimidation",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.949,35.005 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2209014597ME [08:770]",
+    "Offense Date":"September 28, 2022 22H:42M:00S",
+    "Block Address":"3300 Tchulatech Dr",
+    "Crime Type":"Intimidation",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.087,35.057 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2210002689ME [22:790]",
+    "Offense Date":"October 06, 2022 11H:09M:00S",
+    "Block Address":"700 Mitchell Rd",
+    "Crime Type":"Intimidation",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.934,35.24 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2210003269ME [13:890]",
+    "Offense Date":"October 05, 2022 15H:15M:00S",
+    "Block Address":"3900 Voltaire Ave",
+    "Crime Type":"Intimidation",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.046,35.124 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2209013068ME [13:167]",
+    "Offense Date":"September 26, 2022 09H:50M:00S",
+    "Block Address":"500 E H Crump Blvd",
+    "Crime Type":"Intimidation",
+    "zipcode":38126
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.015,35.144 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2209012801ME [14:053]",
+    "Offense Date":"September 25, 2022 18H:30M:00S",
+    "Block Address":"1400 Poplar Ave",
+    "Crime Type":"Intimidation",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.839,35.176 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2209015469ME [09:917]",
+    "Offense Date":"September 30, 2022 17H:40M:00S",
+    "Block Address":"6800 Raleigh Lagrange Rd",
+    "Crime Type":"Intimidation",
+    "zipcode":38133
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.039,35.211 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2210007216ME [41:760]",
+    "Offense Date":"October 13, 2022 14H:45M:00S",
+    "Block Address":"2200 Mangum Rd",
+    "Crime Type":"Intimidation",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.794,35.134 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2209010114ME [14:683]",
+    "Offense Date":"September 20, 2022 15H:30M:00S",
+    "Block Address":"8100 Carriage Ln",
+    "Crime Type":"Intimidation",
+    "zipcode":38018
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.019,35.137 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2210004813ME [12:100]",
+    "Offense Date":"October 11, 2022 02H:00M:00S",
+    "Block Address":"1300 Union Ave",
+    "Crime Type":"Intimidation",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.913,35.172 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2210002607ME [40:230]",
+    "Offense Date":"October 08, 2022 18H:30M:00S",
+    "Block Address":"1500 Russwood Rd",
+    "Crime Type":"Intimidation",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.906,35.075 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2210003191ME [10:983]",
+    "Offense Date":"October 07, 2022 07H:45M:00S",
+    "Block Address":"2800 S Perkins Rd",
+    "Crime Type":"Intimidation",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.942,35.074 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2210008345ME [13:723]",
+    "Offense Date":"October 18, 2022 08H:00M:00S",
+    "Block Address":"3700 Kathy Ave",
+    "Crime Type":"Intimidation",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.03,35.132 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2210001895ME [12:977]",
+    "Offense Date":"September 21, 2022 00H:00M:00S",
+    "Block Address":"900 N Evergreen St",
+    "Crime Type":"Intimidation",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.961,35.144 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2210006499ME [11:673]",
+    "Offense Date":"October 11, 2022 10H:30M:00S",
+    "Block Address":"500 Tillman St",
+    "Crime Type":"Intimidation",
+    "zipcode":38112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.943,35.15 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2209011292ME [17:133]",
+    "Offense Date":"September 21, 2022 08H:39M:00S",
+    "Block Address":"3600 Summer Ave",
+    "Crime Type":"Intimidation",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.007,35.051 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2209012529ME [10:247]",
+    "Offense Date":"September 25, 2022 04H:00M:00S",
+    "Block Address":"3600 Millbranch Rd",
+    "Crime Type":"Intimidation",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.882,35.05 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2209009594ME [14:577]",
+    "Offense Date":"September 19, 2022 16H:00M:00S",
+    "Block Address":"5500 Winchester Rd",
+    "Crime Type":"Intimidation",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.003,35.206 ]
+    },
+    "properties": {
+    "Category":"Intimidation",
+    "ID":"2210001837ME [12:893]",
+    "Offense Date":"October 04, 2022 20H:00M:00S",
+    "Block Address":"1900 Pinedale Ave",
+    "Crime Type":"Intimidation",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.041,35.098 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2210006427ME [11:860]",
+    "Offense Date":"October 13, 2022 03H:00M:00S",
+    "Block Address":"1800 Orleans St",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.851,35.049 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2210008059ME [12:937]",
+    "Offense Date":"October 17, 2022 16H:00M:00S",
+    "Block Address":"6400 Crown Imperial Dr",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.048,35.149 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2209010653ME [36:917]",
+    "Offense Date":"September 21, 2022 07H:00M:00S",
+    "Block Address":"2900 S Mendenhall Rd",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.781,35.169 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2209012809ME [13:050]",
+    "Offense Date":"September 25, 2022 19H:00M:00S",
+    "Block Address":"1700 Ranmar Dr",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38016
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.044,35.028 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2209012650ME [36:370]",
+    "Offense Date":"September 25, 2022 12H:00M:00S",
+    "Block Address":"4500 Tulane Rd",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.855,35.046 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2209009472ME [46:630]",
+    "Offense Date":"September 19, 2022 12H:19M:00S",
+    "Block Address":"3900 Ridgeway Rd",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.979,35.223 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2210004654ME [36:740]",
+    "Offense Date":"October 10, 2022 01H:06M:00S",
+    "Block Address":"3600 Trezevant St",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.987,35.217 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2209014827ME [14:600]",
+    "Offense Date":"September 29, 2022 12H:00M:00S",
+    "Block Address":"3400 Frayser View",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.021,35.058 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2210005232ME [11:140]",
+    "Offense Date":"October 10, 2022 11H:00M:00S",
+    "Block Address":"1300 Gateway Dr",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38132
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.013,35.21 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2209012355ME [11:703]",
+    "Offense Date":"September 24, 2022 13H:00M:00S",
+    "Block Address":"3100 Saint Charles Dr",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.982,35.021 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2210003661ME [41:203]",
+    "Offense Date":"October 08, 2022 15H:40M:00S",
+    "Block Address":"800 E Raines Rd",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.819,35.185 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2210004758ME [38:080]",
+    "Offense Date":"October 10, 2022 23H:40M:00S",
+    "Block Address":"7300 Appling Farms Pkwy",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38133
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.048,35.157 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2210005001ME [12:370]",
+    "Offense Date":"October 10, 2022 21H:56M:00S",
+    "Block Address":"4500 Quince Rd",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.965,35.14 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2209010293ME [11:947]",
+    "Offense Date":"September 20, 2022 23H:04M:00S",
+    "Block Address":"2900 Mimosa Ave",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.943,35.091 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2209012831ME [09:507]",
+    "Offense Date":"September 25, 2022 20H:20M:00S",
+    "Block Address":"3600 Hendricks Ave",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.007,35.156 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2209012816ME [08:257]",
+    "Offense Date":"September 25, 2022 19H:55M:00S",
+    "Block Address":"1600 Tutwiler Ave",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.04,35.036 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2210005145ME [20:567]",
+    "Offense Date":"October 01, 2022 12H:00M:00S",
+    "Block Address":"800 E Raines Rd",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.938,35.096 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2210004429ME [12:550]",
+    "Offense Date":"October 10, 2022 09H:30M:00S",
+    "Block Address":"1400 Barron Cir",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.103,35.008 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2210000106ME [11:187]",
+    "Offense Date":"October 01, 2022 09H:45M:00S",
+    "Block Address":"1200 Longcrest Rd",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.992,35.053 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2210004202ME [15:307]",
+    "Offense Date":"October 08, 2022 23H:33M:00S",
+    "Block Address":"2200 Winchester Rd",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.905,35.217 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2209009643ME [14:967]",
+    "Offense Date":"September 19, 2022 06H:05M:00S",
+    "Block Address":"4800 Olds Ave",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.955,35.154 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2209015350ME [13:287]",
+    "Offense Date":"September 30, 2022 00H:00M:00S",
+    "Block Address":"3800 Townes Ave",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.886,35.051 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2210001312ME [14:323]",
+    "Offense Date":"October 03, 2022 21H:00M:00S",
+    "Block Address":"5400 Winchester Rd",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.012,35.145 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2210005101ME [43:697]",
+    "Offense Date":"October 11, 2022 07H:00M:00S",
+    "Block Address":"900 Garland Ave",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.067,35.043 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2209010283ME [11:057]",
+    "Offense Date":"September 20, 2022 21H:50M:00S",
+    "Block Address":"3900 Weaver Meadows Ln",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.985,35.174 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2209015064ME [14:310]",
+    "Offense Date":"September 28, 2022 22H:50M:00S",
+    "Block Address":"1400 Hyde Park Blvd",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.028,35.005 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2210007268ME [09:293]",
+    "Offense Date":"October 15, 2022 20H:30M:00S",
+    "Block Address":"5300 Elvis Presley Blvd",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.979,35.208 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2209009786ME [10:960]",
+    "Offense Date":"September 19, 2022 15H:00M:00S",
+    "Block Address":"2700 Nightingale Rd",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.985,35.085 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2209014372ME [08:963]",
+    "Offense Date":"September 28, 2022 14H:00M:00S",
+    "Block Address":"2400 Dwight Rd",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.023,34.999 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2209014209ME [38:800]",
+    "Offense Date":"September 28, 2022 06H:00M:00S",
+    "Block Address":"5500 Vandergreen Dr",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.881,35.072 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2209012927ME [13:250]",
+    "Offense Date":"September 26, 2022 02H:00M:00S",
+    "Block Address":"2900 Meadowlake Dr",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.979,35.155 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2209012426ME [10:480]",
+    "Offense Date":"September 24, 2022 21H:30M:00S",
+    "Block Address":"700 Mcconnell St",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.985,35.108 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2209013985ME [08:913]",
+    "Offense Date":"September 27, 2022 20H:07M:00S",
+    "Block Address":"2400 Park",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.989,35.117 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2209015357ME [41:040]",
+    "Offense Date":"September 30, 2022 14H:15M:00S",
+    "Block Address":"1100 Meda St",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.932,35.088 ]
+    },
+    "properties": {
+    "Category":"Intimidation/DV",
+    "ID":"2209012175ME [09:860]",
+    "Offense Date":"September 24, 2022 11H:09M:00S",
+    "Block Address":"1600 Stribling St",
+    "Crime Type":"Intimidation/DV",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.029,35.13 ]
+    },
+    "properties": {
+    "Category":"Threatening Phone Call",
+    "ID":"2210004521ME [13:857]",
+    "Offense Date":"October 05, 2022 09H:00M:00S",
+    "Block Address":"1000 Peabody Ave",
+    "Crime Type":"Threatening Phone Call",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.021,35.033 ]
+    },
+    "properties": {
+    "Category":"Threatening Phone Call",
+    "ID":"2210003979ME [08:217]",
+    "Offense Date":"October 08, 2022 09H:00M:00S",
+    "Block Address":"1300 Wesley Dr",
+    "Crime Type":"Threatening Phone Call",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.971,35.179 ]
+    },
+    "properties": {
+    "Category":"Threatening Phone Call",
+    "ID":"2210005722ME [22:990]",
+    "Offense Date":"October 12, 2022 17H:39M:00S",
+    "Block Address":"2600 Peres Ave",
+    "Crime Type":"Threatening Phone Call",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.886,35.154 ]
+    },
+    "properties": {
+    "Category":"Threatening Phone Call",
+    "ID":"2210002318ME [10:437]",
+    "Offense Date":"October 05, 2022 18H:10M:00S",
+    "Block Address":"5300 Summer Ave",
+    "Crime Type":"Threatening Phone Call",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.892,35.034 ]
+    },
+    "properties": {
+    "Category":"Threatening Phone Call",
+    "ID":"2210000631ME [09:063]",
+    "Offense Date":"September 29, 2022 07H:00M:00S",
+    "Block Address":"5200 Raines Rd",
+    "Crime Type":"Threatening Phone Call",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.033,35.106 ]
+    },
+    "properties": {
+    "Category":"Threatening Phone Call",
+    "ID":"2209012337ME [13:330]",
+    "Offense Date":"September 24, 2022 17H:59M:00S",
+    "Block Address":"1500 Clancy St",
+    "Crime Type":"Threatening Phone Call",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.761,35.188 ]
+    },
+    "properties": {
+    "Category":"Threatening Phone Call",
+    "ID":"2210000648ME [08:717]",
+    "Offense Date":"October 02, 2022 09H:00M:00S",
+    "Block Address":"2300 Purple Leaf Cv",
+    "Crime Type":"Threatening Phone Call",
+    "zipcode":38016
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.014,35.144 ]
+    },
+    "properties": {
+    "Category":"Threatening Phone Call",
+    "ID":"2209012737ME [15:297]",
+    "Offense Date":"September 25, 2022 15H:30M:00S",
+    "Block Address":"1400 Poplar Ave",
+    "Crime Type":"Threatening Phone Call",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.892,35.112 ]
+    },
+    "properties": {
+    "Category":"Threatening Phone Call",
+    "ID":"2210007897ME [10:910]",
+    "Offense Date":"October 10, 2022 09H:45M:00S",
+    "Block Address":"5100 Poplar Ave",
+    "Crime Type":"Threatening Phone Call",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.072,35.014 ]
+    },
+    "properties": {
+    "Category":"Threatening Phone Call",
+    "ID":"2210007129ME [39:937]",
+    "Offense Date":"October 15, 2022 15H:20M:00S",
+    "Block Address":"5000 Ortie Dr",
+    "Crime Type":"Threatening Phone Call",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.027,35.016 ]
+    },
+    "properties": {
+    "Category":"Trespass of Real Property",
+    "ID":"2209011725ME [12:780]",
+    "Offense Date":"September 23, 2022 11H:25M:00S",
+    "Block Address":"4900 Elvis Presley Blvd",
+    "Crime Type":"Trespass of Real Property",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.018,35.159 ]
+    },
+    "properties": {
+    "Category":"Trespass of Real Property",
+    "ID":"2210001770ME [14:520]",
+    "Offense Date":"October 04, 2022 17H:26M:00S",
+    "Block Address":"1200 Jackson Ave",
+    "Crime Type":"Trespass of Real Property",
+    "zipcode":38107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.984,35.108 ]
+    },
+    "properties": {
+    "Category":"Trespass of Real Property",
+    "ID":"2210005330ME [09:317]",
+    "Offense Date":"October 12, 2022 00H:47M:00S",
+    "Block Address":"2400 Park Ave",
+    "Crime Type":"Trespass of Real Property",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.962,35.141 ]
+    },
+    "properties": {
+    "Category":"Trespass of Real Property",
+    "ID":"2210005705ME [15:830]",
+    "Offense Date":"October 12, 2022 16H:25M:00S",
+    "Block Address":"400 Tillman St",
+    "Crime Type":"Trespass of Real Property",
+    "zipcode":38112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.021,35.109 ]
+    },
+    "properties": {
+    "Category":"Trespass of Real Property",
+    "ID":"2210001867ME [11:510]",
+    "Offense Date":"October 04, 2022 20H:10M:00S",
+    "Block Address":"1400 Elvis Presley Blvd",
+    "Crime Type":"Trespass of Real Property",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.984,35.096 ]
+    },
+    "properties": {
+    "Category":"Trespass of Real Property",
+    "ID":"2210007565ME [12:420]",
+    "Offense Date":"October 16, 2022 17H:00M:00S",
+    "Block Address":"2400 Twain Ave",
+    "Crime Type":"Trespass of Real Property",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.93,35.186 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2210003980ME [10:400]",
+    "Offense Date":"October 09, 2022 12H:11M:00S",
+    "Block Address":"4100 Jackson Ave",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.956,35.083 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2209800191ME [05:890]",
+    "Offense Date":"September 25, 2022 07H:25M:00S",
+    "Block Address":"1800 PRESCOTT ROAD",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.862,35.176 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2210001272ME [12:877]",
+    "Offense Date":"October 03, 2022 00H:00M:00S",
+    "Block Address":"6100 Summer Trace Dr",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38134
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.075,35.064 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2210005194ME [13:833]",
+    "Offense Date":"October 08, 2022 21H:00M:00S",
+    "Block Address":"400 Brooks Rd",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.089,35.042 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2209011762ME [10:877]",
+    "Offense Date":"September 20, 2022 17H:00M:00S",
+    "Block Address":"4100 Soapstone Dr",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.939,35.198 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2210800010ME [09:423]",
+    "Offense Date":"October 01, 2022 13H:00M:00S",
+    "Block Address":"3700 CHANTREY WEST",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.945,35.146 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2209010712ME [38:490]",
+    "Offense Date":"September 21, 2022 14H:30M:00S",
+    "Block Address":"600 Highland St",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.011,35.239 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2210000044ME [12:387]",
+    "Offense Date":"October 01, 2022 02H:00M:00S",
+    "Block Address":"4200 Thomas St",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.982,35.102 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2210007843ME [10:110]",
+    "Offense Date":"October 15, 2022 12H:00M:00S",
+    "Block Address":"2500 Lamar Ave",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.998,35.135 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2210005659ME [38:357]",
+    "Offense Date":"October 12, 2022 14H:46M:00S",
+    "Block Address":"1900 Union",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.976,35.145 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2210003085ME [38:310]",
+    "Offense Date":"October 06, 2022 20H:30M:00S",
+    "Block Address":"2600 Yale Ave",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.89,35.088 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2210003402ME [08:840]",
+    "Offense Date":"October 07, 2022 22H:50M:00S",
+    "Block Address":"1600 White Station Rd",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.026,35.032 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2209014307ME [13:610]",
+    "Offense Date":"September 28, 2022 05H:30M:00S",
+    "Block Address":"4300 Elvis Presley Blvd",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.031,35.017 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2210001367ME [09:040]",
+    "Offense Date":"October 02, 2022 21H:30M:00S",
+    "Block Address":"1100 Whitehaven Ln",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.828,35.063 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2210001354ME [13:257]",
+    "Offense Date":"October 03, 2022 12H:00M:00S",
+    "Block Address":"3200 Caledonian Rd",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38119
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.021,35.163 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2209014024ME [15:747]",
+    "Offense Date":"September 27, 2022 21H:50M:00S",
+    "Block Address":"900 Crockett St",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.985,35.08 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2210007220ME [52:637]",
+    "Offense Date":"October 15, 2022 21H:00M:00S",
+    "Block Address":"2400 Airways Blvd",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.026,35.158 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2210002947ME [08:773]",
+    "Offense Date":"October 06, 2022 20H:15M:00S",
+    "Block Address":"700 Hastings St",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.926,35.166 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2210000968ME [50:403]",
+    "Offense Date":"September 27, 2022 15H:00M:00S",
+    "Block Address":"1300 N Graham St",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.874,35.074 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2210000126ME [11:393]",
+    "Offense Date":"September 30, 2022 18H:00M:00S",
+    "Block Address":"5700 Mtmoriah Road Ext",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.024,35.036 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2210006301ME [13:917]",
+    "Offense Date":"October 13, 2022 19H:00M:00S",
+    "Block Address":"4200 Elvis Presley Blvd",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.795,35.18 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2210005076ME [41:737]",
+    "Offense Date":"October 11, 2022 02H:30M:00S",
+    "Block Address":"2100 Ambergate Ln",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38016
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.039,35.148 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2210004588ME [14:533]",
+    "Offense Date":"October 10, 2022 09H:00M:00S",
+    "Block Address":"300 Hamlin Pl",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38105
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.896,35.179 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2210000606ME [09:627]",
+    "Offense Date":"October 01, 2022 20H:00M:00S",
+    "Block Address":"2000 Covington Pike",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.002,35.142 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2210800002ME [09:190]",
+    "Offense Date":"October 01, 2022 00H:28M:00S",
+    "Block Address":"200 NORTH AUBURNDALE STREET",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.933,35.21 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2209015406ME [11:200]",
+    "Offense Date":"September 30, 2022 13H:52M:00S",
+    "Block Address":"3200 Homewood Dr",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.952,35.121 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2210003855ME [14:313]",
+    "Offense Date":"October 09, 2022 04H:45M:00S",
+    "Block Address":"500 Holmes Cir",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.938,35.082 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2209010891ME [10:637]",
+    "Offense Date":"September 21, 2022 21H:00M:00S",
+    "Block Address":"3800 Robin Park Cir",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.972,35.118 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2209009297ME [09:723]",
+    "Offense Date":"September 19, 2022 03H:20M:00S",
+    "Block Address":"500 Baltimore St",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.974,35.125 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2210001530ME [16:147]",
+    "Offense Date":"October 03, 2022 18H:30M:00S",
+    "Block Address":"2700 Central Ave",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.916,35.081 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2209010647ME [15:903]",
+    "Offense Date":"September 20, 2022 21H:00M:00S",
+    "Block Address":"1900 Cherry Rd",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.906,35.119 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2210001698ME [12:990]",
+    "Offense Date":"October 04, 2022 14H:00M:00S",
+    "Block Address":"600 S Perkins Rd",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.914,35.102 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Felony",
+    "ID":"2210004505ME [14:073]",
+    "Offense Date":"October 09, 2022 22H:00M:00S",
+    "Block Address":"1100 Cherry Rd",
+    "Crime Type":"Vandalism/Felony",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.958,35.149 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209015002ME [09:417]",
+    "Offense Date":"September 29, 2022 19H:30M:00S",
+    "Block Address":"3100 Summer Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.017,35.131 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210002111ME [14:343]",
+    "Offense Date":"October 04, 2022 23H:00M:00S",
+    "Block Address":"1400 Carr Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.826,35.051 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210002895ME [39:583]",
+    "Offense Date":"October 06, 2022 19H:07M:00S",
+    "Block Address":"7200 Winchester Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38125
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.988,35.165 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210005434ME [12:133]",
+    "Offense Date":"October 11, 2022 18H:00M:00S",
+    "Block Address":"1100 Cabana Cir",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.986,35.109 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209009301ME [36:610]",
+    "Offense Date":"September 19, 2022 03H:40M:00S",
+    "Block Address":"2300 Park Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.868,35.072 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209015240ME [23:197]",
+    "Offense Date":"September 29, 2022 22H:00M:00S",
+    "Block Address":"5900 Mount Hickory Dr",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.939,35.201 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210007773ME [11:630]",
+    "Offense Date":"October 16, 2022 21H:30M:00S",
+    "Block Address":"W Hickory Bluff",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.052,35.144 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209011636ME [13:467]",
+    "Offense Date":"September 22, 2022 17H:30M:00S",
+    "Block Address":"100 Second St",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.927,35.239 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209012389ME [10:510]",
+    "Offense Date":"September 23, 2022 18H:00M:00S",
+    "Block Address":"4100 Druid Hill Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.905,35.21 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210003401ME [15:873]",
+    "Offense Date":"October 07, 2022 22H:00M:00S",
+    "Block Address":"7800 Winchester Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.923,35.068 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210005781ME [11:403]",
+    "Offense Date":"October 12, 2022 18H:55M:00S",
+    "Block Address":"4300 Kenosha Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.893,35.219 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210001279ME [15:467]",
+    "Offense Date":"October 03, 2022 09H:30M:00S",
+    "Block Address":"5200 Steuben Dr",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38134
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.027,35.041 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209012982ME [44:113]",
+    "Offense Date":"September 26, 2022 07H:00M:00S",
+    "Block Address":"1200 Whitaker Dr",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.037,35.035 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210004154ME [08:480]",
+    "Offense Date":"October 09, 2022 20H:45M:00S",
+    "Block Address":"4400 Winward Dr",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.994,35.101 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209013630ME [09:820]",
+    "Offense Date":"September 26, 2022 20H:00M:00S",
+    "Block Address":"2100 Lowell Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.997,35.033 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209013113ME [37:933]",
+    "Offense Date":"September 26, 2022 11H:10M:00S",
+    "Block Address":"4300 Balboa Cir",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.939,35.083 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209012266ME [16:530]",
+    "Offense Date":"September 24, 2022 13H:20M:00S",
+    "Block Address":"3800 Robin Park Cir",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.858,35.056 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209011174ME [12:877]",
+    "Offense Date":"September 22, 2022 00H:00M:00S",
+    "Block Address":"6200 Waterstone Oak Way",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.095,35.052 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209014353ME [09:460]",
+    "Offense Date":"September 28, 2022 13H:00M:00S",
+    "Block Address":"1000 Eyers Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.865,35.178 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209012533ME [13:900]",
+    "Offense Date":"September 24, 2022 23H:30M:00S",
+    "Block Address":"2000 Wall St",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38134
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.048,35.147 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210006124ME [10:883]",
+    "Offense Date":"October 13, 2022 07H:30M:00S",
+    "Block Address":"300 Adams Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.908,35.114 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209800190ME [08:447]",
+    "Offense Date":"September 28, 2022 21H:30M:00S",
+    "Block Address":"700 PERKINS EXTENSION",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.863,35.071 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210003236ME [39:237]",
+    "Offense Date":"October 07, 2022 12H:15M:00S",
+    "Block Address":"6100 Mount Moriah Road Ext",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.926,35.158 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210004911ME [07:857]",
+    "Offense Date":"October 10, 2022 15H:15M:00S",
+    "Block Address":"1000 Sandra Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.918,35.051 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209013711ME [09:380]",
+    "Offense Date":"September 24, 2022 03H:30M:00S",
+    "Block Address":"4400 Winchester Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.934,35.083 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210001520ME [39:747]",
+    "Offense Date":"October 03, 2022 04H:00M:00S",
+    "Block Address":"1900 Getwell Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.95,35.117 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209012100ME [12:173]",
+    "Offense Date":"September 24, 2022 00H:00M:00S",
+    "Block Address":"600 Reese St",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.881,35.044 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210002994ME [11:617]",
+    "Offense Date":"October 07, 2022 02H:10M:00S",
+    "Block Address":"5700 Maple Tree Dr",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.019,35.086 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209012261ME [11:750]",
+    "Offense Date":"September 24, 2022 14H:00M:00S",
+    "Block Address":"2200 Elvis Presley Blvd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.009,35.117 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210004559ME [11:563]",
+    "Offense Date":"October 09, 2022 20H:30M:00S",
+    "Block Address":"1100 Roland St",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.06,35.112 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209013677ME [22:913]",
+    "Offense Date":"September 27, 2022 07H:27M:00S",
+    "Block Address":"100 Trigg Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.988,35.135 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210001946ME [12:417]",
+    "Offense Date":"October 04, 2022 22H:00M:00S",
+    "Block Address":"100 Cox St",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.018,35.218 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210000503ME [11:037]",
+    "Offense Date":"September 30, 2022 12H:00M:00S",
+    "Block Address":"1400 Frayser Blvd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.793,35.155 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210001240ME [16:250]",
+    "Offense Date":"October 02, 2022 22H:18M:00S",
+    "Block Address":"1100 Germantown Pkwy",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38016
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.917,35.206 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210007484ME [12:180]",
+    "Offense Date":"October 16, 2022 11H:30M:00S",
+    "Block Address":"4400 Stage Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.011,35.164 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210007669ME [13:900]",
+    "Offense Date":"October 16, 2022 10H:00M:00S",
+    "Block Address":"1000 Watkins St",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.03,35.132 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210007262ME [08:447]",
+    "Offense Date":"October 15, 2022 18H:30M:00S",
+    "Block Address":"2100 Elvis Presley Blvd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.99,35.137 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210006220ME [12:737]",
+    "Offense Date":"October 13, 2022 17H:11M:00S",
+    "Block Address":"N Cooper St//La Salle Pl",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.053,35.168 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210001124ME [12:393]",
+    "Offense Date":"October 02, 2022 22H:00M:00S",
+    "Block Address":"200 Harbor Club Cir",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.894,35.232 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210006882ME [38:003]",
+    "Offense Date":"October 14, 2022 23H:50M:00S",
+    "Block Address":"6200 Mt Moriah Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.003,35.105 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210007105ME [12:467]",
+    "Offense Date":"October 15, 2022 13H:50M:00S",
+    "Block Address":"1500 S Mclean Blvd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.77,35.171 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210003046ME [10:433]",
+    "Offense Date":"October 06, 2022 21H:30M:00S",
+    "Block Address":"1700 Wood Mills Dr",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38016
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.909,35.12 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210000259ME [15:540]",
+    "Offense Date":"October 01, 2022 18H:15M:00S",
+    "Block Address":"400 Perkins Road Ext",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.02,35.057 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209009883ME [20:300]",
+    "Offense Date":"September 20, 2022 07H:15M:00S",
+    "Block Address":"1400 Elmview Ln",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.976,35.162 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209011411ME [12:010]",
+    "Offense Date":"September 22, 2022 18H:00M:00S",
+    "Block Address":"1000 Birch St",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.988,35.133 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209012617ME [52:240]",
+    "Offense Date":"September 24, 2022 22H:00M:00S",
+    "Block Address":"200 Cox St",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.946,35.202 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210005564ME [37:953]",
+    "Offense Date":"October 11, 2022 19H:00M:00S",
+    "Block Address":"3600 Maclin Ln",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.022,35.136 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209009620ME [13:540]",
+    "Offense Date":"September 19, 2022 08H:00M:00S",
+    "Block Address":"Pasadena Pl//Eastmoreland Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38163
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.845,35.164 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210000142ME [43:267]",
+    "Offense Date":"October 01, 2022 09H:45M:00S",
+    "Block Address":"6600 Birchbrook Ln",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38134
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.92,35.084 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210007687ME [08:473]",
+    "Offense Date":"October 16, 2022 00H:00M:00S",
+    "Block Address":"1800 Merrycrest Dr",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.011,35.038 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210007132ME [09:717]",
+    "Offense Date":"October 14, 2022 22H:00M:00S",
+    "Block Address":"4100 Mickey Dr",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.055,35.126 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210002513ME [11:950]",
+    "Offense Date":"October 05, 2022 23H:00M:00S",
+    "Block Address":"800 B B King Blvd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.86,35.069 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209011053ME [44:107]",
+    "Offense Date":"September 22, 2022 06H:30M:00S",
+    "Block Address":"6100 Apple Tree Dr",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.926,35.093 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210006473ME [10:933]",
+    "Offense Date":"October 14, 2022 07H:30M:00S",
+    "Block Address":"1500 Titus St",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.973,35.178 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209012286ME [15:200]",
+    "Offense Date":"September 23, 2022 22H:00M:00S",
+    "Block Address":"1600 Merton St",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.039,35.165 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209012187ME [10:957]",
+    "Offense Date":"September 23, 2022 21H:00M:00S",
+    "Block Address":"300 Bickford Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38105
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.984,35.178 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210008130ME [38:137]",
+    "Offense Date":"October 17, 2022 21H:15M:00S",
+    "Block Address":"2200 Lyon Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.008,35.05 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210007301ME [40:453]",
+    "Offense Date":"October 16, 2022 01H:00M:00S",
+    "Block Address":"3600 Dalebranch Dr",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.016,35.096 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210000752ME [15:437]",
+    "Offense Date":"October 02, 2022 20H:30M:00S",
+    "Block Address":"1500 Lyceum Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.843,35.07 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209014538ME [13:967]",
+    "Offense Date":"September 28, 2022 20H:40M:00S",
+    "Block Address":"2900 Kirby Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38119
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.99,35.136 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209010259ME [11:460]",
+    "Offense Date":"September 20, 2022 15H:56M:00S",
+    "Block Address":"Monroe//Cooper St",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.934,35.038 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210005350ME [13:890]",
+    "Offense Date":"October 12, 2022 01H:34M:00S",
+    "Block Address":"4100 Senator St",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.787,35.176 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209009304ME [18:120]",
+    "Offense Date":"September 19, 2022 05H:01M:00S",
+    "Block Address":"8300 Fletcher Run Cir",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38016
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.899,35.115 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209012833ME [08:870]",
+    "Offense Date":"September 25, 2022 16H:00M:00S",
+    "Block Address":"600 Erin Dr",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.954,35.156 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209013893ME [35:407]",
+    "Offense Date":"September 27, 2022 17H:20M:00S",
+    "Block Address":"3200 Lyndale Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.033,35.133 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209013648ME [14:223]",
+    "Offense Date":"September 26, 2022 23H:00M:00S",
+    "Block Address":"400 Cossitt Pl",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38126
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.995,35.135 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210001385ME [15:923]",
+    "Offense Date":"October 03, 2022 22H:30M:00S",
+    "Block Address":"2000 Union Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.988,35.106 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210007559ME [14:283]",
+    "Offense Date":"October 16, 2022 17H:15M:00S",
+    "Block Address":"2300 Lamar Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.998,35.001 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210005229ME [40:677]",
+    "Offense Date":"October 11, 2022 19H:00M:00S",
+    "Block Address":"5400 Lastrada St",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.983,35.162 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210005221ME [15:707]",
+    "Offense Date":"October 11, 2022 18H:15M:00S",
+    "Block Address":"2300 Vollintine Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.017,35.219 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209013665ME [13:723]",
+    "Offense Date":"September 26, 2022 00H:00M:00S",
+    "Block Address":"1500 Haywood Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.087,35.057 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210002691ME [25:987]",
+    "Offense Date":"October 06, 2022 11H:00M:00S",
+    "Block Address":"700 Mitchell Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.088,35.039 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209012038ME [09:680]",
+    "Offense Date":"September 24, 2022 00H:30M:00S",
+    "Block Address":"800 Soapstone Cv",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.053,35.147 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210000878ME [18:100]",
+    "Offense Date":"October 03, 2022 06H:35M:00S",
+    "Block Address":"100 Jefferson Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.973,35.178 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209012483ME [11:780]",
+    "Offense Date":"September 25, 2022 01H:30M:00S",
+    "Block Address":"2600 Peres St",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.003,35.231 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210004377ME [13:177]",
+    "Offense Date":"October 10, 2022 01H:30M:00S",
+    "Block Address":"1900 Saint Elmo Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.866,35.094 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209014718ME [11:823]",
+    "Offense Date":"September 28, 2022 19H:00M:00S",
+    "Block Address":"1400 Oak Mnr",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38119
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.047,35.133 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209012540ME [10:373]",
+    "Offense Date":"September 24, 2022 21H:00M:00S",
+    "Block Address":"500 Foote Park Ln",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38126
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.939,35.255 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210001808ME [08:863]",
+    "Offense Date":"October 04, 2022 18H:00M:00S",
+    "Block Address":"3800 Royal Wood Dr",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.07,35.038 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210004007ME [10:560]",
+    "Offense Date":"October 09, 2022 13H:55M:00S",
+    "Block Address":"4100 Third St",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.886,35.06 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210008270ME [09:260]",
+    "Offense Date":"October 18, 2022 04H:00M:00S",
+    "Block Address":"3300 Mendenhall Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90,35.137 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209800145ME [07:813]",
+    "Offense Date":"September 20, 2022 20H:30M:00S",
+    "Block Address":"1900 MADISON AVENUE",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.009,35.105 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210007506ME [12:937]",
+    "Offense Date":"October 16, 2022 15H:41M:00S",
+    "Block Address":"1600 Cane Meadow Cir",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.006,35.049 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209012269ME [10:993]",
+    "Offense Date":"September 24, 2022 14H:00M:00S",
+    "Block Address":"5800 Waterstone Way",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.035,35.065 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210008446ME [19:020]",
+    "Offense Date":"October 18, 2022 07H:15M:00S",
+    "Block Address":"3100 Connahbrook Dr",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.913,35.05 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210002256ME [12:017]",
+    "Offense Date":"October 05, 2022 06H:40M:00S",
+    "Block Address":"3700 Knight Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.931,35.171 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210007045ME [13:343]",
+    "Offense Date":"October 15, 2022 12H:04M:00S",
+    "Block Address":"1500 Depass Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.036,35.144 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210003780ME [11:460]",
+    "Offense Date":"October 08, 2022 11H:00M:00S",
+    "Block Address":"800 Adams Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38105
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.919,35.149 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209014110ME [13:317]",
+    "Offense Date":"September 28, 2022 03H:52M:00S",
+    "Block Address":"4300 Summer Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.058,35.135 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210003966ME [11:983]",
+    "Offense Date":"October 09, 2022 11H:30M:00S",
+    "Block Address":"400 S Main St",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.915,35.126 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209013133ME [12:950]",
+    "Offense Date":"September 26, 2022 00H:00M:00S",
+    "Block Address":"4400 Tuckahoe Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.006,35.159 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209015553ME [20:687]",
+    "Offense Date":"September 30, 2022 07H:15M:00S",
+    "Block Address":"1600 Jackson Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.009,35.105 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209011112ME [16:463]",
+    "Offense Date":"September 22, 2022 08H:55M:00S",
+    "Block Address":"1600 Cane Meadow Cir",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.956,35.116 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210006774ME [39:493]",
+    "Offense Date":"October 14, 2022 18H:03M:00S",
+    "Block Address":"2200 Union",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.062,35.122 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210008083ME [17:530]",
+    "Offense Date":"October 17, 2022 18H:25M:00S",
+    "Block Address":"100 E Desoto Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.06,35.136 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210005774ME [15:017]",
+    "Offense Date":"October 12, 2022 18H:46M:00S",
+    "Block Address":"400 S Main St",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.008,35.105 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209009235ME [11:440]",
+    "Offense Date":"September 19, 2022 00H:15M:00S",
+    "Block Address":"1700 Cane Meadow Cir",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.867,35.061 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210003908ME [09:573]",
+    "Offense Date":"October 08, 2022 10H:00M:00S",
+    "Block Address":"5900 Knight Arnold Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.104,35.007 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210005565ME [39:547]",
+    "Offense Date":"October 12, 2022 00H:00M:00S",
+    "Block Address":"5300 Third St",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.987,35.107 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209014295ME [24:373]",
+    "Offense Date":"September 28, 2022 03H:00M:00S",
+    "Block Address":"2300 Lamar Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.046,35.162 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210005422ME [09:613]",
+    "Offense Date":"October 12, 2022 06H:30M:00S",
+    "Block Address":"700 Main St",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.006,35.142 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210007018ME [12:127]",
+    "Offense Date":"October 15, 2022 09H:00M:00S",
+    "Block Address":"1700 Poplar Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.92,35.062 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209013275ME [46:407]",
+    "Offense Date":"September 26, 2022 06H:40M:00S",
+    "Block Address":"4400 Sheffield Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.961,35.144 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210008565ME [12:513]",
+    "Offense Date":"October 18, 2022 17H:52M:00S",
+    "Block Address":"300 E Red Oak Dr",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.894,35.048 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209015591ME [09:910]",
+    "Offense Date":"September 30, 2022 22H:45M:00S",
+    "Block Address":"3700 Shoreham Dr",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.025,35.028 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210004339ME [16:410]",
+    "Offense Date":"October 10, 2022 07H:10M:00S",
+    "Block Address":"4500 Elvis Presley Blvd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.926,35.211 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209013887ME [11:673]",
+    "Offense Date":"September 27, 2022 12H:00M:00S",
+    "Block Address":"3200 Write Pl",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.848,35.086 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209014148ME [16:723]",
+    "Offense Date":"September 27, 2022 14H:00M:00S",
+    "Block Address":"2400 Holly Grove",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38119
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.988,35.116 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209013410ME [53:827]",
+    "Offense Date":"September 26, 2022 17H:26M:00S",
+    "Block Address":"2300 Pkwy",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.935,35.101 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210004338ME [02:767]",
+    "Offense Date":"October 09, 2022 18H:00M:00S",
+    "Block Address":"3900 Vanuys Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.918,35.018 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209012995ME [50:160]",
+    "Offense Date":"September 24, 2022 12H:30M:00S",
+    "Block Address":"4800 Malone Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.937,35.201 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209014756ME [20:657]",
+    "Offense Date":"September 28, 2022 20H:01M:00S",
+    "Block Address":"3800 Advantage Way Dr",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.959,35.107 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210005438ME [18:500]",
+    "Offense Date":"October 09, 2022 12H:00M:00S",
+    "Block Address":"1000 Aubra Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.026,35.153 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209012445ME [09:943]",
+    "Offense Date":"September 24, 2022 18H:20M:00S",
+    "Block Address":"4400 Horn Lake Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38105
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.062,35.048 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209010527ME [22:100]",
+    "Offense Date":"September 21, 2022 09H:27M:00S",
+    "Block Address":"100 E Fairway Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.963,35.011 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210007875ME [17:897]",
+    "Offense Date":"October 17, 2022 10H:28M:00S",
+    "Block Address":"3100 Morningview Dr",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.975,35.14 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209012717ME [10:510]",
+    "Offense Date":"September 25, 2022 13H:30M:00S",
+    "Block Address":"200 Bingham St",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.828,35.201 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210003505ME [12:160]",
+    "Offense Date":"October 07, 2022 20H:00M:00S",
+    "Block Address":"7100 Markim Dr",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38133
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.846,35.165 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210001251ME [15:720]",
+    "Offense Date":"October 03, 2022 06H:00M:00S",
+    "Block Address":"6600 Birchbrook Ln",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38134
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.948,35.001 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210004565ME [39:143]",
+    "Offense Date":"October 10, 2022 10H:30M:00S",
+    "Block Address":"5400 Meltech Dr",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.059,35.115 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210007060ME [09:657]",
+    "Offense Date":"October 14, 2022 23H:30M:00S",
+    "Block Address":"1200 Main St",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.058,35.065 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209014252ME [10:610]",
+    "Offense Date":"September 28, 2022 10H:01M:00S",
+    "Block Address":"200 Eastman Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.771,35.174 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210003163ME [15:310]",
+    "Offense Date":"October 06, 2022 21H:30M:00S",
+    "Block Address":"1800 Cheshunt Ln",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38016
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.99,35.015 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209012043ME [09:847]",
+    "Offense Date":"September 24, 2022 01H:15M:00S",
+    "Block Address":"5000 Airways Blvd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.046,35.122 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209009694ME [11:133]",
+    "Offense Date":"September 19, 2022 19H:35M:00S",
+    "Block Address":"500 Williams Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38126
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.034,35.224 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210007673ME [11:887]",
+    "Offense Date":"October 16, 2022 22H:00M:00S",
+    "Block Address":"900 Restbrook Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.856,35.082 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209013402ME [50:763]",
+    "Offense Date":"September 26, 2022 11H:00M:00S",
+    "Block Address":"6300 Lorne Cv",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38119
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.026,35.211 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209009357ME [14:703]",
+    "Offense Date":"September 19, 2022 06H:30M:00S",
+    "Block Address":"1200 Dellwood Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.848,35.056 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210006172ME [41:407]",
+    "Offense Date":"October 13, 2022 11H:45M:00S",
+    "Block Address":"3400 Kirby Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.857,35.043 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210800076ME [08:657]",
+    "Offense Date":"October 11, 2022 21H:00M:00S",
+    "Block Address":"3900 HICKORY FARMS DRIVE",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.849,35.06 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209009990ME [11:307]",
+    "Offense Date":"September 20, 2022 11H:05M:00S",
+    "Block Address":"3400 Knight Trails Cir",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.9,35.195 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210007402ME [10:970]",
+    "Offense Date":"October 15, 2022 22H:00M:00S",
+    "Block Address":"2600 Elmscourt Dr",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.947,35.128 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209012829ME [08:493]",
+    "Offense Date":"September 25, 2022 13H:00M:00S",
+    "Block Address":"3500 Poplar Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38152
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.878,35.185 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210004199ME [12:787]",
+    "Offense Date":"October 09, 2022 23H:50M:00S",
+    "Block Address":"2200 Meadow Glade Ln",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38134
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.938,35.2 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210000447ME [10:120]",
+    "Offense Date":"October 01, 2022 22H:00M:00S",
+    "Block Address":"3800 Advantage Way Dr",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.025,35.041 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209012844ME [10:377]",
+    "Offense Date":"September 25, 2022 21H:31M:00S",
+    "Block Address":"4000 Elvis Presley Blvd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.015,35.062 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210005419ME [11:970]",
+    "Offense Date":"October 12, 2022 00H:00M:00S",
+    "Block Address":"1500 Brooks Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.999,35.137 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209012835ME [16:050]",
+    "Offense Date":"September 25, 2022 19H:20M:00S",
+    "Block Address":"100 Barksdale St",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.05,35.03 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209011668ME [20:530]",
+    "Offense Date":"September 23, 2022 09H:25M:00S",
+    "Block Address":"4400 Hodge Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.918,35.029 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210001074ME [11:010]",
+    "Offense Date":"September 30, 2022 00H:45M:00S",
+    "Block Address":"4500 Malone Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.031,35.227 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209014216ME [15:423]",
+    "Offense Date":"September 27, 2022 17H:30M:00S",
+    "Block Address":"1000 Creston Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.873,35.175 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209014258ME [11:243]",
+    "Offense Date":"September 28, 2022 02H:30M:00S",
+    "Block Address":"1900 Wilcrest Dr",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38134
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.903,35.049 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210000943ME [18:620]",
+    "Offense Date":"October 02, 2022 23H:00M:00S",
+    "Block Address":"3700 Old Dominion Dr",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.804,35.05 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210002958ME [08:397]",
+    "Offense Date":"October 05, 2022 16H:30M:00S",
+    "Block Address":"7800 Winchester Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38125
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.046,35.143 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210004725ME [09:517]",
+    "Offense Date":"October 10, 2022 20H:50M:00S",
+    "Block Address":"400 Madison Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.875,35.03 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209013717ME [16:350]",
+    "Offense Date":"September 27, 2022 11H:00M:00S",
+    "Block Address":"5700 Jardin Pl",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38141
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.965,35.103 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210005959ME [47:120]",
+    "Offense Date":"October 13, 2022 07H:00M:00S",
+    "Block Address":"3000 Hoskins Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.854,35.061 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210000456ME [19:843]",
+    "Offense Date":"October 01, 2022 18H:00M:00S",
+    "Block Address":"6300 Lake View Trl",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.058,35.103 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209011847ME [29:627]",
+    "Offense Date":"September 23, 2022 16H:00M:00S",
+    "Block Address":"1700 Michigan St",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.731,35.2 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210001347ME [10:013]",
+    "Offense Date":"October 03, 2022 22H:30M:00S",
+    "Block Address":"10000 Spillway Cir",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38016
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.023,35.125 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209011882ME [43:347]",
+    "Offense Date":"September 22, 2022 12H:00M:00S",
+    "Block Address":"1200 Agnes Place",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.047,35.104 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209014495ME [11:743]",
+    "Offense Date":"September 28, 2022 18H:40M:00S",
+    "Block Address":"1600 Wellington St",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.035,35.164 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210003282ME [41:633]",
+    "Offense Date":"October 07, 2022 15H:20M:00S",
+    "Block Address":"700 Chelsea Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.068,35.103 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210000431ME [10:987]",
+    "Offense Date":"October 01, 2022 22H:00M:00S",
+    "Block Address":"1700 Pennsylvania St",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.078,35.052 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210000560ME [09:257]",
+    "Offense Date":"October 02, 2022 12H:25M:00S",
+    "Block Address":"500 Fairhope Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.983,35.201 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210000776ME [08:647]",
+    "Offense Date":"October 02, 2022 22H:45M:00S",
+    "Block Address":"2800 Sky Line Cir",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.867,35.071 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210005471ME [43:187]",
+    "Offense Date":"October 12, 2022 00H:00M:00S",
+    "Block Address":"2900 Putting Green Cv",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.041,35.092 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209012799ME [11:623]",
+    "Offense Date":"September 19, 2022 18H:00M:00S",
+    "Block Address":"2100 Blakewood Pl",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.977,35.156 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210008069ME [13:237]",
+    "Offense Date":"October 17, 2022 00H:00M:00S",
+    "Block Address":"800 Spring St",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.801,35.161 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210007323ME [13:107]",
+    "Offense Date":"October 16, 2022 02H:25M:00S",
+    "Block Address":"7900 Club Dr",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38016
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.943,35.173 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210004395ME [11:770]",
+    "Offense Date":"October 09, 2022 04H:00M:00S",
+    "Block Address":"3600 Jackson Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.917,35.085 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210006534ME [19:517]",
+    "Offense Date":"September 30, 2022 12H:00M:00S",
+    "Block Address":"1800 Cherry Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.787,35.201 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209014400ME [12:297]",
+    "Offense Date":"September 28, 2022 14H:00M:00S",
+    "Block Address":"2800 Germantown Pkwy",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38133
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.991,35.169 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209012780ME [11:010]",
+    "Offense Date":"September 25, 2022 17H:45M:00S",
+    "Block Address":"2000 Hubert Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.922,35.074 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210000920ME [41:910]",
+    "Offense Date":"October 03, 2022 09H:04M:00S",
+    "Block Address":"2800 Colony Park Dr",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.948,35.151 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210006291ME [12:127]",
+    "Offense Date":"October 13, 2022 08H:00M:00S",
+    "Block Address":"700 National St",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.071,35.106 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210007822ME [11:823]",
+    "Offense Date":"October 16, 2022 23H:00M:00S",
+    "Block Address":"300 Burdock Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.021,35.174 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210005638ME [13:777]",
+    "Offense Date":"October 12, 2022 10H:30M:00S",
+    "Block Address":"4300 Townhall Ln",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.839,35.039 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210002655ME [14:843]",
+    "Offense Date":"October 06, 2022 09H:30M:00S",
+    "Block Address":"6800 Keystone Dr",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.002,35.049 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209012875ME [08:920]",
+    "Offense Date":"September 25, 2022 23H:00M:00S",
+    "Block Address":"3700 Cazassa Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.927,35.088 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209009753ME [09:947]",
+    "Offense Date":"September 19, 2022 22H:10M:00S",
+    "Block Address":"4100 Willowview Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.06,35.062 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209013726ME [10:273]",
+    "Offense Date":"September 27, 2022 12H:05M:00S",
+    "Block Address":"3200 Third St",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.062,35.126 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209015138ME [39:120]",
+    "Offense Date":"September 30, 2022 05H:00M:00S",
+    "Block Address":"E Virginia Ave//Florida St",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.983,35.105 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209015235ME [12:100]",
+    "Offense Date":"September 30, 2022 09H:45M:00S",
+    "Block Address":"2400 Deadrick Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.946,35.12 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209010448ME [28:743]",
+    "Offense Date":"September 20, 2022 14H:00M:00S",
+    "Block Address":"400 Highland St",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.799,35.17 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210800106ME [09:600]",
+    "Offense Date":"October 15, 2022 16H:00M:00S",
+    "Block Address":"1700 DEXTER LAKE DRIVE",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38016
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.857,35.005 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210006820ME [10:073]",
+    "Offense Date":"October 14, 2022 20H:50M:00S",
+    "Block Address":"6300 Holmes Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38141
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.044,35.143 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210007800ME [37:530]",
+    "Offense Date":"October 16, 2022 22H:00M:00S",
+    "Block Address":"400 Madison Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.009,35.104 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209015433ME [39:037]",
+    "Offense Date":"September 30, 2022 17H:30M:00S",
+    "Block Address":"1600 Cane Meadow Cir",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.92,35.086 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210005121ME [16:443]",
+    "Offense Date":"October 11, 2022 15H:00M:00S",
+    "Block Address":"4300 Willow Rd",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.995,35.157 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209013755ME [22:757]",
+    "Offense Date":"September 26, 2022 17H:00M:00S",
+    "Block Address":"1900 Lyndale Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.016,35.031 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210001350ME [09:467]",
+    "Offense Date":"October 03, 2022 23H:43M:00S",
+    "Block Address":"4400 Graceland Dr",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.067,35.043 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210007895ME [16:283]",
+    "Offense Date":"October 17, 2022 10H:30M:00S",
+    "Block Address":"3900 Weaver Meadows Ln",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.961,35.096 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209010224ME [13:927]",
+    "Offense Date":"September 20, 2022 19H:15M:00S",
+    "Block Address":"1400 Semmes St",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.895,35.016 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210003234ME [19:353]",
+    "Offense Date":"October 07, 2022 13H:00M:00S",
+    "Block Address":"5100 Lamar Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.976,35.178 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209015239ME [11:287]",
+    "Offense Date":"September 29, 2022 21H:00M:00S",
+    "Block Address":"1600 Hollywood St",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.793,35.166 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210001550ME [14:667]",
+    "Offense Date":"October 03, 2022 22H:30M:00S",
+    "Block Address":"8000 Regatta Dr",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38016
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.923,35.236 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210007814ME [40:160]",
+    "Offense Date":"October 16, 2022 18H:30M:00S",
+    "Block Address":"4100 Amanda Cir",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.95,35.129 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210008493ME [10:027]",
+    "Offense Date":"October 18, 2022 13H:15M:00S",
+    "Block Address":"3400 Poplar Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.993,35.173 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2210003488ME [14:093]",
+    "Offense Date":"October 08, 2022 05H:45M:00S",
+    "Block Address":"2000 Chelsea Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.855,35.055 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209012395ME [36:060]",
+    "Offense Date":"September 24, 2022 17H:30M:00S",
+    "Block Address":"3500 Fescue Ln",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.908,35.117 ]
+    },
+    "properties": {
+    "Category":"Vandalism/Misdemeanor",
+    "ID":"2209012882ME [38:450]",
+    "Offense Date":"September 25, 2022 12H:30M:00S",
+    "Block Address":"4700 Poplar Ave",
+    "Crime Type":"Vandalism/Misdemeanor",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.048,35.149 ]
+    },
+    "properties": {
+    "Category":"Violation of Protection Order",
+    "ID":"2210006068ME [05:120]",
+    "Offense Date":"October 13, 2022 09H:50M:00S",
+    "Block Address":"300 Poplar Ave",
+    "Crime Type":"Violation of Protection Order",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.006,35.035 ]
+    },
+    "properties": {
+    "Category":"Violation of Protection Order",
+    "ID":"2209009787ME [09:550]",
+    "Offense Date":"September 19, 2022 12H:20M:00S",
+    "Block Address":"1800 Brookgreen Dr",
+    "Crime Type":"Violation of Protection Order",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.962,35.152 ]
+    },
+    "properties": {
+    "Category":"Violation of Protection Order",
+    "ID":"2210003235ME [13:260]",
+    "Offense Date":"October 07, 2022 13H:05M:00S",
+    "Block Address":"800 Glankler St",
+    "Crime Type":"Violation of Protection Order",
+    "zipcode":38112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.03,35.132 ]
+    },
+    "properties": {
+    "Category":"Violation of Protection Order",
+    "ID":"2210003541ME [10:267]",
+    "Offense Date":"October 08, 2022 08H:55M:00S",
+    "Block Address":"1000 N Watkins St",
+    "Crime Type":"Violation of Protection Order",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.069,35.022 ]
+    },
+    "properties": {
+    "Category":"Violation of Protection Order",
+    "ID":"2210002259ME [36:970]",
+    "Offense Date":"September 30, 2022 15H:10M:00S",
+    "Block Address":"4700 Horn Lake Rd",
+    "Crime Type":"Violation of Protection Order",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.971,35.224 ]
+    },
+    "properties": {
+    "Category":"Violation of Protection Order",
+    "ID":"2209012782ME [08:287]",
+    "Offense Date":"September 25, 2022 17H:50M:00S",
+    "Block Address":"3600 England St",
+    "Crime Type":"Violation of Protection Order",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.01,35.012 ]
+    },
+    "properties": {
+    "Category":"Violation of Protection Order",
+    "ID":"2210007859ME [16:277]",
+    "Offense Date":"October 17, 2022 09H:16M:00S",
+    "Block Address":"5000 Loch Lomond Dr",
+    "Crime Type":"Violation of Protection Order",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.932,35.045 ]
+    },
+    "properties": {
+    "Category":"Wire Fraud",
+    "ID":"2209013830ME [47:780]",
+    "Offense Date":"September 27, 2022 15H:30M:00S",
+    "Block Address":"3800 Air Park St",
+    "Crime Type":"Wire Fraud",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.083,35.026 ]
+    },
+    "properties": {
+    "Category":"Traffic/Misc.",
+    "ID":"2209010182ME [11:490]",
+    "Offense Date":"September 20, 2022 18H:00M:00S",
+    "Block Address":"S Third St//Ford Rd",
+    "Crime Type":"Traffic/Misc.",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.929,35.062 ]
+    },
+    "properties": {
+    "Category":"Traffic/Misc.",
+    "ID":"2209012403ME [22:050]",
+    "Offense Date":"September 24, 2022 20H:10M:00S",
+    "Block Address":"4100 Camelot Ln",
+    "Crime Type":"Traffic/Misc.",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.026,35.217 ]
+    },
+    "properties": {
+    "Category":"Traffic/Misc.",
+    "ID":"2210001729ME [09:540]",
+    "Offense Date":"October 04, 2022 16H:44M:00S",
+    "Block Address":"1200 Frayser Blvd",
+    "Crime Type":"Traffic/Misc.",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.947,35.073 ]
+    },
+    "properties": {
+    "Category":"Traffic/Misc.",
+    "ID":"2209010807ME [11:240]",
+    "Offense Date":"September 21, 2022 18H:18M:00S",
+    "Block Address":"Lamar Ave//Pearson Rd",
+    "Crime Type":"Traffic/Misc.",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.069,35.125 ]
+    },
+    "properties": {
+    "Category":"Traffic/Misc.",
+    "ID":"2210005327ME [43:570]",
+    "Offense Date":"October 11, 2022 23H:53M:00S",
+    "Block Address":"I 55//E H Crump Blvd",
+    "Crime Type":"Traffic/Misc.",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.032,35.109 ]
+    },
+    "properties": {
+    "Category":"Traffic/Misc.",
+    "ID":"2209011366ME [10:030]",
+    "Offense Date":"September 22, 2022 17H:40M:00S",
+    "Block Address":"S Parkway E//Gaither St",
+    "Crime Type":"Traffic/Misc.",
+    "zipcode":38106
+    }
+  }
+]
+}

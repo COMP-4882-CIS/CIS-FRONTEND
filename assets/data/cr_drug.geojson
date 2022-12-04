@@ -1,0 +1,1325 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.054,35.141 ]
+    },
+    "properties": {
+    "Category":"Driving Under the Influence",
+    "ID":"2210000060ME [45:283]",
+    "Offense Date":"October 01, 2022 04H:30M:00S",
+    "Block Address":"200 Peabody Pl",
+    "Crime Type":"Driving Under the Influence",
+    "zipcode":38101
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90,35.135 ]
+    },
+    "properties": {
+    "Category":"Driving Under the Influence",
+    "ID":"2210008547ME [08:667]",
+    "Offense Date":"October 18, 2022 17H:15M:00S",
+    "Block Address":"Union Ave//S Mclean Blvd",
+    "Crime Type":"Driving Under the Influence",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.041,35.152 ]
+    },
+    "properties": {
+    "Category":"Driving Under the Influence",
+    "ID":"2210007343ME [11:797]",
+    "Offense Date":"October 16, 2022 04H:12M:00S",
+    "Block Address":"100 W//N Danny Thomas Blvd",
+    "Crime Type":"Driving Under the Influence",
+    "zipcode":38105
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.029,35.101 ]
+    },
+    "properties": {
+    "Category":"Driving Under the Influence",
+    "ID":"2210000410ME [41:597]",
+    "Offense Date":"October 02, 2022 02H:45M:00S",
+    "Block Address":"300 S//Norris Rd",
+    "Crime Type":"Driving Under the Influence",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.919,35.075 ]
+    },
+    "properties": {
+    "Category":"Drug Equipment Violation",
+    "ID":"2210003673ME [09:840]",
+    "Offense Date":"October 08, 2022 14H:42M:00S",
+    "Block Address":"2800 Cherry Rd",
+    "Crime Type":"Drug Equipment Violation",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.903,35.169 ]
+    },
+    "properties": {
+    "Category":"Drug Equipment Violation",
+    "ID":"2210006726ME [07:013]",
+    "Offense Date":"October 14, 2022 18H:15M:00S",
+    "Block Address":"100 E//Covington Pike",
+    "Crime Type":"Drug Equipment Violation",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.863,35.167 ]
+    },
+    "properties": {
+    "Category":"Drug Equipment Violation",
+    "ID":"2209010895ME [10:540]",
+    "Offense Date":"September 21, 2022 22H:00M:00S",
+    "Block Address":"Sycamore View Rd//40 W To Sycamore View Rd",
+    "Crime Type":"Drug Equipment Violation",
+    "zipcode":38134
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.86,35.02 ]
+    },
+    "properties": {
+    "Category":"Drug Equipment Violation",
+    "ID":"2210008171ME [12:657]",
+    "Offense Date":"October 18, 2022 01H:23M:00S",
+    "Block Address":"Crump Rd//E Shelby Dr",
+    "Crime Type":"Drug Equipment Violation",
+    "zipcode":38141
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.971,35.095 ]
+    },
+    "properties": {
+    "Category":"Drug Equipment Violation",
+    "ID":"2210004365ME [36:970]",
+    "Offense Date":"October 10, 2022 09H:14M:00S",
+    "Block Address":"2800 Kimball Ave",
+    "Crime Type":"Drug Equipment Violation",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.891,35.097 ]
+    },
+    "properties": {
+    "Category":"Drug Equipment Violation",
+    "ID":"2209011919ME [17:363]",
+    "Offense Date":"September 23, 2022 18H:24M:00S",
+    "Block Address":"S White Station Rd//Flamingo Rd",
+    "Crime Type":"Drug Equipment Violation",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.902,35.05 ]
+    },
+    "properties": {
+    "Category":"Drug Equipment Violation",
+    "ID":"2210005255ME [38:790]",
+    "Offense Date":"October 11, 2022 20H:08M:00S",
+    "Block Address":"4900 Winchester Ave",
+    "Crime Type":"Drug Equipment Violation",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.052,35.095 ]
+    },
+    "properties": {
+    "Category":"Drug Equipment Violation",
+    "ID":"2209009663ME [09:190]",
+    "Offense Date":"September 19, 2022 18H:23M:00S",
+    "Block Address":"Latham St//E Belz Blvd",
+    "Crime Type":"Drug Equipment Violation",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.903,35.115 ]
+    },
+    "properties": {
+    "Category":"Drug Equipment Violation",
+    "ID":"2210000183ME [08:827]",
+    "Offense Date":"October 01, 2022 14H:30M:00S",
+    "Block Address":"Poplar Ave//Colonial Rd",
+    "Crime Type":"Drug Equipment Violation",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.958,35.15 ]
+    },
+    "properties": {
+    "Category":"Drug Equipment Violation",
+    "ID":"2209014650ME [15:407]",
+    "Offense Date":"September 29, 2022 02H:15M:00S",
+    "Block Address":"Faxon Ave//Baltic St",
+    "Crime Type":"Drug Equipment Violation",
+    "zipcode":38112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.034,35.207 ]
+    },
+    "properties": {
+    "Category":"Drug Equipment Violation",
+    "ID":"2210002791ME [10:943]",
+    "Offense Date":"October 06, 2022 15H:55M:00S",
+    "Block Address":"Thomas St//Nortgate St",
+    "Crime Type":"Drug Equipment Violation",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.876,35.061 ]
+    },
+    "properties": {
+    "Category":"Drug Equipment Violation",
+    "ID":"2209011639ME [18:630]",
+    "Offense Date":"September 23, 2022 07H:27M:00S",
+    "Block Address":"Clarke Rd//Knight Arnold Rd",
+    "Crime Type":"Drug Equipment Violation",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.998,35.078 ]
+    },
+    "properties": {
+    "Category":"Drug Equipment Violation",
+    "ID":"2210006790ME [11:437]",
+    "Offense Date":"October 14, 2022 20H:20M:00S",
+    "Block Address":"E Alcy Rd//Thames St",
+    "Crime Type":"Drug Equipment Violation",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.978,35.203 ]
+    },
+    "properties": {
+    "Category":"Drug Equipment Violation",
+    "ID":"2210006115ME [14:763]",
+    "Offense Date":"October 13, 2022 11H:14M:00S",
+    "Block Address":"2900 Leafy Hollow Dr",
+    "Crime Type":"Drug Equipment Violation",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.014,35.236 ]
+    },
+    "properties": {
+    "Category":"Drug Equipment Violation",
+    "ID":"2210002330ME [10:717]",
+    "Offense Date":"October 05, 2022 18H:19M:00S",
+    "Block Address":"Thomas St//N Watkins St",
+    "Crime Type":"Drug Equipment Violation",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.989,35.165 ]
+    },
+    "properties": {
+    "Category":"Drug Equipment Violation",
+    "ID":"2209011462ME [15:593]",
+    "Offense Date":"September 22, 2022 22H:05M:00S",
+    "Block Address":"2600 Goodwill Ln",
+    "Crime Type":"Drug Equipment Violation",
+    "zipcode":38107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.034,35.15 ]
+    },
+    "properties": {
+    "Category":"Drug Equipment Violation",
+    "ID":"2210000811ME [11:913]",
+    "Offense Date":"October 03, 2022 02H:15M:00S",
+    "Block Address":"N Manassas St//Leath St",
+    "Crime Type":"Drug Equipment Violation",
+    "zipcode":38105
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.018,35.082 ]
+    },
+    "properties": {
+    "Category":"Drug Equipment Violation",
+    "ID":"2209013860ME [14:480]",
+    "Offense Date":"September 27, 2022 16H:54M:00S",
+    "Block Address":"2300 Elvis Presley Blvd",
+    "Crime Type":"Drug Equipment Violation",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.808,35.034 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2210002117ME [09:420]",
+    "Offense Date":"October 05, 2022 09H:00M:00S",
+    "Block Address":"4300 Long Creek Rd",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38125
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.96,35.084 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2209012543ME [49:637]",
+    "Offense Date":"September 25, 2022 07H:00M:00S",
+    "Block Address":"3100 Lamar Ave",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.886,35.047 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2210001735ME [09:173]",
+    "Offense Date":"October 04, 2022 16H:55M:00S",
+    "Block Address":"S Mendenhall Rd//Winchester Rd",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.989,35.165 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2209011462ME [15:123]",
+    "Offense Date":"September 22, 2022 22H:05M:00S",
+    "Block Address":"2600 Goodwill Ln",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.034,35.145 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2209009933ME [14:060]",
+    "Offense Date":"September 20, 2022 10H:02M:00S",
+    "Block Address":"800 Poplar Ave",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38105
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.983,35.079 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2210005486ME [10:553]",
+    "Offense Date":"October 12, 2022 08H:30M:00S",
+    "Block Address":"2500 Joy Ln",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.024,35.11 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2209014477ME [12:340]",
+    "Offense Date":"September 28, 2022 18H:20M:00S",
+    "Block Address":"S Parkway E//James St",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.987,35.107 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2210005793ME [12:670]",
+    "Offense Date":"October 12, 2022 19H:38M:00S",
+    "Block Address":"Lamar Ave//Kerr Ave",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.852,35.065 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2210020048ME [48:230]",
+    "Offense Date":"October 07, 2022 19H:50M:00S",
+    "Block Address":"3100 Arbor Pl",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.851,35.077 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2209013422ME [11:470]",
+    "Offense Date":"September 26, 2022 17H:59M:00S",
+    "Block Address":"Quince Rd//Sulgrave Dr",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38119
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.016,35.139 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2209015522ME [13:630]",
+    "Offense Date":"September 30, 2022 19H:50M:00S",
+    "Block Address":"Madison Ave//N Cleveland St",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.903,35.115 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2210000183ME [08:640]",
+    "Offense Date":"October 01, 2022 14H:30M:00S",
+    "Block Address":"Poplar Ave//Colonial Rd",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.891,35.097 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2209011919ME [17:157]",
+    "Offense Date":"September 23, 2022 18H:24M:00S",
+    "Block Address":"S White Station Rd//Flamingo Rd",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.99,35.174 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2210005264ME [36:113]",
+    "Offense Date":"October 11, 2022 20H:32M:00S",
+    "Block Address":"Chelsea Ave//May St",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.031,35.107 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2210001823ME [18:620]",
+    "Offense Date":"October 04, 2022 20H:00M:00S",
+    "Block Address":"Kerr Ave//Gaither St",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.982,35.108 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2210005233ME [13:650]",
+    "Offense Date":"October 11, 2022 19H:30M:00S",
+    "Block Address":"Grand St//Park Ave",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.948,35.16 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2210006768ME [12:970]",
+    "Offense Date":"October 14, 2022 19H:42M:00S",
+    "Block Address":"National St//Harmony Woods Dr",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.055,35.12 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2209015487ME [09:587]",
+    "Offense Date":"September 30, 2022 18H:10M:00S",
+    "Block Address":"S Third St//Walker Ave",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.037,35.111 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2210001781ME [19:873]",
+    "Offense Date":"October 04, 2022 18H:28M:00S",
+    "Block Address":"800 Richmond Ave",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.86,35.02 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2210008171ME [12:440]",
+    "Offense Date":"October 18, 2022 01H:23M:00S",
+    "Block Address":"Crump Rd//E Shelby Dr",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38141
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.002,35.226 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2210002276ME [08:953]",
+    "Offense Date":"October 05, 2022 16H:50M:00S",
+    "Block Address":"Burnham Ave//Argonne St",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.048,35.149 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2210000511ME [15:440]",
+    "Offense Date":"October 02, 2022 09H:00M:00S",
+    "Block Address":"300 Poplar Ave",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.998,35.078 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2210006790ME [11:220]",
+    "Offense Date":"October 14, 2022 20H:20M:00S",
+    "Block Address":"E Alcy Rd//Thames St",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.884,35.223 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2209010814ME [42:293]",
+    "Offense Date":"September 21, 2022 18H:30M:00S",
+    "Block Address":"5400 Bruton Ave",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38135
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.927,35.162 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2209015090ME [12:963]",
+    "Offense Date":"September 30, 2022 02H:43M:00S",
+    "Block Address":"Macon Rd//N Graham St",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.909,35.117 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2210020011ME [08:970]",
+    "Offense Date":"October 06, 2022 18H:24M:00S",
+    "Block Address":"Perkins Ext Ext//Poplar Ave",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.984,35.11 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2210002751ME [10:057]",
+    "Offense Date":"October 06, 2022 12H:00M:00S",
+    "Block Address":"2400 Brooklyn Ave",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.98,35.079 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2209010378ME [09:643]",
+    "Offense Date":"September 21, 2022 04H:11M:00S",
+    "Block Address":"Ketchum Rd//Imogene St",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.983,35.175 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2210005281ME [41:787]",
+    "Offense Date":"October 11, 2022 21H:09M:00S",
+    "Block Address":"2300 Chelsea Ave",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.945,35.199 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2209010045ME [15:463]",
+    "Offense Date":"September 20, 2022 12H:50M:00S",
+    "Block Address":"James Rd//Allen Rd",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.937,35.052 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2209010208ME [08:640]",
+    "Offense Date":"September 20, 2022 18H:50M:00S",
+    "Block Address":"Old Getwell Rd//Winchester Rd",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.046,35.148 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2210008445ME [23:463]",
+    "Offense Date":"October 18, 2022 13H:00M:00S",
+    "Block Address":"300 Poplar Ave",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.007,35.05 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2210002382ME [14:420]",
+    "Offense Date":"October 05, 2022 20H:00M:00S",
+    "Block Address":"3700 Millbranch Rd",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.011,35.103 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2209013935ME [12:073]",
+    "Offense Date":"September 27, 2022 18H:30M:00S",
+    "Block Address":"1600 Gold Ave",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.021,35.108 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2210004672ME [40:960]",
+    "Offense Date":"October 10, 2022 19H:17M:00S",
+    "Block Address":"Elvis Presley Blvd//Gill Ave",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.014,35.236 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2210005699ME [09:393]",
+    "Offense Date":"October 12, 2022 16H:30M:00S",
+    "Block Address":"N Watkins St//Thomas St",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.919,35.075 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2210003673ME [09:673]",
+    "Offense Date":"October 08, 2022 14H:42M:00S",
+    "Block Address":"2800 Cherry Rd",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.993,35.179 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2209015062ME [10:660]",
+    "Offense Date":"September 29, 2022 23H:48M:00S",
+    "Block Address":"300 Poplar Ave",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.962,35.086 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2210003147ME [10:260]",
+    "Offense Date":"October 07, 2022 10H:08M:00S",
+    "Block Address":"Lamar Ave//Semmes St",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.733,35.206 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Felony",
+    "ID":"2210000396ME [36:853]",
+    "Offense Date":"October 02, 2022 02H:43M:00S",
+    "Block Address":"2900 N Houston Levee Rd",
+    "Crime Type":"Drugs/Narcotics Violation/Felony",
+    "zipcode":38002
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.024,35.11 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Misdemeanor",
+    "ID":"2209013881ME [14:860]",
+    "Offense Date":"September 27, 2022 17H:05M:00S",
+    "Block Address":"James St//S Parkway E",
+    "Crime Type":"Drugs/Narcotics Violation/Misdemeanor",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.988,35.165 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Misdemeanor",
+    "ID":"2209014996ME [11:930]",
+    "Offense Date":"September 29, 2022 19H:10M:00S",
+    "Block Address":"2100 Cabana North Circle",
+    "Crime Type":"Drugs/Narcotics Violation/Misdemeanor",
+    "zipcode":38107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.004,35.142 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Misdemeanor",
+    "ID":"2210007695ME [20:523]",
+    "Offense Date":"October 17, 2022 00H:20M:00S",
+    "Block Address":"1700 Poplar Ave",
+    "Crime Type":"Drugs/Narcotics Violation/Misdemeanor",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.07,35.043 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Misdemeanor",
+    "ID":"2210002953ME [14:440]",
+    "Offense Date":"October 06, 2022 23H:53M:00S",
+    "Block Address":"Horn Lake Rd//W Levi Rd",
+    "Crime Type":"Drugs/Narcotics Violation/Misdemeanor",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.022,35.11 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Misdemeanor",
+    "ID":"2210004146ME [09:040]",
+    "Offense Date":"October 09, 2022 20H:30M:00S",
+    "Block Address":"S Bellevue Blvd//S Parkway E",
+    "Crime Type":"Drugs/Narcotics Violation/Misdemeanor",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.876,35.061 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Misdemeanor",
+    "ID":"2209011639ME [18:327]",
+    "Offense Date":"September 23, 2022 07H:27M:00S",
+    "Block Address":"Clarke Rd//Knight Arnold Rd",
+    "Crime Type":"Drugs/Narcotics Violation/Misdemeanor",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.858,35.061 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Misdemeanor",
+    "ID":"2209014505ME [08:623]",
+    "Offense Date":"September 28, 2022 19H:23M:00S",
+    "Block Address":"3300 Ridgeway Rd",
+    "Crime Type":"Drugs/Narcotics Violation/Misdemeanor",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.032,35.142 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Misdemeanor",
+    "ID":"2210007739ME [12:420]",
+    "Offense Date":"October 17, 2022 02H:05M:00S",
+    "Block Address":"900 Jefferson Ave",
+    "Crime Type":"Drugs/Narcotics Violation/Misdemeanor",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.976,35.168 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Misdemeanor",
+    "ID":"2210006325ME [08:857]",
+    "Offense Date":"October 13, 2022 21H:30M:00S",
+    "Block Address":"Dexter Ave//N Hollywood St",
+    "Crime Type":"Drugs/Narcotics Violation/Misdemeanor",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.017,35.177 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Misdemeanor",
+    "ID":"2210003728ME [08:467]",
+    "Offense Date":"October 08, 2022 19H:32M:00S",
+    "Block Address":"N Bellevue Blvd//Bammel Ave",
+    "Crime Type":"Drugs/Narcotics Violation/Misdemeanor",
+    "zipcode":38107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.93,35.205 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Misdemeanor",
+    "ID":"2209010002ME [09:313]",
+    "Offense Date":"September 20, 2022 12H:05M:00S",
+    "Block Address":"James Rd//River Grove Cir",
+    "Crime Type":"Drugs/Narcotics Violation/Misdemeanor",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.876,35.065 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Misdemeanor",
+    "ID":"2210004716ME [17:510]",
+    "Offense Date":"October 10, 2022 20H:27M:00S",
+    "Block Address":"Clarke Rd//Fox Meadows Cv",
+    "Crime Type":"Drugs/Narcotics Violation/Misdemeanor",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.906,35.076 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Misdemeanor",
+    "ID":"2209010322ME [09:480]",
+    "Offense Date":"September 21, 2022 00H:35M:00S",
+    "Block Address":"Showcase Blvd//S Perkins Rd",
+    "Crime Type":"Drugs/Narcotics Violation/Misdemeanor",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.04,35.04 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Misdemeanor",
+    "ID":"2210003043ME [11:257]",
+    "Offense Date":"October 07, 2022 04H:12M:00S",
+    "Block Address":"800 Rosebank Rd",
+    "Crime Type":"Drugs/Narcotics Violation/Misdemeanor",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.055,35.108 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Misdemeanor",
+    "ID":"2210000285ME [11:890]",
+    "Offense Date":"October 01, 2022 20H:00M:00S",
+    "Block Address":"S Third St//S Parkway E",
+    "Crime Type":"Drugs/Narcotics Violation/Misdemeanor",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.988,35.168 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Misdemeanor",
+    "ID":"2209011110ME [14:647]",
+    "Offense Date":"September 22, 2022 09H:25M:00S",
+    "Block Address":"2200 Howell Ave",
+    "Crime Type":"Drugs/Narcotics Violation/Misdemeanor",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.021,35.133 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Misdemeanor",
+    "ID":"2209013505ME [10:013]",
+    "Offense Date":"September 27, 2022 01H:05M:00S",
+    "Block Address":"S Bellevue Blvd//Peabody Ave",
+    "Crime Type":"Drugs/Narcotics Violation/Misdemeanor",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.028,35.217 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Misdemeanor",
+    "ID":"2210003322ME [09:877]",
+    "Offense Date":"October 07, 2022 16H:28M:00S",
+    "Block Address":"3400 Millington St",
+    "Crime Type":"Drugs/Narcotics Violation/Misdemeanor",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.896,35.069 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Misdemeanor",
+    "ID":"2209011445ME [08:970]",
+    "Offense Date":"September 22, 2022 00H:30M:00S",
+    "Block Address":"3000 Curtis St",
+    "Crime Type":"Drugs/Narcotics Violation/Misdemeanor",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.945,35.199 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Misdemeanor",
+    "ID":"2209009988ME [20:737]",
+    "Offense Date":"September 20, 2022 11H:57M:00S",
+    "Block Address":"N Highland St//James Rd",
+    "Crime Type":"Drugs/Narcotics Violation/Misdemeanor",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.021,35.109 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Misdemeanor",
+    "ID":"2209014436ME [13:570]",
+    "Offense Date":"September 28, 2022 16H:25M:00S",
+    "Block Address":"1400 Elvis Presley Blvd",
+    "Crime Type":"Drugs/Narcotics Violation/Misdemeanor",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.901,35.201 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Misdemeanor",
+    "ID":"2210001976ME [14:100]",
+    "Offense Date":"October 05, 2022 06H:09M:00S",
+    "Block Address":"2900 Summit Arbors Cir",
+    "Crime Type":"Drugs/Narcotics Violation/Misdemeanor",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.888,35.116 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Misdemeanor",
+    "ID":"2210001742ME [40:313]",
+    "Offense Date":"October 04, 2022 17H:34M:00S",
+    "Block Address":"S White Station Rd//Lexington Rd",
+    "Crime Type":"Drugs/Narcotics Violation/Misdemeanor",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.032,35.086 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Misdemeanor",
+    "ID":"2209014394ME [14:443]",
+    "Offense Date":"September 28, 2022 15H:41M:00S",
+    "Block Address":"E Mallory Ave//Pine Hill Pl",
+    "Crime Type":"Drugs/Narcotics Violation/Misdemeanor",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.029,35.103 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Misdemeanor",
+    "ID":"2210008620ME [11:907]",
+    "Offense Date":"October 18, 2022 19H:05M:00S",
+    "Block Address":"Hernando Rd//Kirkland Ave",
+    "Crime Type":"Drugs/Narcotics Violation/Misdemeanor",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.019,35.101 ]
+    },
+    "properties": {
+    "Category":"Drugs/Narcotics Violation/Misdemeanor",
+    "ID":"2209014510ME [42:350]",
+    "Offense Date":"September 28, 2022 19H:29M:00S",
+    "Block Address":"Elvis Presley Blvd//E Person Ave",
+    "Crime Type":"Drugs/Narcotics Violation/Misdemeanor",
+    "zipcode":38106
+    }
+  }
+]
+}
