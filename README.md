@@ -55,6 +55,6 @@ Rename and replace the resulting file in `src/assets/data`.
 
 [Maintenance and Help Guide](https://github.com/COMP-4882-CIS/CIS-FRONTEND/blob/main/Maintenance-and-Help-Guide.pdf)
 
-[Softwware Architecture Document](https://github.com/COMP-4882-CIS/CIS-FRONTEND/blob/main/CIS-Software-Architecture-Document.pdf)
+[Software Architecture Document](https://github.com/COMP-4882-CIS/CIS-FRONTEND/blob/main/CIS-Software-Architecture-Document.pdf)
 
 [Source Code Document](https://github.com/COMP-4882-CIS/CIS-FRONTEND/blob/main/CIS-Source-Code-Document.pdf)
