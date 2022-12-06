@@ -9,7 +9,7 @@ The Child Impact Statements Map is a public tool that we believe can aid Shelby 
 ## Setup
 
 1. First, ensure that you have the [backend](https://github.com/COMP-4882-Capstone-4/Child-Impact-Statements) up and running.
-2. Install the npm dependencies: `npm i` or 'npm i --force'.
+2. Install the npm dependencies: `npm i` or `npm i --force`.
 3. Run the application: `npm run start` or `npm run watch`
 4. One can set the backend url for development and production in the files `src/app/environment.ts` and `src/app/environment.prod.ts` respectively:
 
