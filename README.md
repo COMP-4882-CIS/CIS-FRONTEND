@@ -2,6 +2,10 @@
 
 Child Impact Statements - Angular Frontend
 
+## Context
+
+The Child Impact Statements Map is a public tool that we believe can aid Shelby County policy makers in answering fundamental questions about how a policy may benefit or harm a child. There is various data within the map that can give more insight on youth and the institutions that shape them in Shelby County.
+
 ## Setup
 
 1. First, ensure that you have the [backend](https://github.com/COMP-4882-Capstone-4/Child-Impact-Statements) up and running.
@@ -46,3 +50,11 @@ The resulting files will be available in `dist/CIS`.
 
 To update a dataset, visit the links above and click 'Export', selecting the 'GeoJSON' option. 
 Rename and replace the resulting file in `src/assets/data`.
+
+### Help 
+
+[Maintenance and Help Guide](https://github.com/COMP-4882-CIS/CIS-FRONTEND/blob/main/Maintenance%20and%20Help%20Guide.pdf)
+
+[Softwware Architecture Document](https://github.com/COMP-4882-CIS/CIS-FRONTEND/blob/main/CIS-Software-Architecture-Document.pdf)
+
+[Source Code Document](https://github.com/COMP-4882-CIS/CIS-FRONTEND/blob/main/CIS-Source-Code-Document.pdf)
