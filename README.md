@@ -53,7 +53,7 @@ Rename and replace the resulting file in `src/assets/data`.
 
 ### Help 
 
-[Maintenance and Help Guide](https://github.com/COMP-4882-CIS/CIS-FRONTEND/blob/main/Maintenance%20and%20Help%20Guide.pdf)
+[Maintenance and Help Guide](https://github.com/COMP-4882-CIS/CIS-FRONTEND/blob/main/Maintenance-and-Help-Guide.pdf)
 
 [Softwware Architecture Document](https://github.com/COMP-4882-CIS/CIS-FRONTEND/blob/main/CIS-Software-Architecture-Document.pdf)
 
