@@ -585,6 +585,27 @@ export class MapSidebarComponent {
   isCCF(data: MapSidebarData) {
     return data.pointFeatureData!.type === PointFeatureType.CCF ;
   }
+  isLEAD0(data: MapSidebarData) {
+    return data.pointFeatureData!.type === PointFeatureType.LEAD0 ;
+  }
+  isLEAD1(data: MapSidebarData) {
+    return data.pointFeatureData!.type === PointFeatureType.LEAD1 ;
+  }
+  isLEAD2(data: MapSidebarData) {
+    return data.pointFeatureData!.type === PointFeatureType.LEAD2 ;
+  }
+  isLEAD3(data: MapSidebarData) {
+    return data.pointFeatureData!.type === PointFeatureType.LEAD3 ;
+  }
+  isLEAD4(data: MapSidebarData) {
+    return data.pointFeatureData!.type === PointFeatureType.LEAD4 ;
+  }
+  isLEAD5(data: MapSidebarData) {
+    return data.pointFeatureData!.type === PointFeatureType.LEAD5 ;
+  }
+  isLEAD6(data: MapSidebarData) {
+    return data.pointFeatureData!.type === PointFeatureType.LEAD6 ;
+  }
 
   showGenderChart(data: MapSidebarData) {
     if (!!data.genderChartData) {
@@ -599,6 +620,14 @@ export class MapSidebarComponent {
   }
 
   showPovertyChart(data: MapSidebarData) {
+    return (
+      data.stat.populationInPovertyUnder6 > 0 ||
+      data.stat.populationInPoverty6To11 > 0 ||
+      data.stat.populationInPoverty12To17 > 0
+    )
+  }
+
+  showLeadChart(data: MapSidebarData) {
     return (
       data.stat.populationInPovertyUnder6 > 0 ||
       data.stat.populationInPoverty6To11 > 0 ||

@@ -147,6 +147,7 @@ export class MapComponent implements AfterViewInit {
     this.CWGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.CW, this.map);
     // this.HCGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.HC, this.map);
     this.SEARCHGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.SEARCH, this.map);
+    
 
     this.fetchMapData(this.map);
     this.attachEvents(this.map);
@@ -192,6 +193,7 @@ export class MapComponent implements AfterViewInit {
     const cw: GeoJSON = this.CWGeoJSON!;
     // const hc: GeoJSON = this.HCGeoJSON!;
     const search: GeoJSON = this.SEARCHGeoJSON!;
+    
 
 
     map.on('popupopen', (e: PopupEvent) => {
@@ -332,6 +334,7 @@ export class MapComponent implements AfterViewInit {
     const cw = this.CWGeoJSON as GeoJSON;
     // const hc = this.HCGeoJSON as GeoJSON;
     const search = this.SEARCHGeoJSON as GeoJSON;
+    
 
     const tiles = L.tileLayer(environment.map.tiles, {
       maxZoom: 18,
@@ -412,8 +415,8 @@ export class MapComponent implements AfterViewInit {
             },
             //If we decide to allow filtering by category
             // {
-            //   label: 'Crime',
-            //   selectAllCheckbox: true,
+            // label: 'Crime',
+            //  selectAllCheckbox: true,
             //   children: [
             //       {label: 'Assaults', layer: camarkers},
             //       {label: 'Burglary/Robbery', layer: cbrmarkers},

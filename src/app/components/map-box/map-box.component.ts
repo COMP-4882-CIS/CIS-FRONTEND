@@ -82,6 +82,13 @@ export class MapBoxComponent {
       case PointFeatureType.CT:
       case PointFeatureType.CO:
       case PointFeatureType.CW:
+      case PointFeatureType.LEAD0:
+      case PointFeatureType.LEAD1:
+      case PointFeatureType.LEAD2:
+      case PointFeatureType.LEAD3:
+      case PointFeatureType.LEAD4:
+      case PointFeatureType.LEAD5:
+      case PointFeatureType.LEAD6:
         
       default:
         const data: PointFeature = event.data as PointFeature;
