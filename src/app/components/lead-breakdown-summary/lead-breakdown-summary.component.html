@@ -1,0 +1,62 @@
+<div style="width: 90%;">
+  <canvas
+    baseChart height="300"
+    [type]="'bar'"
+    [legend]="true"
+    [datasets]="chartData"
+    [labels]="chartLabels"
+  >
+  </canvas>
+</div>
+<mat-list>
+  
+  <h3 matSubheader>Number of Children with Lead Exposure</h3>
+  <mat-list-item>
+    <div class="list-item-inner">
+      <span class="title">Age 0</span>
+      <span class="value">{{LEAD0Count}}</span>
+    </div>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+  <mat-list-item>
+    <div class="list-item-inner">
+      <span class="title">Age 1</span>
+      <span class="value">{{LEAD1Count}}</span>
+    </div>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+  <mat-list-item>
+    <div class="list-item-inner">
+      <span class="title">Age 2</span>
+      <span class="value">{{LEAD2Count}}</span>
+    </div>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+  <mat-list-item>
+    <div class="list-item-inner">
+      <span class="title">Age 3</span>
+      <span class="value">{{LEAD3Count}}</span>
+    </div>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+  <mat-list-item>
+    <div class="list-item-inner">
+      <span class="title">Age 4</span>
+      <span class="value">{{LEAD4Count}}</span>
+    </div>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+  <mat-list-item>
+    <div class="list-item-inner">
+      <span class="title">Age 5</span>
+      <span class="value">{{LEAD5Count}}</span>
+    </div>
+  </mat-list-item>
+  <mat-list-item>
+    <div class="list-item-inner">
+      <span class="title">Age 6</span>
+      <span class="value">{{LEAD6Count}}</span>
+    </div>
+  </mat-list-item>
+</mat-list>
+  

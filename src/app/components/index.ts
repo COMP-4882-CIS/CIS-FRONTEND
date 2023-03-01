@@ -9,3 +9,4 @@ export * from './poverty-breakdown-summary/poverty-breakdown-summary.component';
 export * from './crime-breakdown-summary/crime-breakdown-summary.component';
 export * from './school-feature-summary/school-feature-summary.component';
 export * from './poverty-chart/poverty-chart.component';
+export * from './lead-breakdown-summary/lead-breakdown-summary.component';

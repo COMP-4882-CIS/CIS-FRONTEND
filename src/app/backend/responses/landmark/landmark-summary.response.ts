@@ -24,4 +24,21 @@ export interface LandmarkSummaryResponse {
   parks: Landmark[];
   communityCenters: Landmark[];
   libraries: Landmark[];
+  totalLEAD0: number;
+  totalLEAD1:number;
+  totalLEAD2: number;
+  totalLEAD3:number;
+  totalLEAD4: number;
+  totalLEAD5:number;
+  totalLEAD6: number;
+  LEAD0: Landmark[];
+  LEAD1: Landmark[];
+  LEAD2: Landmark[];
+  LEAD3: Landmark[];
+  LEAD4: Landmark[];
+  LEAD5: Landmark[];
+  LEAD6: Landmark[];
+  
+
+
 }

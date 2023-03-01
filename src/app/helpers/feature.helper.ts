@@ -18,6 +18,13 @@ import {
   HealthFeature,
   SearchFeature,
   SickFeature,
+  LEAD0Feature,
+  LEAD1Feature,
+  LEAD2Feature,
+  LEAD3Feature,
+  LEAD4Feature,
+  LEAD5Feature,
+  LEAD6Feature,
 } from "../backend/types/geo/features/point";
 import {DistrictFeature, LayerFeature, TractFeature, ZipcodeFeature} from "../backend/types/geo/features/layer";
 import {LayerFeatureType} from "../backend/types/geo/features/layer/layer-feature-type.enum";
@@ -107,6 +114,34 @@ export class FeatureHelper {
       iconUrl: 'assets/icons/search.png',
       iconSize: [31, 42],
     }),
+    LEAD0: L.icon({
+      iconUrl: 'assets/icons/search.png',
+      iconSize: [31, 42],
+    }),
+    LEAD1: L.icon({
+      iconUrl: 'assets/icons/search.png',
+      iconSize: [31, 42],
+    }),
+    LEAD2: L.icon({
+      iconUrl: 'assets/icons/search.png',
+      iconSize: [31, 42],
+    }),
+    LEAD3: L.icon({
+      iconUrl: 'assets/icons/search.png',
+      iconSize: [31, 42],
+    }),
+    LEAD4: L.icon({
+      iconUrl: 'assets/icons/search.png',
+      iconSize: [31, 42],
+    }),
+    LEAD5: L.icon({
+      iconUrl: 'assets/icons/search.png',
+      iconSize: [31, 42],
+    }),
+    LEAD6: L.icon({
+      iconUrl: 'assets/icons/search.png',
+      iconSize: [31, 42],
+    }),
   }
 
   static createGeoJSON(type: PointFeatureType, map: L.Map, animate: boolean = true): L.GeoJSON {
@@ -165,6 +200,28 @@ export class FeatureHelper {
       case PointFeatureType.SICK:
         icon = this.icons.SICK;
         break;
+      case PointFeatureType.LEAD0:
+        icon = this.icons.LEAD0;
+        break;
+      case PointFeatureType.LEAD1:
+        icon = this.icons.LEAD1;
+        break;
+      case PointFeatureType.LEAD2:
+        icon = this.icons.LEAD2;
+        break;
+      case PointFeatureType.LEAD3:
+        icon = this.icons.LEAD3;
+        break;
+      case PointFeatureType.LEAD4:
+        icon = this.icons.LEAD4;
+        break;
+      case PointFeatureType.LEAD5:
+        icon = this.icons.LEAD5;
+        break;
+      case PointFeatureType.LEAD6:
+        icon = this.icons.LEAD6;
+        break;
+      
     }
 
     const marker = L.marker(coordinates, {icon, riseOnHover: true, riseOffset: 10});
@@ -208,6 +265,21 @@ export class FeatureHelper {
         return new SearchFeature(data);
       case PointFeatureType.SICK:
         return new SickFeature(data);
+      case PointFeatureType.LEAD0:
+        return new LEAD0Feature(data);
+      case PointFeatureType.LEAD1:
+        return new LEAD1Feature(data);
+      case PointFeatureType.LEAD2:
+        return new LEAD2Feature(data);
+      case PointFeatureType.LEAD3:
+        return new LEAD3Feature(data);
+      case PointFeatureType.LEAD4:
+        return new LEAD4Feature(data);
+      case PointFeatureType.LEAD5:
+        return new LEAD5Feature(data);
+      case PointFeatureType.LEAD6:
+        return new LEAD6Feature(data);
+
     }
   }
 

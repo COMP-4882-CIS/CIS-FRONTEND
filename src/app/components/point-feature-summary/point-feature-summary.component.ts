@@ -11,7 +11,7 @@ import {
   CDFeature,
   COFeature,
   CTFeature,
-  CWFeature
+  CWFeature,
 } from "../../backend/types/geo/features/point";
 
 @Component({
