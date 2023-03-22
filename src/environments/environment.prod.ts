@@ -2,7 +2,7 @@ const packageInfo = require('../../package.json');
 
 export const environment = {
   production: true,
-  apiURL: 'https://cis-4882-sp23.herokuapp.com/',
+  apiURL: 'https://main--ubiquitous-sundae-9e2789.netlify.app/',
   appTitle: 'Child Impact Resources',
   appVersion: packageInfo.version,
   helpURL: "https://www.youtube.com/watch?v=kVGI9bi1oKE",
