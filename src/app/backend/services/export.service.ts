@@ -39,6 +39,13 @@ export class ExportService {
       CTCount: landmarkSummary.totalCT,
       COCount: landmarkSummary.totalCO,
       CWCount: landmarkSummary.totalCW,
+      LEAD0Count: landmarkSummary.totalLEAD0,
+      LEAD1Count: landmarkSummary.totalLEAD1,
+      LEAD2Count: landmarkSummary.totalLEAD2,
+      LEAD3Count: landmarkSummary.totalLEAD3,
+      LEAD4Count: landmarkSummary.totalLEAD4,
+      LEAD5Count: landmarkSummary.totalLEAD5,
+      LEAD6Count: landmarkSummary.totalLEAD6,
       communityCenterCount: landmarkSummary.totalCommunityCenters
 
     }
@@ -72,7 +79,15 @@ export class ExportService {
       CTCount: landmarkSummary.totalCT,
       COCount: landmarkSummary.totalCO,
       CWCount: landmarkSummary.totalCW,
+      LEAD0Count: landmarkSummary.totalLEAD0,
+      LEAD1Count: landmarkSummary.totalLEAD1,
+      LEAD2Count: landmarkSummary.totalLEAD2,
+      LEAD3Count: landmarkSummary.totalLEAD3,
+      LEAD4Count: landmarkSummary.totalLEAD4,
+      LEAD5Count: landmarkSummary.totalLEAD5,
+      LEAD6Count: landmarkSummary.totalLEAD6,
       communityCenterCount: landmarkSummary.totalCommunityCenters
+
     }
 
     const url = Burly(environment.apiURL)

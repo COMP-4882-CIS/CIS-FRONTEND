@@ -39,7 +39,9 @@
             </mat-tab>
 
             <mat-tab label="Health">
-              <mat-list>
+                <app-lead-breakdown-summary title="LEAD"
+                  [landmarksSummary]="currentData.landmarks"></app-lead-breakdown-summary>
+               
               <h3 matSubheader>Covid-19 Information - Under 18</h3>
                 <mat-list-item>
                   <div class="list-item-inner">
@@ -72,7 +74,6 @@
                     <span class="value">{{get38002CVP(currentData)}}</span>
                   </div>
                 </mat-list-item>
-              </mat-list>
               <mat-list>
                 <h3 matSubheader>Blood Lead Level Information - 5 and Under</h3>
                 <mat-list-item>

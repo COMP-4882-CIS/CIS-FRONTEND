@@ -79,6 +79,13 @@ export class SidebarDataHelper {
     let totalCT: number = 0;
     let totalCO: number = 0;
     let totalCW: number = 0;
+    let totalLEAD0: number = 0;
+    let totalLEAD1: number = 0;
+    let totalLEAD2: number = 0;
+    let totalLEAD3: number = 0;
+    let totalLEAD4: number = 0;
+    let totalLEAD5: number = 0;
+    let totalLEAD6: number = 0;
     let parks: Landmark[] = [];
     let communityCenters: Landmark[] = [];
     let libraries: Landmark[] = [];
@@ -90,6 +97,13 @@ export class SidebarDataHelper {
     let CT: Landmark[] = [];
     let CO: Landmark[] = [];
     let CW: Landmark[] = [];
+    let LEAD0: Landmark[] = [];
+    let LEAD1: Landmark[] = [];
+    let LEAD2: Landmark[] = [];
+    let LEAD3: Landmark[] = [];
+    let LEAD4: Landmark[] = [];
+    let LEAD5: Landmark[] = [];
+    let LEAD6: Landmark[] = [];
 
     if (!!destination && !!addition) {
       totalParks = destination.totalParks + addition.totalParks;
@@ -103,6 +117,15 @@ export class SidebarDataHelper {
       totalCT = destination.totalCT+ destination.totalCT;
       totalCO = destination.totalCO+ destination.totalCO;
       totalCW = destination.totalCW + destination.totalCW;
+      totalLEAD0 = destination.totalLEAD0 + destination.totalLEAD0;
+      totalLEAD1 = destination.totalLEAD1 + destination.totalLEAD1;
+      totalLEAD2 = destination.totalLEAD2 + destination.totalLEAD2;
+      totalLEAD3 = destination.totalLEAD3 + destination.totalLEAD3;
+      totalLEAD4 = destination.totalLEAD4 + destination.totalLEAD4;
+      totalLEAD5 = destination.totalLEAD5 + destination.totalLEAD5;
+      totalLEAD6 = destination.totalLEAD6 + destination.totalLEAD6;
+
+
 
 
       parks = [...destination.parks, ...addition.parks];
@@ -116,6 +139,13 @@ export class SidebarDataHelper {
       CT = [...destination.CT, ...addition.CT];
       CO = [...destination.CO, ...addition.CO];
       CW = [...destination.CW, ...addition.CW];
+      LEAD0 = [...destination.LEAD0, ...addition.LEAD0];
+      LEAD1 = [...destination.LEAD1, ...addition.LEAD1];
+      LEAD2 = [...destination.LEAD2, ...addition.LEAD2];
+      LEAD3 = [...destination.LEAD3, ...addition.LEAD3];
+      LEAD4 = [...destination.LEAD4, ...addition.LEAD4];
+      LEAD5= [...destination.LEAD5, ...addition.LEAD5];
+      LEAD6= [...destination.LEAD6, ...addition.LEAD6];
     } else if (!!destination) {
       totalParks = destination.totalParks;
       totalCCC = destination.totalCCC;
@@ -128,6 +158,14 @@ export class SidebarDataHelper {
       totalCT = destination.totalCT;
       totalCO = destination.totalCO;
       totalCW = destination.totalCW;
+      totalLEAD0 = destination.totalLEAD0;
+      totalLEAD1 = destination.totalLEAD1;
+      totalLEAD2 = destination.totalLEAD2;
+      totalLEAD3 = destination.totalLEAD3;
+      totalLEAD4 = destination.totalLEAD4;
+      totalLEAD5 = destination.totalLEAD5;
+      totalLEAD6 = destination.totalLEAD6;
+      
 
       parks = destination.parks;
       communityCenters = destination.communityCenters;
@@ -140,6 +178,14 @@ export class SidebarDataHelper {
       CT = destination.CT;
       CO = destination.CO;
       CW = destination.CW;
+      LEAD0 = destination.LEAD0;
+      LEAD1 = destination.LEAD1;
+      LEAD2 = destination.LEAD2;
+      LEAD3 = destination.LEAD3;
+      LEAD4 = destination.LEAD4;
+      LEAD5 = destination.LEAD5;
+      LEAD6= destination.LEAD6;
+
     } else if (!!addition) {
       totalParks = addition.totalParks;
       totalCommunityCenters = addition.totalCommunityCenters;
@@ -152,6 +198,14 @@ export class SidebarDataHelper {
       totalCT = addition.totalCT;
       totalCO = addition.totalCO;
       totalCW = addition.totalCW;
+      totalLEAD0 = addition.totalLEAD0;
+      totalLEAD1 = addition.totalLEAD1;
+      totalLEAD2 = addition.totalLEAD2;
+      totalLEAD3 = addition.totalLEAD3;
+      totalLEAD4 = addition.totalLEAD4;
+      totalLEAD5 = addition.totalLEAD5;
+      totalLEAD6 = addition.totalLEAD6;
+
 
       parks = addition.parks;
       CCC = addition.CCC;
@@ -164,9 +218,18 @@ export class SidebarDataHelper {
       CT = addition.CT;
       CO = addition.CO;
       CW = addition.CW;
+      LEAD0= addition.LEAD0;
+      LEAD1 = addition.LEAD1;
+      LEAD2 = addition.LEAD2;
+      LEAD3 = addition.LEAD3;
+      LEAD4 = addition.LEAD4;
+      LEAD5= addition.LEAD5;
+      LEAD6 = addition.LEAD6;
+
     }
 
     return {
+      id,
       totalParks,
       totalCommunityCenters,
       totalLibraries,
@@ -178,6 +241,13 @@ export class SidebarDataHelper {
       totalCT,
       totalCO,
       totalCW,
+      totalLEAD0,
+      totalLEAD1,
+      totalLEAD2,
+      totalLEAD3,
+      totalLEAD4,
+      totalLEAD5,
+      totalLEAD6,
       parks,
       communityCenters,
       libraries,
@@ -188,7 +258,14 @@ export class SidebarDataHelper {
       CD,
       CT,
       CO,
-      CW 
+      CW,
+      LEAD0,
+      LEAD1,
+      LEAD2,
+      LEAD3,
+      LEAD4,
+      LEAD5,
+      LEAD6
     }
   }
 }

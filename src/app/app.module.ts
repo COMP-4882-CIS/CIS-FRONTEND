@@ -1,6 +1,5 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {HttpClientModule} from '@angular/common/http';
@@ -33,7 +32,8 @@ import {
   MapComponent, MapSidebarComponent, PointFeatureSummaryComponent,
   PovertyBreakdownSummaryComponent, 
   CrimeBreakdownSummaryComponent, SchoolFeatureSummaryComponent,
-  PovertyChartComponent
+  PovertyChartComponent,
+  LeadBreakdownSummaryComponent,
 } from "./components";
 
 @NgModule({
@@ -46,6 +46,7 @@ import {
     BreakdownChartComponent,
     PointFeatureSummaryComponent,
     BreakdownSummaryComponent,
+    LeadBreakdownSummaryComponent,
     PovertyBreakdownSummaryComponent,
     CrimeBreakdownSummaryComponent,
     SchoolFeatureSummaryComponent,

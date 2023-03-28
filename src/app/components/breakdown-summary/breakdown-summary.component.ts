@@ -56,6 +56,14 @@ export class BreakdownSummaryComponent {
   totalCO: number = 0;
   totalCW: number = 0;
 
+  totalLEAD0: number=0;
+  totalLEAD1: number = 0;
+  totalLEAD2: number = 0;
+  totalLEAD3: number = 0;
+  totalLEAD4: number = 0;
+  totalLEAD5: number = 0;
+  totalLEAD6: number = 0;
+
   showLandmarksSummary = false;
 
   private _populationStats!: BreakdownStat;
@@ -114,6 +122,13 @@ export class BreakdownSummaryComponent {
       this.totalCT = landmarksSummary.totalCT;
       this.totalCO = landmarksSummary.totalCO;
       this.totalCW = landmarksSummary.totalCW;
+      this.totalLEAD0 = landmarksSummary.totalLEAD0;
+      this.totalLEAD1 = landmarksSummary.totalLEAD1;
+      this.totalLEAD2 = landmarksSummary.totalLEAD2;
+      this.totalLEAD3 = landmarksSummary.totalLEAD3;
+      this.totalLEAD4 = landmarksSummary.totalLEAD4;
+      this.totalLEAD5 = landmarksSummary.totalLEAD5;
+      this.totalLEAD6 = landmarksSummary.totalLEAD6;
     } else {
       this.showLandmarksSummary = false;
     }

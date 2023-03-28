@@ -17,6 +17,29 @@ export class GeoTractService {
     return this.http.get<GeoJSONObject>('assets/data/fire.geojson');
   }
 
+  getLEAD0Features() {
+    return this.http.get<GeoJSONObject>('assets/data/lead_data0.geojson');
+  }
+  getLEAD1Features() {
+    return this.http.get<GeoJSONObject>('assets/data/lead_data1.geojson');
+  }
+  getLEAD2Features() {
+    return this.http.get<GeoJSONObject>('assets/data/lead_data2.geojson');
+  }
+  getLEAD3Features() {
+    return this.http.get<GeoJSONObject>('assets/data/lead_data3.geojson');
+  }
+  getLEAD4Features() {
+    return this.http.get<GeoJSONObject>('assets/data/lead_data4.geojson');
+  }
+  getLEAD5Features() {
+    return this.http.get<GeoJSONObject>('assets/data/lead_data5.geojson');
+  }
+  getLEAD6Features() {
+    return this.http.get<GeoJSONObject>('assets/data/lead_data6.geojson');
+  }
+
+
   getSearchFeatures() {
     return this.http.get<GeoJSONObject>('assets/data/search.geojson');
   }
