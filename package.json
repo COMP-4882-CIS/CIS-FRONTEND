@@ -1,7 +1,7 @@
 {
   "name": "cis",
   "version": "0.0.1",
-  "homepage": "https://cis-4882-sp23.github.io/CIS-frontend/",
+  "homepage": ".",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
