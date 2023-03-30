@@ -44,9 +44,9 @@ To depoly the website, install gh-pages by running 'npm install gh-pages --save-
 Then run 'npm run deploy'
 The branch gh-pages should update with your changes to deploy to the website, and should deploy them automatically. Make sure your APIURL is set for the backend, and your index.html includes your base h-ref as the url, such as:
 
-'''html
+```html
 <base href="https://comp-4882-cis.github.io/CIS-FRONTEND/">
-'''
+```
 
 ## Datasets
 * [Census Tracts](https://data.memphistn.gov/Public-Safety/Census-Tracts/e4xa-n94q) - Memphis Data Hub
