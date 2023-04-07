@@ -1,7 +1,6 @@
 {
   "name": "cis",
   "version": "0.0.1",
-  "homepage": "http://shelbycountykiddata.com/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
