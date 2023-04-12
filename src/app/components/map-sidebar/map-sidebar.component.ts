@@ -12,6 +12,11 @@ import {SchoolSummaryResponse} from "../../backend/responses/landmark/school-sum
 import {MatButtonToggleChange} from "@angular/material/button-toggle";
 import {MapBoxComponent} from "../map-box/map-box.component";
 import {ChartData} from "chart.js";
+import {
+  COVIDVACCFeature,
+  COVIDCASEFeature
+} from "../../backend/types/geo/features/point";
+
 
 @Component({
   selector: 'app-map-sidebar',
@@ -74,6 +79,8 @@ export class MapSidebarComponent {
   changeTab(tabIndex: number) {
     this.selectedTab = tabIndex;
   }
+
+
 
   // code below is for health data, very ugly but oh well...
   string1: string | undefined;
@@ -606,6 +613,14 @@ export class MapSidebarComponent {
   isLEAD6(data: MapSidebarData) {
     return data.pointFeatureData!.type === PointFeatureType.LEAD6 ;
   }
+
+  isCOVIDVACC(data: MapSidebarData) {
+    return data.pointFeatureData!.type === PointFeatureType.COVIDVACC ;
+  }
+  isCOVIDCASE(data: MapSidebarData) {
+    return data.pointFeatureData!.type === PointFeatureType.COVIDCASE ;
+  }
+
 
   showGenderChart(data: MapSidebarData) {
     if (!!data.genderChartData) {

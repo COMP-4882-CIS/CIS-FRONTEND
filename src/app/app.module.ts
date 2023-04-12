@@ -25,6 +25,7 @@ import {MatTooltipModule} from "@angular/material/tooltip";
 import {MatMenuModule} from "@angular/material/menu";
 import {MatExpansionModule} from '@angular/material/expansion';
 import {HomeComponent, PovertyLevelComponent, WorksCitedComponent} from "./pages";
+import { CovidBreakdownSummaryComponent } from './components/covid-breakdown-summary/covid-breakdown-summary.component';
 import {
   BreakdownChartComponent,
   BreakdownSummaryComponent, FetchErrorComponent,
@@ -54,6 +55,7 @@ import {
     WorksCitedComponent,
     PovertyLevelComponent,
     PovertyChartComponent,
+    CovidBreakdownSummaryComponent,
   ],
   imports: [
     BrowserModule,

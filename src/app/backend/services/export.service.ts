@@ -46,6 +46,8 @@ export class ExportService {
       LEAD4Count: landmarkSummary.totalLEAD4,
       LEAD5Count: landmarkSummary.totalLEAD5,
       LEAD6Count: landmarkSummary.totalLEAD6,
+      COVIDVACCCount: landmarkSummary.totalCOVIDVACC,
+      COVIDCASECount: landmarkSummary.totalCOVIDCASE,
       communityCenterCount: landmarkSummary.totalCommunityCenters
 
     }
@@ -86,6 +88,8 @@ export class ExportService {
       LEAD4Count: landmarkSummary.totalLEAD4,
       LEAD5Count: landmarkSummary.totalLEAD5,
       LEAD6Count: landmarkSummary.totalLEAD6,
+      COVIDVACCCount: landmarkSummary.totalCOVIDCASE,
+      COVIDCASECount: landmarkSummary.totalCOVIDVACC,
       communityCenterCount: landmarkSummary.totalCommunityCenters
 
     }
