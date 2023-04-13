@@ -12,6 +12,8 @@ import {
   COFeature,
   CTFeature,
   CWFeature,
+  COVIDVACCFeature,
+  COVIDCASEFeature,
 } from "../../backend/types/geo/features/point";
 
 @Component({
@@ -69,7 +71,10 @@ export class PointFeatureSummaryComponent {
     !!(this.pointFeature as CAFeature).date;
   }
 
-  
+  get hasCovid(): boolean {
+    return this.pointFeature instanceof COVIDVACCFeature || this.pointFeature instanceof COVIDCASEFeature || 
+    !!(this.pointFeature as COVIDVACCFeature).date;
+  }
 
   getValue(key: string): any {
     return (this.pointFeature as {[key: string]: any})[key];

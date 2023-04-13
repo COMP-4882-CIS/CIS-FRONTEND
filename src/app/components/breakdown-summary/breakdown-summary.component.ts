@@ -64,6 +64,9 @@ export class BreakdownSummaryComponent {
   totalLEAD5: number = 0;
   totalLEAD6: number = 0;
 
+  totalCOVIDCASE: number = 0;
+  totalCOVIDVACC: number = 0;
+
   showLandmarksSummary = false;
 
   private _populationStats!: BreakdownStat;
@@ -129,6 +132,8 @@ export class BreakdownSummaryComponent {
       this.totalLEAD4 = landmarksSummary.totalLEAD4;
       this.totalLEAD5 = landmarksSummary.totalLEAD5;
       this.totalLEAD6 = landmarksSummary.totalLEAD6;
+      this.totalCOVIDVACC = landmarksSummary.totalCOVIDVACC;
+      this.totalCOVIDCASE = landmarksSummary.totalCOVIDCASE;
     } else {
       this.showLandmarksSummary = false;
     }

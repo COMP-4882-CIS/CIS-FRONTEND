@@ -38,6 +38,10 @@ export interface LandmarkSummaryResponse {
   LEAD4: Landmark[];
   LEAD5: Landmark[];
   LEAD6: Landmark[];
+  totalCOVIDVACC: number;
+  totalCOVIDCASE: number;
+  COVIDVACC: Landmark[];
+  COVIDCASE: Landmark[];
   
 
 

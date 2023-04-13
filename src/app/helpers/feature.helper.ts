@@ -25,6 +25,8 @@ import {
   LEAD4Feature,
   LEAD5Feature,
   LEAD6Feature,
+  COVIDCASEFeature,
+  COVIDVACCFeature,
 } from "../backend/types/geo/features/point";
 import {DistrictFeature, LayerFeature, TractFeature, ZipcodeFeature} from "../backend/types/geo/features/layer";
 import {LayerFeatureType} from "../backend/types/geo/features/layer/layer-feature-type.enum";
@@ -142,6 +144,14 @@ export class FeatureHelper {
       iconUrl: 'assets/icons/search.png',
       iconSize: [31, 42],
     }),
+    COVIDVACC: L.icon({
+      iconUrl: 'assets/icons/search.png',
+      iconSize: [31, 42],
+    }),
+    COVIDCASE: L.icon({
+      iconUrl: 'assets/icons/search.png',
+      iconSize: [31, 42],
+    }),
   }
 
   static createGeoJSON(type: PointFeatureType, map: L.Map, animate: boolean = true): L.GeoJSON {
@@ -221,6 +231,12 @@ export class FeatureHelper {
       case PointFeatureType.LEAD6:
         icon = this.icons.LEAD6;
         break;
+      case PointFeatureType.COVIDCASE:
+          icon = this.icons.COVIDCASE;
+          break;
+      case PointFeatureType.COVIDVACC:
+            icon = this.icons.COVIDVACC;
+            break;
       
     }
 
@@ -278,6 +294,10 @@ export class FeatureHelper {
       case PointFeatureType.LEAD5:
         return new LEAD5Feature(data);
       case PointFeatureType.LEAD6:
+        return new LEAD6Feature(data);
+      case PointFeatureType.COVIDCASE:
+        return new LEAD6Feature(data);
+      case PointFeatureType.COVIDVACC:
         return new LEAD6Feature(data);
 
     }

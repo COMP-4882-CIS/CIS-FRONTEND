@@ -25,8 +25,8 @@ import {MatTooltipModule} from "@angular/material/tooltip";
 import {MatMenuModule} from "@angular/material/menu";
 import {MatExpansionModule} from '@angular/material/expansion';
 import {HomeComponent, PovertyLevelComponent, WorksCitedComponent} from "./pages";
-import { DropDownListModule } from "@syncfusion/ej2-angular-dropdowns";
 import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
+import { CovidBreakdownSummaryComponent } from './components/covid-breakdown-summary/covid-breakdown-summary.component';
 import {
   BreakdownChartComponent,
   BreakdownSummaryComponent, FetchErrorComponent,
@@ -56,7 +56,8 @@ import {
     WorksCitedComponent,
     PovertyLevelComponent,
     PovertyChartComponent,
-    NavigationBarComponent
+    NavigationBarComponent,
+    CovidBreakdownSummaryComponent,
   ],
   imports: [
     BrowserModule,
@@ -83,7 +84,6 @@ import {
     MatTableModule,
     MatTooltipModule,
     MatMenuModule,
-    DropDownListModule
   ],
   bootstrap: [AppComponent]
 })
