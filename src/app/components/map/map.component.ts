@@ -536,7 +536,14 @@ export class MapComponent implements AfterViewInit {
       LayerHelper.stylizePopulationLayer(tracts, maxStats);
       LayerHelper.stylizeDistrictLayer(districts);
 
+      //set it so all checkboxes are automatically unchecked
       tracts.removeFrom(map);
+      parks.removeFrom(map);
+      libraries.removeFrom(map);
+      centers.removeFrom(map);
+      schools.removeFrom(map);
+      ccf.removeFrom(map);
+      ccc.removeFrom(map);
 
       this.bindDistrictLabels(districts, map);
       this.bindZipcodeLabels(zipCodes, map);
@@ -632,6 +639,8 @@ export class MapComponent implements AfterViewInit {
    */
   private handleFeatureClick(event: LeafletEvent) {
     const feature: PointFeature = event.sourceTarget.feature.properties;
+    const popup: GeoJSON= event.sourceTarget.feature;
+    popup.openPopup();
     setTimeout(() => {
       this.popupOpened.emit({
         type: feature.type,
@@ -665,3 +674,7 @@ private bindZipcodeLabels(feature: L.GeoJSON, map: L.Map) {
  })
 }
 }
+
+
+
+
