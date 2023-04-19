@@ -25,6 +25,7 @@ import {Geocoder, geocoders} from 'leaflet-control-geocoder';
 import {Search} from 'leaflet-search';
 import 'leaflet-ruler';
 import 'leaflet.markercluster';
+import { isNullOrUndefined } from 'util';
 
 
 @Component({
@@ -132,7 +133,7 @@ export class MapComponent implements AfterViewInit {
     this.zipCodesGeoJSON = L.geoJSON()
       .bindPopup(layer => PopupHelper.bindLayerPopup(LayerFeatureType.ZIP_CODE, layer))
       .addTo(this.map);
-
+      
     this.parksGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.PARK, this.map);
     this.librariesGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.LIBRARY, this.map);
     this.centersGeoJSON = FeatureHelper.createGeoJSON(PointFeatureType.COMMUNITY_CENTER, this.map);
@@ -179,6 +180,7 @@ export class MapComponent implements AfterViewInit {
    * @private
    */
   private attachEvents(map: L.Map) {
+    const zipcode: GeoJSON = this.zipCodesGeoJSON!;
     const parks: GeoJSON = this.parksGeoJSON!;
     const libraries: GeoJSON = this.librariesGeoJSON!;
     const centers: GeoJSON = this.centersGeoJSON!;
@@ -194,8 +196,8 @@ export class MapComponent implements AfterViewInit {
     // const hc: GeoJSON = this.HCGeoJSON!;
     const search: GeoJSON = this.SEARCHGeoJSON!;
     
-
-
+    
+  
     map.on('popupopen', (e: PopupEvent) => {
       const feature = (e.popup as unknown as { _source: any })._source.feature as Feature;
 
@@ -213,7 +215,7 @@ export class MapComponent implements AfterViewInit {
     });
 
     map.on('click', () => this.popupOpened.emit(null));
-
+    
     map.on('zoomend', () => this.refreshCalloutLabels());
     map.on('baselayerchange', () => {
       this.refreshCalloutLabels();
@@ -392,7 +394,6 @@ export class MapComponent implements AfterViewInit {
     co.removeFrom(map);
     cw.removeFrom(map);
 
-
     this.fetchMapPopulationData(map).subscribe((maxStats) => {
 
 
@@ -518,9 +519,8 @@ export class MapComponent implements AfterViewInit {
         });
 
       map.addControl(searchControl);
-      
-
-
+    
+  
       // used to create marker clusters
       // const markers = L.markerClusterGroup();
       // markers.addLayers([ca,cbr,cd,ct,co,cw]);
@@ -539,6 +539,7 @@ export class MapComponent implements AfterViewInit {
       tracts.removeFrom(map);
 
       this.bindDistrictLabels(districts, map);
+      this.bindZipcodeLabels(zipCodes, map);
 
       setTimeout(() => {
         map.invalidateSize();
@@ -631,7 +632,6 @@ export class MapComponent implements AfterViewInit {
    */
   private handleFeatureClick(event: LeafletEvent) {
     const feature: PointFeature = event.sourceTarget.feature.properties;
-
     setTimeout(() => {
       this.popupOpened.emit({
         type: feature.type,
@@ -640,4 +640,28 @@ export class MapComponent implements AfterViewInit {
     }, 100);
   }
 
+
+/**
+   * Add callout labels to the zipcode labels
+   * @param feature - L.GeoJSON (tracts/zipCodes)
+   * @param map
+   * @private
+   */
+private bindZipcodeLabels(feature: L.GeoJSON, map: L.Map) {
+ feature.eachLayer(rawLayer => {
+   const layer = rawLayer as unknown as GeoLayer;
+   if (!!layer.feature.properties) {
+     const zipcode: ZipcodeFeature = layer.feature.properties as ZipcodeFeature;
+
+     rawLayer.bindTooltip(
+       `Zipcode ${zipcode.id}`,
+       {
+         permanent: false,
+         direction: 'auto',
+         offset: [-15, 0],
+         className: `zipcode-label map-geo-label ${map.getZoom() < 0 ? 'hide' : 'show'}`
+       });
+   }
+ })
+}
 }
