@@ -536,7 +536,14 @@ export class MapComponent implements AfterViewInit {
       LayerHelper.stylizePopulationLayer(tracts, maxStats);
       LayerHelper.stylizeDistrictLayer(districts);
 
+      //set it so all checkboxes are automatically unchecked
       tracts.removeFrom(map);
+      parks.removeFrom(map);
+      libraries.removeFrom(map);
+      centers.removeFrom(map);
+      schools.removeFrom(map);
+      ccf.removeFrom(map);
+      ccc.removeFrom(map);
 
       this.bindDistrictLabels(districts, map);
       this.bindZipcodeLabels(zipCodes, map);

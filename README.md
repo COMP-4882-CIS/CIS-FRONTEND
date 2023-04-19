@@ -36,7 +36,17 @@ export const environment = {
 
 To build the project, please run `npm run build`. 
 
-The resulting files will be available in `dist/CIS`.
+The resulting files will be available in `dist`.
+
+## Deploying
+
+To depoly the website, install gh-pages by running 'npm install gh-pages --save-dev'
+Then run 'npm run deploy'
+The branch gh-pages should update with your changes to deploy to the website, and should deploy them automatically. Make sure your APIURL is set for the backend, and your index.html includes your base h-ref as the url, such as:
+
+```html
+<base href="https://shelbycountykiddata.com/">
+```
 
 ## Datasets
 * [Census Tracts](https://data.memphistn.gov/Public-Safety/Census-Tracts/e4xa-n94q) - Memphis Data Hub

@@ -14,6 +14,8 @@ export interface ZipTractBaseRequest {
   LEAD4Count: number;
   LEAD5Count: number;
   LEAD6Count: number;
+  COVIDVACCCount: number;
+  COVIDCASECount: number;
 
   parkCount: number;
   libraryCount: number;

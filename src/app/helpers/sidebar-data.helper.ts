@@ -86,6 +86,10 @@ export class SidebarDataHelper {
     let totalLEAD4: number = 0;
     let totalLEAD5: number = 0;
     let totalLEAD6: number = 0;
+    let totalCOVIDCASE: number = 0;
+    let totalCOVIDVACC: number = 0;
+
+
     let parks: Landmark[] = [];
     let communityCenters: Landmark[] = [];
     let libraries: Landmark[] = [];
@@ -104,6 +108,8 @@ export class SidebarDataHelper {
     let LEAD4: Landmark[] = [];
     let LEAD5: Landmark[] = [];
     let LEAD6: Landmark[] = [];
+    let COVIDCASE: Landmark[] = [];
+    let COVIDVACC: Landmark[] = [];
 
     if (!!destination && !!addition) {
       totalParks = destination.totalParks + addition.totalParks;
@@ -124,6 +130,8 @@ export class SidebarDataHelper {
       totalLEAD4 = destination.totalLEAD4 + destination.totalLEAD4;
       totalLEAD5 = destination.totalLEAD5 + destination.totalLEAD5;
       totalLEAD6 = destination.totalLEAD6 + destination.totalLEAD6;
+      totalCOVIDCASE = destination.totalCOVIDCASE + destination.totalCOVIDCASE;
+      totalCOVIDVACC = destination.totalCOVIDVACC + destination.totalCOVIDVACC;
 
 
 
@@ -146,6 +154,8 @@ export class SidebarDataHelper {
       LEAD4 = [...destination.LEAD4, ...addition.LEAD4];
       LEAD5= [...destination.LEAD5, ...addition.LEAD5];
       LEAD6= [...destination.LEAD6, ...addition.LEAD6];
+      COVIDCASE= [...destination.COVIDCASE, ...addition.COVIDCASE];
+      COVIDVACC= [...destination.COVIDVACC, ...addition.COVIDVACC];
     } else if (!!destination) {
       totalParks = destination.totalParks;
       totalCCC = destination.totalCCC;
@@ -185,6 +195,9 @@ export class SidebarDataHelper {
       LEAD4 = destination.LEAD4;
       LEAD5 = destination.LEAD5;
       LEAD6= destination.LEAD6;
+      COVIDCASE= destination.COVIDCASE;
+      COVIDVACC= destination.COVIDVACC;
+      
 
     } else if (!!addition) {
       totalParks = addition.totalParks;
@@ -205,6 +218,8 @@ export class SidebarDataHelper {
       totalLEAD4 = addition.totalLEAD4;
       totalLEAD5 = addition.totalLEAD5;
       totalLEAD6 = addition.totalLEAD6;
+      totalCOVIDCASE = addition.totalCOVIDCASE;
+      totalCOVIDVACC = addition.totalCOVIDVACC;
 
 
       parks = addition.parks;
@@ -225,6 +240,8 @@ export class SidebarDataHelper {
       LEAD4 = addition.LEAD4;
       LEAD5= addition.LEAD5;
       LEAD6 = addition.LEAD6;
+      COVIDCASE = addition.COVIDCASE;
+      COVIDVACC= addition.COVIDVACC;
 
     }
 
@@ -248,6 +265,8 @@ export class SidebarDataHelper {
       totalLEAD4,
       totalLEAD5,
       totalLEAD6,
+      totalCOVIDCASE,
+      totalCOVIDVACC,
       parks,
       communityCenters,
       libraries,
@@ -265,7 +284,9 @@ export class SidebarDataHelper {
       LEAD3,
       LEAD4,
       LEAD5,
-      LEAD6
+      LEAD6,
+      COVIDCASE,
+      COVIDVACC,
     }
   }
 }

@@ -21,5 +21,7 @@ export enum PointFeatureType {
   LEAD4= 'lead4',
   LEAD5= 'lead5',
   LEAD6= 'lead6',
+  COVIDVACC='covidvacc',
+  COVIDCASE= 'covidcase',
 
 }

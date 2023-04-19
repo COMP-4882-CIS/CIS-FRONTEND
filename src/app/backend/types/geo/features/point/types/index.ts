@@ -22,3 +22,5 @@ export * from './lead3-feature.type';
 export * from './lead4-feature.type';
 export * from './lead5-feature.type';
 export * from './lead6-feature.type';
+export * from './covidcase-feature.type';
+export * from './covidvacc-feature.type';
