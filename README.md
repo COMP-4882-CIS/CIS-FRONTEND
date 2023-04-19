@@ -45,7 +45,7 @@ Then run 'npm run deploy'
 The branch gh-pages should update with your changes to deploy to the website, and should deploy them automatically. Make sure your APIURL is set for the backend, and your index.html includes your base h-ref as the url, such as:
 
 ```html
-<base href="https://comp-4882-cis.github.io/CIS-FRONTEND/">
+<base href="https://shelbycountykiddata.com/">
 ```
 
 ## Datasets
