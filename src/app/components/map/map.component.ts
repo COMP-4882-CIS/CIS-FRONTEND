@@ -28,6 +28,7 @@ import 'leaflet.markercluster';
 import { isNullOrUndefined } from 'util';
 
 
+
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
@@ -667,8 +668,9 @@ private bindZipcodeLabels(feature: L.GeoJSON, map: L.Map) {
          direction: 'auto',
          offset: [-15, 0],
          className: `zipcode-label map-geo-label ${map.getZoom() < 0 ? 'hide' : 'show'}`
-       });
-   }
- })
-}
+        });
+      }
+    })
+  }
+
 }
