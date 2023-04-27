@@ -25,7 +25,15 @@ import {MatTooltipModule} from "@angular/material/tooltip";
 import {MatMenuModule} from "@angular/material/menu";
 import {MatExpansionModule} from '@angular/material/expansion';
 import {HomeComponent, PovertyLevelComponent, WorksCitedComponent} from "./pages";
+import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
 import { CovidBreakdownSummaryComponent } from './components/covid-breakdown-summary/covid-breakdown-summary.component';
+import { AboutPageComponent } from './components/about-page/about-page.component';
+import { LeadGraphsComponent } from './components/lead-graphs/lead-graphs.component';
+import { SideBarComponent } from './components/side-bar/side-bar.component';
+import { CovidGraphsComponent } from './components/covid-graphs/covid-graphs.component';
+import { MapFeaturesGraphsComponent } from './components/mapfeatures-graphs/mapfeatures-graphs.component';
+import { MapResourceGraphsComponent } from './components/mapresource-graphs/mapresource-graphs.component';
+import { GraphsPageComponent } from './components/graphs-page/graphs-page.component';
 import {
   BreakdownChartComponent,
   BreakdownSummaryComponent, FetchErrorComponent,
@@ -34,8 +42,23 @@ import {
   PovertyBreakdownSummaryComponent, 
   CrimeBreakdownSummaryComponent, SchoolFeatureSummaryComponent,
   PovertyChartComponent,
-  LeadBreakdownSummaryComponent,
+  LeadBreakdownSummaryComponent
 } from "./components";
+import { RouterModule } from '@angular/router';
+import { Routes } from '@angular/router';
+
+const appRoutes: Routes = [
+  { path: 'about', component: AboutPageComponent},
+  { path: 'lead', component: LeadGraphsComponent},
+  { path: 'covid', component: CovidGraphsComponent},
+  { path: 'mapresources', component: MapResourceGraphsComponent},
+  { path: 'mapfeatures', component: MapFeaturesGraphsComponent},
+  { path: 'graphs', component: GraphsPageComponent},
+
+
+
+
+];
 
 @NgModule({
   declarations: [
@@ -55,9 +78,18 @@ import {
     WorksCitedComponent,
     PovertyLevelComponent,
     PovertyChartComponent,
+    NavigationBarComponent,
     CovidBreakdownSummaryComponent,
+    AboutPageComponent,
+    LeadGraphsComponent,
+    SideBarComponent,
+    CovidGraphsComponent,
+    MapFeaturesGraphsComponent,
+    MapResourceGraphsComponent,
+    GraphsPageComponent
   ],
   imports: [
+    RouterModule.forRoot(appRoutes),
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
