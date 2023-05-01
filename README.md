@@ -47,6 +47,7 @@ The branch gh-pages should update with your changes to deploy to the website, an
 ```html
 <base href="https://shelbycountykiddata.com/">
 ```
+You might also have to reset the custome domain name in the settings-pages section of the frontend, to shelbycountykiddata.com
 
 ## Datasets
 * [Census Tracts](https://data.memphistn.gov/Public-Safety/Census-Tracts/e4xa-n94q) - Memphis Data Hub
