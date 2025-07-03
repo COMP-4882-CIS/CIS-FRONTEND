@@ -34,13 +34,13 @@ print_header "CIS Frontend Docker Container Tests"
 
 # Get the current branch for the image tag
 CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
-IMAGE_NAME="cis-frontend:$CURRENT_BRANCH"
+IMAGE_NAME="iisdevs/cis-frontend:$CURRENT_BRANCH"
 
 print_status "Testing image: $IMAGE_NAME"
 
 # Test 1: Check if the image exists
 print_status "Test 1: Checking if Docker image exists..."
-if docker image inspect $IMAGE_NAME > /dev/null 2>&1; then
+if sudo docker image inspect $IMAGE_NAME > /dev/null 2>&1; then
     print_status "✅ Docker image $IMAGE_NAME exists"
 else
     print_error "❌ Docker image $IMAGE_NAME not found"
@@ -49,7 +49,7 @@ fi
 
 # Test 2: Start container and test HTTP response
 print_status "Test 2: Starting container and testing HTTP response..."
-CONTAINER_ID=$(docker run -d -p 8080:80 $IMAGE_NAME)
+CONTAINER_ID=$(sudo docker run -d -p 8080:80 $IMAGE_NAME)
 print_status "Container started with ID: $CONTAINER_ID"
 
 # Wait for container to be ready
@@ -80,7 +80,7 @@ fi
 
 # Test 4: Check container logs for errors
 print_status "Test 4: Checking container logs for errors..."
-LOGS=$(docker logs $CONTAINER_ID 2>&1)
+LOGS=$(sudo docker logs $CONTAINER_ID 2>&1)
 if echo "$LOGS" | grep -i "error\|fail\|exception" > /dev/null; then
     print_warning "⚠️  Found potential errors in container logs:"
     echo "$LOGS" | grep -i "error\|fail\|exception"
@@ -90,8 +90,8 @@ fi
 
 # Cleanup
 print_status "Cleaning up test container..."
-docker stop $CONTAINER_ID > /dev/null
-docker rm $CONTAINER_ID > /dev/null
+sudo docker stop $CONTAINER_ID > /dev/null
+sudo docker rm $CONTAINER_ID > /dev/null
 print_status "✅ Test container cleaned up"
 
 print_header "All Tests Completed Successfully"

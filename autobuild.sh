@@ -91,8 +91,8 @@ echo "  - Build info created"
 
 # Update the docker-compose.yml tag
 echo "** Updating docker-compose.yml tag... to $CURRENT_BRANCH"
-sed -i "s/image: cis-frontend:main/image: cis-frontend:$CURRENT_BRANCH/g" ./docker-compose.yml
-echo "  - Updated docker-compose.yml tag to $CURRENT_BRANCH"
+sed -i "s/image: iisdevs\/cis-frontend:main/image: iisdevs\/cis-frontend:$CURRENT_BRANCH/g" ./docker-compose.yml
+echo "  - Updated docker-compose.yml tag to iisdevs/cis-frontend:$CURRENT_BRANCH"
 
 
 #get the github token from the environment, if it exists
@@ -136,6 +136,15 @@ docker login
 # Build the image
 sudo docker compose build cis-frontend
 
+# Verify image was built before running tests
+print_status "Verifying Docker image was built..."
+if sudo docker images --format "table {{.Repository}}:{{.Tag}}" | grep -q "iisdevs/cis-frontend:$CURRENT_BRANCH"; then
+  print_status "✅ Docker image iisdevs/cis-frontend:$CURRENT_BRANCH confirmed"
+else
+  print_error "❌ Docker image iisdevs/cis-frontend:$CURRENT_BRANCH not found after build"
+  exit 1
+fi
+
 # Run Docker tests to verify the build
 print_status "Running Docker tests to verify the build..."
 if [ -f "./docker-test.sh" ]; then
@@ -161,5 +170,5 @@ print_status "✅ Build and push completed for tag: $CURRENT_BRANCH"
 print_header "Autobuild Complete"
 print_status "Release: $RELEASE_NAME"
 print_status "Branch: $CURRENT_BRANCH"
-print_status "Image: cis-frontend:$CURRENT_BRANCH"
+print_status "Image: iisdevs/cis-frontend:$CURRENT_BRANCH"
 print_status "Build info saved to: ./build-info/versionInfo.json"

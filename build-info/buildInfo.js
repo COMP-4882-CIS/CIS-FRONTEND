@@ -1,9 +1,9 @@
 export const BUILD_INFO = {
-  "commitID": "e77cc65c2e065f7cc173a7ef185a287ef73a0ab5",
+  "commitID": "378aff251d13431647d411457147de6192238d5e",
   "buildTimestamp": "Thursday 2025-07-03",
   "buildersUsername": "JRustyHaner",
   "branch": "main",
   "repoURL": "https://github.com/COMP-4882-CIS/CIS-FRONTEND.git",
-  "last5commitMessages": "Update README.md Delete CIS-Software-Architecture-Document.pdf updated documentation Update README.md Update README.md",
-  "releaseName": "v2025-07-03-09-30-04-main-autobuild"
+  "last5commitMessages": "Docker Engine compatibility Update README.md Delete CIS-Software-Architecture-Document.pdf updated documentation Update README.md",
+  "releaseName": "v2025-07-03-09-50-14-main-autobuild"
 };
