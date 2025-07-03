@@ -6,7 +6,7 @@ const packageInfo = require('../../package.json');
 
 export const environment = {
   production: false,
-  apiURL: 'http://localhost:3000',
+  apiURL: 'https://iis.memphis.edu/apis/cis/',
   appTitle: 'Child Impact Resources - Development',
   appVersion: packageInfo.version,
   helpURL: "https://www.youtube.com/watch?v=kVGI9bi1oKE",
