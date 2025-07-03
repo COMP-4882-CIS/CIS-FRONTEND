@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  cis-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: cis-frontend:main
+    ports:
+      - "80:80"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+    
+  # Development service (optional)
+  cis-frontend-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "4200:4200"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    command: npm start
+    profiles:
+      - dev
