@@ -69,7 +69,8 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "baseHref": "/cis-dashboard/"
             },
             "development": {
               "buildOptimizer": false,
@@ -77,7 +78,8 @@
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
-              "namedChunks": true
+              "namedChunks": true,
+              "baseHref": "/cis-dashboard/"
             }
           },
           "defaultConfiguration": "production"

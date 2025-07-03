@@ -26,7 +26,7 @@ export const environment = {
 // Production
 export const environment = {
   production: true,
-  apiURL: 'https://cis-backend-comp-4882.herokuapp.com'
+  apiURL: 'https://iis.memphis.edu/apis/cis/'
 };
 
 ```

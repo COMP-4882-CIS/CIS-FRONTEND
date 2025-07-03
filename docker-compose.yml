@@ -11,6 +11,8 @@ services:
     environment:
       - NODE_ENV=production
     restart: unless-stopped
+    networks:
+      - frontend-network
     
   # Development service (optional)
   cis-frontend-dev:
@@ -27,3 +29,7 @@ services:
     command: npm start
     profiles:
       - dev
+
+networks:
+  frontend-network:
+    driver: bridge

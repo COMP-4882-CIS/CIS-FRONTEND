@@ -2,7 +2,7 @@ const packageInfo = require('../../package.json');
 
 export const environment = {
   production: true,
-  apiURL: 'https://cis-backend.herokuapp.com/',
+  apiURL: 'https://iis.memphis.edu/apis/cis/',
   appTitle: 'Child Impact Resources',
   appVersion: packageInfo.version,
   helpURL: "https://www.youtube.com/watch?v=kVGI9bi1oKE",

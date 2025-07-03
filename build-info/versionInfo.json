@@ -1,9 +1,9 @@
 {
-  "commitID": "378aff251d13431647d411457147de6192238d5e",
+  "commitID": "b3ea944b0764a4f64ece12328e8aebbbb91aff8e",
   "buildTimestamp": "Thursday 2025-07-03",
   "buildersUsername": "JRustyHaner",
   "branch": "main",
   "repoURL": "https://github.com/COMP-4882-CIS/CIS-FRONTEND.git",
-  "last5commitMessages": "Docker Engine compatibility Update README.md Delete CIS-Software-Architecture-Document.pdf updated documentation Update README.md",
-  "releaseName": "v2025-07-03-09-50-14-main-autobuild"
+  "last5commitMessages": "change endpoints to production for IIS Autobuild and Docker Script Finalization Docker Engine compatibility Update README.md Delete CIS-Software-Architecture-Document.pdf",
+  "releaseName": "v2025-07-03-13-34-22-main-autobuild"
 }
