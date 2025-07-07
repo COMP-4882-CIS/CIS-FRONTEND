@@ -1,0 +1,39 @@
+<h3 matSubheader>{{title}} - By Age</h3>
+  <mat-list-item>
+    <div class="list-item-inner">
+      <span class="title">TEST</span>
+      <span class="value">{{ageUnder5}}</span>
+    </div>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+  <mat-list-item>
+    <div class="list-item-inner">
+      <span class="title">TEST</span>
+      <span class="value">{{age5To9}}</span>
+    </div>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+  <mat-list-item>
+    <div class="list-item-inner">
+      <span class="title">TEST</span>
+      <span class="value">{{age10To14}}</span>
+    </div>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+  <mat-list-item>
+    <div class="list-item-inner">
+      <span class="title">TEST</span>
+      <span class="value">{{age15To19}}</span>
+    </div>
+  </mat-list-item>
+  <h3 matSubheader>{{title}} - Total</h3>
+  <mat-list-item>
+    <div class="list-item-inner">
+      <span class="title">TEST</span>
+      <span class="value">{{totalPopulation}}</span>
+    </div>
+  </mat-list-item>
+  <div class="export-wrapper">
+    <button mat-stroked-button color="primary" (click)="exportData()">Export</button>
+  </div>
+</mat-list>

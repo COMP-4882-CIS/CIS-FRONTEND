@@ -1,0 +1,28 @@
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 850px;
+  }
+  h1.heading {
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
+
+  img {
+    border: 5px solid #555;
+  }

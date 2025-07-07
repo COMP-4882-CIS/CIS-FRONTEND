@@ -1,0 +1,102 @@
+<mat-list>
+  <ng-container *ngIf="district as district">
+    <h3 matSubheader>{{title}} - District Information</h3>
+    <mat-list-item>
+      <div class="list-item-inner">
+        <span class="title">District</span>
+        <span class="value">{{district.id}}</span>
+      </div>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <div class="list-item-inner">
+        <span class="title">Representative</span>
+        <span class="value">{{district.representative}}</span>
+      </div>
+    </mat-list-item>
+
+    <ng-container *ngIf="district.websiteURL as districtWebsiteURL">
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <div class="list-item-inner">
+          <span class="title">More Information</span>
+          <a mat-icon-button target="_blank" [href]="districtWebsiteURL">
+            <mat-icon>open_in_new</mat-icon>
+          </a>
+        </div>
+      </mat-list-item>
+    </ng-container>
+  </ng-container>
+
+  <ng-container *ngIf="showLandmarksSummary">
+    <h3 matSubheader>Community Resources</h3>
+    <mat-list-item>
+      <div class="list-item-inner">
+        <span class="title">Parks</span>
+        <span class="value">{{totalParks}}</span>
+      </div>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <div class="list-item-inner">
+        <span class="title">Libraries</span>
+        <span class="value">{{totalLibraries}}</span>
+      </div>
+    </mat-list-item>
+
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <div class="list-item-inner">
+        <span class="title">Community Centers</span>
+        <span class="value">{{totalCommunityCenters}}</span>
+      </div>
+    </mat-list-item>
+
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <div class="list-item-inner">
+        <span class="title">Child Care Facilities</span>
+        <span class="value">{{totalCCF + totalCCC}}</span>
+      </div>
+    </mat-list-item>
+  </ng-container>
+
+  <h3 matSubheader>{{title}} - By Age</h3>
+  <mat-list-item>
+    <div class="list-item-inner">
+      <span class="title">Under 5</span>
+      <span class="value">{{ageUnder5}}</span>
+    </div>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+  <mat-list-item>
+    <div class="list-item-inner">
+      <span class="title">5 - 9</span>
+      <span class="value">{{age5To9}}</span>
+    </div>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+  <mat-list-item>
+    <div class="list-item-inner">
+      <span class="title">10 - 14</span>
+      <span class="value">{{age10To14}}</span>
+    </div>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+  <mat-list-item>
+    <div class="list-item-inner">
+      <span class="title">15 - 19</span>
+      <span class="value">{{age15To19}}</span>
+    </div>
+  </mat-list-item>
+  <h3 matSubheader>{{title}} - Total</h3>
+  <mat-list-item>
+    <div class="list-item-inner">
+      <span class="title">Total</span>
+      <span class="value">{{totalPopulation}}</span>
+    </div>
+  </mat-list-item>
+  <div class="export-wrapper">
+    <button mat-stroked-button color="primary" (click)="exportData()">Export</button>
+  </div>
+</mat-list>

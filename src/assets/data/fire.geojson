@@ -1,0 +1,35 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "zip_code": "38002",
+        "CovidCC": "2787",
+        "CovidCCPer": "23.6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.70926,
+          35.28854
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zip_code": "38105",
+        "CovidCC": "2787",
+        "CovidCCPer": "23.6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.76046,
+          35.17956
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,3470 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.983,35.175 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210005071ME [41:003]",
+    "Offense Date":"October 11, 2022 12H:45M:00S",
+    "Block Address":"1500 Springdale St",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.026,35.038 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210002622ME [36:963]",
+    "Offense Date":"October 06, 2022 10H:40M:00S",
+    "Block Address":"Elvis Presley Blvd//Brooks",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.049,35.149 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210005676ME [37:347]",
+    "Offense Date":"October 12, 2022 13H:00M:00S",
+    "Block Address":"1200 Russwood Rd",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.019,35.159 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2209015061ME [10:153]",
+    "Offense Date":"September 29, 2022 22H:45M:00S",
+    "Block Address":"1200 JACKSON Avenue",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.919,35.074 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2209015438ME [16:893]",
+    "Offense Date":"September 30, 2022 00H:00M:00S",
+    "Block Address":"Cherry Rd//American Way",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.001,35.136 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210007028ME [15:053]",
+    "Offense Date":"October 15, 2022 09H:10M:00S",
+    "Block Address":"600 S Bellevue Blvd",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.91,35.052 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2209015358ME [10:617]",
+    "Offense Date":"September 30, 2022 14H:25M:00S",
+    "Block Address":"4600 Winchester Rd",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.062,35.061 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2209011805ME [14:447]",
+    "Offense Date":"September 23, 2022 15H:00M:00S",
+    "Block Address":"100 Rollins Rd",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.922,35.037 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210006684ME [38:100]",
+    "Offense Date":"October 14, 2022 14H:35M:00S",
+    "Block Address":"4200 Delp St",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.995,35.076 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210008167ME [09:250]",
+    "Offense Date":"October 18, 2022 00H:20M:00S",
+    "Block Address":"2600 W Hillview Dr",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.855,35.047 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2209011338ME [37:073]",
+    "Offense Date":"September 22, 2022 16H:30M:00S",
+    "Block Address":"3800 Ridgeway Rd",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.863,35.099 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2209009565ME [11:827]",
+    "Offense Date":"September 19, 2022 14H:08M:00S",
+    "Block Address":"6000 Park Ave",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38119
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.866,35.132 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210006210ME [14:387]",
+    "Offense Date":"October 13, 2022 14H:30M:00S",
+    "Block Address":"5900 Walnut Grove Rd",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38120
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.026,35.042 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210007035ME [17:397]",
+    "Offense Date":"October 14, 2022 20H:00M:00S",
+    "Block Address":"4000 Elvis Presley Blvd",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.952,35.052 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210005192ME [13:137]",
+    "Offense Date":"October 11, 2022 17H:00M:00S",
+    "Block Address":"4900 Winchester Rd",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.973,35.178 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2209012483ME [11:523]",
+    "Offense Date":"September 25, 2022 01H:30M:00S",
+    "Block Address":"2600 Peres St",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.02,35.176 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210005421ME [10:023]",
+    "Offense Date":"October 12, 2022 06H:35M:00S",
+    "Block Address":"1100 Louisville Ave",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.977,35.169 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210004383ME [47:427]",
+    "Offense Date":"October 09, 2022 23H:30M:00S",
+    "Block Address":"2500 Shasta Ave",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.996,35.173 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2209010882ME [09:970]",
+    "Offense Date":"September 21, 2022 21H:07M:00S",
+    "Block Address":"N Mclean Blvd//Chelsea Ave",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.047,35.012 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210006256ME [13:113]",
+    "Offense Date":"October 06, 2022 00H:00M:00S",
+    "Block Address":"5000 Vickie Dr",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.057,35.04 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210000046ME [10:830]",
+    "Offense Date":"October 01, 2022 04H:25M:00S",
+    "Block Address":"300 N Wesley Forest Pl N",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.049,35.006 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210007674ME [12:857]",
+    "Offense Date":"October 16, 2022 23H:25M:00S",
+    "Block Address":"Brockwood Cv//Leonard Rd",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.867,35.096 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210002274ME [09:440]",
+    "Offense Date":"October 05, 2022 16H:00M:00S",
+    "Block Address":"1400 Essex Dr",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38119
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.032,35.145 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210007650ME [15:043]",
+    "Offense Date":"October 16, 2022 19H:27M:00S",
+    "Block Address":"Durham St//Overton Crossing",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.939,35.177 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2209011204ME [40:727]",
+    "Offense Date":"September 22, 2022 12H:25M:00S",
+    "Block Address":"3700 Kendrick Ave",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.02,35.158 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2209015554ME [09:880]",
+    "Offense Date":"September 30, 2022 21H:10M:00S",
+    "Block Address":"Jackson Ave//I240",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.006,35.159 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2209015586ME [44:447]",
+    "Offense Date":"September 30, 2022 19H:30M:00S",
+    "Block Address":"Jackson Ave//Maury St",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.911,35.158 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210001220ME [16:723]",
+    "Offense Date":"October 03, 2022 17H:15M:00S",
+    "Block Address":"1000 Berclair Rd",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.01,35.165 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210003884ME [09:940]",
+    "Offense Date":"October 09, 2022 05H:20M:00S",
+    "Block Address":"1100 Randle St",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.032,35.107 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2209010360ME [37:410]",
+    "Offense Date":"September 21, 2022 03H:00M:00S",
+    "Block Address":"Kerr Ave//Mississippi Blvd",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.079,35.018 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2209012387ME [11:997]",
+    "Offense Date":"September 24, 2022 19H:00M:00S",
+    "Block Address":"500 Delta Rd",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.045,35.216 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210007546ME [09:473]",
+    "Offense Date":"October 16, 2022 02H:45M:00S",
+    "Block Address":"3100 Steele St",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.861,35.128 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210002424ME [08:543]",
+    "Offense Date":"October 05, 2022 21H:20M:00S",
+    "Block Address":"6600 Winchester Rd",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38120
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.037,35.035 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210004168ME [13:360]",
+    "Offense Date":"October 09, 2022 21H:30M:00S",
+    "Block Address":"E Raines Rd//Neely Rd",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.97,35.109 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2209012356ME [08:547]",
+    "Offense Date":"September 24, 2022 19H:28M:00S",
+    "Block Address":"1600 S Lauderdale St",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.976,35.181 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210004517ME [20:753]",
+    "Offense Date":"October 10, 2022 13H:43M:00S",
+    "Block Address":"1700 Oakwood St",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.917,35.221 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2209014866ME [11:657]",
+    "Offense Date":"September 29, 2022 13H:33M:00S",
+    "Block Address":"3600 Coleman Rd",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.946,35.115 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2209012899ME [11:210]",
+    "Offense Date":"September 26, 2022 00H:38M:00S",
+    "Block Address":"S Highland St//Southern Ave",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.788,35.199 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2209015056ME [08:680]",
+    "Offense Date":"September 29, 2022 22H:50M:00S",
+    "Block Address":"2900 N Germantown Pkwy",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38133
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.026,35.108 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2209011211ME [40:253]",
+    "Offense Date":"September 22, 2022 12H:00M:00S",
+    "Block Address":"1400 Englewood St",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.947,35.032 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210004629ME [11:373]",
+    "Offense Date":"October 10, 2022 00H:00M:00S",
+    "Block Address":"3600 Shemwell Ave",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.784,35.052 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210001930ME [08:757]",
+    "Offense Date":"October 05, 2022 02H:20M:00S",
+    "Block Address":"8400 Championship Dr",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38125
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.012,35.204 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2209012740ME [08:963]",
+    "Offense Date":"September 25, 2022 16H:00M:00S",
+    "Block Address":"2900 Vayu Dr",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.029,35.133 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210004098ME [13:057]",
+    "Offense Date":"October 09, 2022 17H:30M:00S",
+    "Block Address":"400 S Pauline St",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.834,35.179 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210004082ME [09:960]",
+    "Offense Date":"October 09, 2022 15H:10M:00S",
+    "Block Address":"Southern Ave//Highland Ave",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38133
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.984,35.166 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210008653ME [09:320]",
+    "Offense Date":"October 18, 2022 20H:55M:00S",
+    "Block Address":"Springdale St//Berkeley Ave",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.959,35.093 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2209010269ME [11:343]",
+    "Offense Date":"September 20, 2022 21H:20M:00S",
+    "Block Address":"3200 Waco St",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.984,35.108 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210003389ME [10:557]",
+    "Offense Date":"October 07, 2022 22H:55M:00S",
+    "Block Address":"2400 Park Ave",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.021,35.175 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210005222ME [16:333]",
+    "Offense Date":"October 11, 2022 17H:00M:00S",
+    "Block Address":"DECATUR//CAPITAL AVE",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.912,35.16 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210002119ME [37:403]",
+    "Offense Date":"October 05, 2022 11H:45M:00S",
+    "Block Address":"1100 Berclair Rd",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.846,35.047 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210001024ME [11:973]",
+    "Offense Date":"October 03, 2022 00H:30M:00S",
+    "Block Address":"3800 Deer Forest Dr",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.058,35.049 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2209010584ME [42:567]",
+    "Offense Date":"September 21, 2022 10H:57M:00S",
+    "Block Address":"200 Hillview Ave",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.88,35.046 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210000393ME [09:493]",
+    "Offense Date":"October 02, 2022 02H:10M:00S",
+    "Block Address":"5600 Apple Blossom Dr",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.913,35.209 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2209014009ME [13:273]",
+    "Offense Date":"September 27, 2022 19H:55M:00S",
+    "Block Address":"Tanbark Ave//Magevney St",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.051,35.018 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210003549ME [36:907]",
+    "Offense Date":"October 08, 2022 09H:45M:00S",
+    "Block Address":"400 Sanford Rd",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.889,35.203 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2209012885ME [09:493]",
+    "Offense Date":"September 23, 2022 08H:00M:00S",
+    "Block Address":"Stage Rd//Cela Rd",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38134
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.91,35.158 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault",
+    "ID":"2210000750ME [16:583]",
+    "Offense Date":"October 02, 2022 21H:30M:00S",
+    "Block Address":"4600 Violet Cv",
+    "Crime Type":"Aggravated Assault",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.058,35.103 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault/DV",
+    "ID":"2209011843ME [19:000]",
+    "Offense Date":"September 23, 2022 16H:10M:00S",
+    "Block Address":"1700 Michigan St",
+    "Crime Type":"Aggravated Assault/DV",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.732,35.201 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault/DV",
+    "ID":"2210007564ME [08:987]",
+    "Offense Date":"October 16, 2022 17H:00M:00S",
+    "Block Address":"10000 Barge Dr",
+    "Crime Type":"Aggravated Assault/DV",
+    "zipcode":38016
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.019,35.137 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault/DV",
+    "ID":"2210000540ME [12:613]",
+    "Offense Date":"September 30, 2022 15H:00M:00S",
+    "Block Address":"S Parkway//Florida St",
+    "Crime Type":"Aggravated Assault/DV",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.02,35.136 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault/DV",
+    "ID":"2209013138ME [10:730]",
+    "Offense Date":"September 26, 2022 07H:00M:00S",
+    "Block Address":"4500 Boyce Rd",
+    "Crime Type":"Aggravated Assault/DV",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.057,35.022 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault/DV",
+    "ID":"2210000801ME [12:103]",
+    "Offense Date":"October 03, 2022 07H:00M:00S",
+    "Block Address":"4700 Appleville St",
+    "Crime Type":"Aggravated Assault/DV",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.894,35.124 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault/DV",
+    "ID":"2210000730ME [10:970]",
+    "Offense Date":"October 02, 2022 20H:25M:00S",
+    "Block Address":"300 South Mendenhall Rd",
+    "Crime Type":"Aggravated Assault/DV",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.873,35.028 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault/DV",
+    "ID":"2209009766ME [12:943]",
+    "Offense Date":"September 19, 2022 23H:30M:00S",
+    "Block Address":"4500 Burnette Pl",
+    "Crime Type":"Aggravated Assault/DV",
+    "zipcode":38141
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.951,35.151 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault/DV",
+    "ID":"2209012099ME [15:993]",
+    "Offense Date":"September 24, 2022 07H:55M:00S",
+    "Block Address":"700 Holmes St",
+    "Crime Type":"Aggravated Assault/DV",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.835,35.033 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault/DV",
+    "ID":"2209014332ME [12:187]",
+    "Offense Date":"September 28, 2022 12H:30M:00S",
+    "Block Address":"4300 Meadow Ridge Trl",
+    "Crime Type":"Aggravated Assault/DV",
+    "zipcode":38141
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.92,35.201 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault/DV",
+    "ID":"2209012461ME [13:010]",
+    "Offense Date":"September 24, 2022 21H:00M:00S",
+    "Block Address":"4400 Creekwood Dr",
+    "Crime Type":"Aggravated Assault/DV",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.047,35.136 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault/DV",
+    "ID":"2209009838ME [37:623]",
+    "Offense Date":"September 20, 2022 03H:43M:00S",
+    "Block Address":"300 Turley St",
+    "Crime Type":"Aggravated Assault/DV",
+    "zipcode":38126
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.007,35.061 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault/DV",
+    "ID":"2210003764ME [08:363]",
+    "Offense Date":"October 08, 2022 22H:19M:00S",
+    "Block Address":"4200 Double Tree Rd",
+    "Crime Type":"Aggravated Assault/DV",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.964,35.139 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault/DV",
+    "ID":"2209014863ME [41:390]",
+    "Offense Date":"September 29, 2022 13H:00M:00S",
+    "Block Address":"300 Red Oak Dr",
+    "Crime Type":"Aggravated Assault/DV",
+    "zipcode":38112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.02,35.031 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault/DV",
+    "ID":"2209010549ME [43:433]",
+    "Offense Date":"September 22, 2022 07H:35M:00S",
+    "Block Address":"4400 Faronia Rd",
+    "Crime Type":"Aggravated Assault/DV",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.908,35.057 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault/DV",
+    "ID":"2210006358ME [12:867]",
+    "Offense Date":"October 13, 2022 23H:15M:00S",
+    "Block Address":"Chancellor St//Chuck Ave",
+    "Crime Type":"Aggravated Assault/DV",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.046,35.159 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault/DV",
+    "ID":"2210003399ME [14:267]",
+    "Offense Date":"October 08, 2022 00H:01M:00S",
+    "Block Address":"600 Second St",
+    "Crime Type":"Aggravated Assault/DV",
+    "zipcode":38105
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.03,35.158 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault/DV",
+    "ID":"2209009997ME [08:797]",
+    "Offense Date":"September 20, 2022 11H:00M:00S",
+    "Block Address":"700 Pearce St",
+    "Crime Type":"Aggravated Assault/DV",
+    "zipcode":38107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.971,35.102 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault/DV",
+    "ID":"2210003579ME [10:070]",
+    "Offense Date":"October 08, 2022 12H:10M:00S",
+    "Block Address":"1600 Marianna St",
+    "Crime Type":"Aggravated Assault/DV",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.025,35.211 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault/DV",
+    "ID":"2209009503ME [17:287]",
+    "Offense Date":"September 19, 2022 12H:30M:00S",
+    "Block Address":"3200 Madewell Dr",
+    "Crime Type":"Aggravated Assault/DV",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.004,35.138 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault/DV",
+    "ID":"2209011951ME [12:293]",
+    "Offense Date":"September 23, 2022 20H:10M:00S",
+    "Block Address":"1800 Madison Ave",
+    "Crime Type":"Aggravated Assault/DV",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.934,35.169 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault/DV",
+    "ID":"2209012349ME [09:917]",
+    "Offense Date":"September 24, 2022 18H:00M:00S",
+    "Block Address":"1400 Salem St",
+    "Crime Type":"Aggravated Assault/DV",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.059,35.05 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault/DV",
+    "ID":"2209013990ME [46:997]",
+    "Offense Date":"September 27, 2022 19H:30M:00S",
+    "Block Address":"3700 Hillbrook Rd",
+    "Crime Type":"Aggravated Assault/DV",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.907,35.149 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault/DV",
+    "ID":"2209011282ME [14:957]",
+    "Offense Date":"September 22, 2022 14H:00M:00S",
+    "Block Address":"2900 Summit Arbors Circle",
+    "Crime Type":"Aggravated Assault/DV",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.087,35.018 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault/DV",
+    "ID":"2209011666ME [25:590]",
+    "Offense Date":"September 23, 2022 08H:15M:00S",
+    "Block Address":"4800 Manson Rd",
+    "Crime Type":"Aggravated Assault/DV",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.921,35.094 ]
+    },
+    "properties": {
+    "Category":"Aggravated Assault/DV",
+    "ID":"2210003473ME [47:420]",
+    "Offense Date":"October 08, 2022 01H:15M:00S",
+    "Block Address":"4300 Fizer Ave",
+    "Crime Type":"Aggravated Assault/DV",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.953,35.106 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210007662ME [13:250]",
+    "Offense Date":"October 16, 2022 21H:45M:00S",
+    "Block Address":"1000 Brower St",
+    "Crime Type":"Simple Assault",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.933,35.177 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2209010204ME [38:523]",
+    "Offense Date":"September 20, 2022 18H:35M:00S",
+    "Block Address":"3900 Burr Rd",
+    "Crime Type":"Simple Assault",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.886,35.219 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210000025ME [11:530]",
+    "Offense Date":"October 01, 2022 01H:30M:00S",
+    "Block Address":"1500 Elvis Presley Dr",
+    "Crime Type":"Simple Assault",
+    "zipcode":38134
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.003,35.051 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210006032ME [10:710]",
+    "Offense Date":"October 13, 2022 09H:45M:00S",
+    "Block Address":"3600 Queensland Dr",
+    "Crime Type":"Simple Assault",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.946,35.157 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2209014474ME [13:713]",
+    "Offense Date":"September 28, 2022 15H:40M:00S",
+    "Block Address":"1000 Beatrice St",
+    "Crime Type":"Simple Assault",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.875,35.182 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210006337ME [14:413]",
+    "Offense Date":"October 13, 2022 21H:00M:00S",
+    "Block Address":"2100 Pennington Gap Dr",
+    "Crime Type":"Simple Assault",
+    "zipcode":38134
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.856,35.043 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2209009353ME [36:430]",
+    "Offense Date":"September 19, 2022 07H:30M:00S",
+    "Block Address":"4000 Ridgeway Rd",
+    "Crime Type":"Simple Assault",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.027,35.135 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210002399ME [11:287]",
+    "Offense Date":"October 05, 2022 22H:05M:00S",
+    "Block Address":"1100 Linden Ave",
+    "Crime Type":"Simple Assault",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.051,35.123 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2209014308ME [13:570]",
+    "Offense Date":"September 28, 2022 11H:20M:00S",
+    "Block Address":"1000 Fourth St",
+    "Crime Type":"Simple Assault",
+    "zipcode":38126
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.886,35.061 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210000553ME [14:550]",
+    "Offense Date":"October 01, 2022 11H:30M:00S",
+    "Block Address":"2800 Mendenhall Rd",
+    "Crime Type":"Simple Assault",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.961,35.204 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2209011822ME [15:413]",
+    "Offense Date":"September 23, 2022 14H:45M:00S",
+    "Block Address":"3100 Glengarry Rd",
+    "Crime Type":"Simple Assault",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.026,35.016 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2209011341ME [13:910]",
+    "Offense Date":"September 22, 2022 14H:45M:00S",
+    "Block Address":"4900 Elvis Presley Blvd",
+    "Crime Type":"Simple Assault",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.787,35.177 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210003700ME [08:107]",
+    "Offense Date":"October 08, 2022 17H:20M:00S",
+    "Block Address":"8300 Fletcher Run Cir",
+    "Crime Type":"Simple Assault",
+    "zipcode":38016
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.844,35.071 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210006678ME [09:497]",
+    "Offense Date":"October 14, 2022 16H:15M:00S",
+    "Block Address":"2900 Kirby Rd",
+    "Crime Type":"Simple Assault",
+    "zipcode":38119
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.776,35.179 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210003129ME [43:920]",
+    "Offense Date":"October 07, 2022 09H:00M:00S",
+    "Block Address":"2000 Mount Badon Ln",
+    "Crime Type":"Simple Assault",
+    "zipcode":38016
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.861,35.128 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210000349ME [09:430]",
+    "Offense Date":"October 01, 2022 23H:50M:00S",
+    "Block Address":"6100 Walnut Grove Rd",
+    "Crime Type":"Simple Assault",
+    "zipcode":38120
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.977,35.114 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210002637ME [15:667]",
+    "Offense Date":"October 06, 2022 10H:45M:00S",
+    "Block Address":"700 Hanley St",
+    "Crime Type":"Simple Assault",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.861,35.128 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210004008ME [09:110]",
+    "Offense Date":"October 09, 2022 13H:30M:00S",
+    "Block Address":"6100 Walnut Grove Rd",
+    "Crime Type":"Simple Assault",
+    "zipcode":38120
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.048,35.157 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2209014174ME [42:917]",
+    "Offense Date":"September 28, 2022 06H:15M:00S",
+    "Block Address":"500 Main St",
+    "Crime Type":"Simple Assault",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.945,35.121 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2209009732ME [11:900]",
+    "Offense Date":"September 19, 2022 21H:00M:00S",
+    "Block Address":"400 Highland St",
+    "Crime Type":"Simple Assault",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.892,35.057 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210002711ME [16:567]",
+    "Offense Date":"October 06, 2022 11H:20M:00S",
+    "Block Address":"5200 Scottsdale Ave",
+    "Crime Type":"Simple Assault",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.805,35.196 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210004508ME [12:800]",
+    "Offense Date":"October 10, 2022 09H:30M:00S",
+    "Block Address":"7800 Mesa Dr",
+    "Crime Type":"Simple Assault",
+    "zipcode":38133
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90,35.171 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2209014481ME [09:330]",
+    "Offense Date":"September 28, 2022 16H:30M:00S",
+    "Block Address":"N Evergreen St//Eldridge Ave",
+    "Crime Type":"Simple Assault",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.092,35.026 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2209009482ME [46:080]",
+    "Offense Date":"September 19, 2022 00H:00M:00S",
+    "Block Address":"4500 Westmont Rd",
+    "Crime Type":"Simple Assault",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.042,35.137 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2209011376ME [16:140]",
+    "Offense Date":"September 19, 2022 12H:00M:00S",
+    "Block Address":"900 Hamilton Street",
+    "Crime Type":"Simple Assault",
+    "zipcode":38126
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.016,35.086 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210003261ME [14:553]",
+    "Offense Date":"October 07, 2022 13H:50M:00S",
+    "Block Address":"1500 Eloise Rd",
+    "Crime Type":"Simple Assault",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.02,35.136 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2209009291ME [13:717]",
+    "Offense Date":"September 19, 2022 03H:00M:00S",
+    "Block Address":"1300 Union Ave",
+    "Crime Type":"Simple Assault",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.073,35.008 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2209013062ME [14:363]",
+    "Offense Date":"September 26, 2022 06H:00M:00S",
+    "Block Address":"3400 Pearson Rd.",
+    "Crime Type":"Simple Assault",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.863,35.099 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2209013591ME [10:247]",
+    "Offense Date":"September 26, 2022 20H:00M:00S",
+    "Block Address":"3100 S Perkins Rd",
+    "Crime Type":"Simple Assault",
+    "zipcode":38119
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.972,35.179 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210007995ME [43:587]",
+    "Offense Date":"October 17, 2022 15H:00M:00S",
+    "Block Address":"2600 Goodwill Ln",
+    "Crime Type":"Simple Assault",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.944,35.118 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210002383ME [14:593]",
+    "Offense Date":"October 05, 2022 21H:36M:00S",
+    "Block Address":"3600 Mynders Ave",
+    "Crime Type":"Simple Assault",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.087,35.062 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210003983ME [09:360]",
+    "Offense Date":"October 09, 2022 12H:20M:00S",
+    "Block Address":"700 Gilleas Rd",
+    "Crime Type":"Simple Assault",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.966,35.134 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210002597ME [46:653]",
+    "Offense Date":"October 06, 2022 09H:30M:00S",
+    "Block Address":"2900 Poplar Ave",
+    "Crime Type":"Simple Assault",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.933,35.167 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2209012929ME [13:073]",
+    "Offense Date":"September 26, 2022 02H:00M:00S",
+    "Block Address":"1300 Wrenwood St",
+    "Crime Type":"Simple Assault",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.032,35.142 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210002180ME [09:110]",
+    "Offense Date":"October 05, 2022 13H:45M:00S",
+    "Block Address":"900 Jefferson Ave",
+    "Crime Type":"Simple Assault",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.046,35.15 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210003125ME [11:160]",
+    "Offense Date":"October 06, 2022 10H:59M:00S",
+    "Block Address":"1200 S Cooper Young",
+    "Crime Type":"Simple Assault",
+    "zipcode":38105
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.972,35.079 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210000951ME [13:987]",
+    "Offense Date":"October 03, 2022 09H:59M:00S",
+    "Block Address":"2500 Tori Dr",
+    "Crime Type":"Simple Assault",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.054,35.144 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210004387ME [36:863]",
+    "Offense Date":"October 10, 2022 00H:30M:00S",
+    "Block Address":"100 Monroe Ave",
+    "Crime Type":"Simple Assault",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.84,35.043 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2209012802ME [10:920]",
+    "Offense Date":"September 25, 2022 19H:00M:00S",
+    "Block Address":"Birch Run Ln//Ross Rd",
+    "Crime Type":"Simple Assault",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.936,35.178 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2209014670ME [11:980]",
+    "Offense Date":"September 29, 2022 04H:05M:00S",
+    "Block Address":"3800 Jackson Ave",
+    "Crime Type":"Simple Assault",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.863,35.164 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210002981ME [08:107]",
+    "Offense Date":"October 07, 2022 00H:04M:00S",
+    "Block Address":"6500 Knight Arnold Rd",
+    "Crime Type":"Simple Assault",
+    "zipcode":38134
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.044,35.019 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210001261ME [10:400]",
+    "Offense Date":"October 03, 2022 18H:36M:00S",
+    "Block Address":"4800 Haven Ct",
+    "Crime Type":"Simple Assault",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.927,35.189 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210008146ME [21:717]",
+    "Offense Date":"October 17, 2022 21H:22M:00S",
+    "Block Address":"4100 Reenie Ave",
+    "Crime Type":"Simple Assault",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.026,35.026 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2209012271ME [13:227]",
+    "Offense Date":"September 24, 2022 14H:45M:00S",
+    "Block Address":"4500 Elvis Presley Blvd",
+    "Crime Type":"Simple Assault",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.796,35.201 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210003590ME [10:323]",
+    "Offense Date":"October 08, 2022 10H:20M:00S",
+    "Block Address":"2800 Wolfcreek Pkwy",
+    "Crime Type":"Simple Assault",
+    "zipcode":38133
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.03,35.213 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2209010727ME [18:000]",
+    "Offense Date":"September 21, 2022 14H:30M:00S",
+    "Block Address":"3200 Thomas St",
+    "Crime Type":"Simple Assault",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.828,35.048 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210000337ME [22:580]",
+    "Offense Date":"October 01, 2022 22H:50M:00S",
+    "Block Address":"3800 Malco Way",
+    "Crime Type":"Simple Assault",
+    "zipcode":38125
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.015,35.136 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2209013311ME [12:830]",
+    "Offense Date":"September 26, 2022 16H:00M:00S",
+    "Block Address":"1500 Union Ave",
+    "Crime Type":"Simple Assault",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.03,35.14 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2209012484ME [09:830]",
+    "Offense Date":"September 25, 2022 01H:00M:00S",
+    "Block Address":"1100 Union",
+    "Crime Type":"Simple Assault",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.047,35.124 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210002978ME [15:893]",
+    "Offense Date":"October 07, 2022 00H:30M:00S",
+    "Block Address":"S Danny Thomas Blvd//E E H Crump Blvd",
+    "Crime Type":"Simple Assault",
+    "zipcode":38126
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.075,35.008 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2209013668ME [13:857]",
+    "Offense Date":"September 27, 2022 00H:00M:00S",
+    "Block Address":"5200 Jonetta St",
+    "Crime Type":"Simple Assault",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.021,35.033 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210006797ME [21:197]",
+    "Offense Date":"October 14, 2022 18H:00M:00S",
+    "Block Address":"1300 Wesley Dr",
+    "Crime Type":"Simple Assault",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.949,35.16 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2209015502ME [10:693]",
+    "Offense Date":"September 30, 2022 19H:00M:00S",
+    "Block Address":"3400 Harmony Woods Dr",
+    "Crime Type":"Simple Assault",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.825,35.079 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210000339ME [08:743]",
+    "Offense Date":"October 01, 2022 23H:00M:00S",
+    "Block Address":"6900 Waterview Cir",
+    "Crime Type":"Simple Assault",
+    "zipcode":38138
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.971,35.098 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210008669ME [13:573]",
+    "Offense Date":"October 18, 2022 20H:47M:00S",
+    "Block Address":"1800 Pendleton St",
+    "Crime Type":"Simple Assault",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.981,35.223 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210004102ME [15:700]",
+    "Offense Date":"October 09, 2022 17H:46M:00S",
+    "Block Address":"3600 Debby Dr",
+    "Crime Type":"Simple Assault",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.058,35.048 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2209010550ME [12:170]",
+    "Offense Date":"September 21, 2022 09H:00M:00S",
+    "Block Address":"200 Hillview Ave",
+    "Crime Type":"Simple Assault",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.069,35.022 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210002737ME [08:943]",
+    "Offense Date":"October 06, 2022 12H:40M:00S",
+    "Block Address":"4700 Horn Lake Rd",
+    "Crime Type":"Simple Assault",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.925,35.163 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2210002140ME [17:080]",
+    "Offense Date":"October 05, 2022 12H:15M:00S",
+    "Block Address":"4100 Macon Rd",
+    "Crime Type":"Simple Assault",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.891,35.062 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2209010740ME [09:187]",
+    "Offense Date":"September 21, 2022 15H:20M:00S",
+    "Block Address":"3200 Dothan St",
+    "Crime Type":"Simple Assault",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.915,35.21 ]
+    },
+    "properties": {
+    "Category":"Simple Assault",
+    "ID":"2209012030ME [11:843]",
+    "Offense Date":"September 24, 2022 00H:05M:00S",
+    "Block Address":"3200 Coleman Rd",
+    "Crime Type":"Simple Assault",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.971,35.11 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210001796ME [09:983]",
+    "Offense Date":"October 04, 2022 19H:10M:00S",
+    "Block Address":"900 Marianna St",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.016,35.033 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210000567ME [11:103]",
+    "Offense Date":"October 02, 2022 12H:20M:00S",
+    "Block Address":"4300 Eastwind Dr",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.866,35.058 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2209010332ME [09:707]",
+    "Offense Date":"September 21, 2022 00H:40M:00S",
+    "Block Address":"3400 Hickory Hill Rd",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.951,35.152 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2209014432ME [14:623]",
+    "Offense Date":"September 28, 2022 16H:00M:00S",
+    "Block Address":"3400 Tutwiler Ave",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.997,35.054 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210006662ME [29:930]",
+    "Offense Date":"October 14, 2022 15H:50M:00S",
+    "Block Address":"3500 Briarpark Loop",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.997,35.098 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2209013024ME [00:267]",
+    "Offense Date":"September 26, 2022 08H:00M:00S",
+    "Block Address":"2000 Frisco Ave",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.07,35.055 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2209013950ME [11:200]",
+    "Offense Date":"September 27, 2022 18H:30M:00S",
+    "Block Address":"3500 Horn Lake Rd",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.013,35.098 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2209012125ME [42:377]",
+    "Offense Date":"September 24, 2022 08H:50M:00S",
+    "Block Address":"1800 Silver St",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.034,35.108 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210003398ME [11:060]",
+    "Offense Date":"October 07, 2022 19H:40M:00S",
+    "Block Address":"400 E Trigg Ave",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.927,35.24 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210000408ME [10:163]",
+    "Offense Date":"October 02, 2022 03H:50M:00S",
+    "Block Address":"4200 Troost Dr",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.942,35.162 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210004059ME [14:173]",
+    "Offense Date":"October 09, 2022 16H:00M:00S",
+    "Block Address":"3600 Macon Rd",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.765,35.13 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210004263ME [40:980]",
+    "Offense Date":"October 10, 2022 03H:20M:00S",
+    "Block Address":"200 Scarborough Ln",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38018
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.992,35.077 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210002444ME [10:300]",
+    "Offense Date":"October 06, 2022 00H:00M:00S",
+    "Block Address":"2200 Hillview Cv",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.95,35.113 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210002213ME [10:250]",
+    "Offense Date":"October 05, 2022 14H:30M:00S",
+    "Block Address":"5000 Willow Rd",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.066,35.037 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210002350ME [16:570]",
+    "Offense Date":"October 05, 2022 19H:02M:00S",
+    "Block Address":"100 Raines Oaks Cv",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.034,35.123 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2209013122ME [17:990]",
+    "Offense Date":"September 26, 2022 11H:00M:00S",
+    "Block Address":"900 Green Park Ave",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38126
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.864,35.059 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210001295ME [17:263]",
+    "Offense Date":"October 03, 2022 20H:25M:00S",
+    "Block Address":"3300 Cosmic Cir",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.037,35.035 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2209014238ME [12:177]",
+    "Offense Date":"September 28, 2022 09H:00M:00S",
+    "Block Address":"4100 S Third St",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.066,35.067 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210003833ME [12:137]",
+    "Offense Date":"October 09, 2022 02H:00M:00S",
+    "Block Address":"100 W Peebles Rd",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.075,35.061 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210005805ME [13:407]",
+    "Offense Date":"October 12, 2022 20H:30M:00S",
+    "Block Address":"3300 Rochester Rd",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.046,35.09 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2209013876ME [17:750]",
+    "Offense Date":"September 27, 2022 16H:25M:00S",
+    "Block Address":"600 Frank Ave",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.893,35.234 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2209011009ME [09:213]",
+    "Offense Date":"September 22, 2022 01H:00M:00S",
+    "Block Address":"1600 Sycamore View Rd",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.001,35.207 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210005972ME [16:560]",
+    "Offense Date":"October 13, 2022 07H:30M:00S",
+    "Block Address":"3000 Birchdale Dr",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.865,35.034 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210003519ME [40:447]",
+    "Offense Date":"October 08, 2022 07H:00M:00S",
+    "Block Address":"6000 Park Ave",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38141
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.889,35.082 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210007362ME [14:510]",
+    "Offense Date":"October 16, 2022 18H:00M:00S",
+    "Block Address":"2500 Mount Moriah Rd",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.011,35.06 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210002351ME [40:247]",
+    "Offense Date":"October 05, 2022 19H:00M:00S",
+    "Block Address":"1600 Brooks Rd",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.95,35.018 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2209010411ME [08:910]",
+    "Offense Date":"September 21, 2022 06H:00M:00S",
+    "Block Address":"3500 Bestway Dr",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.863,35.039 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2209013798ME [11:940]",
+    "Offense Date":"September 27, 2022 13H:50M:00S",
+    "Block Address":"6100 Little Brook Cir",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.898,35.046 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210004163ME [09:777]",
+    "Offense Date":"October 09, 2022 21H:30M:00S",
+    "Block Address":"5000 Cromwell Ave",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.037,35.21 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2209012419ME [10:180]",
+    "Offense Date":"September 24, 2022 20H:40M:00S",
+    "Block Address":"3100 Kingston St",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.853,35.162 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2209013436ME [41:963]",
+    "Offense Date":"September 26, 2022 18H:30M:00S",
+    "Block Address":"1400 Heathcliff Dr",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38134
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.993,35.103 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2209012477ME [13:990]",
+    "Offense Date":"September 25, 2022 00H:57M:00S",
+    "Block Address":"1600 Cooper St",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.987,35.177 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210007019ME [14:770]",
+    "Offense Date":"October 15, 2022 09H:56M:00S",
+    "Block Address":"1500 Britton St",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.058,35.041 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210005786ME [39:550]",
+    "Offense Date":"October 12, 2022 00H:00M:00S",
+    "Block Address":"200 Wesley Forest Pl",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.04,35.037 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210007615ME [12:993]",
+    "Offense Date":"October 16, 2022 19H:20M:00S",
+    "Block Address":"800 E Raines Rd",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.901,35.05 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210001605ME [40:710]",
+    "Offense Date":"October 04, 2022 12H:10M:00S",
+    "Block Address":"4900 Chesterwood Dr",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.004,35.051 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210005308ME [10:180]",
+    "Offense Date":"October 11, 2022 22H:15M:00S",
+    "Block Address":"3600 Queensland Dr",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.933,35.247 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210008118ME [44:963]",
+    "Offense Date":"October 17, 2022 11H:30M:00S",
+    "Block Address":"2900 Summit Arbors Cir",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.836,35.052 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210001250ME [12:327]",
+    "Offense Date":"October 03, 2022 17H:00M:00S",
+    "Block Address":"4000 S Germantown Rd",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.919,35.067 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210000678ME [08:927]",
+    "Offense Date":"October 02, 2022 16H:00M:00S",
+    "Block Address":"3100 Randy Ln",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.855,35.046 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210001633ME [18:193]",
+    "Offense Date":"October 03, 2022 13H:30M:00S",
+    "Block Address":"4200 Berrybrook Rd",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.029,35.129 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210004415ME [12:413]",
+    "Offense Date":"October 10, 2022 03H:00M:00S",
+    "Block Address":"700 Lipford St",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.005,35.202 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210000370ME [08:553]",
+    "Offense Date":"October 02, 2022 01H:00M:00S",
+    "Block Address":"2900 Green Terrace Dr",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.016,35.032 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210008033ME [14:797]",
+    "Offense Date":"October 17, 2022 15H:44M:00S",
+    "Block Address":"4300 Graceland Dr",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.977,35.244 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210008462ME [12:793]",
+    "Offense Date":"October 18, 2022 13H:30M:00S",
+    "Block Address":"4400 Davey Cir",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.059,35.014 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210003831ME [15:350]",
+    "Offense Date":"October 09, 2022 02H:20M:00S",
+    "Block Address":"200 Loraine Dr",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.049,35.139 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210002412ME [15:310]",
+    "Offense Date":"October 05, 2022 22H:53M:00S",
+    "Block Address":"S Fourth St//Beale St",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.948,35.162 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2209010952ME [08:727]",
+    "Offense Date":"September 22, 2022 00H:30M:00S",
+    "Block Address":"3400 Hardin St",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.95,35.098 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2209012865ME [35:953]",
+    "Offense Date":"September 25, 2022 22H:30M:00S",
+    "Block Address":"1300 Prescott Rd",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.936,35.102 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210007315ME [09:650]",
+    "Offense Date":"October 16, 2022 01H:00M:00S",
+    "Block Address":"1100 Will Scarlet Rd",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.86,35.161 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210006585ME [12:667]",
+    "Offense Date":"October 14, 2022 12H:13M:00S",
+    "Block Address":"1400 Sycamore View Rd",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38134
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.845,35.167 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2209015516ME [09:550]",
+    "Offense Date":"September 30, 2022 19H:00M:00S",
+    "Block Address":"6600 Gallan Ct",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38134
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.917,35.053 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210000421ME [14:653]",
+    "Offense Date":"October 02, 2022 04H:30M:00S",
+    "Block Address":"4500 Andorra Ct",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.935,35.231 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2209015510ME [14:353]",
+    "Offense Date":"September 30, 2022 18H:30M:00S",
+    "Block Address":"3900 Winwood Dr",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.947,35.085 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210007294ME [12:643]",
+    "Offense Date":"October 16, 2022 00H:10M:00S",
+    "Block Address":"1700 Morlye Pl",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.977,35.169 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210008444ME [44:037]",
+    "Offense Date":"October 18, 2022 12H:20M:00S",
+    "Block Address":"2500 Shasta Ave",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.037,35.035 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210001010ME [10:173]",
+    "Offense Date":"October 03, 2022 11H:00M:00S",
+    "Block Address":"4200 Airways Rd",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.033,35.034 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2209009275ME [10:987]",
+    "Offense Date":"September 19, 2022 01H:30M:00S",
+    "Block Address":"1000 Rock Point Dr",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.982,35.215 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2209009856ME [25:660]",
+    "Offense Date":"September 20, 2022 05H:15M:00S",
+    "Block Address":"2500 Nunnelee Ave",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.964,35.219 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210008169ME [38:227]",
+    "Offense Date":"October 17, 2022 01H:06M:00S",
+    "Block Address":"3500 Margaretta Rd",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.003,35.202 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2209010937ME [11:907]",
+    "Offense Date":"September 21, 2022 22H:00M:00S",
+    "Block Address":"7000 Winchester Rd",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.041,35.213 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2209009728ME [39:803]",
+    "Offense Date":"September 19, 2022 19H:30M:00S",
+    "Block Address":"3300 Benjestown Rd",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.946,35.028 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210004715ME [09:710]",
+    "Offense Date":"October 10, 2022 20H:30M:00S",
+    "Block Address":"3600 Arnold Rd",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.911,35.15 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210004639ME [09:643]",
+    "Offense Date":"October 10, 2022 17H:50M:00S",
+    "Block Address":"4600 Summer Ave",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.867,35.069 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2209015150ME [37:640]",
+    "Offense Date":"September 30, 2022 04H:25M:00S",
+    "Block Address":"3000 Par 3 Dr",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.07,35.012 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210007794ME [39:170]",
+    "Offense Date":"October 17, 2022 06H:00M:00S",
+    "Block Address":"200 Horn Lake Cv",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.037,35.088 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210000306ME [11:493]",
+    "Offense Date":"October 01, 2022 20H:00M:00S",
+    "Block Address":"E Davant Ave//Prospect St",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.811,35.048 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210008648ME [13:847]",
+    "Offense Date":"October 18, 2022 11H:00M:00S",
+    "Block Address":"7600 Winchester Rd",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38125
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.972,35.086 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210000605ME [14:143]",
+    "Offense Date":"October 02, 2022 02H:00M:00S",
+    "Block Address":"2800 Frisco Ave",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.98,35.105 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210004246ME [09:960]",
+    "Offense Date":"October 10, 2022 02H:28M:00S",
+    "Block Address":"2500 Deadrick Ave",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.012,35.206 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210003438ME [11:957]",
+    "Offense Date":"October 08, 2022 00H:30M:00S",
+    "Block Address":"1600 Alta Vista Dr",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.906,35.075 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210007064ME [14:677]",
+    "Offense Date":"October 15, 2022 13H:00M:00S",
+    "Block Address":"4800 Showcase Blvd",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.847,35.024 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2209012944ME [16:770]",
+    "Offense Date":"September 26, 2022 03H:11M:00S",
+    "Block Address":"4600 Summer Crk",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38141
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.027,35.042 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2209013598ME [19:097]",
+    "Offense Date":"September 27, 2022 08H:25M:00S",
+    "Block Address":"1200 Whitaker Dr",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.032,35.085 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2209015292ME [09:437]",
+    "Offense Date":"September 30, 2022 12H:07M:00S",
+    "Block Address":"2300 Pine Hill Pl",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.969,35.111 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2209012223ME [16:473]",
+    "Offense Date":"September 24, 2022 12H:00M:00S",
+    "Block Address":"800 Josephine St",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.796,35.173 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210007513ME [09:510]",
+    "Offense Date":"October 16, 2022 12H:00M:00S",
+    "Block Address":"8100 Dexter Rd",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38016
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.003,35.206 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210001837ME [12:550]",
+    "Offense Date":"October 04, 2022 20H:00M:00S",
+    "Block Address":"1900 Pinedale Ave",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.786,35.053 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210005866ME [35:803]",
+    "Offense Date":"October 12, 2022 22H:30M:00S",
+    "Block Address":"8400 Championship Dr",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38125
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.969,35.206 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2209012463ME [40:687]",
+    "Offense Date":"September 24, 2022 00H:00M:00S",
+    "Block Address":"3000 Birchfield Dr",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.91,35.194 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2209014608ME [13:477]",
+    "Offense Date":"September 28, 2022 22H:00M:00S",
+    "Block Address":"4700 Andrew Crossing Dr",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.044,35.131 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210003836ME [09:010]",
+    "Offense Date":"October 09, 2022 02H:29M:00S",
+    "Block Address":"600 St Paul Ave",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38126
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.932,35.072 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2209012351ME [35:610]",
+    "Offense Date":"September 24, 2022 18H:05M:00S",
+    "Block Address":"4000 Arrowhead Ave",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.001,35.159 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210006180ME [09:780]",
+    "Offense Date":"October 13, 2022 00H:00M:00S",
+    "Block Address":"800 Evergreen St",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.844,35.063 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2209011419ME [36:547]",
+    "Offense Date":"September 22, 2022 19H:40M:00S",
+    "Block Address":"6600 Greenwood Dr",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.867,35.061 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210000168ME [38:840]",
+    "Offense Date":"October 01, 2022 13H:00M:00S",
+    "Block Address":"6000 Knight Arnold Rd",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.948,35.022 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210000257ME [12:447]",
+    "Offense Date":"October 01, 2022 17H:50M:00S",
+    "Block Address":"4700 Birdsong Ferry Cv",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.941,35.098 ]
+    },
+    "properties": {
+    "Category":"Simple Assault/DV",
+    "ID":"2210003104ME [42:203]",
+    "Offense Date":"October 07, 2022 07H:20M:00S",
+    "Block Address":"3700 Barron Ave",
+    "Crime Type":"Simple Assault/DV",
+    "zipcode":38111
+    }
+  }
+]
+}

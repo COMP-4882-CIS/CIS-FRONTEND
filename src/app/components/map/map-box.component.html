@@ -1,0 +1,24 @@
+<mat-drawer-container class="map-box-container">
+  <mat-drawer-content class="map-box-content">
+    <app-map (popupOpened)="popupOpened($event)"></app-map>
+    <mat-toolbar color="primary" class="map-box-toolbar">
+      <div class="inner-toolbar">
+        <span class="app-title">{{appTitle}}</span>
+        <span class="app-version">v{{appVersion}}</span>
+      </div>
+      <mat-menu #infoMenu="matMenu">
+        <button mat-menu-item routerLink="works-cited">Works Cited</button>
+        <button mat-menu-item routerLink="poverty-level">Detailed Poverty Information</button>
+      </mat-menu>
+      <button mat-icon-button [matMenuTriggerFor]="infoMenu"  matTooltip="Get more information about this data">
+        <mat-icon>more_horiz</mat-icon>
+      </button>
+      <a [href]="helpURL" mat-icon-button matTooltip="View a YouTube tutorial on how to use this tool">
+        <mat-icon>help</mat-icon>
+      </a>
+    </mat-toolbar>
+  </mat-drawer-content>
+  <mat-drawer mode="side" position="end" [opened]="drawerOpen" class="drawer-sidebar">
+    <app-map-sidebar [data]="currentData|async"></app-map-sidebar>
+  </mat-drawer>
+</mat-drawer-container>

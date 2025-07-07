@@ -1,0 +1,15 @@
+@use '@angular/material' as mat;
+
+:host {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+mat-card {
+  @include mat.elevation-transition(24);
+  @include mat.elevation(24);
+
+  &:hover {
+    @include mat.elevation(24);
+  }
+}

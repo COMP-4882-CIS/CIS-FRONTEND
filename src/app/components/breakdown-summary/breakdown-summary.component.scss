@@ -1,0 +1,25 @@
+.list-item-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+
+  .title {
+    color: gray;
+  }
+
+  .value {
+    flex: 1;
+    text-align: right;
+  }
+
+  
+}
+.export-wrapper {
+  display: flex;
+  padding: 1em;
+
+  button {
+    flex: 1;
+  }
+}

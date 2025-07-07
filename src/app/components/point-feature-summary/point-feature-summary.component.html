@@ -1,0 +1,111 @@
+<mat-list>
+  <h3 matSubheader>{{typeTitle}} Information</h3>
+  <mat-list-item>
+    <div class="list-item-inner">
+      <span class="title">Location</span>
+      <span class="value">{{pointFeature.streetAddress|titlecase}}</span>
+    </div>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+  <mat-list-item>
+    <div class="list-item-inner">
+      <span class="title">ZIP Code</span>
+      <span class="value">{{pointFeature.zipCode}}</span>
+    </div>
+  </mat-list-item>
+
+  <ng-container *ngIf="hasTelephoneNumber">
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <div class="list-item-inner">
+        <span class="title">Contact Number</span>
+        <span class="value">{{getValue('phoneNumber')}}</span>
+      </div>
+    </mat-list-item>
+  </ng-container>
+
+  <ng-container *ngIf="hasDate">
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <div class="list-item-inner">
+        <span class="title">Offense Date</span>
+        <span class="value">{{getValue('date')}}</span>
+      </div>
+    </mat-list-item>
+  </ng-container>
+
+  <ng-container *ngIf="hasMinAge">
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <div class="list-item-inner">
+        <span class="title">Minimum Age</span>
+        <span class="value">{{getValue('minAge')}}</span>
+      </div>
+    </mat-list-item>
+  </ng-container>
+
+  <ng-container *ngIf="hasMaxAge">
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <div class="list-item-inner">
+        <span class="title">Maximum Age</span>
+        <span class="value">{{getValue('maxAge')}}</span>
+      </div>
+    </mat-list-item>
+  </ng-container>
+
+  <ng-container *ngIf="hasCovid">
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <div class="list-item-inner">
+        <span class="title">Covid</span>
+        <span class="value">{{getValue('date')}}</span>
+      </div>
+    </mat-list-item>
+  </ng-container>
+
+  <ng-container *ngIf="hasCapacity">
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <div class="list-item-inner">
+        <span class="title">Capacity</span>
+        <span class="value">{{getValue('capacity')}}</span>
+      </div>
+    </mat-list-item>
+  </ng-container>
+
+  <ng-container *ngIf="hasRegStatus">
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <div class="list-item-inner">
+        <span class="title">Regulatory Status</span>
+        <span class="value">{{getValue('regStatus')}}</span>
+      </div>
+    </mat-list-item>
+  </ng-container>
+
+  <ng-container *ngIf="hasRegAgency">
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <div class="list-item-inner">
+        <span class="title">Regulator Agency</span>
+        <span class="value">{{getValue('regAgency')}}</span>
+      </div>
+    </mat-list-item>
+  </ng-container>
+
+  <ng-container *ngIf="hasWebsiteURL">
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <div class="list-item-inner">
+        <span class="title">Website</span>
+        <span class="value">
+          <a mat-icon-button target="_blank" [href]="getValue('websiteURL')">
+            <mat-icon>open_in_new</mat-icon>
+          </a>
+        </span>
+      </div>
+    </mat-list-item>
+  </ng-container>
+</mat-list>
+

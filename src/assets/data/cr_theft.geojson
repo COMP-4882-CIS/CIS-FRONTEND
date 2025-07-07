@@ -1,0 +1,4850 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.855,35.046 ]
+    },
+    "properties": {
+    "Category":"Identity Theft",
+    "ID":"2209013055ME [22:603]",
+    "Offense Date":"September 26, 2022 00H:00M:00S",
+    "Block Address":"8500 Timber Creek",
+    "Crime Type":"Identity Theft",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.948,35.075 ]
+    },
+    "properties": {
+    "Category":"Identity Theft",
+    "ID":"2210000407ME [13:160]",
+    "Offense Date":"October 02, 2022 04H:00M:00S",
+    "Block Address":"3500 Lamar Ave",
+    "Crime Type":"Identity Theft",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.727,35.191 ]
+    },
+    "properties": {
+    "Category":"Identity Theft",
+    "ID":"2209014324ME [12:100]",
+    "Offense Date":"September 28, 2022 03H:00M:00S",
+    "Block Address":"2400 Fallingwater Ln",
+    "Crime Type":"Identity Theft",
+    "zipcode":38016
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.004,35.049 ]
+    },
+    "properties": {
+    "Category":"Identity Theft",
+    "ID":"2210006457ME [37:607]",
+    "Offense Date":"October 14, 2022 00H:00M:00S",
+    "Block Address":"1900 Wessex Dr",
+    "Crime Type":"Identity Theft",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.919,35.151 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2209010134ME [13:793]",
+    "Offense Date":"September 19, 2022 18H:30M:00S",
+    "Block Address":"4300 Tutwiler Ave",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.042,35.142 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2209012149ME [48:550]",
+    "Offense Date":"September 23, 2022 18H:00M:00S",
+    "Block Address":"100 Lauderdale St",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.931,35.163 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2210005921ME [08:503]",
+    "Offense Date":"October 13, 2022 03H:50M:00S",
+    "Block Address":"3900 Macon Rd",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.061,35.053 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2209013041ME [12:280]",
+    "Offense Date":"September 25, 2022 06H:00M:00S",
+    "Block Address":"3600 Third St",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.917,35.085 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2210006534ME [19:310]",
+    "Offense Date":"September 30, 2022 12H:00M:00S",
+    "Block Address":"1800 Cherry Rd",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.91,35.194 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2209014608ME [13:727]",
+    "Offense Date":"September 28, 2022 22H:00M:00S",
+    "Block Address":"4700 Andrew Crossing Dr",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.018,35.035 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2210000667ME [13:263]",
+    "Offense Date":"September 30, 2022 21H:58M:00S",
+    "Block Address":"4200 Eastwind Dr",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.043,35.169 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2209014391ME [39:650]",
+    "Offense Date":"September 28, 2022 02H:00M:00S",
+    "Block Address":"1000 Second St",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.988,35.108 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2210008101ME [37:083]",
+    "Offense Date":"October 17, 2022 14H:00M:00S",
+    "Block Address":"2300 Lamar Ave",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.053,35.017 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2209012037ME [09:920]",
+    "Offense Date":"September 23, 2022 22H:20M:00S",
+    "Block Address":"400 Burwood Dr",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.899,35.205 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2209010635ME [37:580]",
+    "Offense Date":"September 21, 2022 12H:42M:00S",
+    "Block Address":"4900 Stage Rd",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.942,35.162 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2210008051ME [38:367]",
+    "Offense Date":"October 16, 2022 17H:30M:00S",
+    "Block Address":"1200 Biltmore St",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.029,35.13 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2209014871ME [09:183]",
+    "Offense Date":"September 26, 2022 09H:00M:00S",
+    "Block Address":"2000 Oliver St",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.967,35.134 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2210800086ME [06:353]",
+    "Offense Date":"October 03, 2022 11H:50M:00S",
+    "Block Address":"2800 MADISON AVENUE",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.966,35.093 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2210005505ME [11:937]",
+    "Offense Date":"October 11, 2022 11H:30M:00S",
+    "Block Address":"2900 Filmore Ave",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.945,35.108 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2209010797ME [09:037]",
+    "Offense Date":"September 21, 2022 15H:06M:00S",
+    "Block Address":"3600 Park Ave",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.915,35.222 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2210800093ME [06:670]",
+    "Offense Date":"October 11, 2022 14H:40M:00S",
+    "Block Address":"3600 NORTHMOOR STREET",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.928,35.056 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2209010614ME [10:170]",
+    "Offense Date":"September 21, 2022 11H:45M:00S",
+    "Block Address":"4100 Clearpool Cir",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.055,35.117 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2209010820ME [09:583]",
+    "Offense Date":"September 20, 2022 20H:00M:00S",
+    "Block Address":"1100 Third St",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.895,35.231 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2210005547ME [17:637]",
+    "Offense Date":"October 12, 2022 10H:00M:00S",
+    "Block Address":"3900 Austin Peay Hwy",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.021,35.128 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2209012869ME [13:293]",
+    "Offense Date":"September 25, 2022 23H:45M:00S",
+    "Block Address":"1300 Lamar Ave",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.018,35.216 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2210001881ME [15:437]",
+    "Offense Date":"October 04, 2022 11H:15M:00S",
+    "Block Address":"1400 Paullus Ave",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.928,35.073 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2209012328ME [16:503]",
+    "Offense Date":"September 24, 2022 16H:40M:00S",
+    "Block Address":"4100 Tarry Park",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.987,35.098 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2210006116ME [17:157]",
+    "Offense Date":"October 13, 2022 06H:00M:00S",
+    "Block Address":"2300 Boyle Ave",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.971,35.069 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2209010571ME [09:493]",
+    "Offense Date":"September 19, 2022 16H:30M:00S",
+    "Block Address":"2800 Democrat Rd",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.007,35.2 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2210003190ME [10:137]",
+    "Offense Date":"October 06, 2022 00H:00M:00S",
+    "Block Address":"2800 Watkins St",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.925,35.098 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2210004433ME [13:390]",
+    "Offense Date":"October 07, 2022 17H:00M:00S",
+    "Block Address":"4200 Southlawn Ave",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.021,35.109 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2209012397ME [17:100]",
+    "Offense Date":"September 24, 2022 20H:00M:00S",
+    "Block Address":"1400 Elvis Presley Blvd",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.883,35.044 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2210001782ME [22:253]",
+    "Offense Date":"October 04, 2022 16H:45M:00S",
+    "Block Address":"5500 Flowering Peach Dr",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.016,35.031 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2210003045ME [10:220]",
+    "Offense Date":"October 07, 2022 04H:00M:00S",
+    "Block Address":"4400 Graceland Dr",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.992,35.056 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2209012116ME [39:827]",
+    "Offense Date":"September 23, 2022 20H:30M:00S",
+    "Block Address":"3400 Airways Blvd",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.074,35.014 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2210800112ME [08:170]",
+    "Offense Date":"October 16, 2022 13H:30M:00S",
+    "Block Address":"300 HONDURAS DRIVE",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.795,35.172 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2210001253ME [40:080]",
+    "Offense Date":"October 01, 2022 16H:00M:00S",
+    "Block Address":"3100 Covington Pike",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38016
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.867,35.005 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2210007820ME [13:473]",
+    "Offense Date":"October 15, 2022 10H:00M:00S",
+    "Block Address":"5300 Hickory Hill Rd",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38141
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.089,35.042 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2209011756ME [09:173]",
+    "Offense Date":"September 20, 2022 18H:00M:00S",
+    "Block Address":"3900 Dagan Dr",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.998,35.059 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2209014964ME [12:277]",
+    "Offense Date":"September 26, 2022 02H:00M:00S",
+    "Block Address":"3400 Winbrook Dr",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.862,35.04 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2210800069ME [08:170]",
+    "Offense Date":"October 11, 2022 20H:25M:00S",
+    "Block Address":"6100 NORTH LITTLE BROOK CIRCLE",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.056,35.048 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2210000427ME [09:550]",
+    "Offense Date":"October 02, 2022 01H:00M:00S",
+    "Block Address":"3700 Neely Rd",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.054,35.011 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2210001059ME [11:457]",
+    "Offense Date":"October 03, 2022 13H:23M:00S",
+    "Block Address":"5100 Stacey Dr",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.918,35.051 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2209013711ME [08:993]",
+    "Offense Date":"September 24, 2022 03H:30M:00S",
+    "Block Address":"4400 Winchester Rd",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.981,35.151 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2209014528ME [13:343]",
+    "Offense Date":"September 28, 2022 20H:23M:00S",
+    "Block Address":"2400 Summer Ave",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.951,35.075 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2209010205ME [36:237]",
+    "Offense Date":"September 20, 2022 18H:00M:00S",
+    "Block Address":"4800 Summer Ave",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.944,35.076 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Non-Specific",
+    "ID":"2209014237ME [14:460]",
+    "Offense Date":"September 27, 2022 08H:10M:00S",
+    "Block Address":"3600 Venable Ave",
+    "Crime Type":"Other Theft/Non-Specific",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.972,35.167 ]
+    },
+    "properties": {
+    "Category":"Other Theft/Scrap Metal",
+    "ID":"2209010410ME [39:203]",
+    "Offense Date":"September 21, 2022 04H:42M:00S",
+    "Block Address":"1200 Tupelo St",
+    "Crime Type":"Other Theft/Scrap Metal",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.835,35.037 ]
+    },
+    "properties": {
+    "Category":"Theft & Recovery/Passenger Vehicle",
+    "ID":"2209010469ME [09:947]",
+    "Offense Date":"September 20, 2022 20H:00M:00S",
+    "Block Address":"6900 Club Ridge Cir",
+    "Crime Type":"Theft & Recovery/Passenger Vehicle",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.97,35.08 ]
+    },
+    "properties": {
+    "Category":"Theft & Recovery/Passenger Vehicle",
+    "ID":"2210005994ME [36:773]",
+    "Offense Date":"October 13, 2022 06H:00M:00S",
+    "Block Address":"2800 Ketchum Pl",
+    "Crime Type":"Theft & Recovery/Passenger Vehicle",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.902,35.195 ]
+    },
+    "properties": {
+    "Category":"Theft & Recovery/Passenger Vehicle",
+    "ID":"2210006913ME [09:183]",
+    "Offense Date":"October 15, 2022 03H:00M:00S",
+    "Block Address":"2600 Holly Hedge Dr",
+    "Crime Type":"Theft & Recovery/Passenger Vehicle",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.949,35.202 ]
+    },
+    "properties": {
+    "Category":"Theft & Recovery/Passenger Vehicle",
+    "ID":"2210000484ME [14:897]",
+    "Offense Date":"October 02, 2022 09H:18M:00S",
+    "Block Address":"2800 Walnut Rd",
+    "Crime Type":"Theft & Recovery/Passenger Vehicle",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.994,35.207 ]
+    },
+    "properties": {
+    "Category":"Theft & Recovery/Passenger Vehicle",
+    "ID":"2210005844ME [36:843]",
+    "Offense Date":"October 12, 2022 21H:00M:00S",
+    "Block Address":"2300 St Elmo Ave",
+    "Crime Type":"Theft & Recovery/Passenger Vehicle",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.999,35.023 ]
+    },
+    "properties": {
+    "Category":"Theft & Recovery/Passenger Vehicle",
+    "ID":"2210001414ME [10:360]",
+    "Offense Date":"October 04, 2022 02H:00M:00S",
+    "Block Address":"2000 Saint James Dr",
+    "Crime Type":"Theft & Recovery/Passenger Vehicle",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.847,35.064 ]
+    },
+    "properties": {
+    "Category":"Theft & Recovery/Passenger Vehicle",
+    "ID":"2210007554ME [15:533]",
+    "Offense Date":"October 16, 2022 16H:00M:00S",
+    "Block Address":"3200 Autumn Cir",
+    "Crime Type":"Theft & Recovery/Passenger Vehicle",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.98,35.209 ]
+    },
+    "properties": {
+    "Category":"Theft & Recovery/Passenger Vehicle",
+    "ID":"2209012173ME [07:910]",
+    "Offense Date":"September 24, 2022 01H:00M:00S",
+    "Block Address":"3100 Skycastle Cv",
+    "Crime Type":"Theft & Recovery/Passenger Vehicle",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.046,35.028 ]
+    },
+    "properties": {
+    "Category":"Theft & Recovery/Passenger Vehicle",
+    "ID":"2210000198ME [08:183]",
+    "Offense Date":"September 30, 2022 11H:59M:00S",
+    "Block Address":"600 Byron Dr",
+    "Crime Type":"Theft & Recovery/Passenger Vehicle",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.903,35.155 ]
+    },
+    "properties": {
+    "Category":"Theft & Recovery/Passenger Vehicle",
+    "ID":"2210005461ME [15:890]",
+    "Offense Date":"October 11, 2022 21H:30M:00S",
+    "Block Address":"4800 Owen Ave",
+    "Crime Type":"Theft & Recovery/Passenger Vehicle",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.862,35.041 ]
+    },
+    "properties": {
+    "Category":"Theft & Recovery/Passenger Vehicle",
+    "ID":"2209012649ME [10:723]",
+    "Offense Date":"September 25, 2022 10H:50M:00S",
+    "Block Address":"4000 Autumn Ridge Ct",
+    "Crime Type":"Theft & Recovery/Passenger Vehicle",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.909,35.193 ]
+    },
+    "properties": {
+    "Category":"Theft & Recovery/Passenger Vehicle",
+    "ID":"2210007303ME [14:330]",
+    "Offense Date":"October 16, 2022 00H:40M:00S",
+    "Block Address":"2600 Northumberland Dr",
+    "Crime Type":"Theft & Recovery/Passenger Vehicle",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.937,35.238 ]
+    },
+    "properties": {
+    "Category":"Theft & Recovery/Passenger Vehicle",
+    "ID":"2209012688ME [13:163]",
+    "Offense Date":"September 25, 2022 13H:15M:00S",
+    "Block Address":"2600 Woodcliff Dr",
+    "Crime Type":"Theft & Recovery/Passenger Vehicle",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.057,35.04 ]
+    },
+    "properties": {
+    "Category":"Theft & Recovery/Passenger Vehicle",
+    "ID":"2210000046ME [49:510]",
+    "Offense Date":"October 01, 2022 04H:25M:00S",
+    "Block Address":"300 N Wesley Forest Pl N",
+    "Crime Type":"Theft & Recovery/Passenger Vehicle",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.855,35.027 ]
+    },
+    "properties": {
+    "Category":"Theft & Recovery/Passenger Vehicle",
+    "ID":"2210007837ME [14:160]",
+    "Offense Date":"October 17, 2022 02H:00M:00S",
+    "Block Address":"4500 Sunnyslope Dr",
+    "Crime Type":"Theft & Recovery/Passenger Vehicle",
+    "zipcode":38141
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.039,35.146 ]
+    },
+    "properties": {
+    "Category":"Theft & Recovery/Passenger Vehicle",
+    "ID":"2210006637ME [13:610]",
+    "Offense Date":"October 14, 2022 14H:44M:00S",
+    "Block Address":"700 Adams Ave",
+    "Crime Type":"Theft & Recovery/Passenger Vehicle",
+    "zipcode":38163
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.061,35.111 ]
+    },
+    "properties": {
+    "Category":"Theft & Recovery/Passenger Vehicle",
+    "ID":"2210007632ME [17:443]",
+    "Offense Date":"October 13, 2022 06H:00M:00S",
+    "Block Address":"1400 Adelaide St",
+    "Crime Type":"Theft & Recovery/Passenger Vehicle",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.94,35.116 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2209800148ME [08:473]",
+    "Offense Date":"September 21, 2022 17H:05M:00S",
+    "Block Address":"3700 SOUTHERN AVENUE",
+    "Crime Type":"Theft from Building",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.906,35.103 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2209014923ME [14:250]",
+    "Offense Date":"September 24, 2022 15H:00M:00S",
+    "Block Address":"4700 Chip Rd",
+    "Crime Type":"Theft from Building",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.994,35.077 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2210002834ME [36:637]",
+    "Offense Date":"October 06, 2022 03H:50M:00S",
+    "Block Address":"2500 Hillview Dr",
+    "Crime Type":"Theft from Building",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.926,35.219 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2209012621ME [41:387]",
+    "Offense Date":"September 23, 2022 00H:00M:00S",
+    "Block Address":"4200 La Farge Dr",
+    "Crime Type":"Theft from Building",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.894,35.185 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2210000671ME [38:057]",
+    "Offense Date":"October 02, 2022 05H:00M:00S",
+    "Block Address":"2200 Covington Pike",
+    "Crime Type":"Theft from Building",
+    "zipcode":38134
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.913,35.167 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2209011097ME [10:057]",
+    "Offense Date":"September 22, 2022 05H:00M:00S",
+    "Block Address":"1300 Pallwood Rd",
+    "Crime Type":"Theft from Building",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.003,35.105 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2210003617ME [13:127]",
+    "Offense Date":"October 07, 2022 20H:00M:00S",
+    "Block Address":"1600 Oaklawn Ln",
+    "Crime Type":"Theft from Building",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.91,35.147 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2209013429ME [11:863]",
+    "Offense Date":"September 26, 2022 19H:35M:00S",
+    "Block Address":"600 N Perkins Rd",
+    "Crime Type":"Theft from Building",
+    "zipcode":38134
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.796,35.147 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2210004466ME [09:143]",
+    "Offense Date":"October 09, 2022 19H:00M:00S",
+    "Block Address":"900 Germantown Pkwy",
+    "Crime Type":"Theft from Building",
+    "zipcode":38018
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.863,35.071 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2209014850ME [14:390]",
+    "Offense Date":"September 29, 2022 09H:05M:00S",
+    "Block Address":"6100 Mount Moriah Road Ext",
+    "Crime Type":"Theft from Building",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.876,35.074 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2209012666ME [39:007]",
+    "Offense Date":"September 24, 2022 23H:00M:00S",
+    "Block Address":"5700 Clarke Rd",
+    "Crime Type":"Theft from Building",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.026,35.11 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2209013700ME [12:430]",
+    "Offense Date":"September 22, 2022 10H:00M:00S",
+    "Block Address":"4400 Crescent Park",
+    "Crime Type":"Theft from Building",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.958,35.03 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2209015361ME [22:370]",
+    "Offense Date":"September 30, 2022 00H:00M:00S",
+    "Block Address":"4400 Firerock Cir",
+    "Crime Type":"Theft from Building",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.904,35.114 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2210800054ME [04:597]",
+    "Offense Date":"October 09, 2022 19H:25M:00S",
+    "Block Address":"4800 SPOTTSWOOD AVENUE",
+    "Crime Type":"Theft from Building",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.798,35.046 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2210800052ME [02:377]",
+    "Offense Date":"October 09, 2022 01H:00M:00S",
+    "Block Address":"3800 HACKS CROSS ROAD",
+    "Crime Type":"Theft from Building",
+    "zipcode":38125
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.973,35.107 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2210800035ME [04:680]",
+    "Offense Date":"October 05, 2022 18H:25M:00S",
+    "Block Address":"2700 ENTERPRISE AVENUE",
+    "Crime Type":"Theft from Building",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.862,35.087 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2209013991ME [26:253]",
+    "Offense Date":"September 27, 2022 19H:30M:00S",
+    "Block Address":"6100 Quince Rd",
+    "Crime Type":"Theft from Building",
+    "zipcode":38119
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.84,35.099 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2209010833ME [12:517]",
+    "Offense Date":"September 21, 2022 17H:40M:00S",
+    "Block Address":"1900 Kirby Pkwy",
+    "Crime Type":"Theft from Building",
+    "zipcode":38138
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.796,35.199 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2209013989ME [10:160]",
+    "Offense Date":"September 27, 2022 20H:02M:00S",
+    "Block Address":"8100 Giacosa Pl",
+    "Crime Type":"Theft from Building",
+    "zipcode":38133
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.799,35.165 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2209013472ME [09:550]",
+    "Offense Date":"September 26, 2022 22H:00M:00S",
+    "Block Address":"1500 Reserve Rd",
+    "Crime Type":"Theft from Building",
+    "zipcode":38016
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.059,35.132 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2210004535ME [23:250]",
+    "Offense Date":"September 30, 2022 13H:00M:00S",
+    "Block Address":"600 S Main St",
+    "Crime Type":"Theft from Building",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.045,35.133 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2209013701ME [16:427]",
+    "Offense Date":"September 27, 2022 03H:30M:00S",
+    "Block Address":"600 Betty Bayou St",
+    "Crime Type":"Theft from Building",
+    "zipcode":38126
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.851,35.049 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2210008059ME [13:290]",
+    "Offense Date":"October 17, 2022 16H:00M:00S",
+    "Block Address":"6400 Crown Imperial Dr",
+    "Crime Type":"Theft from Building",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.054,35.141 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2210000621ME [11:573]",
+    "Offense Date":"October 02, 2022 14H:45M:00S",
+    "Block Address":"200 Main St",
+    "Crime Type":"Theft from Building",
+    "zipcode":38101
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.998,35.036 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2209015477ME [28:720]",
+    "Offense Date":"September 28, 2022 22H:00M:00S",
+    "Block Address":"2000 Bonnie Dr",
+    "Crime Type":"Theft from Building",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.926,35.166 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2209013075ME [13:747]",
+    "Offense Date":"September 23, 2022 16H:00M:00S",
+    "Block Address":"1300 Graham St",
+    "Crime Type":"Theft from Building",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.937,35.117 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2209010644ME [44:257]",
+    "Offense Date":"September 20, 2022 21H:00M:00S",
+    "Block Address":"3800 Walker Avenue",
+    "Crime Type":"Theft from Building",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.936,35.122 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2210004118ME [31:583]",
+    "Offense Date":"October 06, 2022 13H:00M:00S",
+    "Block Address":"3800 Central Avenue",
+    "Crime Type":"Theft from Building",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.041,35.143 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2209010141ME [13:423]",
+    "Offense Date":"September 20, 2022 15H:00M:00S",
+    "Block Address":"100 Neely St",
+    "Crime Type":"Theft from Building",
+    "zipcode":38105
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.054,35.149 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2209013671ME [11:890]",
+    "Offense Date":"September 22, 2022 17H:30M:00S",
+    "Block Address":"1000 Early Maxwell St",
+    "Crime Type":"Theft from Building",
+    "zipcode":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.831,35.205 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2210003127ME [42:263]",
+    "Offense Date":"October 06, 2022 21H:00M:00S",
+    "Block Address":"7000 64 Highway",
+    "Crime Type":"Theft from Building",
+    "zipcode":38133
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.873,35.071 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2209013645ME [39:170]",
+    "Offense Date":"September 26, 2022 20H:00M:00S",
+    "Block Address":"5800 Los Gatos Dr",
+    "Crime Type":"Theft from Building",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.894,35.232 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2209800154ME [09:397]",
+    "Offense Date":"September 22, 2022 14H:20M:00S",
+    "Block Address":"4000 AUSTIN PEAY HIGHWAY",
+    "Crime Type":"Theft from Building",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.786,35.2 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2210000685ME [19:083]",
+    "Offense Date":"October 02, 2022 17H:30M:00S",
+    "Block Address":"2700 Germantown Pkwy",
+    "Crime Type":"Theft from Building",
+    "zipcode":38133
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.877,35.046 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2210004296ME [14:843]",
+    "Offense Date":"October 10, 2022 05H:50M:00S",
+    "Block Address":"5600 Apple Blossom Dr",
+    "Crime Type":"Theft from Building",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.06,35.061 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2210000938ME [14:363]",
+    "Offense Date":"September 30, 2022 14H:00M:00S",
+    "Block Address":"3200 S Third St",
+    "Crime Type":"Theft from Building",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.911,35.151 ]
+    },
+    "properties": {
+    "Category":"Theft from Building",
+    "ID":"2209013477ME [27:083]",
+    "Offense Date":"September 25, 2022 10H:00M:00S",
+    "Block Address":"800 Berclair St",
+    "Crime Type":"Theft from Building",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.86,35.161 ]
+    },
+    "properties": {
+    "Category":"Theft from Building/Access Device",
+    "ID":"2210005787ME [12:650]",
+    "Offense Date":"October 12, 2022 17H:00M:00S",
+    "Block Address":"1400 Sycamore View Rd",
+    "Crime Type":"Theft from Building/Access Device",
+    "zipcode":38134
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.92,35.202 ]
+    },
+    "properties": {
+    "Category":"Theft from Building/Access Device",
+    "ID":"2210000758ME [20:900]",
+    "Offense Date":"October 02, 2022 12H:00M:00S",
+    "Block Address":"4400 Creekwood Dr",
+    "Crime Type":"Theft from Building/Access Device",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.796,35.049 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210000241ME [10:977]",
+    "Offense Date":"October 01, 2022 16H:53M:00S",
+    "Block Address":"8000 Winchester Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38125
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.878,35.109 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210004041ME [15:920]",
+    "Offense Date":"October 09, 2022 14H:09M:00S",
+    "Block Address":"900 Eaton St",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38120
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.907,35.115 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209010196ME [21:273]",
+    "Offense Date":"September 20, 2022 18H:24M:00S",
+    "Block Address":"600 Perkins Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.796,35.151 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210800080ME [03:643]",
+    "Offense Date":"October 11, 2022 08H:15M:00S",
+    "Block Address":"1000 NORTH GERMANTOWN PARKWAY",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38018
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.925,35.163 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210007096ME [14:160]",
+    "Offense Date":"October 15, 2022 14H:00M:00S",
+    "Block Address":"4100 Macon Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.922,35.177 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210002843ME [09:183]",
+    "Offense Date":"October 06, 2022 12H:00M:00S",
+    "Block Address":"4200 Ward Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.851,35.089 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209013635ME [09:850]",
+    "Offense Date":"September 26, 2022 23H:00M:00S",
+    "Block Address":"6400 Heather Dr",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38119
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.013,35.129 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210006989ME [15:990]",
+    "Offense Date":"October 14, 2022 13H:00M:00S",
+    "Block Address":"700 Melrose St",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.826,35.051 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209012764ME [10:383]",
+    "Offense Date":"September 25, 2022 16H:50M:00S",
+    "Block Address":"7200 Winchester Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38125
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.905,35.077 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210001410ME [09:883]",
+    "Offense Date":"October 04, 2022 01H:40M:00S",
+    "Block Address":"4800 Showcase Blvd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.868,35.101 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209012199ME [37:743]",
+    "Offense Date":"September 24, 2022 11H:20M:00S",
+    "Block Address":"5900 Poplar Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38119
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.932,35.106 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210000216ME [14:073]",
+    "Offense Date":"October 01, 2022 14H:40M:00S",
+    "Block Address":"4000 Park Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.987,35.105 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210007463ME [15:377]",
+    "Offense Date":"October 15, 2022 20H:00M:00S",
+    "Block Address":"2300 Deadrick Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.849,35.163 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210005998ME [15:753]",
+    "Offense Date":"October 13, 2022 03H:00M:00S",
+    "Block Address":"6500 Arrowbrook Ln",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38134
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.049,35.149 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209015298ME [09:080]",
+    "Offense Date":"September 29, 2022 16H:45M:00S",
+    "Block Address":"5200 Park Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.938,35.026 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209015379ME [37:043]",
+    "Offense Date":"September 30, 2022 12H:00M:00S",
+    "Block Address":"4500 Getwell Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.02,35.104 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210007383ME [13:887]",
+    "Offense Date":"October 15, 2022 20H:30M:00S",
+    "Block Address":"1600 Elvis Presley Blvd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.05,35.151 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210800115ME [07:603]",
+    "Offense Date":"October 17, 2022 09H:57M:00S",
+    "Block Address":"300 NORTH MAIN STREET",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.012,35.001 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210006614ME [37:397]",
+    "Offense Date":"October 13, 2022 21H:30M:00S",
+    "Block Address":"1600 Winfield Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.991,35.108 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210003941ME [13:153]",
+    "Offense Date":"October 08, 2022 17H:00M:00S",
+    "Block Address":"1400 Chadwick Cir",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.777,35.14 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210004837ME [13:680]",
+    "Offense Date":"October 11, 2022 01H:40M:00S",
+    "Block Address":"600 Bruins Trce",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38018
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.901,35.074 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210003963ME [36:300]",
+    "Offense Date":"October 09, 2022 02H:00M:00S",
+    "Block Address":"4900 American Way",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.839,35.119 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210008583ME [14:630]",
+    "Offense Date":"October 18, 2022 16H:15M:00S",
+    "Block Address":"6800 Wolf River Blvd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38120
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.789,35.198 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210008516ME [16:610]",
+    "Offense Date":"October 18, 2022 18H:00M:00S",
+    "Block Address":"2700 N Germantown Pkwy",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38133
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.906,35.156 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209013609ME [10:473]",
+    "Offense Date":"September 26, 2022 19H:30M:00S",
+    "Block Address":"4700 Given Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.037,35.164 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209800160ME [03:210]",
+    "Offense Date":"September 20, 2022 18H:15M:00S",
+    "Block Address":"900 THOMAS STREET",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.05,35.154 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209011787ME [15:667]",
+    "Offense Date":"September 23, 2022 13H:20M:00S",
+    "Block Address":"100 Jackson Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.913,35.136 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209011220ME [43:450]",
+    "Offense Date":"September 21, 2022 21H:00M:00S",
+    "Block Address":"4500 Barfield Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.863,35.07 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209009512ME [12:750]",
+    "Offense Date":"September 19, 2022 13H:18M:00S",
+    "Block Address":"2900 Hickory Hill Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.905,35.156 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210003920ME [10:853]",
+    "Offense Date":"October 08, 2022 17H:00M:00S",
+    "Block Address":"4900 Owen Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.849,35.047 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210000381ME [09:373]",
+    "Offense Date":"October 01, 2022 23H:00M:00S",
+    "Block Address":"6500 Winchester Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.834,35.179 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210003606ME [17:997]",
+    "Offense Date":"October 08, 2022 04H:00M:00S",
+    "Block Address":"6700 East Century Arbor Place",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38133
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.845,35.059 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210003428ME [38:517]",
+    "Offense Date":"October 07, 2022 19H:30M:00S",
+    "Block Address":"3300 Kirby Pkwy",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.889,35.209 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210001484ME [45:270]",
+    "Offense Date":"October 03, 2022 20H:00M:00S",
+    "Block Address":"3100 Canyon Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38134
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.002,35.143 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210800026ME [06:280]",
+    "Offense Date":"October 04, 2022 18H:00M:00S",
+    "Block Address":"200 NORTH AUBURNDALE STREET",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.734,35.2 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210001534ME [09:813]",
+    "Offense Date":"October 03, 2022 15H:00M:00S",
+    "Block Address":"2800 Safe Harbor Dr",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38016
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.023,35.108 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209010632ME [09:880]",
+    "Offense Date":"September 21, 2022 02H:00M:00S",
+    "Block Address":"1500 James St",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.941,35.064 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210008614ME [49:163]",
+    "Offense Date":"October 18, 2022 18H:00M:00S",
+    "Block Address":"3700 Lamar Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.991,35.138 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210006858ME [10:193]",
+    "Offense Date":"October 14, 2022 22H:20M:00S",
+    "Block Address":"2200 Court Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.048,35.16 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209011902ME [09:997]",
+    "Offense Date":"September 23, 2022 15H:45M:00S",
+    "Block Address":"600 Main St",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.019,35.137 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210006270ME [47:467]",
+    "Offense Date":"October 13, 2022 07H:30M:00S",
+    "Block Address":"1300 Union Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.014,35.058 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209014693ME [16:507]",
+    "Offense Date":"September 29, 2022 04H:03M:00S",
+    "Block Address":"3400 One Pl",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.057,35.04 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210000046ME [29:470]",
+    "Offense Date":"October 01, 2022 04H:25M:00S",
+    "Block Address":"300 N Wesley Forest Pl N",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.003,35.125 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210006549ME [10:300]",
+    "Offense Date":"October 14, 2022 00H:00M:00S",
+    "Block Address":"1800 York Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.055,35.132 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210006930ME [38:217]",
+    "Offense Date":"October 14, 2022 14H:00M:00S",
+    "Block Address":"600 B B King Blvd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38126
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.038,35.144 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210004067ME [13:863]",
+    "Offense Date":"October 08, 2022 18H:00M:00S",
+    "Block Address":"700 Adams Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38163
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.974,35.125 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209011886ME [11:830]",
+    "Offense Date":"September 23, 2022 15H:45M:00S",
+    "Block Address":"2700 Central Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.906,35.112 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210004674ME [10:000]",
+    "Offense Date":"October 10, 2022 18H:00M:00S",
+    "Block Address":"4700 Spottswood Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.908,35.023 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209013802ME [15:080]",
+    "Offense Date":"September 27, 2022 10H:05M:00S",
+    "Block Address":"4700 Shelby Dr",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.813,35.049 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209800132ME [02:860]",
+    "Offense Date":"September 20, 2022 13H:00M:00S",
+    "Block Address":"7500 WINCHESTER ROAD",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38125
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.789,35.201 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210004023ME [11:920]",
+    "Offense Date":"October 09, 2022 14H:00M:00S",
+    "Block Address":"2700 Germantown Pkwy",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38133
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.922,35.075 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210004342ME [25:083]",
+    "Offense Date":"October 09, 2022 23H:00M:00S",
+    "Block Address":"4300 American Way",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.015,35.145 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209015316ME [12:740]",
+    "Offense Date":"September 30, 2022 11H:10M:00S",
+    "Block Address":"1500 Poplar Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.86,35.099 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209014532ME [16:207]",
+    "Offense Date":"September 28, 2022 18H:20M:00S",
+    "Block Address":"1200 Ridgeway Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38119
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.843,35.05 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210001158ME [40:057]",
+    "Offense Date":"October 03, 2022 11H:30M:00S",
+    "Block Address":"6700 Winchester Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.866,35.07 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210000534ME [16:440]",
+    "Offense Date":"October 01, 2022 23H:00M:00S",
+    "Block Address":"3000 Hickory Hill Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.834,35.179 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209009540ME [38:633]",
+    "Offense Date":"September 19, 2022 11H:00M:00S",
+    "Block Address":"100 Mary Ann Dr",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38133
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.007,35.051 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209010920ME [10:153]",
+    "Offense Date":"September 21, 2022 04H:00M:00S",
+    "Block Address":"1800 Commonwealth Dr",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.833,35.187 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209010573ME [13:297]",
+    "Offense Date":"September 20, 2022 23H:45M:00S",
+    "Block Address":"2300 Belin Dr",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38133
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.796,35.141 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210001224ME [13:633]",
+    "Offense Date":"October 03, 2022 15H:56M:00S",
+    "Block Address":"600 Germantown Pkwy",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38018
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.038,35.139 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210003231ME [10:253]",
+    "Offense Date":"October 07, 2022 11H:00M:00S",
+    "Block Address":"800 Union Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.864,35.102 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210001348ME [08:940]",
+    "Offense Date":"October 03, 2022 11H:15M:00S",
+    "Block Address":"6000 Poplar Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38120
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.805,35.05 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209011963ME [20:310]",
+    "Offense Date":"September 23, 2022 18H:30M:00S",
+    "Block Address":"7800 Winchester Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38125
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.97,35.08 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210007143ME [14:537]",
+    "Offense Date":"October 15, 2022 10H:00M:00S",
+    "Block Address":"2800 Ketchum Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.03,35.132 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210007262ME [14:907]",
+    "Offense Date":"October 15, 2022 18H:30M:00S",
+    "Block Address":"2100 Elvis Presley Blvd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.969,35.102 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210007724ME [11:297]",
+    "Offense Date":"October 17, 2022 01H:05M:00S",
+    "Block Address":"1600 Dunmoor Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.921,35.23 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209014999ME [11:470]",
+    "Offense Date":"September 29, 2022 00H:30M:00S",
+    "Block Address":"4300 Hallview Dr",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.997,35.141 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209010284ME [10:300]",
+    "Offense Date":"September 20, 2022 21H:20M:00S",
+    "Block Address":"200 N Tucker St",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.965,35.139 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209012155ME [14:150]",
+    "Offense Date":"September 24, 2022 01H:00M:00S",
+    "Block Address":"3000 Mimosa Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.06,35.046 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210003082ME [14:537]",
+    "Offense Date":"October 07, 2022 07H:48M:00S",
+    "Block Address":"3800 Hillbrook Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.988,35.066 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210006147ME [39:987]",
+    "Offense Date":"October 13, 2022 14H:50M:00S",
+    "Block Address":"2900 Airways Blvd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38132
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.918,35.098 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209014146ME [12:887]",
+    "Offense Date":"September 27, 2022 22H:30M:00S",
+    "Block Address":"1300 Merrycrest Dr",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.055,35.144 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210007250ME [10:927]",
+    "Offense Date":"October 15, 2022 18H:30M:00S",
+    "Block Address":"100 Monroe Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38101
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.859,35.164 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209015119ME [12:330]",
+    "Offense Date":"September 30, 2022 01H:00M:00S",
+    "Block Address":"6200 Macon Cv",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38134
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.864,35.005 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209009782ME [12:120]",
+    "Offense Date":"September 19, 2022 23H:00M:00S",
+    "Block Address":"5300 Hickory Hill Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38141
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.89,35.086 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210000849ME [10:240]",
+    "Offense Date":"October 03, 2022 03H:00M:00S",
+    "Block Address":"1700 Vera Cruz St",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.968,35.144 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210008057ME [09:937]",
+    "Offense Date":"October 17, 2022 14H:30M:00S",
+    "Block Address":"1400 Riverside Blvd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.026,35.044 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210005568ME [18:170]",
+    "Offense Date":"October 12, 2022 01H:00M:00S",
+    "Block Address":"3900 Elvis Presley Blvd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.89,35.088 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210003402ME [11:093]",
+    "Offense Date":"October 07, 2022 22H:50M:00S",
+    "Block Address":"1600 White Station Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.812,35.049 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210007287ME [14:193]",
+    "Offense Date":"October 15, 2022 15H:15M:00S",
+    "Block Address":"7500 Winchester Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38125
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.855,35.046 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209013904ME [23:320]",
+    "Offense Date":"September 20, 2022 12H:30M:00S",
+    "Block Address":"2500 Larose Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.001,35.065 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210006194ME [11:723]",
+    "Offense Date":"October 13, 2022 14H:50M:00S",
+    "Block Address":"1900 Brooks Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.899,35.115 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209012833ME [08:610]",
+    "Offense Date":"September 25, 2022 16H:00M:00S",
+    "Block Address":"600 Erin Dr",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.834,35.179 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210007204ME [09:873]",
+    "Offense Date":"October 13, 2022 23H:00M:00S",
+    "Block Address":"4300 Raleigh Millington Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38133
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.97,35.08 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210000449ME [43:150]",
+    "Offense Date":"October 01, 2022 23H:00M:00S",
+    "Block Address":"2800 Ketchum Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.074,35.108 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210000990ME [43:710]",
+    "Offense Date":"October 03, 2022 04H:00M:00S",
+    "Block Address":"400 Pkwy",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.866,35.129 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210001746ME [25:027]",
+    "Offense Date":"October 04, 2022 03H:38M:00S",
+    "Block Address":"100 Lynnfield St",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38120
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.819,35.185 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210002920ME [12:123]",
+    "Offense Date":"October 06, 2022 19H:50M:00S",
+    "Block Address":"7300 Appling Farms Pkwy",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38133
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.864,35.03 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210006489ME [36:690]",
+    "Offense Date":"October 14, 2022 03H:35M:00S",
+    "Block Address":"4400 Cloudburst Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38141
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.019,35.143 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210006150ME [09:173]",
+    "Offense Date":"October 08, 2022 05H:00M:00S",
+    "Block Address":"200 Eastman Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.039,35.145 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209015050ME [13:350]",
+    "Offense Date":"September 29, 2022 13H:30M:00S",
+    "Block Address":"700 Adams Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38105
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.892,35.021 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209009583ME [13:490]",
+    "Offense Date":"September 19, 2022 14H:00M:00S",
+    "Block Address":"5200 Shelby Dr",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.05,35.138 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209014373ME [10:870]",
+    "Offense Date":"September 24, 2022 16H:00M:00S",
+    "Block Address":"200 Beale St",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.961,35.109 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210006319ME [40:087]",
+    "Offense Date":"October 13, 2022 19H:25M:00S",
+    "Block Address":"3100 Chisca Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.004,35.138 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210007264ME [16:017]",
+    "Offense Date":"October 15, 2022 20H:00M:00S",
+    "Block Address":"1800 Madison Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.98,35.239 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209011075ME [38:523]",
+    "Offense Date":"September 21, 2022 23H:00M:00S",
+    "Block Address":"2600 Rammesses Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.88,35.11 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210006599ME [12:067]",
+    "Offense Date":"October 14, 2022 11H:00M:00S",
+    "Block Address":"5500 Valleybrook Cv",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38120
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.993,35.118 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210004574ME [39:120]",
+    "Offense Date":"October 09, 2022 20H:00M:00S",
+    "Block Address":"2100 Felix Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.951,35.132 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209010698ME [11:630]",
+    "Offense Date":"September 21, 2022 12H:00M:00S",
+    "Block Address":"100 Reese St",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.898,35.184 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210003823ME [13:320]",
+    "Offense Date":"October 09, 2022 00H:00M:00S",
+    "Block Address":"2200 Covington Pike",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.02,35.028 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210800094ME [08:130]",
+    "Offense Date":"October 06, 2022 22H:05M:00S",
+    "Block Address":"4500 FARONIA",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.828,35.049 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209800155ME [10:673]",
+    "Offense Date":"September 22, 2022 15H:45M:00S",
+    "Block Address":"7100 Winchester",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38125
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.929,35.09 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210003139ME [12:537]",
+    "Offense Date":"October 07, 2022 01H:55M:00S",
+    "Block Address":"4100 Dunn Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.008,35.2 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210005807ME [25:667]",
+    "Offense Date":"October 12, 2022 18H:30M:00S",
+    "Block Address":"2800 Watkins St",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.065,35.101 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210004989ME [15:783]",
+    "Offense Date":"October 11, 2022 00H:00M:00S",
+    "Block Address":"1700 Kansas St",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.806,35.049 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210000229ME [11:857]",
+    "Offense Date":"October 01, 2022 16H:00M:00S",
+    "Block Address":"7800 Winchester Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38125
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.86,35.098 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210002935ME [19:893]",
+    "Offense Date":"October 06, 2022 20H:00M:00S",
+    "Block Address":"1300 Ridgeway Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38119
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.884,35.078 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209011870ME [11:670]",
+    "Offense Date":"September 23, 2022 14H:10M:00S",
+    "Block Address":"3600 Riverdale Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.939,35.201 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210007773ME [11:430]",
+    "Offense Date":"October 16, 2022 21H:30M:00S",
+    "Block Address":"W Hickory Bluff",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.864,35.101 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209009834ME [09:487]",
+    "Offense Date":"September 19, 2022 20H:00M:00S",
+    "Block Address":"6000 Poplar Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38119
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.037,35.035 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210006629ME [10:377]",
+    "Offense Date":"October 11, 2022 15H:00M:00S",
+    "Block Address":"200 E Gage St",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.022,35.139 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210003128ME [15:737]",
+    "Offense Date":"October 07, 2022 05H:37M:00S",
+    "Block Address":"1200 Monroe Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.94,35.164 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209011185ME [09:507]",
+    "Offense Date":"September 21, 2022 23H:00M:00S",
+    "Block Address":"3600 Rockwood Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.825,35.193 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210003487ME [09:757]",
+    "Offense Date":"October 07, 2022 21H:00M:00S",
+    "Block Address":"2500 Country Trail Dr",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38133
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.891,35.108 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210000207ME [11:127]",
+    "Offense Date":"October 01, 2022 14H:00M:00S",
+    "Block Address":"5200 Park Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.877,35.126 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209012706ME [09:263]",
+    "Offense Date":"September 24, 2022 23H:00M:00S",
+    "Block Address":"300 Green Glade Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38120
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.045,35.13 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210004355ME [19:310]",
+    "Offense Date":"October 09, 2022 09H:00M:00S",
+    "Block Address":"700 Mississippi Blvd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38126
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.788,35.199 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209015056ME [08:847]",
+    "Offense Date":"September 29, 2022 22H:50M:00S",
+    "Block Address":"2900 N Germantown Pkwy",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38133
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.015,35.022 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209010073ME [13:597]",
+    "Offense Date":"September 19, 2022 17H:00M:00S",
+    "Block Address":"4700 Yosemite Ct",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.789,35.201 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210008070ME [10:823]",
+    "Offense Date":"October 17, 2022 18H:06M:00S",
+    "Block Address":"2700 Germantown Pkwy",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38133
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.904,35.117 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210002201ME [44:020]",
+    "Offense Date":"October 05, 2022 11H:59M:00S",
+    "Block Address":"4800 Aynsley Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.891,35.107 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209010809ME [08:887]",
+    "Offense Date":"September 21, 2022 18H:15M:00S",
+    "Block Address":"5200 Park Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.985,35.105 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210007593ME [29:270]",
+    "Offense Date":"October 15, 2022 17H:00M:00S",
+    "Block Address":"2400 Lamar Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.959,35.149 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210800082ME [03:313]",
+    "Offense Date":"October 10, 2022 03H:25M:00S",
+    "Block Address":"3100 SUMMER AVENUE",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.92,35.202 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210005795ME [10:277]",
+    "Offense Date":"October 12, 2022 01H:00M:00S",
+    "Block Address":"4400 Creekwood Dr",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.048,35.143 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209009718ME [37:290]",
+    "Offense Date":"September 19, 2022 19H:00M:00S",
+    "Block Address":"100 Fourth St",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.826,35.051 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210002895ME [38:973]",
+    "Offense Date":"October 06, 2022 19H:07M:00S",
+    "Block Address":"7200 Winchester Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38125
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.866,35.06 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210007029ME [14:670]",
+    "Offense Date":"October 13, 2022 14H:30M:00S",
+    "Block Address":"6000 Knight Arnold Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.015,35.015 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210004307ME [41:880]",
+    "Offense Date":"October 10, 2022 05H:52M:00S",
+    "Block Address":"4900 Sagewood Dr",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.908,35.075 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209010225ME [18:717]",
+    "Offense Date":"September 20, 2022 10H:00M:00S",
+    "Block Address":"2700 Perkins Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.813,35.201 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210003023ME [09:470]",
+    "Offense Date":"October 06, 2022 22H:00M:00S",
+    "Block Address":"7600 Meadowland Dr",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38133
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.895,35.212 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209015244ME [08:697]",
+    "Offense Date":"September 29, 2022 23H:00M:00S",
+    "Block Address":"3200 Raleigh Ridge Dr",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.052,35.149 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209012637ME [40:440]",
+    "Offense Date":"September 24, 2022 00H:00M:00S",
+    "Block Address":"200 North Danny Thomas Blvd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.927,35.24 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210003577ME [16:747]",
+    "Offense Date":"October 08, 2022 00H:00M:00S",
+    "Block Address":"4200 Troost Dr",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.894,35.195 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209014249ME [09:040]",
+    "Offense Date":"September 27, 2022 18H:00M:00S",
+    "Block Address":"2600 Twin Woods Cv",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38134
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.863,35.081 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209014111ME [39:973]",
+    "Offense Date":"September 28, 2022 03H:50M:00S",
+    "Block Address":"2600 Hawkhurst St",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38119
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.051,35.144 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210000901ME [10:977]",
+    "Offense Date":"October 03, 2022 01H:00M:00S",
+    "Block Address":"Monroe Ave//S B B King Blvd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.91,35.149 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210002882ME [16:187]",
+    "Offense Date":"October 06, 2022 18H:50M:00S",
+    "Block Address":"4600 Summer Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.835,35.037 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209010469ME [10:263]",
+    "Offense Date":"September 20, 2022 20H:00M:00S",
+    "Block Address":"6900 Club Ridge Cir",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.045,35.164 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209013012ME [32:647]",
+    "Offense Date":"September 25, 2022 13H:00M:00S",
+    "Block Address":"800 Main St",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.876,35.074 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209009278ME [08:933]",
+    "Offense Date":"September 19, 2022 00H:29M:00S",
+    "Block Address":"2800 Mount Moriah Rd",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.955,35.155 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210007750ME [13:133]",
+    "Offense Date":"October 16, 2022 21H:00M:00S",
+    "Block Address":"2200 Covington Pike",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.828,35.202 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2210003049ME [10:893]",
+    "Offense Date":"October 07, 2022 00H:01M:00S",
+    "Block Address":"7100 Laura Cir",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38133
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.951,35.117 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209012122ME [17:773]",
+    "Offense Date":"September 23, 2022 20H:00M:00S",
+    "Block Address":"600 Alexander St",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.982,35.227 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209012994ME [14:883]",
+    "Offense Date":"September 26, 2022 01H:00M:00S",
+    "Block Address":"4400 Summer Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.792,35.172 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209010788ME [09:907]",
+    "Offense Date":"September 20, 2022 19H:00M:00S",
+    "Block Address":"8200 Cordova Center Dr",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38018
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.847,35.101 ]
+    },
+    "properties": {
+    "Category":"Theft from Motor Vehicle",
+    "ID":"2209014526ME [09:927]",
+    "Offense Date":"September 28, 2022 19H:55M:00S",
+    "Block Address":"6500 Poplar Ave",
+    "Crime Type":"Theft from Motor Vehicle",
+    "zipcode":38119
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.949,35.003 ]
+    },
+    "properties": {
+    "Category":"Theft from Semi-trailer",
+    "ID":"2209013027ME [15:860]",
+    "Offense Date":"September 26, 2022 05H:30M:00S",
+    "Block Address":"5300 Meltech Dr",
+    "Crime Type":"Theft from Semi-trailer",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.961,35.223 ]
+    },
+    "properties": {
+    "Category":"Theft from Semi-trailer",
+    "ID":"2210003694ME [15:960]",
+    "Offense Date":"October 08, 2022 14H:30M:00S",
+    "Block Address":"3100 New Frayser Blvd",
+    "Crime Type":"Theft from Semi-trailer",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.897,35.019 ]
+    },
+    "properties": {
+    "Category":"Theft from Semi-trailer",
+    "ID":"2209013004ME [17:587]",
+    "Offense Date":"September 25, 2022 23H:00M:00S",
+    "Block Address":"Lamar Ave//Pleasant Run Rd",
+    "Crime Type":"Theft from Semi-trailer",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.932,35.057 ]
+    },
+    "properties": {
+    "Category":"Theft from Semi-Trailer",
+    "ID":"2209011177ME [42:070]",
+    "Offense Date":"September 22, 2022 02H:00M:00S",
+    "Block Address":"Lamar Ave//New Getwell Rd",
+    "Crime Type":"Theft from Semi-Trailer",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.859,35.087 ]
+    },
+    "properties": {
+    "Category":"Theft from Semi-trailer",
+    "ID":"2210002523ME [09:607]",
+    "Offense Date":"October 05, 2022 05H:00M:00S",
+    "Block Address":"3400 Lamar Ave",
+    "Crime Type":"Theft from Semi-trailer",
+    "zipcode":38119
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.857,35.007 ]
+    },
+    "properties": {
+    "Category":"Theft from Semi-trailer",
+    "ID":"2209011054ME [09:897]",
+    "Offense Date":"September 21, 2022 20H:00M:00S",
+    "Block Address":"5200 Tradeport Rd",
+    "Crime Type":"Theft from Semi-trailer",
+    "zipcode":38141
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.955,35.069 ]
+    },
+    "properties": {
+    "Category":"Theft from Semi-trailer",
+    "ID":"2210004324ME [16:160]",
+    "Offense Date":"October 08, 2022 11H:00M:00S",
+    "Block Address":"3300 Democrat Rd",
+    "Crime Type":"Theft from Semi-trailer",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.94,35.065 ]
+    },
+    "properties": {
+    "Category":"Theft from Semi-trailer",
+    "ID":"2210006518ME [10:430]",
+    "Offense Date":"October 13, 2022 18H:00M:00S",
+    "Block Address":"3700 Knight Arnold Rd",
+    "Crime Type":"Theft from Semi-trailer",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.949,35.005 ]
+    },
+    "properties": {
+    "Category":"Theft from Semi-trailer",
+    "ID":"2210007776ME [13:610]",
+    "Offense Date":"October 17, 2022 01H:20M:00S",
+    "Block Address":"3300 Tchulatech Dr",
+    "Crime Type":"Theft from Semi-trailer",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.961,35.223 ]
+    },
+    "properties": {
+    "Category":"Theft from Semi-trailer",
+    "ID":"2210004206ME [39:197]",
+    "Offense Date":"October 09, 2022 17H:30M:00S",
+    "Block Address":"3100 New Frayser Blvd",
+    "Crime Type":"Theft from Semi-trailer",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.945,35.07 ]
+    },
+    "properties": {
+    "Category":"Theft from Semi-trailer",
+    "ID":"2210002511ME [10:210]",
+    "Offense Date":"October 06, 2022 05H:00M:00S",
+    "Block Address":"3600 Lamar Ave",
+    "Crime Type":"Theft from Semi-trailer",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.804,35.144 ]
+    },
+    "properties": {
+    "Category":"Theft of Construction/Farm Equipment",
+    "ID":"2209011106ME [35:967]",
+    "Offense Date":"September 21, 2022 18H:30M:00S",
+    "Block Address":"7800 Moriarty Rd",
+    "Crime Type":"Theft of Construction/Farm Equipment",
+    "zipcode":38018
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.019,35.168 ]
+    },
+    "properties": {
+    "Category":"Theft of Other Trailer",
+    "ID":"2209009938ME [13:200]",
+    "Offense Date":"September 19, 2022 00H:00M:00S",
+    "Block Address":"I-40 Hwy//Chelsea",
+    "Crime Type":"Theft of Other Trailer",
+    "zipcode":38107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.007,35.2 ]
+    },
+    "properties": {
+    "Category":"Theft of Other Trailer",
+    "ID":"2209015416ME [13:467]",
+    "Offense Date":"September 29, 2022 19H:00M:00S",
+    "Block Address":"2800 Watkins St",
+    "Crime Type":"Theft of Other Trailer",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.998,35.139 ]
+    },
+    "properties": {
+    "Category":"Theft of Other Trailer",
+    "ID":"2210007839ME [13:080]",
+    "Offense Date":"October 14, 2022 17H:30M:00S",
+    "Block Address":"1900 Court Ave",
+    "Crime Type":"Theft of Other Trailer",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.898,35.099 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2209012655ME [36:813]",
+    "Offense Date":"September 25, 2022 03H:10M:00S",
+    "Block Address":"5000 Parkside Ave",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.912,35.152 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210007497ME [42:173]",
+    "Offense Date":"October 16, 2022 01H:00M:00S",
+    "Block Address":"800 Berclair Rd",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.051,35.016 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210005290ME [11:053]",
+    "Offense Date":"October 11, 2022 21H:44M:00S",
+    "Block Address":"4900 Fairley Rd",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.894,35.232 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2209013397ME [10:703]",
+    "Offense Date":"September 26, 2022 07H:45M:00S",
+    "Block Address":"4000 Austin Peay Hwy",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.025,35.126 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210002048ME [42:703]",
+    "Offense Date":"October 04, 2022 14H:30M:00S",
+    "Block Address":"1100 Sledge Ave",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.921,35.064 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210000076ME [39:787]",
+    "Offense Date":"September 30, 2022 19H:30M:00S",
+    "Block Address":"4300 Knight Arnold Rd",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.938,35.119 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210006168ME [38:963]",
+    "Offense Date":"October 10, 2022 21H:00M:00S",
+    "Block Address":"3700 Alumni",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.926,35.088 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210006992ME [13:143]",
+    "Offense Date":"October 11, 2022 09H:52M:00S",
+    "Block Address":"4100 Willowview Ave",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.825,35.034 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210008350ME [10:980]",
+    "Offense Date":"October 18, 2022 08H:50M:00S",
+    "Block Address":"7200 Chevy Chase Dr",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38125
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.029,35.13 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210001112ME [08:390]",
+    "Offense Date":"October 01, 2022 09H:00M:00S",
+    "Block Address":"1700 S Orleans St",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.79,35.192 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210002203ME [41:730]",
+    "Offense Date":"October 04, 2022 17H:00M:00S",
+    "Block Address":"2500 End Row",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38016
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.91,35.217 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210000507ME [08:880]",
+    "Offense Date":"October 01, 2022 19H:00M:00S",
+    "Block Address":"2900 Spring Hill Dr",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.001,35.122 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210000515ME [10:673]",
+    "Offense Date":"September 29, 2022 20H:30M:00S",
+    "Block Address":"1900 Nelson Ave",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.022,35.143 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210800109ME [08:230]",
+    "Offense Date":"October 11, 2022 18H:15M:00S",
+    "Block Address":"1200 JEFFERSON AVENUE",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.043,35.125 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210007400ME [10:747]",
+    "Offense Date":"October 12, 2022 18H:30M:00S",
+    "Block Address":"800 Mississippi Blvd",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38126
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.891,35.106 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2209014789ME [14:313]",
+    "Offense Date":"September 28, 2022 19H:00M:00S",
+    "Block Address":"5200 Park Ave",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38117
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.055,35.108 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210004854ME [11:543]",
+    "Offense Date":"October 11, 2022 03H:30M:00S",
+    "Block Address":"S Parkway E//S Third St",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.893,35.184 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2209800125ME [12:240]",
+    "Offense Date":"September 19, 2022 08H:00M:00S",
+    "Block Address":"5200 COVINGTON WAY",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38134
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.834,35.179 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210002191ME [11:840]",
+    "Offense Date":"October 04, 2022 21H:30M:00S",
+    "Block Address":"10100 Hwy 64",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38133
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.893,35.234 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210000596ME [09:880]",
+    "Offense Date":"October 02, 2022 11H:30M:00S",
+    "Block Address":"4000 New Covington Pike",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.988,35.141 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2209014224ME [13:557]",
+    "Offense Date":"September 27, 2022 17H:30M:00S",
+    "Block Address":"2200 Poplar Ave",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.952,35.104 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210005159ME [42:317]",
+    "Offense Date":"October 10, 2022 22H:00M:00S",
+    "Block Address":"1000 Mount Vernon Rd",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.872,35.168 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210003644ME [16:690]",
+    "Offense Date":"October 07, 2022 15H:30M:00S",
+    "Block Address":"6700 Poplar Ave",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38134
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.033,35.049 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210002604ME [39:440]",
+    "Offense Date":"September 29, 2022 14H:30M:00S",
+    "Block Address":"3700 Summershade Cv",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.075,35.113 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210000095ME [11:980]",
+    "Offense Date":"September 30, 2022 17H:05M:00S",
+    "Block Address":"1300 Riverside Blvd",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.841,35.172 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210008380ME [20:353]",
+    "Offense Date":"October 16, 2022 05H:35M:00S",
+    "Block Address":"1800 Century Center Cv",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38134
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.847,35.163 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2209011658ME [10:007]",
+    "Offense Date":"September 22, 2022 18H:00M:00S",
+    "Block Address":"6500 Ridgebrook Ln",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38134
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.03,35.132 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210003961ME [09:067]",
+    "Offense Date":"October 06, 2022 15H:00M:00S",
+    "Block Address":"200 N Montgomery St",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.042,35.089 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210006589ME [10:427]",
+    "Offense Date":"October 12, 2022 08H:00M:00S",
+    "Block Address":"700 Mckellar Ave",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.953,35.117 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210000888ME [15:603]",
+    "Offense Date":"September 30, 2022 17H:45M:00S",
+    "Block Address":"600 Holmes St",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.841,35.159 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210004612ME [39:663]",
+    "Offense Date":"October 08, 2022 09H:00M:00S",
+    "Block Address":"6700 Whitten Pine Dr",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38134
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.837,35.164 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210006510ME [18:103]",
+    "Offense Date":"October 14, 2022 01H:00M:00S",
+    "Block Address":"1500 Whitten Rd",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38134
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.902,35.197 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2209011335ME [38:977]",
+    "Offense Date":"September 22, 2022 14H:30M:00S",
+    "Block Address":"2700 Barbara Cir",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.914,35.201 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210000428ME [09:657]",
+    "Offense Date":"October 02, 2022 06H:00M:00S",
+    "Block Address":"4500 Stone Gate Dr",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.797,35.051 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210005973ME [20:493]",
+    "Offense Date":"October 12, 2022 18H:00M:00S",
+    "Block Address":"3600 Hacks Cross Rd",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38125
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.988,35.215 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210800009ME [02:763]",
+    "Offense Date":"October 01, 2022 09H:30M:00S",
+    "Block Address":"3300 BOONE STREET",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.791,35.193 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210001567ME [59:363]",
+    "Offense Date":"October 04, 2022 01H:00M:00S",
+    "Block Address":"8200 Rockcreek Pl",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38016
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.959,35.092 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2209009362ME [16:617]",
+    "Offense Date":"September 19, 2022 01H:00M:00S",
+    "Block Address":"3200 Beaumont St",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.924,35.036 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2209800127ME [06:520]",
+    "Offense Date":"September 19, 2022 08H:00M:00S",
+    "Block Address":"4200 DELP STREET",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.866,35.022 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210004575ME [39:933]",
+    "Offense Date":"October 09, 2022 23H:50M:00S",
+    "Block Address":"4700 Hickory Hill Rd",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38141
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.855,35.046 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210003750ME [09:653]",
+    "Offense Date":"October 07, 2022 12H:00M:00S",
+    "Block Address":"6700 Gazebo Cv",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.048,35.147 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2209013335ME [09:513]",
+    "Offense Date":"September 26, 2022 10H:56M:00S",
+    "Block Address":"300 Adams Ave",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.784,35.204 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210004946ME [11:657]",
+    "Offense Date":"October 10, 2022 22H:00M:00S",
+    "Block Address":"8400 Hwy 64",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38133
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.049,35.155 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2209011642ME [14:300]",
+    "Offense Date":"September 22, 2022 18H:00M:00S",
+    "Block Address":"400 Main St",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.846,35.167 ]
+    },
+    "properties": {
+    "Category":"Theft of Vehicle Parts/Accessories",
+    "ID":"2210003701ME [10:487]",
+    "Offense Date":"October 07, 2022 13H:00M:00S",
+    "Block Address":"6600 Ballantrace Ct",
+    "Crime Type":"Theft of Vehicle Parts/Accessories",
+    "zipcode":38134
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.943,35.107 ]
+    },
+    "properties": {
+    "Category":"Carjacking",
+    "ID":"2209009764ME [37:477]",
+    "Offense Date":"September 19, 2022 23H:18M:00S",
+    "Block Address":"3600 Carrington Rd",
+    "Crime Type":"Carjacking",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.988,35.168 ]
+    },
+    "properties": {
+    "Category":"Carjacking",
+    "ID":"2209012412ME [09:337]",
+    "Offense Date":"September 24, 2022 21H:25M:00S",
+    "Block Address":"2200 Howell Ave",
+    "Crime Type":"Carjacking",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.960,35.110 ]
+    },
+    "properties": {
+    "Category":"Carjacking",
+    "ID":"2209011996ME [12:033]",
+    "Offense Date":"September 23, 2022 22H:30M:00S",
+    "Block Address":"3100 Douglass Ave",
+    "Crime Type":"Carjacking",
+    "zipcode":38111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.092,35.064 ]
+    },
+    "properties": {
+    "Category":"Possible Stolen MVT",
+    "ID":"2209012653ME [11:780]",
+    "Offense Date":"September 25, 2022 12H:31M:00S",
+    "Block Address":"Nonconnah//Weaver Rd",
+    "Crime Type":"Possible Stolen MVT",
+    "zipcode":38109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.027,35.041 ]
+    },
+    "properties": {
+    "Category":"Possible Stolen MVT",
+    "ID":"2209013020ME [44:840]",
+    "Offense Date":"September 26, 2022 08H:00M:00S",
+    "Block Address":"3700 King Gate Dr",
+    "Crime Type":"Possible Stolen MVT",
+    "zipcode":38116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.907,35.078 ]
+    },
+    "properties": {
+    "Category":"Possible Stolen MVT",
+    "ID":"2210006896ME [16:260]",
+    "Offense Date":"October 15, 2022 00H:00M:00S",
+    "Block Address":"300 E//S Perkins Rd",
+    "Crime Type":"Possible Stolen MVT",
+    "zipcode":38118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.928,35.163 ]
+    },
+    "properties": {
+    "Category":"Possible Stolen MVT",
+    "ID":"2210002113ME [10:250]",
+    "Offense Date":"October 05, 2022 11H:43M:00S",
+    "Block Address":"4000 Macon Rd",
+    "Crime Type":"Possible Stolen MVT",
+    "zipcode":38122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.000,35.172 ]
+    },
+    "properties": {
+    "Category":"Possible Stolen MVT",
+    "ID":"2210007823ME [11:163]",
+    "Offense Date":"October 17, 2022 08H:21M:00S",
+    "Block Address":"N Evergreen St//Marble Ave",
+    "Crime Type":"Possible Stolen MVT",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.736,35.202 ]
+    },
+    "properties": {
+    "Category":"Possible Stolen MVT",
+    "ID":"2209015464ME [09:370]",
+    "Offense Date":"September 30, 2022 15H:00M:00S",
+    "Block Address":"9900 Misty Pine Dr",
+    "Crime Type":"Possible Stolen MVT",
+    "zipcode":38002
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.957,35.180 ]
+    },
+    "properties": {
+    "Category":"Possible Stolen MVT",
+    "ID":"2210000799ME [11:777]",
+    "Offense Date":"October 03, 2022 01H:16M:00S",
+    "Block Address":"3100 Shannon Ave",
+    "Crime Type":"Possible Stolen MVT",
+    "zipcode":38108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.968,35.085 ]
+    },
+    "properties": {
+    "Category":"Possible Stolen MVT",
+    "ID":"2210006446ME [16:280]",
+    "Offense Date":"October 13, 2022 18H:00M:00S",
+    "Block Address":"2900 Heber Ave",
+    "Crime Type":"Possible Stolen MVT",
+    "zipcode":38114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.050,35.040 ]
+    },
+    "properties": {
+    "Category":"Possible Stolen MVT",
+    "ID":"2210008357ME [12:433]",
+    "Offense Date":"October 18, 2022 10H:23M:00S",
+    "Block Address":"500 Ivan Rd",
+    "Crime Type":"Possible Stolen MVT",
+    "zipcode":38109
+    }
+  }
+]
+}

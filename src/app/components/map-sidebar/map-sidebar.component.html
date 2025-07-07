@@ -1,0 +1,159 @@
+<div class="map-sidebar">
+  <ng-container *ngIf="currentData$|async as currentData; else loadingStats">
+    <ng-container *ngIf="!isLoading; else loadingStats">
+      <div class="single-breakdown" *ngIf="!isFeaturePoint && !isMulti">
+        <mat-toolbar>
+          <button mat-icon-button (click)="close()">
+            <mat-icon>arrow_back_ios</mat-icon>
+          </button>
+          <h1 class="title">{{getTitle(currentData)}} - <span>{{getSubtitle(currentData)}}</span></h1>
+        </mat-toolbar>
+        <ng-container *ngIf="!didError; else errorFetchingStats">
+          <mat-tab-group dynamicHeight mat-align-tabs="center" [selectedIndex]="selectedTab">
+            <mat-tab label="Population">
+              <div class="inner-sidebar">
+                <div class="stats">
+                  <app-breakdown-chart *ngIf="showGenderChart(currentData)"
+                                       [chartData]="currentData.genderChartData"></app-breakdown-chart>
+                  <app-breakdown-summary title="Population" [populationStats]="getStat(currentData)"
+                                         [landmarksSummary]="currentData.landmarks"
+                                         [district]="getDistrict(currentData)"></app-breakdown-summary>
+                </div>
+              </div>
+            </mat-tab>
+
+            <mat-tab label="Poverty">
+              <div class="inner-sidebar">
+                <div class="stats">
+                  <app-breakdown-chart *ngIf="showPovertyChart(currentData)"
+                                       [chartData]="currentData.povertyChartData"></app-breakdown-chart>
+                  <app-poverty-breakdown-summary title="Poverty"
+                                                 [populationStats]="getStat(currentData)"></app-poverty-breakdown-summary>
+                </div>
+              </div>
+            </mat-tab>
+
+            <mat-tab label="Crime">
+            <app-crime-breakdown-summary title="Crime"
+              [landmarksSummary]="currentData.landmarks"></app-crime-breakdown-summary>
+            </mat-tab>
+
+            <mat-tab label="Health">
+                <app-lead-breakdown-summary title="LEAD"
+                  [landmarksSummary]="currentData.landmarks"></app-lead-breakdown-summary>
+              
+                  <h3 matSubheader>Covid-19 Information - Under 18</h3>
+                  <mat-list-item>
+                    <div class="list-item-inner">
+                      <span class="title" style="color:gray;">Cumulative Case Count </span>
+                      <span style="color:white;">____________________</span>
+                      <span class="value">{{get38002CC(currentData)}}</span>
+                    </div>
+                  </mat-list-item>
+                  <mat-divider></mat-divider>
+                  <mat-list-item>
+                    <div class="list-item-inner">
+                      <span class="title" style="color:gray;">Cumulative Case Rate Per 100 Persons </span>
+                      <span style="color:white;">_____</span>
+                      <span class="value" style="text-align:right;">{{get38002CCP(currentData)}}</span>
+                    </div>
+                  </mat-list-item>
+                  <mat-divider></mat-divider>
+                  <mat-list-item>
+                    <div class="list-item-inner">
+                      <span class="title" style="color:gray;">Vaccination Count </span>
+                      <span style="color:white;">_________________________</span>
+                      <span class="value">{{get38002CV(currentData)}}</span>
+                    </div>
+                  </mat-list-item>
+                  <mat-divider></mat-divider>
+                  <mat-list-item>
+                    <div class="list-item-inner">
+                      <span class="title" style="text-align:center;color:gray;">Vaccination Percentage </span>
+                      <span style="color:white;">____________________</span>
+                      <span class="value">{{get38002CVP(currentData)}}</span>
+                    </div>
+                  </mat-list-item>
+                <mat-list>
+                  <h3 matSubheader>Blood Lead Level Information - 5 and Under</h3>
+                  <mat-list-item>
+                    <div class="list-item-inner">
+                      <span class="title" style="text-align:center;color:gray;"
+                      matTooltip="Average of Elevated Blood Lead Levels in Youth Age 5 and Under (2015-2022)">Average Elevated Blood Lead Level </span>
+                      <span style="color:white;">________</span>
+                      <span class="value">{{getAvgPb(currentData)}}</span>
+                    </div>
+                  </mat-list-item>
+                </mat-list>
+            </mat-tab>
+
+          </mat-tab-group>
+        </ng-container>
+      </div>
+
+      <div class="feature-point-summary" *ngIf="isFeaturePoint">
+        <mat-toolbar>
+          <button mat-icon-button (click)="close()">
+            <mat-icon>arrow_back_ios</mat-icon>
+          </button>
+          <h1 class="title">{{getTitle(currentData)}}</h1>
+        </mat-toolbar>
+        <ng-container *ngIf="!didError; else errorFetchingStats">
+          <ng-container *ngIf="isSchool(currentData); else regularPointFeature">
+
+            <mat-tab-group dynamicHeight mat-align-tabs="center">
+              <mat-tab label="School">
+                <ng-template matTabContent>
+                <div class="school-chart-wrapper" [class.hide]="!showSchoolChart(currentData)">
+                  <app-breakdown-chart [chartData]="schoolChartData"></app-breakdown-chart>
+                  <mat-button-toggle-group (change)="updateSchoolChartMode($event, currentData)">
+                    <mat-button-toggle [value]="'grade'" checked>Grade</mat-button-toggle>
+                    <mat-button-toggle [value]="'gender'">Gender</mat-button-toggle>
+                  </mat-button-toggle-group>
+                </div>
+
+                <app-point-feature-summary [pointFeature]="getPointFeatureData(currentData)"
+                                           [typeTitle]="getTitle(currentData)"></app-point-feature-summary>
+
+                <app-school-feature-summary [schoolFeature]="getPointFeatureData(currentData)"
+                                            [schoolSummary]="getSchoolSummaryData(currentData)"></app-school-feature-summary>
+                </ng-template>
+              </mat-tab>
+              <mat-tab label="Servicing Population">
+                <ng-template [ngTemplateOutlet]="regularPointFeature"></ng-template>
+              </mat-tab>
+
+            </mat-tab-group>
+
+          </ng-container>
+          <ng-template #regularPointFeature>
+            <app-breakdown-chart *ngIf="!isCA(currentData) && !isCBR(currentData)  && !isCD(currentData) 
+             && !isCT(currentData) && !isCO(currentData) && !isCW(currentData) && !isCCC(currentData)
+             && !isCCF(currentData)" [chartData]="currentData.overallChartData"></app-breakdown-chart>
+            <app-point-feature-summary *ngIf="!isSchool(currentData)" [pointFeature]="getPointFeatureData(currentData)"
+                                       [typeTitle]="getTitle(currentData)"></app-point-feature-summary>
+            <app-breakdown-summary title="Servicing Population" *ngIf="!isCA(currentData) && !isCBR(currentData)  && !isCD(currentData) 
+            && !isCT(currentData) && !isCO(currentData) && !isCW(currentData) && !isCCC(currentData)
+            && !isCCF(currentData)" 
+                                   [populationStats]="getStat(currentData)"></app-breakdown-summary>
+          </ng-template>
+          
+          <ng-template #TestFeature>
+            <p> test </p>
+          </ng-template>
+
+        </ng-container>
+      </div>
+
+      <ng-template #errorFetchingStats>
+        <h1>Could not fetch stats!</h1>
+      </ng-template>
+    </ng-container>
+  </ng-container>
+
+  <ng-template #loadingStats>
+    <div class="loading-shade">
+      <mat-spinner diameter="40"></mat-spinner>
+    </div>
+  </ng-template>
+</div>

@@ -1,0 +1,209 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "zip_code": 38103,
+        "_24_hour_emergency_department": "Yes",
+        "hospital": "Regional One Health",
+        "memphis_fire_department": "Yes",
+        "street_address": "877 Jefferson Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.031943,
+          35.142855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zip_code": 38104,
+        "_24_hour_emergency_department": "Yes",
+        "hospital": "Veterans' Administration Hospital",
+        "memphis_fire_department": "Yes",
+        "street_address": "1030 Jefferson Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.026394,
+          35.143256
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zip_code": 38133,
+        "_24_hour_emergency_department": "Yes",
+        "hospital": "Saint Francis Hospital Bartlett",
+        "memphis_fire_department": "Yes",
+        "street_address": "2986 Kate Bond Road"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.802304,
+          35.207143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zip_code": 38120,
+        "_24_hour_emergency_department": "Yes",
+        "hospital": "Baptist Women's Hospital",
+        "memphis_fire_department": "Yes",
+        "street_address": "6225 Humphrey's Boulevard"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.855235,
+          35.128158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zip_code": 38105,
+        "_24_hour_emergency_department": "Yes",
+        "hospital": "Le Bonheur Children’s Hospital",
+        "memphis_fire_department": "Yes",
+        "street_address": "50 N Dunlap Street"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.032454,
+          35.144353
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zip_code": 38128,
+        "_24_hour_emergency_department": "Yes",
+        "hospital": "Methodist North Hospital",
+        "memphis_fire_department": "Yes",
+        "street_address": "3960 New Covington Pike"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.892117,
+          35.23428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zip_code": 38104,
+        "_24_hour_emergency_department": "Yes",
+        "hospital": "Methodist University Hospital",
+        "memphis_fire_department": "Yes",
+        "street_address": "1265 Union Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.019429,
+          35.136984
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zip_code": 38116,
+        "_24_hour_emergency_department": "Yes",
+        "hospital": "Methodist South Hospital",
+        "memphis_fire_department": "Yes",
+        "street_address": "1300 Wesley Drive"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.021439,
+          35.033363
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zip_code": 38138,
+        "_24_hour_emergency_department": "Yes",
+        "hospital": "Methodist Germantown Hospital",
+        "memphis_fire_department": "Yes",
+        "street_address": "7691 Poplar Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.807725,
+          35.090483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zip_code": 38017,
+        "_24_hour_emergency_department": "Yes",
+        "hospital": "Baptist Memorial Hospital Collierville",
+        "memphis_fire_department": "Yes",
+        "street_address": "1500 W Poplar Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.714421,
+          35.049654
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zip_code": 38120,
+        "_24_hour_emergency_department": "Yes",
+        "hospital": "Baptist Memorial Hospital Memphis",
+        "memphis_fire_department": "Yes",
+        "street_address": "6019 Walnut Grove Road"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.861317,
+          35.129413
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zip_code": 38119,
+        "_24_hour_emergency_department": "Yes",
+        "hospital": "Saint Francis Hospital Memphis",
+        "memphis_fire_department": "Yes",
+        "street_address": "5959 Park Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.864898,
+          35.098438
+        ]
+      }
+    }
+  ]
+}

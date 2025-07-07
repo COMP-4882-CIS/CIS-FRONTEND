@@ -1,0 +1,66 @@
+@use '@angular/material' as mat;
+@use './src/app/pages/works-cited/works-cited.theme' as works-cited;
+@use './src/app/components/poverty-chart/poverty-chart.theme' as poverty-chart;
+@use './src/app/components/map/map.theme' as mapc;
+
+
+html, body {
+  height: 100%;
+  overscroll-behavior-y: none;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: #fafafa;
+}
+
+$primary: mat.define-palette(mat.$blue-palette, 100);
+$accent: mat.define-palette(mat.$blue-palette, 600);
+$theme: mat.define-light-theme((
+  color: (
+    primary: $primary,
+    accent: $accent,
+  )
+));
+
+@include works-cited.theme($theme);
+@include poverty-chart.theme($theme);
+@include mapc.theme($theme);
+
+.logo {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2em
+}
+
+.anim-tooltip {
+  transition: opacity 200ms ease-in-out;
+}
+
+.marker-icon {
+  transition: width 150ms ease-in-out, height 150ms ease-in-out, margin-left 150ms ease-in-out, margin-top 150ms ease-in-out;
+
+  &.focused {
+    width: 41px !important;
+    height: 52px !important;
+    margin-left: -20.5px !important;
+    margin-top: -26px !important;
+  }
+
+  &.normal {
+    width: 31px !important;
+    height: 42px !important;
+    margin-left: -15.5px !important;
+    margin-top: -21px !important;
+  }
+}
+
+@media print {
+  @page {
+    margin: 1em 0 !important;
+  }
+  body {
+  padding: 0!important;
+  }
+}

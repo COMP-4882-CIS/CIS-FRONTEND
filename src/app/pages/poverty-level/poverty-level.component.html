@@ -1,0 +1,41 @@
+<div class="poverty-level">
+  <h1>Poverty in the City of Memphis</h1>
+  <h2>Detailed Information</h2>
+
+  <p>The US Census measures poverty by measuring if a family's total income is less than the family's threshold, then
+    that family and every individual in it is considered in poverty.</p>
+
+  <div class="poverty-level-data-wrapper">
+    <div class="poverty-chart-wrapper">
+      <app-poverty-chart [data]="shelbyCountyPoverty" isMain>
+        <app-poverty-chart *ngFor="let item of povertyData" [data]="item"></app-poverty-chart>
+      </app-poverty-chart>
+    </div>
+
+    <div class="poverty-schedule-wrapper">
+      <mat-divider vertical></mat-divider>
+      <h3>Poverty Guideline Schedule</h3>
+      <mat-list>
+        <mat-list-item *ngFor="let item of povertySchedule; last as last" class="schedule-list-item">
+          <div matLine class="schedule-item">
+            <div class="guideline">
+              <span>Guideline</span>
+              <span>{{item.povertyGuideline|currency}}</span>
+            </div>
+            <div class="household">
+              <span>Persons in Household</span>
+              <span>{{item.personInFamily}}</span>
+            </div>
+          </div>
+          <mat-divider *ngIf="!last"></mat-divider>
+        </mat-list-item>
+      </mat-list>
+    </div>
+  </div>
+
+
+  <div class="button-wrapper">
+    <button mat-button routerLink="/" [queryParams]="{reload: true}" disableRipple>Return Home</button>
+  </div>
+
+</div>

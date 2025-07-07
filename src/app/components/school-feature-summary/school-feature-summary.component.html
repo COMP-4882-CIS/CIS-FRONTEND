@@ -1,0 +1,269 @@
+
+<ng-container *ngIf="schoolFeatureData as schoolFeature">
+  <mat-list class="school-info-list">
+    <ng-container *ngIf="schoolFeature.category && schoolFeature.category.length > 0">
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <div class="list-item-inner">
+          <span class="title">School Category</span>
+          <span class="value">{{schoolFeature.category}}</span>
+        </div>
+      </mat-list-item>
+    </ng-container>
+
+    <ng-container *ngIf="schoolFeature.principal && schoolFeature.principal.length > 0">
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <div class="list-item-inner">
+          <span class="title">School Principal</span>
+          <span class="value">{{schoolFeature.principal}}</span>
+        </div>
+      </mat-list-item>
+    </ng-container>
+  </mat-list>
+</ng-container>
+
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title> Performance </mat-panel-title>
+      </mat-expansion-panel-header>
+      <ng-container *ngIf="schoolFeatureData as schoolFeature">
+        <mat-list class="performance">
+
+          <ng-container *ngIf="schoolFeature.grad_cohort">
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <div class="list-item-inner">
+                <span class="title" matTooltip="number of students who graduate within a 4 year timespan" >Graduation Cohort</span>
+                <span class="value">{{schoolFeature.grad_cohort}}</span>
+              </div>
+            </mat-list-item>
+          </ng-container>
+
+          <ng-container *ngIf="schoolFeature.grad_count">
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <div class="list-item-inner">
+                <span class="title" matTooltip="number of students who graduated">Graduation Count</span>
+                <span class="value">{{schoolFeature.grad_count}}</span>
+              </div>
+            </mat-list-item>
+          </ng-container>
+
+          <ng-container *ngIf="schoolFeature.grad_rate">
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <div class="list-item-inner">
+                <span class="title" matTooltip="% of students who Graduate">Graduation Rate</span>
+                <span class="value">{{schoolFeature.grad_rate}} %</span>
+              </div>
+            </mat-list-item>
+          </ng-container>
+
+          <ng-container *ngIf="schoolFeature.english_avg">
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <div class="list-item-inner">
+                <span class="title" matTooltip=" average ACT score for English ">ACT English Average</span>
+                <span class="value">{{schoolFeature.english_avg}}</span>
+              </div>
+            </mat-list-item>
+          </ng-container>
+
+          <ng-container *ngIf="schoolFeature.math_avg">
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <div class="list-item-inner">
+                <span class="title" matTooltip="average ACT score for Math ">ACT Math Average</span>
+                <span class="value">{{schoolFeature.math_avg}}</span>
+              </div>
+            </mat-list-item>
+          </ng-container>
+
+          <ng-container *ngIf="schoolFeature.reading_avg">
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <div class="list-item-inner">
+                <span class="title" matTooltip="average ACT score for Reading">ACT Reading Average</span>
+                <span class="value">{{schoolFeature.reading_avg}}</span>
+              </div>
+            </mat-list-item>
+          </ng-container>
+
+          <ng-container *ngIf="schoolFeature.science_avg">
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <div class="list-item-inner">
+                <span class="title" matTooltip="average ACT score for Science">ACT Science Average</span>
+                <span class="value">{{schoolFeature.science_avg}}</span>
+              </div>
+            </mat-list-item>
+          </ng-container>
+
+          <ng-container *ngIf="schoolFeature.act_composite_avg">
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <div class="list-item-inner">
+                <span class="title" matTooltip="average total ACT score">ACT Average</span>
+                <span class="value">{{schoolFeature.act_composite_avg}}</span>
+              </div>
+            </mat-list-item>
+          </ng-container>
+
+          <ng-container *ngIf="schoolFeature.percent_dropout">
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <div class="list-item-inner">
+                <span class="title" matTooltip="% of students who dropout">Dropout</span>
+                <span class="value">{{schoolFeature.percent_dropout}} %</span>
+              </div>
+            </mat-list-item>
+          </ng-container>
+
+          <ng-container *ngIf="schoolFeature.success_rate">
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <div class="list-item-inner">
+                <span class="title" matTooltip="Over All School Success Rating">Success Rate</span>
+                <span class="value">{{schoolFeature.success_rate}} %</span>
+              </div>
+            </mat-list-item>
+          </ng-container>
+
+          <ng-container *ngIf="schoolFeature.tvaas_index">
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <div class="list-item-inner">
+                <span class="title" matTooltip = "The Tennessee Value-Added Assessment System (TVAAS) measures student growth year over year, regardless of whether the student is proficient on the state assessment.">TVAAS Score</span>
+                <span class="value">{{schoolFeature.tvaas_index}}</span>
+              </div>
+            </mat-list-item>
+          </ng-container>
+
+          <ng-container *ngIf="schoolFeature.percent_met_growth_standard">
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <div class="list-item-inner">
+                <span class="title" matTooltip = "What Percentage of Students Meet their Growth Targets">% Growth Standard Met</span>
+                <span class="value">{{schoolFeature.percent_met_growth_standard}} %</span>
+              </div>
+            </mat-list-item>
+          </ng-container>
+
+          <ng-container *ngIf="schoolFeature.percent_cte">
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <div class="list-item-inner">
+                <span class="title" matTooltip = "Career and technical education">% CTE Students</span>
+                <span class="value">{{schoolFeature.percent_cte}} %</span>
+              </div>
+            </mat-list-item>
+          </ng-container>
+
+          <ng-container *ngIf="schoolFeature.percent_ca">
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <div class="list-item-inner">
+                <span class="title" matTooltip = "% of Student Chronic Absenteeism">% Chronic Absenteeism</span>
+                <span class="value">{{schoolFeature.percent_ca}} %</span>
+              </div>
+            </mat-list-item>
+          </ng-container>
+
+          <!--
+           <ng-container *ngIf="schoolFeature.act_grad">
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <div class="list-item-inner">
+                <span class="title" matTooltip ="">act_grad</span>
+                <span class="value">{{schoolFeature.act_grad}}</span>
+              </div>
+            </mat-list-item>
+          </ng-container>
+        -->
+
+        <!--
+          <ng-container *ngIf="schoolFeature.percent_longterm_ell">
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <div class="list-item-inner">
+                <span class="title" matTooltip ="% of students enroll">percent_longterm_ell</span>
+                <span class="value">{{schoolFeature.percent_longterm_ell}}</span>
+              </div>
+            </mat-list-item>
+          </ng-container>
+        -->
+
+          <ng-container *ngIf="schoolFeature.percent_retained">
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <div class="list-item-inner">
+                <span class="title" matTooltip ="The ability to keep teachers teaching in schools from year to year">% Teacher Retention</span>
+                <span class="value">{{schoolFeature.percent_retained}} %</span>
+              </div>
+            </mat-list-item>
+          </ng-container>
+
+        </mat-list>
+      </ng-container>
+
+</mat-expansion-panel>
+
+
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>School Statistics</mat-panel-title>
+      </mat-expansion-panel-header>
+        <ng-container *ngIf="schoolSummary as schoolSummary; else errorFetchingStats">
+          <mat-list>
+            <mat-list-item>
+              <div class="list-item-inner">
+                <span class="title">Total Students</span>
+                <span class="value">{{schoolSummary.totalEnrolled}}</span>
+              </div>
+            </mat-list-item>
+
+            <ng-container *ngIf="maleEnrollment > -1">
+              <mat-divider></mat-divider>
+              <mat-list-item>
+                <div class="list-item-inner">
+                  <span class="title">Total Male Students</span>
+                  <span class="value">{{maleEnrollment}}</span>
+                </div>
+              </mat-list-item>
+            </ng-container>
+
+            <ng-container *ngIf="femaleEnrollment > -1">
+              <mat-divider></mat-divider>
+              <mat-list-item>
+                <div class="list-item-inner">
+                  <span class="title">Total Female Students</span>
+                  <span class="value">{{femaleEnrollment}}</span>
+                </div>
+              </mat-list-item>
+            </ng-container>
+
+            <ng-container *ngIf="gradeRange as gradeRange">
+              <mat-divider></mat-divider>
+              <mat-list-item>
+                <div class="list-item-inner">
+                  <span class="title">Grades Taught</span>
+                  <span class="value">
+                {{gradeRange}}
+                </span>
+                </div>
+              </mat-list-item>
+            </ng-container>
+          </mat-list>
+      </ng-container>
+  </mat-expansion-panel>
+
+  <div class="export-wrapper">
+    <button mat-stroked-button color="primary" (click)="exportSchoolData()">Export</button>
+  </div>
+
+
+<ng-template #errorFetchingStats>
+  <app-fetch-error statType="school"
+                   detailMessage="The Shelby County data does not have this school listed"></app-fetch-error>
+</ng-template>
