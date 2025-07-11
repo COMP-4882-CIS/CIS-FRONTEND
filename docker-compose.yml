@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: cis-frontend:main
+    image: iisdevs/cis-frontend:main
     ports:
       - "80:80"
     environment:
